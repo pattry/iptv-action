@@ -1,22 +1,21 @@
 import socket
 from urllib.parse import urlparse
 
-import ipdb
-
 from utils.tools import resource_path
 
 
 class IPChecker:
     def __init__(self):
-        self.db = ipdb.City(resource_path("utils/ip_checker/data/qqwry.ipdb"))
+        try:
+            import ipdb
+            self.db = ipdb.City(resource_path("utils/ip_checker/data/qqwry.ipdb"))
+        except Exception:
+            self.db = None
         self.url_host = {}
         self.host_ip = {}
         self.host_ipv_type = {}
 
     def get_host(self, url: str) -> str:
-        """
-        Get the host from a URL
-        """
         if url in self.url_host:
             return self.url_host[url]
 
@@ -25,9 +24,6 @@ class IPChecker:
         return host
 
     def get_ip(self, url: str) -> str | None:
-        """
-        Get the IP from a URL
-        """
         host = self.get_host(url)
         if host in self.host_ip:
             return self.host_ip[host]
@@ -36,9 +32,6 @@ class IPChecker:
         return self.host_ip.get(host)
 
     def get_ipv_type(self, url: str) -> str:
-        """
-        Get the IPv type of URL
-        """
         host = self.get_host(url)
         if host in self.host_ipv_type:
             return self.host_ipv_type[host]
@@ -58,11 +51,8 @@ class IPChecker:
         return ipv_type
 
     def find_map(self, ip: str) -> tuple[str | None, str | None]:
-        """
-        Find the IP address and return the location and ISP
-        :param ip: The IP address to find
-        :return: A tuple of (location, ISP)
-        """
+        if self.db is None:
+            return None, None
         try:
             result = self.db.find_map(ip, "CN")
             if not result:
