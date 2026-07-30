@@ -1,0 +1,15 @@
+# 这是订阅源列表，每行一个订阅地址
+# 支持设置UA：https://xxx.com/subscribe.m3u UA="xxx"
+# This is a list of subscription sources, with one subscription address per line
+# Supports setting UA: https://xxx.com/subscribe.m3u UA="xxx"
+
+https://gh-proxy.org/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt
+https://iptv-org.github.io/iptv/index.m3u8
+https://tv.850930.xyz/pix.m3u
+https://live.iptv-free.com/iptv/categories/general.m3u
+https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/master/m3u/台湾香港澳门2023.m3u
+https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/master/m3u/国内电视台2023.m3u8
+
+[WHITELIST]
+# 以下是订阅源的白名单，白名单内的订阅源获取的接口将不会参与测速，始终保留至结果最前。
+# This is the whitelist for subscription sources. Subscription sources in the whitelist will not participate in speed testing and will always be retained at the front of the results.
