@@ -30,8 +30,30 @@ jobs:
         run: pip3 install --user pipenv
       - name: Install dependecies
         run: pipenv --python 3.13 && pipenv install --deploy
+      
+      - name: 动态更新今日影视
+        run: |
+          # 下载源文件
+          curl -s "https://gh-proxy.org/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt" > /tmp/today.txt
+          
+          # 提取"今日影视"分类（频道名+地址），写入 local.txt
+          sed -n '/今日影视,#genre#/,/#genre#/p' /tmp/today.txt | grep -v "^$" > config/local.txt
+          
+          # 从 demo.txt 中删除旧的"今日影视"分类（如果存在）
+          sed -i '/今日影视,#genre#/,/#genre#/d' config/demo.txt
+          
+          # 提取频道名（不含地址）到临时文件，并在前面加4个空格
+          sed -n '/今日影视,#genre#/,/#genre#/p' /tmp/today.txt | grep -v "#genre#" | grep -v "^$" | cut -d',' -f1 | sed 's/^/    /' > /tmp/channels.txt
+          
+          # 在"新闻"分类后面插入"今日影视"分类标题
+          sed -i '/^新闻,#genre#/a\\n今日影视,#genre#' config/demo.txt
+          
+          # 在"今日影视,#genre#"后面插入频道名
+          sed -i '/^今日影视,#genre#/r /tmp/channels.txt' config/demo.txt
+      
       - name: Update
         run: pipenv run dev
+      
       - name: Commit and push if changed
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
