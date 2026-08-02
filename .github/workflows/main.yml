@@ -81,14 +81,25 @@ jobs:
           cp output/result.m3u output/result_other.m3u
           cp output/result.txt output/result_other.txt
 
-      - name: 合并结果
+      - name: 合并结果（强制只保留今日影视分类的内容）
         run: |
-          # 合并今日影视和其他分类
-          cat output/result_today.txt output/result_other.txt | grep -v "^$" | awk '!seen[$0]++' > output/result_final.txt
-          cat output/result_today.m3u output/result_other.m3u | grep -v "^$" | awk '!seen[$0]++' > output/result_final.m3u
+          # 从今日影视结果中只提取"今日影视"分类及其内容
+          # 匹配从"今日影视,#genre#"开始，到下一个非空格开头的行结束
+          sed -n '/^今日影视,#genre#/,/^[^ ]/p' output/result_today.txt | grep -v "^$" > /tmp/today_clean.txt
+          
+          # 从其他分类结果中删除可能存在的"今日影视"分类
+          sed -i '/^今日影视,#genre#/,/^[^ ]/d' output/result_other.txt
+          
+          # 合并：其他分类 + 干净的今日影视
+          cat output/result_other.txt /tmp/today_clean.txt | grep -v "^$" | awk '!seen[$0]++' > output/result_final.txt
           
           # 替换最终结果
           cp output/result_final.txt output/result.txt
+          
+          # 同样处理 m3u 格式
+          sed -n '/^今日影视,#genre#/,/^[^ ]/p' output/result_today.m3u | grep -v "^$" > /tmp/today_clean.m3u
+          sed -i '/^今日影视,#genre#/,/^[^ ]/d' output/result_other.m3u
+          cat output/result_other.m3u /tmp/today_clean.m3u | grep -v "^$" | awk '!seen[$0]++' > output/result_final.m3u
           cp output/result_final.m3u output/result.m3u
       
       - name: Commit and push if changed
