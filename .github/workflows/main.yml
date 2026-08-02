@@ -38,9 +38,58 @@ jobs:
           
           # 提取"今日影视"分类（频道名+地址），写入 local.txt
           sed -n '/今日影视,#genre#/,/#genre#/p' /tmp/today.txt | grep -v "^$" > config/local.txt
-      
-      - name: Update
-        run: pipenv run dev
+
+      - name: 为今日影视单独设置 urls_limit=1
+        run: |
+          # 备份原 config.ini 和 demo.txt
+          cp config/config.ini config/config.ini.backup
+          cp config/demo.txt config/demo.txt.backup
+          
+          # 修改 urls_limit 为 1（仅对今日影视生效）
+          sed -i 's/^urls_limit = .*/urls_limit = 1/' config/config.ini
+          
+          # 提取今日影视的频道名
+          sed -n '/今日影视,#genre#/,/#genre#/p' /tmp/today.txt | grep -v "#genre#" | grep -v "^$" | cut -d',' -f1 > /tmp/today_channels.txt
+          
+          # 创建临时 demo.txt，只包含今日影视
+          echo "今日影视,#genre#" > config/demo.tmp
+          cat /tmp/today_channels.txt >> config/demo.tmp
+          
+          # 用临时 demo.txt 替换
+          cp config/demo.tmp config/demo.txt
+          
+          # 运行更新（只匹配今日影视）
+          pipenv run dev
+          
+          # 保存今日影视结果
+          cp output/result.m3u output/result_today.m3u
+          cp output/result.txt output/result_today.txt
+
+      - name: 恢复配置，运行其他分类
+        run: |
+          # 恢复 config.ini 和 demo.txt
+          cp config/config.ini.backup config/config.ini
+          cp config/demo.txt.backup config/demo.txt
+          
+          # 从 subscribe.txt 中移除动态源（避免今日影视混入）
+          sed -i '/gh-proxy.org/d' config/subscribe.txt
+          
+          # 运行更新（生成其他分类）
+          pipenv run dev
+          
+          # 保存其他分类结果
+          cp output/result.m3u output/result_other.m3u
+          cp output/result.txt output/result_other.txt
+
+      - name: 合并结果
+        run: |
+          # 合并今日影视和其他分类
+          cat output/result_today.txt output/result_other.txt | grep -v "^$" | awk '!seen[$0]++' > output/result_final.txt
+          cat output/result_today.m3u output/result_other.m3u | grep -v "^$" | awk '!seen[$0]++' > output/result_final.m3u
+          
+          # 替换最终结果
+          cp output/result_final.txt output/result.txt
+          cp output/result_final.m3u output/result.m3u
       
       - name: Commit and push if changed
         run: |
