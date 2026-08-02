@@ -60,21 +60,37 @@ jobs:
 
       - name: 合并结果
         run: |
-          # 提取今日影视分类（完整保留）
+          # 提取今日影视分类
           sed -n '/^今日影视,#genre#/,/^[^ ]/p' output/result_today.txt | grep -v "^$" > /tmp/today_clean.txt
-          # 删除其他分类中可能存在的今日影视
           sed -i '/^今日影视,#genre#/,/^[^ ]/d' output/result_other.txt
-          # 合并
           cat output/result_other.txt /tmp/today_clean.txt > output/result_final.txt
-          # 去重（仅移除完全相同的行）
-          awk '!seen[$0]++' output/result_final.txt > output/result_final_dedup.txt
+          
+          # 按分类分组去重
+          awk '
+            /^[^ ]/ && !/#genre#/ { category = $0 }
+            /^    / { 
+              key = category "|||" $0
+              if (!seen[key]++) print
+              next
+            }
+            { print }
+          ' output/result_final.txt > output/result_final_dedup.txt
           mv output/result_final_dedup.txt output/result_final.txt
           cp output/result_final.txt output/result.txt
-          # m3u格式同样处理
+          
+          # m3u格式
           sed -n '/^今日影视,#genre#/,/^[^ ]/p' output/result_today.m3u | grep -v "^$" > /tmp/today_clean.m3u
           sed -i '/^今日影视,#genre#/,/^[^ ]/d' output/result_other.m3u
           cat output/result_other.m3u /tmp/today_clean.m3u > output/result_final.m3u
-          awk '!seen[$0]++' output/result_final.m3u > output/result_final_dedup.m3u
+          awk '
+            /^[^ ]/ && !/#genre#/ { category = $0 }
+            /^    / { 
+              key = category "|||" $0
+              if (!seen[key]++) print
+              next
+            }
+            { print }
+          ' output/result_final.m3u > output/result_final_dedup.m3u
           mv output/result_final_dedup.m3u output/result_final.m3u
           cp output/result_final.m3u output/result.m3u
       
