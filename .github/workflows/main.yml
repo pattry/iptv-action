@@ -7,10 +7,7 @@ on:
 
 jobs:
   push:
-    runs-on: ${{ matrix.operating-system }}
-    strategy:
-      matrix:
-        operating-system: [ 'ubuntu-latest' ]
+    runs-on: ubuntu-latest
     steps:
       - name: Set branch name
         id: vars
@@ -30,90 +27,15 @@ jobs:
         run: pip3 install --user pipenv
       - name: Install dependecies
         run: pipenv --python 3.13 && pipenv install --deploy
-      
-      - name: 动态更新今日影视
+
+      - name: 搬运今日影视（不检测）
         run: |
           curl -s "https://gh-proxy.org/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt" > /tmp/today.txt
           sed -n '/今日影视,#genre#/,/#genre#/p' /tmp/today.txt | grep -v "^$" > config/local.txt
 
-      - name: 为今日影视单独设置（关闭过滤，保留所有地址）
-        run: |
-          cp config/config.ini config/config.ini.backup
-          cp config/demo.txt config/demo.txt.backup
-          
-          # 今日影视专用配置：关闭测速和分辨率过滤，保留所有地址
-          sed -i 's/^open_filter_speed = .*/open_filter_speed = False/' config/config.ini
-          sed -i 's/^open_filter_resolution = .*/open_filter_resolution = False/' config/config.ini
-          sed -i 's/^urls_limit = .*/urls_limit = 1/' config/config.ini
-          
-          # 提取今日影视频道名
-          sed -n '/今日影视,#genre#/,/#genre#/p' /tmp/today.txt | grep -v "#genre#" | grep -v "^$" | cut -d',' -f1 > /tmp/today_channels.txt
-          
-          # 创建临时 demo.txt
-          echo "今日影视,#genre#" > config/demo.tmp
-          cat /tmp/today_channels.txt >> config/demo.tmp
-          cp config/demo.tmp config/demo.txt
-          
-          pipenv run dev
-          cp output/result.m3u output/result_today.m3u
-          cp output/result.txt output/result_today.txt
+      - name: Update（检测其他分类）
+        run: pipenv run dev
 
-      - name: 恢复配置，运行其他分类（开启过滤）
-        run: |
-          cp config/config.ini.backup config/config.ini
-          cp config/demo.txt.backup config/demo.txt
-          sed -i '/gh-proxy.org/d' config/subscribe.txt
-          
-          pipenv run dev
-          cp output/result.m3u output/result_other.m3u
-          cp output/result.txt output/result_other.txt
-
-      - name: 合并结果
-        run: |
-          if [ ! -f output/result_today.txt ]; then
-            echo "result_today.txt 不存在，跳过今日影视合并"
-            cp output/result_other.txt output/result_final.txt
-            cp output/result_other.m3u output/result_final.m3u
-          elif [ ! -f output/result_other.txt ]; then
-            echo "result_other.txt 不存在，跳过其他分类合并"
-            cp output/result_today.txt output/result_final.txt
-            cp output/result_today.m3u output/result_final.m3u
-          else
-            # 提取今日影视分类
-            sed -n '/^今日影视,#genre#/,/^[^ ]/p' output/result_today.txt | grep -v "^$" > /tmp/today_clean.txt
-            sed -i '/^今日影视,#genre#/,/^[^ ]/d' output/result_other.txt
-            cat output/result_other.txt /tmp/today_clean.txt > output/result_final.txt
-            
-            # 按分类分组去重
-            awk '
-              /^[^ ]/ && !/#genre#/ { category = $0 }
-              /^    / { 
-                key = category "|||" $0
-                if (!seen[key]++) print
-                next
-              }
-              { print }
-            ' output/result_final.txt > output/result_final_dedup.txt
-            mv output/result_final_dedup.txt output/result_final.txt
-            cp output/result_final.txt output/result.txt
-            
-            # m3u格式
-            sed -n '/^今日影视,#genre#/,/^[^ ]/p' output/result_today.m3u | grep -v "^$" > /tmp/today_clean.m3u
-            sed -i '/^今日影视,#genre#/,/^[^ ]/d' output/result_other.m3u
-            cat output/result_other.m3u /tmp/today_clean.m3u > output/result_final.m3u
-            awk '
-              /^[^ ]/ && !/#genre#/ { category = $0 }
-              /^    / { 
-                key = category "|||" $0
-                if (!seen[key]++) print
-                next
-              }
-              { print }
-            ' output/result_final.m3u > output/result_final_dedup.m3u
-            mv output/result_final_dedup.m3u output/result_final.m3u
-            cp output/result_final.m3u output/result.m3u
-          fi
-      
       - name: Commit and push if changed
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
