@@ -38,18 +38,6 @@ jobs:
           
           # 提取"今日影视"分类（频道名+地址），写入 local.txt
           sed -n '/今日影视,#genre#/,/#genre#/p' /tmp/today.txt | grep -v "^$" > config/local.txt
-          
-          # 提取频道名（不含地址），每行前面加4个空格
-          sed -n '/今日影视,#genre#/,/#genre#/p' /tmp/today.txt | grep -v "#genre#" | grep -v "^$" | cut -d',' -f1 | sed 's/^/    /' > /tmp/channels.txt
-          
-          # 删除 demo.txt 中旧的"今日影视"分类
-          sed -i '/^今日影视,#genre#/,/^[^ ]/d' config/demo.txt
-          
-          # 在"新闻"分类后面插入"今日影视"分类
-          sed -i '/^新闻,#genre#/a\\n今日影视,#genre#' config/demo.txt
-          
-          # 在"今日影视,#genre#"后面插入频道名
-          sed -i '/^今日影视,#genre#/r /tmp/channels.txt' config/demo.txt
       
       - name: Update
         run: pipenv run dev
