@@ -28,12 +28,7 @@ jobs:
       - name: Install dependecies
         run: pipenv --python 3.13 && pipenv install --deploy
 
-      - name: 搬运今日影视（不检测）
-        run: |
-          curl -s "https://gh-proxy.org/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt" > /tmp/today.txt
-          sed -n '/今日影视,#genre#/,/#genre#/p' /tmp/today.txt | grep -v "^$" > config/local.txt
-
-      - name: Update（检测其他分类）
+      - name: Update
         run: pipenv run dev
 
       - name: Commit and push if changed
