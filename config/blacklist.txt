@@ -111,12 +111,20 @@ kwimgs
 
 # ========== 组播/UDP地址 ==========
 /rtp/
+/udp/
 
 # ========== 频道错配的源 ==========
 cctv5p.m3u8
 cctv4k.m3u8
+1905.php
 chchd
 9kds
+
+# ========== 新增低质量源 ==========
+chinacert.cftest5.cn
+jiduo.me
+mxmy.net
+cttv.vip
 
 # ========== 已失效/低质量源 ==========
 player.cntv.cn
@@ -162,16 +170,3 @@ localhost
 /12345/
 /tmp/
 /cache/
-
-# ========== 频道名称与实际内容不符 ==========
-cctv5p.m3u8
-cctv4k.m3u8
-1905.php
-chchd
-kwimgs
-
-chinacert.cftest5.cn
-jiduo.me
-mxmy.net
-cttv.vip
-/udp/
