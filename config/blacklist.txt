@@ -1,5 +1,4 @@
 # 这是接口黑名单列表，符合关键字的接口将被拦截，一个关键字一行
-# This is the interface blacklist list, the interface matching the keyword will be blocked, one keyword line
 
 # ========== 音频/广播流 ==========
 /audio/
@@ -44,7 +43,7 @@ otttv.bj.chinamobile.com
 .sh.chinamobile.com
 .gmcc.net
 
-# ========== 咪咕视频（需要鉴权）==========
+# ========== 咪咕视频 ==========
 hlszymgsplive.miguvideo.com
 gslbmgsplive.miguvideo.com
 migu
@@ -66,7 +65,6 @@ migucdn
 10.0.
 172.16.
 127.0.
-0.0.0.0
 
 # ========== 私人/临时服务器 ==========
 php.jdshipin.com
@@ -88,6 +86,37 @@ webmail.axxe.top
 alvin.ergotron.net
 lu.wqwqwq.sbs
 kkk.888.3116598
+
+# ========== 结果中的私人服务器 ==========
+guangyuan
+xiongnas
+maomizi
+youngx
+vv5678
+scanflove
+rongrong
+hongzhijiaoyu
+yanshifen
+wmh.wmh
+xxika
+syy3
+cfss.cc
+hidns.vip
+hndt.com
+myalicdn
+epg.pw
+antik
+cctvplus
+kwimgs
+
+# ========== 组播/UDP地址 ==========
+/rtp/
+
+# ========== 频道错配的源 ==========
+cctv5p.m3u8
+cctv4k.m3u8
+chchd
+9kds
 
 # ========== 已失效/低质量源 ==========
 player.cntv.cn
@@ -133,13 +162,3 @@ localhost
 /12345/
 /tmp/
 /cache/
-
-# ====== 频道名称 和实际不一致 ======
-http://104.152.209.49:8181/720p/cctv5p.m3u8$订阅源
-https://www.9kds.com/d/1905.php?t=1&id=LIVEOYY31H24H48NE&kl=www.9kds.com$订阅源
-https://www.9kds.com/d/1905.php?t=1&id=LIVE8J4LTCXPI7QJ5_261&kl=www.9kds.com$订阅源
-http://222.89.96.36:8001/hls/13/index.m3u8
-http://104.152.209.49:8181/720p/cctv4k.m3u8$订阅源
-http://63.141.230.178:82/gslb/zbdq5.m3u8?id=chchd$订阅源
-https://txmov2.a.kwimgs.com/bs3/video-hls/5199687338554291078_hlsb.m3u8$订阅源
-
