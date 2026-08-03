@@ -115,7 +115,7 @@ class UpdateSource:
     # ----------------------------
     def _prepare_channel_data(self):
         self.whitelist_maps = load_whitelist_maps(constants.whitelist_path)
-        self.blacklist = get_urls_from_file(constants.blacklist_path, pattern_search=False)
+        self.blacklist = get_urls_from_file(constants.blacklist_path, pattern_search=True)
         self.channel_items = get_channel_items(self.whitelist_maps, self.blacklist)
         self.channel_data = {}
 
