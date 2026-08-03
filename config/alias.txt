@@ -1,10 +1,6 @@
 # 这是频道名称的别名名单，用于获取接口时将多种名称映射为一个名称的结果，可以提升获取量与准确率
 # 格式：主名（对应demo.txt模板中的频道名称）,别名1,别名2,别名3
-# 支持使用正则表达式匹配别名，以re:开头的别名将被识别为正则表达式，例如CCTV-1,re:(?i)^\s*CCTV[-\s_]*0?1(?![0-9Kk+])[\s\S]*$
-# This is the alias list for channel names, used to map multiple names to a single name when fetching from the interface, improving the fetch volume and accuracy.
-# Format: Main name (corresponds to channel name in demo.txt template), alias1, alias2, alias3
-# Aliases support regex matching. Aliases starting with re: are recognized as regular expressions, e\.g\. CCTV-1,re:(?i)^\s*CCTV[-\s_]*0?1(?![0-9Kk+])[\s\S]*$
-
+# 支持使用正则表达式匹配别名，以re:开头的别名将被识别为正则表达式
 
 CCTV1,CCTV-1,CCTV1综合,CCTV1高清,cctv1,cctv1hd,CCTV-1HD,央视综合,中央一套,中央1套,央视1套
 CCTV2,CCTV-2,CCTV2财经,CCTV2高清,cctv2,cctv2hd,CCTV-2HD,央视财经,中央二套,中央2套,央视2套
@@ -22,612 +18,539 @@ CCTV12,CCTV-12,CCTV12社会,CCTV12社会与法,CCTV12高清,cctv12,cctv12hd,CCTV
 CCTV13,CCTV-13,CCTV13新闻,CCTV13高清,cctv13,cctv13hd,CCTV-13HD,央视新闻,中央十三套,中央13套,央视13套,新闻频道
 CCTV14,CCTV-14,CCTV14少儿,CCTV14高清,cctv14,cctv14hd,CCTV-14HD,央视少儿,中央十四套,中央14套,央视14套,少儿频道
 CCTV15,CCTV-15,CCTV15音乐,CCTV15高清,cctv15,cctv15hd,CCTV-15HD,央视音乐,中央十五套,中央15套,央视15套,音乐频道
-CCTV16,CCTV-16,CCTV16奥林,CCTV16奥林匹克,CCTV16高清,cctv16,cctv16hd,CCTV-16HD,央视奥林匹克,央视奥运,奥运频道,奥林匹克频道
-CCTV17,CCTV-17,CCTV17农业,CCTV17农业农村,CCTV17高清,cctv17,cctv17hd,CCTV-17HD,央视农业农村,央视农业,农业频道,农村频道
-CCTV4K,CCTV-4K,CCTV-4K超高清,CCTV4K超高清,CCTV4K标清,CCTV4K高清,央视4K,4K超高清,4K测试,央视4K超高清,中央4K
-CCTV8K,CCTV-8K,CCTV-8K超高清,CCTV8K超高清,CCTV8K标清,CCTV8K高清,央视8K,8K超高清,8K测试,央视8K超高清
+CCTV16,CCTV-16,CCTV16奥林,CCTV16奥林匹克,CCTV16高清,cctv16,cctv16hd,CCTV-16HD,央视奥林匹克,央视奥运,奥运频道
+CCTV17,CCTV-17,CCTV17农业,CCTV17农业农村,CCTV17高清,cctv17,cctv17hd,CCTV-17HD,央视农业农村,央视农业
+CCTV4K,CCTV-4K,CCTV-4K超高清,CCTV4K超高清,CCTV4K高清,央视4K,4K超高清,央视4K超高清
+CCTV8K,CCTV-8K,CCTV-8K超高清,CCTV8K超高清,CCTV8K高清,央视8K,8K超高清,央视8K超高清
 
-CETV1,CETV-1,中国教育1,中国教育一套,中国教育一台,中国教育1HD,中国教育电视台一套,教育1,教育一套
-CETV2,CETV-2,中国教育2,中国教育二台,中国教育2HD,中国教育电视台二套,教育2,教育二套
-CETV3,CETV-3,中国教育3,中国教育三台,中国教育3HD,中国教育电视台三套,教育3,教育三套
-CETV4,CETV-4,中国教育4,中国教育四台,中国教育4HD,中国教育电视台四套,教育4,教育四套
+CETV1,CETV-1,中国教育1,中国教育一套,中国教育一台,中国教育1HD,教育1
+CETV2,CETV-2,中国教育2,中国教育二台,中国教育2HD,教育2
+CETV3,CETV-3,中国教育3,中国教育三台,中国教育3HD,教育3
+CETV4,CETV-4,中国教育4,中国教育四台,中国教育4HD,教育4
 
-CHC家庭影院,CHC家庭影院频道,家庭影院,chc家庭影院,CHC家庭电影,CHC家庭影院HD,CHC家庭影院高清
-CHC动作电影,CHC动作电影频道,chc动作电影,动作电影,CHC动作电影HD,CHC动作电影高清
-CHC影迷电影,CHC影迷电影频道,影迷电影,chc影迷电影,CHC高清电影,高清电影,CHC影迷电影高清,CHC影迷电影HD
+CHC家庭影院,CHC家庭影院频道,家庭影院,chc家庭影院,CHC家庭电影,CHC家庭影院HD
+CHC动作电影,CHC动作电影频道,chc动作电影,CHC动作电影HD
+CHC影迷电影,CHC影迷电影频道,影迷电影,chc影迷电影,CHC高清电影,CHC影迷电影HD
 
-爱上4K,爱上4k,爱上4K频道,爱上超清,爱上4K高清,爱上4K超高清
-重温经典,重温经典频道,经典频道,经典重温,重温经典台,经典影视
-央视台球,CCTV央视台球,台球频道,CCTV台球,台球,央视台球频道
-风云足球,CCTV风云足球,CCTV风云足球HD,风云足球频道,足球频道风云,央视风云足球
-风云剧场,CCTV风云剧场,CCTV风云剧场标清,CCTV风云剧场高清,风云剧场频道,央视风云剧场
-风云音乐,CCTV风云音乐,风云音乐频道,央视风云音乐
-第一剧场,CCTV第一剧场,CCTV第一剧场标清,CCTV第一剧场高清,第一剧场频道,央视第一剧场
-兵器科技,CCTV兵器科技,兵器科技频道,央视兵器科技
-高尔夫网球,CCTV高尔夫网球,高尔夫,网球,高尔夫网球频道,高尔夫·网球,央视高尔夫网球
-世界地理,CCTV世界地理,世界地理频道,央视世界地理
-女性时尚,CCTV女性时尚,女性时尚频道,央视女性时尚
-怀旧剧场,CCTV怀旧剧场,CCTV怀旧剧场标清,CCTV怀旧剧场高清,怀旧剧场频道,央视怀旧剧场
-央视文化精品,CCTV央视文化精品,文化精品,文化精品频道,央视文化精品频道
-卫生健康,CCTV卫生健康,卫生健康频道,健康频道,央视卫生健康
-电视指南,CCTV电视指南,电视指南频道,导视频道,央视电视指南
-老故事,CCTV老故事,中央新影-老故事,老故事频道,中央新影老故事,央视老故事
-发现之旅,CCTV发现之旅,中央新影-发现之旅,发现之旅频道,中央新影发现之旅,央视发现之旅
-国学频道,国学,国学台,国学频道台
-天元围棋,天元围棋频道,围棋频道,围棋,天元围棋台
-优漫卡通,江苏优漫卡通,优漫卡通标清,优漫卡通HD,优漫卡通卫视,优漫卡通台
-早期教育,早期教育频道,早期教育台
+爱上4K,爱上4k,爱上4K频道,爱上超清,爱上4K高清
+重温经典,重温经典频道,经典频道,经典重温
+央视台球,CCTV央视台球,台球频道
+风云足球,CCTV风云足球,风云足球频道
+风云剧场,CCTV风云剧场,风云剧场频道
+风云音乐,CCTV风云音乐,风云音乐频道
+第一剧场,CCTV第一剧场,第一剧场频道
+兵器科技,CCTV兵器科技
+高尔夫网球,CCTV高尔夫网球,高尔夫网球频道
+世界地理,CCTV世界地理
+女性时尚,CCTV女性时尚
+怀旧剧场,CCTV怀旧剧场,怀旧剧场频道
+央视文化精品,CCTV央视文化精品
+卫生健康,CCTV卫生健康
+电视指南,CCTV电视指南
+老故事,CCTV老故事,中央新影-老故事
+发现之旅,CCTV发现之旅,中央新影-发现之旅
+国学频道
+天元围棋,天元围棋频道,围棋频道
+优漫卡通,江苏优漫卡通
+早期教育
 
+湖南卫视4K,湖南卫视超清,湖南卫视4K超清
+湖南卫视,湖南台,HunanTV,芒果台,湖南卫视HD
+湖南经视,湖南经视HD
+湖南都市,湖南都市频道
+湖南娱乐
+湖南电视剧,湖南电视剧频道
+湖南电影
+湖南爱晚,湖南公共
+湖南国际
+金鹰纪实
+金鹰卡通,湖南金鹰卡通
+快乐垂钓
+长沙新闻,长沙新闻频道
+长沙政法,长沙政法频道
+东方卫视,上海卫视,上海东方卫视,东方卫视HD,DragonTV
+浙江卫视,浙江台,ZhejiangTV,中国蓝,浙江卫视HD
+江苏卫视,江苏台,JiangsuTV,荔枝台,江苏卫视HD
+广东卫视,广东台,GuangdongTV,广东卫视HD
+北京卫视,北京台,BTV,北京卫视HD
+天津卫视,天津台
+山东卫视,山东台
+安徽卫视,安徽台
+辽宁卫视,辽宁台
+湖北卫视,湖北台
+重庆卫视,重庆台
+海南卫视,海南台,旅游卫视
+四川卫视,四川台
+吉林卫视,吉林台
+江西卫视,江西台
+黑龙江卫视,黑龙江台
+河南卫视,河南台
+云南卫视,云南台
+深圳卫视,深圳台,ShenzhenTV
+东南卫视,东南台,福建东南卫视
+广西卫视,广西台
+河北卫视,河北台
+山西卫视,山西台
+陕西卫视,陕西台
+甘肃卫视,甘肃台
+宁夏卫视
+青海卫视
+内蒙古卫视,内蒙卫视,内蒙古台,NMTV
+西藏卫视,西藏台
+新疆卫视,新疆台
+厦门卫视,厦门台
+兵团卫视,兵团台
+三沙卫视,三沙台
+大湾区卫视,大湾区
+苏州4K,苏州超清
+河北4K,河北超清
+浙江卫视4K,浙江卫视超清
+东方卫视4K,东方卫视超清
+广州南国都市4K,广州南国都市超清
+嘉佳卡通
+山东教育,山东教育卫视
+河南都市
+河南民生
+河南法治,河南法制
+河南电视剧
+河南新闻
+河南公共
+河南新农村
+河南国际
+移动戏曲
+文物宝库
+梨园,梨园频道
+武术世界
+广东珠江,广东珠江频道
+广东体育,广东体育频道
+广州综合
+广州新闻
+广州南国都市
+五星体育,五星体育频道
+海峡卫视
 
-湖南卫视4K,湖南卫视超清,湖南卫视4K超清,湖南卫视4KHD,湖南卫视4K超高清
-湖南卫视,湖南卫视HD,湖南卫视标清,湖南卫视高清,湖南台,HunanTV,芒果台,湖南卫视超清HD,湖南卫视直播
-湖南经视,湖南经视FHD,湖南经视HD,湖南经视频道,湖南经济电视台
-湖南都市,湖南都市FHD,湖南都市HD,湖南都市频道,湖南都市台
-湖南娱乐,湖南娱乐频道,湖南娱乐台
-湖南电视剧,湖南视剧,湖南电视剧频道,湖南电视剧台
-湖南电影,湖南电影频道,湖南电影台
-湖南爱晚,湖南爱晚频道,湖南公共,湖南爱晚台
-湖南国际,湖南国际频道,湖南国际台
-金鹰纪实,金鹰纪实高清,金鹰纪实频道,湖南金鹰纪实,金鹰纪实台
-金鹰卡通,湖南金鹰卡通,金鹰卡通标清,金鹰卡通高清,金鹰卡通卫视,金鹰卡通台
-快乐垂钓,快乐垂钓频道,快乐垂钓HD,快乐垂钓台
-长沙新闻,长沙新闻频道,长沙新闻台
-长沙政法,长沙政法频道,长沙政法台
-
-东方卫视,上海卫视,东方卫视4K,东方卫视HD,东方卫视标清,东方卫视高清,上海东方卫视,DragonTV,番茄台,东方台
-浙江卫视,浙江卫视HD,浙江卫视4K,浙江卫视标清,浙江卫视高清,浙江台,ZhejiangTV,中国蓝,浙江卫视直播
-江苏卫视,江苏卫视HD,江苏卫视4K,江苏卫视标清,江苏卫视高清,江苏台,JiangsuTV,荔枝台,江苏卫视直播
-广东卫视,广东卫视HD,广东卫视4K,广东卫视标清,广东卫视高清,广东台,GuangdongTV,广东卫视直播
-北京卫视,北京卫视HD,北京卫视4K,北京卫视标清,北京卫视高清,北京台,BTV,北京卫视直播
-天津卫视,天津卫视HD,天津卫视标清,天津卫视高清,天津台,天津卫视直播
-山东卫视,山东卫视HD,山东卫视4K,山东卫视标清,山东卫视高清,山东台,山东卫视直播
-安徽卫视,安徽卫视HD,安徽卫视标清,安徽卫视高清,安徽台,安徽卫视直播
-辽宁卫视,辽宁卫视HD,辽宁卫视标清,辽宁卫视高清,辽宁台,辽宁卫视直播
-湖北卫视,湖北卫视HD,湖北卫视标清,湖北卫视高清,湖北台,湖北卫视直播
-重庆卫视,重庆卫视HD,重庆卫视标清,重庆卫视高清,重庆台,重庆卫视直播
-海南卫视,海南卫视HD,海南卫视标清,海南卫视高清,海南台,旅游卫视,海南卫视直播
-四川卫视,四川卫视HD,四川卫视标清,四川卫视高清,四川台,四川卫视直播
-吉林卫视,吉林卫视HD,吉林卫视标清,吉林卫视高清,吉林台,吉林卫视直播
-江西卫视,江西卫视HD,江西卫视标清,江西卫视高清,江西台,江西卫视直播
-黑龙江卫视,黑龙江卫视HD,黑龙江卫视标清,黑龙江卫视高清,黑龙江台,黑龙江卫视直播
-河南卫视,河南卫视HD,河南卫视标清,河南卫视高清,河南台,河南卫视直播
-云南卫视,云南卫视HD,云南卫视标清,云南卫视高清,云南台,云南卫视直播
-深圳卫视,深圳卫视HD,深圳卫视4K,深圳卫视标清,深圳卫视高清,深圳台,ShenzhenTV,深圳卫视直播
-东南卫视,东南卫视HD,东南卫视标清,东南卫视高清,福建东南卫视,东南台,东南卫视直播
-广西卫视,广西卫视HD,广西卫视标清,广西卫视高清,广西台,广西卫视直播
-河北卫视,河北卫视HD,河北卫视标清,河北卫视高清,河北台,河北卫视直播
-山西卫视,山西卫视HD,山西卫视标清,山西卫视高清,山西台,山西卫视直播
-陕西卫视,陕西卫视HD,陕西卫视标清,陕西卫视高清,陕西台,陕西卫视直播
-甘肃卫视,甘肃卫视HD,甘肃卫视标清,甘肃卫视高清,甘肃台,甘肃卫视直播
-宁夏卫视,宁夏卫视标清,宁夏卫视高清,宁夏台,宁夏卫视直播
-青海卫视,青海卫视标清,青海卫视高清,青海台,青海卫视直播
-内蒙古卫视,内蒙古,内蒙卫视,内蒙古卫视标清,内蒙古卫视高清,内蒙古台,NMTV,内蒙古卫视直播
-西藏卫视,西藏卫视标清,西藏卫视高清,西藏台,西藏卫视直播
-新疆卫视,新疆卫视标清,新疆卫视高清,新疆台,新疆卫视直播
-厦门卫视,厦门卫视高清,厦门卫视标清,厦门台,厦门卫视直播
-兵团卫视,兵团卫视标清,兵团卫视高清,兵团台,兵团卫视直播
-三沙卫视,三沙卫视标清,三沙卫视高清,三沙台,三沙卫视直播
-大湾区卫视,大湾区卫视标清,大湾区卫视高清,大湾区卫视国际版,大湾区,大湾区卫视直播
-
-苏州4K,苏州超清,苏州4K超清,苏州4K频道,苏州4K超高清
-河北4K,河北超清,河北4K超清,河北4K频道,河北4K超高清
-浙江卫视4K,浙江卫视超清,浙江卫视4K超清,浙江卫视4K超高清
-东方卫视4K,东方卫视超清,东方卫视4K超清,东方卫视4K超高清
-广州南国都市4K,广州南国都市超清,南国都市4K,广州南国都市4K超高清
-
-嘉佳卡通,佳嘉卡通,嘉佳卡通标清,嘉佳卡通HD,嘉佳卡通卫视,嘉佳卡通台
-山东教育,山东教育卫视,山东教育电视台,山东教育台,山东教育频道
-河南都市,河南都市频道,河南都市台
-河南民生,河南民生频道,河南民生台
-河南法治,河南法制,河南法治频道,河南法治台
-河南电视剧,河南电视剧频道,河南电视剧台
-河南新闻,河南新闻频道,河南新闻台
-河南公共,河南公共道,河南公共频道,河南公共台
-河南新农村,河南新农村频道,河南新农村台
-河南国际,河南国际频道,河南国际台
-移动戏曲,移动戏曲频道,移动戏曲台
-文物宝库,文物宝库频道,文物宝库台
-梨园,梨园频道,戏曲频道,梨园台
-武术世界,武术世界频道,武术世界台
-广东珠江,广东珠江频道,珠江频道,广东珠江台
-广东体育,广东体育频道,广东体育高清,广东体育超清,广体,广东体育台
-广州综合,广州电视台综合频道,广州综合频道,广州台综合,广州综合台
-广州新闻,广州电视台新闻频道,广州新闻频道,广州台新闻,广州新闻台
-广州南国都市,广州南国都市频道,南国都市,广州南国都市台
-五星体育,五星体育频道,上海五星体育,五星体育台
-海峡卫视,海峡卫视标清,海峡卫视高清,海峡台,海峡卫视直播
-
-iHOT爱体育,iHOT爱体育频道,爱体育,iHOT体育
-足球频道,足球频道台
-劲爆体育,劲爆体育频道,劲爆体育台
-爱尔达体育1,爱尔达体育一台,ELTA体育1,ELTA体育一台,爱尔达1台
-爱尔达体育2,爱尔达体育二台,ELTA体育2,ELTA体育二台,爱尔达2台
-爱尔达体育3,爱尔达体育三台,ELTA体育3,ELTA体育三台,爱尔达3台
-纬来体育,纬来体育台,纬来体育HD,纬来体育频道
-辽宁体育,辽宁体育频道,辽宁体育台
-魅力足球,魅力足球频道,魅力足球台
-羽毛球专场,羽毛球,羽毛球频道
-篮球专场,篮球,篮球频道
-乒乓球专场,乒乓球,乒乓球频道
-斯诺克专场,斯诺克,台球,斯诺克频道
-赛车专场,赛车,赛车频道
-摔跤专场,摔跤,WWE摔跤,摔跤频道
-拳击专场,拳击,拳击频道
-格斗专场,格斗,搏击,格斗频道
-柔道专场,柔道,柔道频道
-WWE专场,WWE,美国职业摔角,WWE频道
-摩托专场,摩托车,摩托,摩托频道
-健美专场,健美,健身健美,健美频道
-健身专场,健身,运动健身,健身频道
-越野专场,越野,越野赛车,越野频道
-Big3专场,Big3,三对三篮球,Big3频道
-飞盘专场,飞盘,飞盘频道
-飞镖专场,飞镖,飞镖频道
-瑜伽专场,瑜伽,瑜伽频道
-棒球专场,棒球,棒球频道
-扇耳光专场,扇耳光,扇耳光频道
-睛彩竞技,睛彩竞技频道,睛彩竞技台
-睛彩篮球,睛彩篮球频道,睛彩篮球台
-睛彩篮球2,睛彩篮球频道2,睛彩篮球2台
-睛彩篮球3,睛彩篮球频道3,睛彩篮球3台
-睛彩羽毛球,睛彩羽毛球频道,睛彩羽毛球台
-篮球资讯,篮球资讯频道,篮球资讯台
-澳门体育台,澳门体育,澳视体育,澳门体育频道
-斗鱼体育1,斗鱼体育,斗鱼体育台1,斗鱼1台
-斗鱼体育2,斗鱼体育台2,斗鱼2台
-斗鱼体育3,斗鱼体育台3,斗鱼3台
-美·红牛运动,美红牛运动,红牛运动,Red Bull
-ELEVEN体育,Eleven Sports,ELEVEN SPORTS,ELEVEN体育台,ELEVEN体育频道
-ELEVEN体育1,Eleven Sports 1,ELEVEN SPORTS1,ELEVEN体育1台,ELEVEN体育1频道
-ELEVEN体育2,Eleven Sports 2,ELEVEN SPORTS2,ELEVEN体育2台,ELEVEN体育2频道
-
-凤凰资讯,凤凰资讯台,凤凰卫视资讯台,凤凰资讯高清,凤凰卫视资讯台HD,鳳凰資訊台
-凤凰中文,凤凰中文台,凤凰卫视中文台,凤凰卫视,凤凰中文高清,鳳凰中文台,凤凰台
-凤凰香港,凤凰香港台,凤凰卫视香港台,凤凰香港高清,鳳凰香港台,凤凰卫视香港
-中天新聞,中天新闻,中天新闻台,中天新闻HD,中天電視
-TVBS新聞,TVBS新闻,TVBS新闻台,TVBS新闻HD,TVBS新聞台
-鏡電視新聞台,镜电视新闻台,镜新闻,镜电视新闻,鏡新聞
-東森新聞,东森新闻,东森新闻台,东森新闻HD,東森新聞台
-東森財經新聞台,东森财经新闻台,东森财经台,東森財經台
-三立新聞iNEWS,三立新闻,三立新闻台,iNEWS,三立iNEWS,三立新聞
-寰宇新聞台灣台,寰宇新闻台湾台,环宇台湾,寰宇台湾,寰宇新聞台
-无线新闻台,无线新闻,無綫新聞台,无线新闻HD,TVB无线新闻
-NOW新闻台,Now新闻台,Now 新闻台,NOW新闻,Now新聞台
-Now财经台,Now 财经台,Now财经台,NOW财经,Now財經台
-HOY资讯台,HOY 资讯台,HOY资讯,HOY资讯频道,HOY資訊台
-HOY国际财经台,HOY财经台,HOY财经,HOY国际财经,HOY國際財經台
-镜新闻,镜电视新闻,镜新闻台,鏡新聞台
-TVBS,TVBS台,TVBS频道
-BBCNews,BBC News,BBC NEWS HD,BBC新闻
-ABCNewsLive,ABC News Live,ABC新闻直播
-CBSNews24/7,CBS News 24/7,CBS新闻
-CNN,CNN国际新闻网络,CNN新闻,CNN HD
-MSNOW,MSNBC,MSNBC新闻
-SkyNews,Sky News,Sky新闻
-FoxWeather,Fox Weather,福克斯天气
-MSNBCHD,MSNBC HD,MSNBC高清
-NBC,NBC新闻,NBC HD
-CNBCHD,CNBC HD,CNBC高清,CNBC财经
-EntertainmentTonight,Entertainment Tonight,ET娱乐
-Newsmax,Newsmax新闻
-RTNews,RT News,今日俄罗斯新闻
-ArirangTV,Arirang TV,ARIRANG阿里郎频道,阿里郎电视
-DWEnglish,DW English,DW德国之声,德国之声英语
-CBCNews,CBC News,加拿大CBC新闻
-NHKWorld-Japan,NHK World-Japan,NHK World,NHK,NHK世界台
-CNA新加坡,Channel NewsAsia,CHANNELNEWSASIA,ChannelNewsAsia,CNA,亚洲新闻台
-AlJazeera English,Al Jazeera English,ALJAZEERA,半岛英语,半岛电视台英语
-GBNews,GB News,英国GB新闻
-WION,WION新闻
-TRTWorld,TRT World,土耳其TRT世界
-CGTN,CGTN英语,CGTN纪录,CGTN法语,CGTN西语,CGTN阿语,CGTN俄语,中国国际电视台
-
-iHOT爱院线,iHOT爱院线频道,爱院线,iHOT院线
-凤凰电影频道,凤凰卫视电影台,鳳凰電影台,凤凰电影,凤凰电影台
-東森電影,东森电影,东森电影台,东森电影HD,東森電影台
-緯來電影,纬来电影,纬来电影台,纬来电影HD,緯來電影台
-龍華電影,龙华电影,龙华电影台,龙华电影HD,龍華電影台
-龍華洋片,龙华洋片,龙华洋片台,龍華洋片台
-風雲恐怖電影,风云恐怖电影,恐怖电影,風雲恐怖電影台
-ROCK Action,ROCK ACTION,ROCKAction,ROCK动作电影,ROCK Action台
-采昌影劇台,采昌影剧台,采昌影剧,采昌影劇台
-靖天映畫,靖天映画,靖天映画台,靖天映畫台
-靖天電影台,靖天电影台,靖天电影,靖天電影台
-靖洋戲劇,靖洋戏剧,靖洋戏剧台,靖洋戏剧HD,靖洋戲劇台
-龙祥时代,龙祥时代台,龙祥電影
-影迷數位電影台,影迷数位电影,影迷数位电影台,影迷电影,影迷數位電影台
-amc電影台,amc电影,amc电影台,AMC电影,AMC HD,amc電影台
-CinemaWorld,CINEMAWORLD,cinemaworld,电影世界,CinemaWorld台
-HBO,HBO频道,HBO台
-HBO原创巨献,HBO原创,HBO Original
-HBO强档巨献,HBO强档,HBO Hits
-HBO温馨家庭,HBO家庭,HBO Family
-亚洲电影,亚洲电影台,Asia Movie
-壹电视电影台,壹电视电影,壹電影
-經典電影台,经典电影台,经典电影,經典電影台
-精選動漫台,精选动漫台,精选动漫,精選動漫台
-MovieSphere,电影星球,MovieSphere台
-HBOFAMILYHD,HBO FAMILY HD,HBOFamily,HBO Family,HBO家庭HD
-UNIVERSALPREMIERHD,UNIVERSAL PREMIER HD,环球首映,环球首映台
-UNIVERSALCINEMAHD,UNIVERSAL CINEMA HD,环球影院,环球影院台
-中国电影,中国电影频道,中国电影台
-POPC,POPC频道
-美亚电影,美亚电影台,美亚电影HD,美亚高清电影台,美亚,美亞電影台
-天映经典,天映经典频道,天映經典台
-天映新加坡,天映,天映新加坡台
-好萊塢电影,好莱坞电影台,好莱坞电影,好莱坞,好萊塢電影台
-TVB星河,TVB星河台,TVB星河3,星河频道,TVB星河频道,TVB星河台
-功夫台,功夫台频道,功夫台
-
-卡酷少儿,北京卡酷少儿,卡酷动画,卡酷动漫,北京卡酷,BTVKAKU少儿,BTV卡酷,卡酷频道,卡酷少儿卫视
-龙华卡通台,龙华卡通,龙华卡通频道,龍華卡通台
-NICKELODEON,尼克儿童频道,尼克儿童,尼克,Nickelodeon
-NICKJR.,Nick Jr.,Nick Jr. 儿童频道,尼克少儿,Nick Jr
-ZOOMOO,ZooMoo,动物乐园,ZooMoo频道
-广东少儿,广东少儿频道,广东少儿台
-山东少儿,山东少儿频道,山东少儿台
-DuckTV,Duck TV,小鸭电视,DuckTV频道
-MOMO亲子,MOMO亲子台,MOMO亲子频道,MOMO親子台
-梦工场动漫,梦工厂动漫,梦工厂动画,梦工场,梦工厂动漫台
-靖天卡通台,靖天卡通,靖天卡通频道,靖天卡通台
-靖洋卡通,靖洋卡通NiceBingo,靖洋卡通频道,靖洋卡通台
-精选动漫台,精选动漫,精选动漫频道,精選動漫台
-经典卡通台,经典卡通,经典卡通频道,經典卡通台
-CN卡通,Cartoon Network,卡通频道,卡通网络,CN卡通频道
-Boomerang,Boomerang频道,Boomerang台
-DisneyJunior,Disney Junior,迪士尼少儿,迪士尼頻道
-东森幼幼,东森幼幼台,YOYO TV,東森幼幼台
-
-
-KroneHitTV,KroneHit TV,KroneHit,KroneHit音樂台
-DeluxeMusic,Deluxe Music,Deluxe音乐,DeluxeMusic台
-CMusic,CMUSIC,CMusic频道,CMusic台
-TRACEUrban,TRACE Urban,TRACEURBAN,TRACE,TRACE Urban台
-MezzoLive HD,Mezzo Live HD,MezzoLiveHD,Mezzo,Mezzo Live台
-CLASSICA古典乐,CLASSICA 古典乐,古典乐,CLASSICA台
-MTVHITSHD,MTV HITS HD,MTV HITS,MTV热播,MTV音樂台
-
-
-CGTNDocumentary,CGTN纪录,CGTN纪录频道,CGTN Documentary
-RTDocumentary,RT Documentary,RT纪录片,RT Documentary台
-动物星球,动物星球频道,动物星球HD,动物星球台
-BBCEarth,BBC Earth,BBC Earth HD,BBC地球,BBC Earth台
-LoveNature 4K,Love Nature 4K,LoveNature4K,喜爱自然4K,Love Nature台
-WildEarth,Wild Earth,野生地球,Wild Earth台
-History,历史频道,History HD,History频道
-Discovery,Discovery Channel,Discovery 科学频道,探索频道,探索,Discovery台
-NASA TV,NASA TV,美国宇航局电视台
-人与自然,人与自然频道
-求索科学,求索科学频道
-求索动物,求索动物频道
-求索生活,求索生活频道
-求索纪录,求索纪录频道
-求索记录,求索记录频道
-探索频道,探索频道,Discovery探索频道
-美食星球,美食星球频道
-国家地理,国家地理频道,National Geographic
-动物世界,动物世界频道
-蜥蜴世界,蜥蜴世界频道
-舌尖上的中国第一季,舌尖上的中国1,舌尖1
-舌尖上的中国第2季,舌尖上的中国2,舌尖2
-探秘中华美食,中华美食探秘,探秘美食
-蓝色星球-自然-纪录片,蓝色星球,蓝色星球纪录片
-觅食者-美食纪录片,觅食者,觅食者纪录片
-冰冻星球-纪录片,冰冻星球
-老广的味道 第3季-美食纪录片,老广的味道3,老广3
-一分钟学道菜,一分钟学道菜,学做菜
-一城一味（舌尖姐妹篇）,一城一味,一城一味纪录片
-最后的狮子-探险纪录片,最后的狮子,狮子纪录片
-王朝-自然-纪录片,王朝,王朝纪录片
-绝美！航拍中国第1季,航拍中国1,航拍中国第一季
-德爷单挑荒野,单挑荒野,德爷荒野
-中国味道 第4季-美食纪录片,中国味道4,中国味道
-寻味顺德-美食纪录片,寻味顺德
-易中天品三国,易中天品三国,品三国
-百家讲坛-之女皇武则天,女皇武则天,武则天
-百家讲坛-红楼梦篇,红楼梦,百家讲坛红楼梦
-百家讲坛――之明太祖朱元璋,明太祖朱元璋,朱元璋
-单挑荒野第一季,单挑荒野1
-【荒野求生】德爷贝爷各种,荒野求生,德爷贝爷,荒野求生纪录片
-航拍中国第一季,航拍中国1
-航拍中国第二季,航拍中国2
-航拍中国第三季,航拍中国3
-
-凤凰资讯台,凤凰资讯,凤凰卫视资讯台,凤凰资讯高清,鳳凰資訊台
-凤凰香港台,凤凰香港,凤凰卫视香港台,凤凰香港高清,鳳凰香港台
-凤凰中文台,凤凰中文,凤凰卫视中文台,凤凰卫视,凤凰中文高清,鳳凰中文台
-翡翠台,翡翠台HD,无线翡翠台,TVB翡翠台,翡翠台直播
-TVB Plus,TVBPlus,TVB PLUS,TVB Plus台
-TVB无线新闻台,无线新闻台,TVB新闻台,無綫新聞台
-TVB明珠台,明珠台,TVB明珠台HD,明珠台直播
-TVB生活台,无线生活台,TVB生活台
-TVB星河频道,TVB星河,星河频道,TVB星河台
-POP C,POPC,POP C频道
-Now爆谷台,Now爆谷,爆谷台
-Now華劇台,Now华剧台,華劇台
-Now劇集台,Now剧集台,劇集台
-Now新闻台,Now新闻,NOW新闻台
-Now直播台,Now直播,直播台
-Now财经台,Now财经,NOW财经台
-澳门莲花,澳门莲花卫视,莲花卫视
-TVB功夫台,功夫台,TVB功夫
-Thrill,Thrill频道
-天映经典,天映经典频道
-香港卫视HKS,香港卫视,HKS
-HOY 76,HOY76,HOY76台
-HOY 77,HOY77,HOY77台
-HOY 78,HOY78,HOY78台
-ViuTV,Viu TV,VIUTV,ViuTV香港
-ViuTV6,ViuTVsix,ViuTV6台
-HKC18台,HKC18,18台
-C18跑马,C18跑马台,跑马18
-88跑马台,88跑马,跑马88
-黄金翡翠台,黄金翡翠,翡翠黄金
-黃金華劇台,黄金华剧台,華劇台
-粤语片台,粤语片,粤语电影台
-美亚电影,美亚电影台,美亚
-AXN,AXN频道,AXN台
-MovieMovie,电影电影,Movie Movie
-mySUPER Sports,mySUPER Sports台,SUPER Sports
-Now爆谷星影台,爆谷星影,星影台
-NowJelli紫金国际,紫金国际,Jelli紫金
-中国电影频道,中国电影,电影频道
-无线卫星亚洲台,无线亚洲台,卫星亚洲台
-mySUPER EYT,EYT,SUPER EYT
-mySUPER识食,识食,SUPER识食
-mySUPER识嘆,识嘆,SUPER识嘆
-mySUPER Music,SUPER Music,Music台
-mySUPER金曲,金曲,SUPER金曲
-mySUPER煲剧,煲剧,SUPER煲剧
-mySUPER剧场,SUPER剧场,剧场台
-mySUPER话当年,话当年,SUPER话当年
-MyTV千禧经典台,千禧经典台,MyTV千禧
-龙祥电影,龙祥电影台,龙祥
-HBO,HBO频道,HBO台
-HBOHits,HBO Hits,HBO强档
-HBOSignature,HBO Signature,HBO原创
-Cinemax,Cinemax频道,Cinemax台
-mySUPER直播足球2台,直播足球2,SUPER足球2
-mySUPER直播足球3台,直播足球3,SUPER足球3
-mySUPER直播足球4台,直播足球4,SUPER足球4
-mySUPER直播足球5台,直播足球5,SUPER足球5
-mySUPER直播足球6台,直播足球6,SUPER足球6
-中视,中视台,中国电视公司
-中视新闻,中视新闻台
-中视经典,中视经典台
-公视,公视台,公共电视
-小公视,小公视台
-民视,民视台,民间电视台
-民视第一台,民视第一
-民视台湾台,民视台湾
-民视影剧台,民视影剧
-民视旅游台,民视旅游
-民视综艺台,民视综艺
-台视,台视台,台湾电视公司
-台视新闻,台视新闻台
-台视综合,台视综合台
-台视财经,台视财经台
-台湾戏剧,台湾戏剧台
-华视,华视台,中华电视公司
-CTS华视新闻资讯,CTS华视,华视新闻
-壹新闻,壹新闻台
-壹电影,壹电影台
-JET综合台,JET综合,JET台
-年代新闻,年代新闻台
-年代Much,年代Much台
-非凡新闻,非凡新闻台
-非凡商业,非凡商业台
-寰宇新闻,寰宇新闻台
-寰宇新闻台湾,寰宇台湾
-寰宇财经,寰宇财经台
-镜新闻,镜新闻台
-东森中国台,东森中国
-东森超视,东森超视台
-东森亚洲,东森亚洲台
-东森综合,东森综合台
-东森新闻,东森新闻台
-东森财经,东森财经台
-东森LIVE,东森LIVE台
-东森电影,东森电影台
-东森洋片,东森洋片台
-东森戏剧,东森戏剧台
-东森幼幼,东森幼幼台,YOYO TV
-MOMO综合台,MOMO综合
-MOMO亲子台,MOMO亲子
-MOMO台,MOMO台
-国兴卫视,国兴卫视台
-龙祥时代,龙祥时代台
-龙华偶像,龙华偶像台
-龙华电视,龙华电视台
-龙华戏剧,龙华戏剧台
-龙华日韩,龙华日韩台
-龙华电影,龙华电影台
-龙华影剧,龙华影剧台
-龙华洋片,龙华洋片台
-龙华卡通,龙华卡通台
-龙华经典,龙华经典台
-三立都会台,三立都会
-三立综合台,三立综合
-三立台湾台,三立台湾
-三立戏剧台,三立戏剧
-三立新闻台,三立新闻
-三立iNEWS,iNEWS,三立iNEWS
-三立国际台,三立国际
-LIVE三立,LIVE三立台
-中天新闻,中天新闻台
-中天综合,中天综合台
-中天娱乐,中天娱乐台
-纬来综合,纬来综合台
-纬来精彩,纬来精彩台
-纬来戏剧,纬来戏剧台
-纬来日本,纬来日本台
-纬来育乐,纬来育乐台
-纬来电影,纬来电影台
+iHOT爱体育,爱体育,iHOT体育
+足球频道
+劲爆体育
+爱尔达体育1,爱尔达体育一台,ELTA体育1
+爱尔达体育2,爱尔达体育二台,ELTA体育2
+爱尔达体育3,爱尔达体育三台,ELTA体育3
 纬来体育,纬来体育台
-八大第一台,八大第一
-TVBS新闻台,TVBS新闻
-TVBS精采台,TVBS精采
-TVBS欢乐台,TVBS欢乐
-TVBS,TVBS台
-TVBS NEWS,TVBS NEWS台
-ELTA日韩,ELTA日韩台
-ELTA影剧,ELTA影剧台
-ELTA综合,ELTA综合台
-ELTA娱乐,ELTA娱乐台
-ELTA生活旅游,ELTA生活旅游台
-ELTA体育1,ELTA体育一台
-ELTA体育2,ELTA体育二台
-ELTA体育3,ELTA体育三台
-ELTA体育4,ELTA体育四台
-ELTA体育MAX1,ELTAMAX1
-ELTA体育MAX2,ELTAMAX2
-ELTA体育MAX3,ELTAMAX3
-ELTA体育MAX4,ELTAMAX4
-GinxTV电竞频道,GinxTV,Ginx电竞
-博斯运动1,博斯运动一台
-博斯运动2,博斯运动二台
-博斯高球1,博斯高球一台
-博斯高球2,博斯高球二台
-博斯网球,博斯网球台
-博斯无限,博斯无限台
-博斯无限2,博斯无限二台
-博斯魅力,博斯魅力台
-智林体育台,智林体育
-经典卡通台,经典卡通
-美亚电影台,美亚电影
-Thrill惊悚,Thrill惊悚台
-AXN频道,AXN
-华纳电影,华纳电影台
-HBO原创,HBO原创台
-HBO强档,HBO强档台
-HBO家庭,HBO家庭台
-好莱坞电影,好莱坞电影台
-amc最爱电影,amc最爱
-经典电影台,经典电影
-Channel,Channel台
-人间卫视,人间卫视台
-好消息,好消息台
-好消息2,好消息二台
+辽宁体育
+魅力足球
+羽毛球专场,羽毛球
+篮球专场,篮球
+乒乓球专场,乒乓球
+斯诺克专场,斯诺克
+赛车专场,赛车
+摔跤专场,摔跤
+拳击专场,拳击
+格斗专场,格斗
+柔道专场,柔道
+WWE专场,WWE
+摩托专场,摩托
+健美专场,健美
+健身专场,健身
+越野专场,越野
+Big3专场,Big3
+飞盘专场,飞盘
+飞镖专场,飞镖
+瑜伽专场,瑜伽
+棒球专场,棒球
+扇耳光专场
+睛彩竞技
+睛彩篮球
+睛彩篮球2
+睛彩篮球3
+睛彩羽毛球
+篮球资讯
+澳门体育台
+斗鱼体育1,斗鱼体育
+斗鱼体育2
+斗鱼体育3
+美·红牛运动,红牛运动
+ELEVEN体育,Eleven Sports
+ELEVEN体育1,Eleven Sports 1
+ELEVEN体育2,Eleven Sports 2
 
-ABCNewsLive,ABC News Live,ABC新闻直播
-BBC News,BBC新闻,BBC News
-CBSNews24/7,CBS News 24/7,CBS新闻
-CNN,CNN国际新闻网络,CNN新闻,CNN HD
-NBC,NBC新闻,NBC HD
-SkyNews,Sky News,Sky新闻
-E!,E!娱乐,E!频道
-MTV,MTV音乐台,MTV频道
-Comedy Central,喜剧中心,Comedy Central
-Boomerang,Boomerang频道
-Cartoon Network,卡通频道,Cartoon Network
-USA Network,USA频道,USA Network
-A&E,A&E频道
-AXSTV,AXS TV,AXS频道
-Bravo,Bravo频道
-Fuse,Fuse频道
-WETV,WE tv,WE频道
-VICE,VICE频道
-MSNBC,MSNBC新闻
-CNBC,CNBC财经
-Newsmax,Newsmax新闻
-FoxNews,Fox News,福克斯新闻
-Bloomberg TV,彭博电视,Bloomberg
-France24,法国24,France 24
-DWEnglish,DW English,DW德国之声,德国之声英语
-Euronews,欧洲新闻,Euronews
-RTNews,RT News,今日俄罗斯新闻
-AlJazeera,半岛电视台,Al Jazeera
-Arirang TV,阿里郎频道,Arirang
-CGTN,CGTN英语,CGTN频道
-CNA,亚洲新闻台,Channel NewsAsia
-NHKWorld-Japan,NHK World,NHK世界台
-KBSWorld,KBS World,KBS世界
-TRTWorld,TRT World,土耳其TRT世界
-GBNews,GB News,英国GB新闻
-WION,WION新闻
-NHK,NHK日本放送
-NTV,日本电视,NTV
-TBS,TBS电视台
-FujiTV,富士电视台,Fuji TV
-TVAsahi,朝日电视台,TV Asahi
-TVTokyo,东京电视台,TV Tokyo
-WOWOW,WOWOW台
-Animax,Animax动漫,Animax频道
+凤凰资讯,凤凰资讯台,凤凰卫视资讯台
+凤凰中文,凤凰中文台,凤凰卫视中文台,凤凰卫视
+凤凰香港,凤凰香港台,凤凰卫视香港台
+中天新聞,中天新闻,中天新闻台
+TVBS新聞,TVBS新闻,TVBS新闻台
+鏡電視新聞台,镜电视新闻台,镜新闻
+東森新聞,东森新闻,东森新闻台
+東森財經新聞台,东森财经新闻台
+三立新聞iNEWS,三立新闻,iNEWS
+寰宇新聞台灣台,寰宇新闻台湾台
+无线新闻台,無綫新聞台
+NOW新闻台,Now新闻台
+Now财经台
+HOY资讯台
+HOY国际财经台
+镜新闻
+TVBS
+BBCNews,BBC News
+ABCNewsLive,ABC News Live
+CBSNews24/7,CBS News 24/7
+CNN
+MSNOW,MSNBC
+SkyNews,Sky News
+FoxWeather,Fox Weather
+MSNBCHD,MSNBC HD
+NBC
+CNBCHD,CNBC HD
+EntertainmentTonight,Entertainment Tonight
+Newsmax
+RTNews,RT News
+ArirangTV,Arirang TV,阿里郎
+DWEnglish,DW English,德国之声
+CBCNews,CBC News
+NHKWorld-Japan,NHK World-Japan,NHK World
+CNA新加坡,Channel NewsAsia,CNA
+AlJazeera English,Al Jazeera,半岛英语
+GBNews,GB News
+WION
+TRTWorld,TRT World
+CGTN,CGTN英语,CGTN纪录,CGTN法语,CGTN西语,CGTN阿语,CGTN俄语
 
-名侦探柯南剧场版,名侦探柯南,柯南剧场版
-火影忍者,火影,火影忍者
-海贼王,海贼王,航海王
-宫崎骏系列,宫崎骏,吉卜力
-猫和老鼠,猫和老鼠,Tom and Jerry
-龙珠,龙珠,七龙珠
-哆啦A梦,哆啦A梦,机器猫
-蜡笔小新,蜡笔小新,小新
-樱桃小丸子,樱桃小丸子,小丸子
-海绵宝宝,海绵宝宝,SpongeBob
-庆余年,庆余年
-陈情令,陈情令
-封神榜,封神榜
-鹿鼎记,鹿鼎记
-寻秦记,寻秦记
-洗冤录,洗冤录
-创世纪,创世纪
-大时代,大时代
-亮剑,亮剑
-雪豹,雪豹
-金庸武侠,金庸,金庸武侠剧
-功夫电影,功夫电影,功夫片
-贺岁电影,贺岁电影,贺岁片
-士兵突击,士兵突击
-笑傲江湖,笑傲江湖
-神雕侠侣,神雕侠侣
-倚天屠龙记,倚天屠龙记
-铁齿铜牙纪晓岚,铁齿铜牙纪晓岚,纪晓岚
-康熙王朝,康熙王朝
-鬼吹灯,鬼吹灯
-楚汉骄雄,楚汉骄雄
-西游记,西游记
-天龙八部,天龙八部
-大唐双龙传,大唐双龙传
-射雕英雄传,射雕英雄传
-刑事侦缉档案,刑事侦缉档案
-法政先锋,法政先锋
-陀枪师姐,陀枪师姐
-使徒行者,使徒行者
-金枝欲孽,金枝欲孽
-扫黄先锋,扫黄先锋
-妙手仁心,妙手仁心
-家有儿女,家有儿女
-喜羊羊与灰太狼,喜羊羊,灰太狼
-变形金刚,变形金刚
-哈利波特,哈利波特
-加勒比海盗,加勒比海盗
-侏罗纪世界,侏罗纪世界
-复仇者联盟,复仇者联盟
-速度与激情,速度与激情
-碟中谍,碟中谍
+iHOT爱院线,爱院线,iHOT院线
+凤凰电影频道,凤凰卫视电影台
+東森電影,东森电影,东森电影台
+緯來電影,纬来电影,纬来电影台
+龍華電影,龙华电影,龙华电影台
+龍華洋片,龙华洋片
+風雲恐怖電影,风云恐怖电影
+ROCK Action
+采昌影劇台,采昌影剧台
+靖天映畫,靖天映画
+靖天電影台,靖天电影台
+靖洋戲劇,靖洋戏剧
+龙祥时代
+影迷數位電影台,影迷数位电影
+amc電影台,AMC电影
+CinemaWorld
+HBO
+HBO原创巨献,HBO原创
+HBO强档巨献,HBO强档
+HBO温馨家庭,HBO家庭
+亚洲电影
+壹电视电影台,壹电影
+經典電影台,经典电影台
+精選動漫台,精选动漫台
+MovieSphere
+HBOFAMILYHD,HBO Family HD
+UNIVERSALPREMIERHD,环球首映
+UNIVERSALCINEMAHD,环球影院
+中国电影
+POPC
+美亚电影,美亚电影台
+天映经典
+天映新加坡
+好萊塢电影,好莱坞电影
+TVB星河,星河频道
+功夫台
+NewTV黑莓电影
+NewTV黑莓动画
+NewTV家庭剧场
+NewTV惊悚悬疑
+NewTV超级电影
+NewTV动作电影
+NewTV爱情喜剧
+NewTV超级体育
+NewTV哒啵赛事
+NewTV古装剧场
+NewTV海外剧场
+NewTV金牌综艺
+NewTV精品大剧
+NewTV精品记录
+NewTV精品纪录
+NewTV精品体育
+NewTV军旅剧场
+NewTV军事纪实
+NewTV军事评论
+NewTV魅力潇湘
+NewTV明星大片
+NewTV农业致富
+NewTV武搏世界
+NewTV怡伴健康
+NewTV中国功夫
 
-NewTV动作电影,NEWTV动作电影,动作电影
-NewTV古装剧场,NEWTV古装剧场,古装剧场
-NewTV海外剧场,NEWTV海外剧场,海外剧场
-NewTV黑莓电影,NEWTV黑莓电影,黑莓电影
-NewTV黑莓动画,NEWTV黑莓动画,黑莓动画
-NewTV家庭剧场,NEWTV家庭剧场,家庭剧场
-NewTV惊悚悬疑,NEWTV惊悚悬疑,惊悚悬疑
-NewTV超级电影,NEWTV超级电影,超级电影
-NewTV爱情喜剧,NEWTV爱情喜剧,爱情喜剧
-NewTV超级体育,NEWTV超级体育,超级体育
-NewTV哒啵赛事,NEWTV哒啵赛事,哒啵赛事
-NewTV金牌综艺,NEWTV金牌综艺,金牌综艺
-NewTV精品大剧,NEWTV精品大剧,精品大剧
-NewTV精品记录,NEWTV精品记录,精品记录
-NewTV精品纪录,NEWTV精品纪录,精品纪录
-NewTV精品体育,NEWTV精品体育,精品体育
-NewTV军旅剧场,NEWTV军旅剧场,军旅剧场
-NewTV军事纪实,NEWTV军事纪实,魅力潇湘
-NewTV军事评论,NEWTV军事评论,军事评论
-NewTV魅力潇湘,NEWTV魅力潇湘,魅力潇湘
-NewTV明星大片,NEWTV明星大片,明星大片
-NewTV农业致富,NEWTV农业致富,农业致富
-NewTV武搏世界,NEWTV武搏世界,武搏世界,武博世界,武术世界
-NewTV怡伴健康,NEWTV怡伴健康,怡伴健康
-NewTV中国功夫,NEWTV中国功夫,中国功夫
+卡酷少儿,北京卡酷少儿,BTV卡酷
+龙华卡通台,龙华卡通
+NICKELODEON,尼克儿童频道
+NICKJR.,Nick Jr.
+ZOOMOO,ZooMoo
+广东少儿
+山东少儿
+DuckTV,Duck TV
+MOMO亲子,MOMO亲子台
+梦工场动漫,梦工厂动漫
+靖天卡通台,靖天卡通
+靖洋卡通
+精选动漫台
+经典卡通台
+CN卡通,Cartoon Network
+Boomerang
+DisneyJunior,Disney Junior
+东森幼幼,东森幼幼台
+
+KroneHitTV,KroneHit TV
+DeluxeMusic,Deluxe Music
+CMusic
+TRACEUrban,TRACE Urban
+MezzoLive HD,Mezzo Live HD
+CLASSICA古典乐
+MTVHITSHD,MTV HITS HD,MTV HITS
+
+CGTNDocumentary,CGTN纪录
+RTDocumentary,RT Documentary
+动物星球
+BBCEarth,BBC Earth
+LoveNature 4K,Love Nature 4K
+WildEarth,Wild Earth
+History,历史频道
+Discovery,Discovery Channel,探索频道
+NASA TV
+人与自然
+求索科学
+求索动物
+求索生活
+求索纪录
+求索记录
+舌尖上的中国第一季,舌尖上的中国,舌尖
+舌尖上的中国第2季,舌尖2
+探索频道
+美食星球
+国家地理,National Geographic
+动物世界
+蜥蜴世界
+探秘中华美食
+蓝色星球-自然-纪录片,蓝色星球
+觅食者-美食纪录片,觅食者
+冰冻星球-纪录片,冰冻星球
+老广的味道 第3季-美食纪录片,老广的味道
+一分钟学道菜
+一城一味（舌尖姐妹篇）,一城一味
+最后的狮子-探险纪录片,最后的狮子
+王朝-自然-纪录片,王朝
+绝美！航拍中国第1季,航拍中国第一季
+德爷单挑荒野,单挑荒野
+中国味道 第4季-美食纪录片,中国味道
+寻味顺德-美食纪录片,寻味顺德
+易中天品三国
+百家讲坛-之女皇武则天,百家讲坛武则天
+百家讲坛-红楼梦篇,百家讲坛红楼梦
+百家讲坛――之明太祖朱元璋,百家讲坛朱元璋
+单挑荒野第一季
+【荒野求生】德爷贝爷各种,荒野求生
+航拍中国第一季
+航拍中国第二季
+航拍中国第三季
+
+凤凰资讯台,凤凰资讯,凤凰卫视资讯台
+凤凰香港台,凤凰香港,凤凰卫视香港台
+凤凰中文台,凤凰中文,凤凰卫视中文台
+翡翠台,TVB翡翠台,无线翡翠台
+TVB Plus,TVBPlus
+TVB无线新闻台,TVB新闻台
+TVB明珠台,明珠台
+TVB生活台
+TVB星河频道,TVB星河
+POP C
+Now爆谷台
+Now華劇台
+Now劇集台
+Now新闻台
+Now直播台
+Now财经台
+澳门莲花
+TVB功夫台
+Thrill
+天映经典
+香港卫视HKS
+HOY 76
+HOY 77
+HOY 78
+ViuTV
+ViuTV6
+HKC18台
+C18跑马
+88跑马台
+黄金翡翠台
+黃金華劇台
+粤语片台
+AXN
+MovieMovie
+mySUPER Sports
+Now爆谷星影台
+NowJelli紫金国际
+中国电影频道
+无线卫星亚洲台
+mySUPER EYT
+mySUPER识食
+mySUPER识嘆
+mySUPER Music
+mySUPER金曲
+mySUPER煲剧
+mySUPER剧场
+mySUPER话当年
+MyTV千禧经典台,千禧经典台
+龙祥电影
+HBOHits
+HBOSignature
+Cinemax
+mySUPER直播足球2台
+mySUPER直播足球3台
+mySUPER直播足球4台
+mySUPER直播足球5台
+mySUPER直播足球6台
+中视
+中视新闻
+中视经典
+公视
+小公视
+民视
+民视第一台
+民视台湾台
+民视影剧台
+民视旅游台
+民视综艺台
+台视
+台视新闻
+台视综合
+台视财经
+台湾戏剧
+华视
+CTS华视新闻资讯
+壹新闻
+壹电影
+JET综合台
+年代新闻
+年代Much
+非凡新闻
+非凡商业
+寰宇新闻
+寰宇新闻台湾
+寰宇财经
+东森中国台
+东森超视
+东森亚洲
+东森LIVE
+东森洋片
+MOMO综合台
+MOMO台
+国兴卫视
+龙华电视
+龙华影剧
+三立戏剧台
+三立国际台
+LIVE三立
+中天娱乐
+纬来精彩
+纬来戏剧
+纬来日本
+纬来育乐
+TVBS欢乐台
+TVBS NEWS
+ELTA日韩
+ELTA影剧
+ELTA综合
+ELTA娱乐
+ELTA生活旅游
+ELTA体育4,爱尔达体育4
+ELTA体育MAX1
+ELTA体育MAX2
+ELTA体育MAX3
+ELTA体育MAX4
+GinxTV电竞频道
+博斯运动1
+博斯运动2
+博斯高球1
+博斯高球2
+博斯网球
+博斯无限
+博斯无限2
+博斯魅力
+智林体育台
+经典卡通台
+美亚电影台
+Thrill惊悚
+AXN频道
+华纳电影
+HBO原创
+HBO强档
+HBO家庭
+好莱坞电影
+amc最爱电影
+经典电影台
+Channel
+人间卫视
+好消息
+好消息2
+
+Animax
+
+劉德華,刘德华
+成龍,成龙
+周星馳,周星驰
+周潤發,周润发
+黄渤
+沈腾
+王晶
+李連杰,李连杰
+古天乐
+甄子丹
+洪金宝
+邵氏电影
+名侦探柯南剧场版
+火影忍者
+海贼王
+宫崎骏系列
+猫和老鼠
+龙珠
+哆啦A梦
+蜡笔小新
+樱桃小丸子
+海绵宝宝
+庆余年
+陈情令
+封神榜
+鹿鼎记
+寻秦记
+洗冤录
+创世纪
+大时代
+亮剑
+雪豹
+金庸武侠
+功夫电影
+贺岁电影
+士兵突击
+笑傲江湖
+神雕侠侣
+倚天屠龙记
+铁齿铜牙纪晓岚
+康熙王朝
+鬼吹灯
+楚汉骄雄
+西游记
+天龙八部
+大唐双龙传
+射雕英雄传
+刑事侦缉档案
+法政先锋
+陀枪师姐
+使徒行者
+金枝欲孽
+扫黄先锋
+妙手仁心
+家有儿女
+喜羊羊与灰太狼
+变形金刚
+哈利波特
+加勒比海盗
+侏罗纪世界
+复仇者联盟
+速度与激情
+碟中谍
