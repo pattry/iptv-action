@@ -1,6 +1,15 @@
+# 这是接口黑名单列表，符合关键字的接口将被拦截，一个关键字一行
+# This is the interface blacklist list, the interface matching the keyword will be blocked, one keyword line
+
+
+
+# ==================== 接口黑名单 ====================
+# 符合关键字的接口将被拦截，一个关键字一行
+
 # ========== 音频/广播流 ==========
 /audio/
 /radio/
+bxtv.3a.ink
 /fm/
 /am/
 /music/
@@ -17,7 +26,7 @@ zby.130519.xyz
 0000505.xyz
 3501776.xyz
 x1x.bid
-.us.ci
+
 
 # ========== 移动/联通/电信内网 ==========
 ottrrs.hl.chinamobile.com
@@ -34,15 +43,17 @@ otttv.bj.chinamobile.com
 .fj.chinamobile.com
 .hn.chinamobile.com
 .sh.chinamobile.com
-.gmcc.net
+gmcc.net
+chinamobile.com/PLTV
 
 # ========== 咪咕视频 ==========
 hlszymgsplive.miguvideo.com
 gslbmgsplive.miguvideo.com
-migu
 miguvideo
 migucloud
 migucdn
+# 如果确定要过滤所有咪咕源，保留；否则建议用更精确的域名
+migu
 
 # ========== 无效IP地址 ==========
 120.87.19.109
@@ -54,13 +65,14 @@ migucdn
 122.152.202.33
 107.150.60.122
 173.208.212.130
+150.138.81.204
+125.77.18.245
+223.109.225.175
+# 内网IP段
 192.168.
 10.0.
 172.16.
 127.0.
-150.138.81.204
-125.77.18.245
-223.109.225.175
 
 # ========== 私人/临时服务器 ==========
 php.jdshipin.com
@@ -82,8 +94,9 @@ webmail.axxe.top
 alvin.ergotron.net
 lu.wqwqwq.sbs
 kkk.888.3116598
+bxtv.3a.ink
 
-# ========== 结果中的私人服务器 ==========
+# ========== 结果中的私人服务器关键词 ==========
 guangyuan
 xiongnas
 maomizi
@@ -133,11 +146,8 @@ jsnzkpg.us.ci
 yg.ygbox.de5.net
 iptv.huuc.edu.cn
 bztv.tvbus.cc
-tvbus
-ddns
-myqcloud
 
-# ========== IPv6内网地址 ==========
+# ========== IPv6内网地址段 ==========
 [2409:8087:8:21::18]
 [2409:8087:2001:20:2800:0:df6e:eb22]
 [2409:8087:2001:20:2800:0:df6e:eb21]
@@ -153,7 +163,7 @@ myqcloud
 [2408:84e3:]
 [2408:84e5:]
 
-# ========== 低质量流媒体 ==========
+# ========== 低质量流媒体协议 ==========
 rtmp://
 rtsp://
 p2p://
