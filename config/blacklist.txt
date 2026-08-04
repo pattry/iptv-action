@@ -1,5 +1,3 @@
-# 这是接口黑名单列表，符合关键字的接口将被拦截，一个关键字一行
-
 # ========== 音频/广播流 ==========
 /audio/
 /radio/
@@ -19,11 +17,6 @@ zby.130519.xyz
 0000505.xyz
 3501776.xyz
 x1x.bid
-.fun/
-.xyz/
-.top/
-.sbs/
-.bid/
 .us.ci
 
 # ========== 移动/联通/电信内网 ==========
@@ -65,6 +58,9 @@ migucdn
 10.0.
 172.16.
 127.0.
+150.138.81.204
+125.77.18.245
+223.109.225.175
 
 # ========== 私人/临时服务器 ==========
 php.jdshipin.com
@@ -120,18 +116,17 @@ cctv4k.m3u8
 chchd
 9kds
 
-# ========== 新增低质量源 ==========
+# ========== 低质量源 ==========
 chinacert.cftest5.cn
 jiduo.me
 mxmy.net
 cttv.vip
 
-# ========== 已失效/低质量源 ==========
+# ========== 已失效订阅源 ==========
 player.cntv.cn
 xykt-fix.github.io
 iptv.catvod.com
 satellitepull.cnr.cn
-ChiSheng9/iptv
 rihou.cc
 zb.xmzb.xyz
 jsnzkpg.us.ci
@@ -176,3 +171,16 @@ douyincdn.com
 116.236.204.18
 111.231.6.102
 qwrt.ansun.de5.net
+
+# ========== 已失效GitHub订阅源 ==========
+raw.githubusercontent.com/imDazui
+raw.githubusercontent.com/develop202
+raw.githubusercontent.com/alienlu
+raw.githubusercontent.com/maitel2020
+raw.githubusercontent.com/zzmaze
+raw.githubusercontent.com/junge3333
+
+# ========== 临时API接口 ==========
+ilook.epg.one
+ha.msbot.dpdns.org
+xn--6orr3pi6g9uu.top
