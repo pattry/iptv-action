@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url="https://raw.githubusercontent.com/pattry/iptv-action/refs/heads/main/output/epg/epg.gz"
-#EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV1.png" group-title="🕘️更新时间",2026-08-06 07:56:23
+#EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV1.png" group-title="🕘️更新时间",2026-08-06 09:39:19
 http://192.151.150.154/live/cctv1hd.m3u8
 #EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV1.png" group-title="央视",CCTV1
 http://192.151.150.154/live/cctv1hd.m3u8
@@ -760,6 +760,10 @@ http://zteres.sn.chinamobile.com:6060/000000001000/2000000002000000007/1.m3u8?ch
 #EXTINF:-1 tvg-id="五星体育" tvg-name="五星体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/五星体育.png" group-title="体育",五星体育
 http://www.kooca.cn:5140/%E4%B8%8A%E6%B5%B7%E6%96%87%E5%B9%BF/%E4%BA%94%E6%98%9F%E4%BD%93%E8%82%B2
 #EXTINF:-1 tvg-id="劲爆体育" tvg-name="劲爆体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/劲爆体育.png" group-title="体育",劲爆体育
+http://183.237.95.108:9901/tsfile/live/1074_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-id="劲爆体育" tvg-name="劲爆体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/劲爆体育.png" group-title="体育",劲爆体育
+http://120.238.94.82:9901/tsfile/live/1086_1.m3u8
+#EXTINF:-1 tvg-id="劲爆体育" tvg-name="劲爆体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/劲爆体育.png" group-title="体育",劲爆体育
 http://www.zhch682022.cn:35455/itv/5000000002000029972.m3u8?cdn=bestzb
 #EXTINF:-1 tvg-id="广东体育" tvg-name="广东体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东体育.png" group-title="体育",广东体育
 http://192.151.150.154/live/gdty.m3u8
@@ -1153,6 +1157,8 @@ http://tl.061833.xyz/tl/rockaction
 https://test.946985.filegear-sg.me/proxy/f146d0e593c924e4
 #EXTINF:-1 tvg-id="ROCK Action" tvg-name="ROCK Action" tvg-logo="https://www.xn--rgv465a.top/tvlogo/ROCK Action.png" group-title="电影",ROCK Action
 https://test.946985.filegear-sg.me/proxy/a233cc1a87cac018
+#EXTINF:-1 tvg-id="MyCinemaEurope" tvg-name="MyCinemaEurope" tvg-logo="https://www.xn--rgv465a.top/tvlogo/MyCinemaEurope.png" group-title="电影",MyCinemaEurope
+https://op-group1-densxvisionhd-1.dens.tv/h/h18/index.m3u8
 #EXTINF:-1 tvg-id="采昌影劇台" tvg-name="采昌影劇台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/采昌影劇台.png" group-title="电影",采昌影劇台
 http://4gtv.cnlive.club/channel/n97ba44a/index.m3u8?q=1782639885837
 #EXTINF:-1 tvg-id="采昌影劇台" tvg-name="采昌影劇台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/采昌影劇台.png" group-title="电影",采昌影劇台
@@ -1532,6 +1538,204 @@ http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/18a8a559464448dbaf6
 http://[2409:8087:5e00:24::2d]:6610/000000001000/1/1000000004000013730/index.m3u8?channel-id=ystenlive&Contentid=1000000004000013730&livemode=1&stbId=YanG-1989
 #EXTINF:-1 tvg-id="NewTV军事评论" tvg-name="NewTV军事评论" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/NEWTV军事评论.png" group-title="纪录",NewTV军事评论
 http://[2409:8087:5e00:24::2d]:6610/000000001000/1/2000000003000000022/index.m3u8?channel-id=hnbblive&Contentid=2000000003000000022&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-id="直播中国精编直播" tvg-name="直播中国精编直播" tvg-logo="https://www.xn--rgv465a.top/tvlogo/直播中国精编直播.png" group-title="纪录",直播中国精编直播
+https://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8
+#EXTINF:-1 tvg-id="上海南浦大桥" tvg-name="上海南浦大桥" tvg-logo="https://www.xn--rgv465a.top/tvlogo/上海南浦大桥.png" group-title="纪录",上海南浦大桥
+https://gctxyc.liveplay.myqcloud.com/gc/tjhh01_1/index.m3u8
+#EXTINF:-1 tvg-id="江苏-无锡鼋头渚赏樱阁" tvg-name="江苏-无锡鼋头渚赏樱阁" tvg-logo="https://www.xn--rgv465a.top/tvlogo/江苏-无锡鼋头渚赏樱阁.png" group-title="纪录",江苏-无锡鼋头渚赏樱阁
+https://gcalic.v.myalicdn.com/gc/pshdxg01_1/index.m3u8?contentid=2820180516001
+#EXTINF:-1 tvg-id="江苏-徐州云龙湖观景台西" tvg-name="江苏-徐州云龙湖观景台西" tvg-logo="https://www.xn--rgv465a.top/tvlogo/江苏-徐州云龙湖观景台西.png" group-title="纪录",江苏-徐州云龙湖观景台西
+https://gcalic.v.myalicdn.com/gc/ylh04_1/index.m3u8?contentid=2820180516001
+#EXTINF:-1 tvg-id="浙江-普陀山" tvg-name="浙江-普陀山" tvg-logo="https://www.xn--rgv465a.top/tvlogo/浙江-普陀山.png" group-title="纪录",浙江-普陀山
+https://gcalic.v.myalicdn.com/gc/pts01_1/index.m3u8?contentid=2820180516001
+#EXTINF:-1 tvg-id="浙江-乌镇全景" tvg-name="浙江-乌镇全景" tvg-logo="https://www.xn--rgv465a.top/tvlogo/浙江-乌镇全景.png" group-title="纪录",浙江-乌镇全景
+https://gcalic.v.myalicdn.com/gc/zjwzblt_1/index.m3u8?contentid=2820180516001
+#EXTINF:-1 tvg-id="湖南张家界水绕四门" tvg-name="湖南张家界水绕四门" tvg-logo="https://www.xn--rgv465a.top/tvlogo/湖南张家界水绕四门.png" group-title="纪录",湖南张家界水绕四门
+https://gcalic.v.myalicdn.com/gc/zjjsrsm_1/index.m3u8
+#EXTINF:-1 tvg-id="湖南张家界水绕四门" tvg-name="湖南张家界水绕四门" tvg-logo="https://www.xn--rgv465a.top/tvlogo/湖南张家界水绕四门.png" group-title="纪录",湖南张家界水绕四门
+https://gcalic.v.myalicdn.com/gc/zjjsrsm_1/index.m3u8?contentid=2820180516001
+#EXTINF:-1 tvg-id="湖南张家界将军列队" tvg-name="湖南张家界将军列队" tvg-logo="https://www.xn--rgv465a.top/tvlogo/湖南张家界将军列队.png" group-title="纪录",湖南张家界将军列队
+https://gcalic.v.myalicdn.com/gc/zjjjjdl_1/index.m3u8
+#EXTINF:-1 tvg-id="湖南张家界将军列队" tvg-name="湖南张家界将军列队" tvg-logo="https://www.xn--rgv465a.top/tvlogo/湖南张家界将军列队.png" group-title="纪录",湖南张家界将军列队
+https://gcalic.v.myalicdn.com/gc/zjjjjdl_1/index.m3u8?contentid=2820180516001
+#EXTINF:-1 tvg-id="湖南张家界迷魂台" tvg-name="湖南张家界迷魂台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/湖南张家界迷魂台.png" group-title="纪录",湖南张家界迷魂台
+https://gcalic.v.myalicdn.com/gc/zjjmht_1/index.m3u8
+#EXTINF:-1 tvg-id="湖南张家界宝峰湖" tvg-name="湖南张家界宝峰湖" tvg-logo="https://www.xn--rgv465a.top/tvlogo/湖南张家界宝峰湖.png" group-title="纪录",湖南张家界宝峰湖
+https://gcalic.v.myalicdn.com/gc/zjjbfh_1/index.m3u8
+#EXTINF:-1 tvg-id="湖南张家界御笔峰" tvg-name="湖南张家界御笔峰" tvg-logo="https://www.xn--rgv465a.top/tvlogo/湖南张家界御笔峰.png" group-title="纪录",湖南张家界御笔峰
+https://gcalic.v.myalicdn.com/gc/zjjybf_1/index.m3u8
+#EXTINF:-1 tvg-id="湖南张家界天门山西线玻璃栈道" tvg-name="湖南张家界天门山西线玻璃栈道" tvg-logo="https://www.xn--rgv465a.top/tvlogo/湖南张家界天门山西线玻璃栈道.png" group-title="纪录",湖南张家界天门山西线玻璃栈道
+https://gcalic.v.myalicdn.com/gc/tms05_1/index.m3u8
+#EXTINF:-1 tvg-id="四川峨眉山云海日出" tvg-name="四川峨眉山云海日出" tvg-logo="https://www.xn--rgv465a.top/tvlogo/四川峨眉山云海日出.png" group-title="纪录",四川峨眉山云海日出
+https://gcalic.v.myalicdn.com/gc/emsarm_1/index.m3u8
+#EXTINF:-1 tvg-id="四川峨眉山远眺贡嘎雪山" tvg-name="四川峨眉山远眺贡嘎雪山" tvg-logo="https://www.xn--rgv465a.top/tvlogo/四川峨眉山远眺贡嘎雪山.png" group-title="纪录",四川峨眉山远眺贡嘎雪山
+https://gcalic.v.myalicdn.com/gc/emsyh_1/index.m3u8
+#EXTINF:-1 tvg-id="四川峨眉山普贤菩萨铜像" tvg-name="四川峨眉山普贤菩萨铜像" tvg-logo="https://www.xn--rgv465a.top/tvlogo/四川峨眉山普贤菩萨铜像.png" group-title="纪录",四川峨眉山普贤菩萨铜像
+https://gcalic.v.myalicdn.com/gc/emspxps_1/index.m3u8
+#EXTINF:-1 tvg-id="四川峨眉山远眺万佛顶" tvg-name="四川峨眉山远眺万佛顶" tvg-logo="https://www.xn--rgv465a.top/tvlogo/四川峨眉山远眺万佛顶.png" group-title="纪录",四川峨眉山远眺万佛顶
+https://gcalic.v.myalicdn.com/gc/emswfs_1/index.m3u8
+#EXTINF:-1 tvg-id="新疆天山(定海神针)" tvg-name="新疆天山(定海神针)" tvg-logo="https://www.xn--rgv465a.top/tvlogo/新疆天山(定海神针).png" group-title="纪录",新疆天山(定海神针)
+http://gctxyc.liveplay.myqcloud.com/gc/xjtcdhsz_1/index.m3u8
+#EXTINF:-1 tvg-id="新疆天山(定海神针)" tvg-name="新疆天山(定海神针)" tvg-logo="https://www.xn--rgv465a.top/tvlogo/新疆天山(定海神针).png" group-title="纪录",新疆天山(定海神针)
+https://gcalic.v.myalicdn.com/gc/xjtcdhsz_1/index.m3u8
+#EXTINF:-1 tvg-id="新疆天山(马牙山)" tvg-name="新疆天山(马牙山)" tvg-logo="https://www.xn--rgv465a.top/tvlogo/新疆天山(马牙山).png" group-title="纪录",新疆天山(马牙山)
+https://gcalic.v.myalicdn.com/gc/xjtcmys_1/index.m3u8
+#EXTINF:-1 tvg-id="新疆天山(灯杆山)" tvg-name="新疆天山(灯杆山)" tvg-logo="https://www.xn--rgv465a.top/tvlogo/新疆天山(灯杆山).png" group-title="纪录",新疆天山(灯杆山)
+https://gcalic.v.myalicdn.com/gc/xjtcdgs_1/index.m3u8
+#EXTINF:-1 tvg-id="厦门鼓浪屿" tvg-name="厦门鼓浪屿" tvg-logo="https://www.xn--rgv465a.top/tvlogo/厦门鼓浪屿.png" group-title="纪录",厦门鼓浪屿
+https://gcalic.v.myalicdn.com/gc/gly01_1/index.m3u8
+#EXTINF:-1 tvg-id="广西玉林大容山莲花山顶" tvg-name="广西玉林大容山莲花山顶" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广西玉林大容山莲花山顶.png" group-title="纪录",广西玉林大容山莲花山顶
+https://gcalic.v.myalicdn.com/gc/drs01_1/index.m3u8
+#EXTINF:-1 tvg-id="八里沟风景区桃花湾瀑布" tvg-name="八里沟风景区桃花湾瀑布" tvg-logo="https://www.xn--rgv465a.top/tvlogo/八里沟风景区桃花湾瀑布.png" group-title="纪录",八里沟风景区桃花湾瀑布
+https://gcalic.v.myalicdn.com/gc/blg05_1/index.m3u8
+#EXTINF:-1 tvg-id="八里沟风景区天界山玻璃栈道" tvg-name="八里沟风景区天界山玻璃栈道" tvg-logo="https://www.xn--rgv465a.top/tvlogo/八里沟风景区天界山玻璃栈道.png" group-title="纪录",八里沟风景区天界山玻璃栈道
+https://gcalic.v.myalicdn.com/gc/blg03_1/index.m3u8
+#EXTINF:-1 tvg-id="安徽池州九华山风景区九华山" tvg-name="安徽池州九华山风景区九华山" tvg-logo="https://www.xn--rgv465a.top/tvlogo/安徽池州九华山风景区九华山.png" group-title="纪录",安徽池州九华山风景区九华山
+https://gcalic.v.myalicdn.com/gc/jhs05_1/index.m3u8
+#EXTINF:-1 tvg-id="安徽池州九华山风景区花台" tvg-name="安徽池州九华山风景区花台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/安徽池州九华山风景区花台.png" group-title="纪录",安徽池州九华山风景区花台
+https://gcalic.v.myalicdn.com/gc/jhs01_1/index.m3u8
+#EXTINF:-1 tvg-id="江苏徐州云龙湖风景区云龙山观景台西" tvg-name="江苏徐州云龙湖风景区云龙山观景台西" tvg-logo="https://www.xn--rgv465a.top/tvlogo/江苏徐州云龙湖风景区云龙山观景台西.png" group-title="纪录",江苏徐州云龙湖风景区云龙山观景台西
+https://gcalic.v.myalicdn.com/gc/ylh04_1/index.m3u8
+#EXTINF:-1 tvg-id="南京玄武湖公园" tvg-name="南京玄武湖公园" tvg-logo="https://www.xn--rgv465a.top/tvlogo/南京玄武湖公园.png" group-title="纪录",南京玄武湖公园
+https://gcalic.v.myalicdn.com/gc/xwh01_1/index.m3u8
+#EXTINF:-1 tvg-id="云南丽江玉龙雪山" tvg-name="云南丽江玉龙雪山" tvg-logo="https://www.xn--rgv465a.top/tvlogo/云南丽江玉龙雪山.png" group-title="纪录",云南丽江玉龙雪山
+https://gcalic.v.myalicdn.com/gc/ylxs11_1/index.m3u8
+#EXTINF:-1 tvg-id="云南丽江蓝月谷" tvg-name="云南丽江蓝月谷" tvg-logo="https://www.xn--rgv465a.top/tvlogo/云南丽江蓝月谷.png" group-title="纪录",云南丽江蓝月谷
+https://gcalic.v.myalicdn.com/gc/ylxs12_1/index.m3u8
+#EXTINF:-1 tvg-id="云南丽江玉龙雪山草甸" tvg-name="云南丽江玉龙雪山草甸" tvg-logo="https://www.xn--rgv465a.top/tvlogo/云南丽江玉龙雪山草甸.png" group-title="纪录",云南丽江玉龙雪山草甸
+https://gcalic.v.myalicdn.com/gc/hkylxs06_1/index.m3u8
+#EXTINF:-1 tvg-id="云南丽江冰川" tvg-name="云南丽江冰川" tvg-logo="https://www.xn--rgv465a.top/tvlogo/云南丽江冰川.png" group-title="纪录",云南丽江冰川
+https://gcalic.v.myalicdn.com/gc/hkylxs05_1/index.m3u8
+#EXTINF:-1 tvg-id="云南丽江印象实景" tvg-name="云南丽江印象实景" tvg-logo="https://www.xn--rgv465a.top/tvlogo/云南丽江印象实景.png" group-title="纪录",云南丽江印象实景
+https://gcalic.v.myalicdn.com/gc/hkylxs01_1/index.m3u8
+#EXTINF:-1 tvg-id="江苏南京牛首山" tvg-name="江苏南京牛首山" tvg-logo="https://www.xn--rgv465a.top/tvlogo/江苏南京牛首山.png" group-title="纪录",江苏南京牛首山
+https://gcalic.v.myalicdn.com/gc/nss01_1/index.m3u8
+#EXTINF:-1 tvg-id="江苏南京牛首山" tvg-name="江苏南京牛首山" tvg-logo="https://www.xn--rgv465a.top/tvlogo/江苏南京牛首山.png" group-title="纪录",江苏南京牛首山
+https://gcalic.v.myalicdn.com/gc/nss01_1/index.m3u8?contentid=2820180516001
+#EXTINF:-1 tvg-id="福建漳州醉美沙滩翡翠湾" tvg-name="福建漳州醉美沙滩翡翠湾" tvg-logo="https://www.xn--rgv465a.top/tvlogo/福建漳州醉美沙滩翡翠湾.png" group-title="纪录",福建漳州醉美沙滩翡翠湾
+https://gcalic.v.myalicdn.com/gc/fcw03_1/index.m3u8
+#EXTINF:-1 tvg-id="普陀山" tvg-name="普陀山" tvg-logo="https://www.xn--rgv465a.top/tvlogo/普陀山.png" group-title="纪录",普陀山
+https://gcalic.v.myalicdn.com/gc/pts01_1/index.m3u8
+#EXTINF:-1 tvg-id="浙江舟山东极岛" tvg-name="浙江舟山东极岛" tvg-logo="https://www.xn--rgv465a.top/tvlogo/浙江舟山东极岛.png" group-title="纪录",浙江舟山东极岛
+https://gcalic.v.myalicdn.com/gc/djd01_1/index.m3u8
+#EXTINF:-1 tvg-id="浙江舟山东极岛" tvg-name="浙江舟山东极岛" tvg-logo="https://www.xn--rgv465a.top/tvlogo/浙江舟山东极岛.png" group-title="纪录",浙江舟山东极岛
+https://gcalic.v.myalicdn.com/gc/djd01_1/index.m3u8?contentid=2820180516001
+#EXTINF:-1 tvg-id="四川四姑娘山隆珠措" tvg-name="四川四姑娘山隆珠措" tvg-logo="https://www.xn--rgv465a.top/tvlogo/四川四姑娘山隆珠措.png" group-title="纪录",四川四姑娘山隆珠措
+https://gcalic.v.myalicdn.com/gc/sgns02_1/index.m3u8
+#EXTINF:-1 tvg-id="丽江古城大研花巷观景" tvg-name="丽江古城大研花巷观景" tvg-logo="https://www.xn--rgv465a.top/tvlogo/丽江古城大研花巷观景.png" group-title="纪录",丽江古城大研花巷观景
+https://gcalic.v.myalicdn.com/gc/ljgcdyhxgjt_1/index.m3u8
+#EXTINF:-1 tvg-id="丽江古城大水车" tvg-name="丽江古城大水车" tvg-logo="https://www.xn--rgv465a.top/tvlogo/丽江古城大水车.png" group-title="纪录",丽江古城大水车
+https://gcalic.v.myalicdn.com/gc/ljgcdsc_1/index.m3u8
+#EXTINF:-1 tvg-id="丽江古城万古楼遥望玉龙雪山" tvg-name="丽江古城万古楼遥望玉龙雪山" tvg-logo="https://www.xn--rgv465a.top/tvlogo/丽江古城万古楼遥望玉龙雪山.png" group-title="纪录",丽江古城万古楼遥望玉龙雪山
+https://gcalic.v.myalicdn.com/gc/ljgcwglytylxs_1/index.m3u8
+#EXTINF:-1 tvg-id="狮子山鸟瞰丽江古城" tvg-name="狮子山鸟瞰丽江古城" tvg-logo="https://www.xn--rgv465a.top/tvlogo/狮子山鸟瞰丽江古城.png" group-title="纪录",狮子山鸟瞰丽江古城
+https://gcalic.v.myalicdn.com/gc/ljgcszsnkgc_1/index.m3u8
+#EXTINF:-1 tvg-id="雪乡梦幻家园" tvg-name="雪乡梦幻家园" tvg-logo="https://www.xn--rgv465a.top/tvlogo/雪乡梦幻家园.png" group-title="纪录",雪乡梦幻家园
+https://gcalic.v.myalicdn.com/gc/mdjxxmhjyxj_1/index.m3u8
+#EXTINF:-1 tvg-id="雪乡大石碑" tvg-name="雪乡大石碑" tvg-logo="https://www.xn--rgv465a.top/tvlogo/雪乡大石碑.png" group-title="纪录",雪乡大石碑
+https://gcalic.v.myalicdn.com/gc/mdjxxdsb_1/index.m3u8
+#EXTINF:-1 tvg-id="乌镇蓝印花布" tvg-name="乌镇蓝印花布" tvg-logo="https://www.xn--rgv465a.top/tvlogo/乌镇蓝印花布.png" group-title="纪录",乌镇蓝印花布
+https://gcalic.v.myalicdn.com/gc/zjwzlyhb_1/index.m3u8
+#EXTINF:-1 tvg-id="乌镇西市河" tvg-name="乌镇西市河" tvg-logo="https://www.xn--rgv465a.top/tvlogo/乌镇西市河.png" group-title="纪录",乌镇西市河
+https://gcalic.v.myalicdn.com/gc/zjwzbblh_1/index.m3u8
+#EXTINF:-1 tvg-id="乌镇龙形田" tvg-name="乌镇龙形田" tvg-logo="https://www.xn--rgv465a.top/tvlogo/乌镇龙形田.png" group-title="纪录",乌镇龙形田
+https://gcalic.v.myalicdn.com/gc/zjwzlxt_1/index.m3u8
+#EXTINF:-1 tvg-id="乌镇全景" tvg-name="乌镇全景" tvg-logo="https://www.xn--rgv465a.top/tvlogo/乌镇全景.png" group-title="纪录",乌镇全景
+https://gcalic.v.myalicdn.com/gc/zjwzblt_1/index.m3u8
+#EXTINF:-1 tvg-id="凤凰古城南华山" tvg-name="凤凰古城南华山" tvg-logo="https://www.xn--rgv465a.top/tvlogo/凤凰古城南华山.png" group-title="纪录",凤凰古城南华山
+https://gcalic.v.myalicdn.com/gc/fhgcdnhs_1/index.m3u8
+#EXTINF:-1 tvg-id="凤凰古城东关门" tvg-name="凤凰古城东关门" tvg-logo="https://www.xn--rgv465a.top/tvlogo/凤凰古城东关门.png" group-title="纪录",凤凰古城东关门
+https://gcalic.v.myalicdn.com/gc/fhgcdgm_1/index.m3u8
+#EXTINF:-1 tvg-id="黄花城水长城01" tvg-name="黄花城水长城01" tvg-logo="https://www.xn--rgv465a.top/tvlogo/黄花城水长城01.png" group-title="纪录",黄花城水长城01
+https://gcalic.v.myalicdn.com/gc/wgw01_1/index.m3u8
+#EXTINF:-1 tvg-id="黄花城水长城02" tvg-name="黄花城水长城02" tvg-logo="https://www.xn--rgv465a.top/tvlogo/黄花城水长城02.png" group-title="纪录",黄花城水长城02
+http://gctxyc.liveplay.myqcloud.com/gc/wgw02_1/index.m3u8
+#EXTINF:-1 tvg-id="黄花城水长城02" tvg-name="黄花城水长城02" tvg-logo="https://www.xn--rgv465a.top/tvlogo/黄花城水长城02.png" group-title="纪录",黄花城水长城02
+https://gcalic.v.myalicdn.com/gc/wgw02_1/index.m3u8
+#EXTINF:-1 tvg-id="黄花城水长城03" tvg-name="黄花城水长城03" tvg-logo="https://www.xn--rgv465a.top/tvlogo/黄花城水长城03.png" group-title="纪录",黄花城水长城03
+https://gcalic.v.myalicdn.com/gc/wgw03_1/index.m3u8
+#EXTINF:-1 tvg-id="鸣沙山" tvg-name="鸣沙山" tvg-logo="https://www.xn--rgv465a.top/tvlogo/鸣沙山.png" group-title="纪录",鸣沙山
+https://gcalic.v.myalicdn.com/gc/dhyyqst_1/index.m3u8
+#EXTINF:-1 tvg-id="月牙泉" tvg-name="月牙泉" tvg-logo="https://www.xn--rgv465a.top/tvlogo/月牙泉.png" group-title="纪录",月牙泉
+https://gcalic.v.myalicdn.com/gc/dhyyqsm_1/index.m3u8
+#EXTINF:-1 tvg-id="五彩池" tvg-name="五彩池" tvg-logo="https://www.xn--rgv465a.top/tvlogo/五彩池.png" group-title="纪录",五彩池
+https://gcalic.v.myalicdn.com/gc/hlwcc_1/index.m3u8
+#EXTINF:-1 tvg-id="黄龙" tvg-name="黄龙" tvg-logo="https://www.xn--rgv465a.top/tvlogo/黄龙.png" group-title="纪录",黄龙
+https://gcalic.v.myalicdn.com/gc/hlzycc_1/index.m3u8
+#EXTINF:-1 tvg-id="望乡台" tvg-name="望乡台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/望乡台.png" group-title="纪录",望乡台
+https://gcalic.v.myalicdn.com/gc/hlwxt_1/index.m3u8
+#EXTINF:-1 tvg-id="泰山主峰" tvg-name="泰山主峰" tvg-logo="https://www.xn--rgv465a.top/tvlogo/泰山主峰.png" group-title="纪录",泰山主峰
+https://gcalic.v.myalicdn.com/gc/taishan01_1/index.m3u8
+#EXTINF:-1 tvg-id="泰山大观峰" tvg-name="泰山大观峰" tvg-logo="https://www.xn--rgv465a.top/tvlogo/泰山大观峰.png" group-title="纪录",泰山大观峰
+https://gcalic.v.myalicdn.com/gc/taishan03_1/index.m3u8
+#EXTINF:-1 tvg-id="泰山玉皇顶" tvg-name="泰山玉皇顶" tvg-logo="https://www.xn--rgv465a.top/tvlogo/泰山玉皇顶.png" group-title="纪录",泰山玉皇顶
+https://gcalic.v.myalicdn.com/gc/taishan06_1/index.m3u8
+#EXTINF:-1 tvg-id="泰山十八盘" tvg-name="泰山十八盘" tvg-logo="https://www.xn--rgv465a.top/tvlogo/泰山十八盘.png" group-title="纪录",泰山十八盘
+https://gcalic.v.myalicdn.com/gc/taishan05_1/index.m3u8
+#EXTINF:-1 tvg-id="泰山望人松" tvg-name="泰山望人松" tvg-logo="https://www.xn--rgv465a.top/tvlogo/泰山望人松.png" group-title="纪录",泰山望人松
+https://gcalic.v.myalicdn.com/gc/taishan02_1/index.m3u8
+#EXTINF:-1 tvg-id="泰山南天门" tvg-name="泰山南天门" tvg-logo="https://www.xn--rgv465a.top/tvlogo/泰山南天门.png" group-title="纪录",泰山南天门
+https://gcalic.v.myalicdn.com/gc/hkts07_1/index.m3u8
+#EXTINF:-1 tvg-id="泰山白云亭悬崖" tvg-name="泰山白云亭悬崖" tvg-logo="https://www.xn--rgv465a.top/tvlogo/泰山白云亭悬崖.png" group-title="纪录",泰山白云亭悬崖
+https://gcalic.v.myalicdn.com/gc/hkts02_1/index.m3u8
+#EXTINF:-1 tvg-id="泰山太平岭" tvg-name="泰山太平岭" tvg-logo="https://www.xn--rgv465a.top/tvlogo/泰山太平岭.png" group-title="纪录",泰山太平岭
+https://gcalic.v.myalicdn.com/gc/hkts09_1/index.m3u8
+#EXTINF:-1 tvg-id="泰山碧霞祠" tvg-name="泰山碧霞祠" tvg-logo="https://www.xn--rgv465a.top/tvlogo/泰山碧霞祠.png" group-title="纪录",泰山碧霞祠
+https://gcalic.v.myalicdn.com/gc/hkts03_1/index.m3u8
+#EXTINF:-1 tvg-id="黄山卧云峰" tvg-name="黄山卧云峰" tvg-logo="https://www.xn--rgv465a.top/tvlogo/黄山卧云峰.png" group-title="纪录",黄山卧云峰
+https://gcalic.v.myalicdn.com/gc/hswlf_1/index.m3u8
+#EXTINF:-1 tvg-id="黄山始信新道" tvg-name="黄山始信新道" tvg-logo="https://www.xn--rgv465a.top/tvlogo/黄山始信新道.png" group-title="纪录",黄山始信新道
+https://gcalic.v.myalicdn.com/gc/hsyg_1/index.m3u8
+#EXTINF:-1 tvg-id="黄山排云亭" tvg-name="黄山排云亭" tvg-logo="https://www.xn--rgv465a.top/tvlogo/黄山排云亭.png" group-title="纪录",黄山排云亭
+https://gcalic.v.myalicdn.com/gc/hspyt_1/index.m3u8
+#EXTINF:-1 tvg-id="黄山飞来石" tvg-name="黄山飞来石" tvg-logo="https://www.xn--rgv465a.top/tvlogo/黄山飞来石.png" group-title="纪录",黄山飞来石
+https://gcalic.v.myalicdn.com/gc/hsptgy_1/index.m3u8
+#EXTINF:-1 tvg-id="黄山" tvg-name="黄山" tvg-logo="https://www.xn--rgv465a.top/tvlogo/黄山.png" group-title="纪录",黄山
+https://gcalic.v.myalicdn.com/gc/ahhs01_1/index.m3u8
+#EXTINF:-1 tvg-id="陕西洋县国宝朱鹮02" tvg-name="陕西洋县国宝朱鹮02" tvg-logo="https://www.xn--rgv465a.top/tvlogo/陕西洋县国宝朱鹮02.png" group-title="纪录",陕西洋县国宝朱鹮02
+https://gcalic.v.myalicdn.com/gc/zh02_1/index.m3u8
+#EXTINF:-1 tvg-id="陕西洋县国宝朱鹮03" tvg-name="陕西洋县国宝朱鹮03" tvg-logo="https://www.xn--rgv465a.top/tvlogo/陕西洋县国宝朱鹮03.png" group-title="纪录",陕西洋县国宝朱鹮03
+https://gcalic.v.myalicdn.com/gc/zh03_1/index.m3u8
+#EXTINF:-1 tvg-id="安徽黟县西递牌坊" tvg-name="安徽黟县西递牌坊" tvg-logo="https://www.xn--rgv465a.top/tvlogo/安徽黟县西递牌坊.png" group-title="纪录",安徽黟县西递牌坊
+https://gcalic.v.myalicdn.com/gc/yxxdpf_1/index.m3u8
+#EXTINF:-1 tvg-id="安徽黟县芦村远眺" tvg-name="安徽黟县芦村远眺" tvg-logo="https://www.xn--rgv465a.top/tvlogo/安徽黟县芦村远眺.png" group-title="纪录",安徽黟县芦村远眺
+https://gcalic.v.myalicdn.com/gc/yxlcyt_1/index.m3u8
+#EXTINF:-1 tvg-id="安徽黟县芦村远眺" tvg-name="安徽黟县芦村远眺" tvg-logo="https://www.xn--rgv465a.top/tvlogo/安徽黟县芦村远眺.png" group-title="纪录",安徽黟县芦村远眺
+https://gcalic.v.myalicdn.com/gc/yxlcyt_1/index.m3u8?contentid=2820180516001
+#EXTINF:-1 tvg-id="中央电视塔东" tvg-name="中央电视塔东" tvg-logo="https://www.xn--rgv465a.top/tvlogo/中央电视塔东.png" group-title="纪录",中央电视塔东
+https://gcalic.v.myalicdn.com/gc/ztd_1/index.m3u8
+#EXTINF:-1 tvg-id="中央电视塔南" tvg-name="中央电视塔南" tvg-logo="https://www.xn--rgv465a.top/tvlogo/中央电视塔南.png" group-title="纪录",中央电视塔南
+https://gcalic.v.myalicdn.com/gc/ztn_1/index.m3u8
+#EXTINF:-1 tvg-id="恒山悬空寺全景" tvg-name="恒山悬空寺全景" tvg-logo="https://www.xn--rgv465a.top/tvlogo/恒山悬空寺全景.png" group-title="纪录",恒山悬空寺全景
+https://gcalic.v.myalicdn.com/gc/hsxksqj_1/index.m3u8
+#EXTINF:-1 tvg-id="黄果树六角亭瀑布" tvg-name="黄果树六角亭瀑布" tvg-logo="https://www.xn--rgv465a.top/tvlogo/黄果树六角亭瀑布.png" group-title="纪录",黄果树六角亭瀑布
+https://gcalic.v.myalicdn.com/gc/hgsspzxdpb_1/index.m3u8
+#EXTINF:-1 tvg-id="天涯石" tvg-name="天涯石" tvg-logo="https://www.xn--rgv465a.top/tvlogo/天涯石.png" group-title="纪录",天涯石
+https://gcalic.v.myalicdn.com/gc/tyhjtys_1/index.m3u8
+#EXTINF:-1 tvg-id="六盘山红军长征景区" tvg-name="六盘山红军长征景区" tvg-logo="https://www.xn--rgv465a.top/tvlogo/六盘山红军长征景区.png" group-title="纪录",六盘山红军长征景区
+https://gcalic.v.myalicdn.com/gc/lpsgmjng01_1/index.m3u8
+#EXTINF:-1 tvg-id="贵州省兴义市万峰林" tvg-name="贵州省兴义市万峰林" tvg-logo="https://www.xn--rgv465a.top/tvlogo/贵州省兴义市万峰林.png" group-title="纪录",贵州省兴义市万峰林
+https://gcalic.v.myalicdn.com/gc/xywfl_1/index.m3u8
+#EXTINF:-1 tvg-id="云南大理崇圣寺三塔中景" tvg-name="云南大理崇圣寺三塔中景" tvg-logo="https://www.xn--rgv465a.top/tvlogo/云南大理崇圣寺三塔中景.png" group-title="纪录",云南大理崇圣寺三塔中景
+https://gcalic.v.myalicdn.com/gc/dlst03_1/index.m3u8
+#EXTINF:-1 tvg-id="云南大理崇圣寺三塔远景" tvg-name="云南大理崇圣寺三塔远景" tvg-logo="https://www.xn--rgv465a.top/tvlogo/云南大理崇圣寺三塔远景.png" group-title="纪录",云南大理崇圣寺三塔远景
+https://gcalic.v.myalicdn.com/gc/dlst01_1/index.m3u8
+#EXTINF:-1 tvg-id="广西桂林漓江景区" tvg-name="广西桂林漓江景区" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广西桂林漓江景区.png" group-title="纪录",广西桂林漓江景区
+https://gcalic.v.myalicdn.com/gc/gllj01_1/index.m3u8
+#EXTINF:-1 tvg-id="青岛崂山双福" tvg-name="青岛崂山双福" tvg-logo="https://www.xn--rgv465a.top/tvlogo/青岛崂山双福.png" group-title="纪录",青岛崂山双福
+https://gcalic.v.myalicdn.com/gc/qdls03_1/index.m3u8
+#EXTINF:-1 tvg-id="青岛崂山八水河" tvg-name="青岛崂山八水河" tvg-logo="https://www.xn--rgv465a.top/tvlogo/青岛崂山八水河.png" group-title="纪录",青岛崂山八水河
+https://gcalic.v.myalicdn.com/gc/qdls02_1/index.m3u8
+#EXTINF:-1 tvg-id="张掖七彩丹霞" tvg-name="张掖七彩丹霞" tvg-logo="https://www.xn--rgv465a.top/tvlogo/张掖七彩丹霞.png" group-title="纪录",张掖七彩丹霞
+https://gcalic.v.myalicdn.com/gc/zyqcdx01_1/index.m3u8
+#EXTINF:-1 tvg-id="都江堰鱼嘴" tvg-name="都江堰鱼嘴" tvg-logo="https://www.xn--rgv465a.top/tvlogo/都江堰鱼嘴.png" group-title="纪录",都江堰鱼嘴
+https://gcalic.v.myalicdn.com/gc/djyqyl1_1/index.m3u8
+#EXTINF:-1 tvg-id="乐山大佛全景" tvg-name="乐山大佛全景" tvg-logo="https://www.xn--rgv465a.top/tvlogo/乐山大佛全景.png" group-title="纪录",乐山大佛全景
+https://gcalic.v.myalicdn.com/gc/lsdfgfl_1/index.m3u8
+#EXTINF:-1 tvg-id="福建武夷山玉女峰" tvg-name="福建武夷山玉女峰" tvg-logo="https://www.xn--rgv465a.top/tvlogo/福建武夷山玉女峰.png" group-title="纪录",福建武夷山玉女峰
+https://gcalic.v.myalicdn.com/gc/wysynf_1/index.m3u8
+#EXTINF:-1 tvg-id="福建武夷山玉女峰" tvg-name="福建武夷山玉女峰" tvg-logo="https://www.xn--rgv465a.top/tvlogo/福建武夷山玉女峰.png" group-title="纪录",福建武夷山玉女峰
+https://gcalic.v.myalicdn.com/gc/wysynf_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1 tvg-id="凤凰资讯台" tvg-name="凤凰资讯台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/凤凰资讯台.png" group-title="港澳台",凤凰资讯台
 http://r.jdshipin.com/0Rp07
 #EXTINF:-1 tvg-id="凤凰资讯台" tvg-name="凤凰资讯台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/凤凰资讯台.png" group-title="港澳台",凤凰资讯台
