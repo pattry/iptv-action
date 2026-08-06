@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url="https://raw.githubusercontent.com/pattry/iptv-action/refs/heads/main/output/epg/epg.gz"
-#EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV1.png" group-title="🕘️更新时间",2026-08-06 09:39:19
+#EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV1.png" group-title="🕘️更新时间",2026-08-06 10:57:50
 http://192.151.150.154/live/cctv1hd.m3u8
 #EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV1.png" group-title="央视",CCTV1
 http://192.151.150.154/live/cctv1hd.m3u8
@@ -302,8 +302,6 @@ http://www.kooca.cn:5140/%E6%95%B0%E5%AD%97%E9%A2%91%E9%81%93/%E5%BF%AB%E4%B9%90
 #EXTINF:-1 tvg-id="长沙新闻" tvg-name="长沙新闻" tvg-logo="https://www.xn--rgv465a.top/tvlogo/长沙新闻.png" group-title="地方",长沙新闻
 http://ls.qingting.fm/live/4877.m3u8
 #EXTINF:-1 tvg-id="东方卫视4K" tvg-name="东方卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/东方卫视.png" group-title="地方",东方卫视
-http://192.151.150.154/live/dfwshd.m3u8
-#EXTINF:-1 tvg-id="东方卫视4K" tvg-name="东方卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/东方卫视.png" group-title="地方",东方卫视
 http://api.kkitv.itv888.cn:8080/hls/p269fvbehye/index.m3u8
 #EXTINF:-1 tvg-id="东方卫视4K" tvg-name="东方卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/东方卫视.png" group-title="地方",东方卫视
 http://gf.you123.fun:35455/itv/1000000005000265018.m3u8?cdn=ystenlive
@@ -311,6 +309,8 @@ http://gf.you123.fun:35455/itv/1000000005000265018.m3u8?cdn=ystenlive
 http://[2409:8087:1e03:21::2]:6060/cms001/ch00000090990000001013/index.m3u8
 #EXTINF:-1 tvg-id="东方卫视4K" tvg-name="东方卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/东方卫视.png" group-title="地方",东方卫视
 http://[2409:8087:3428:20:500::100f]:6610/PLTV/88888888/224/3221225828/index.m3u8?servicetype=1&IASHttpSessionId=RR423820220409134714119178
+#EXTINF:-1 tvg-id="东方卫视4K" tvg-name="东方卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/东方卫视.png" group-title="地方",东方卫视
+http://[2409:8087:3428:20:500::100f]:6610/PLTV/88888888/224/3221226603/index.m3u8?servicetype=1&IASHttpSessionId=RR423820220409134714119178
 #EXTINF:-1 tvg-id="浙江卫视4K" tvg-name="浙江卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/浙江卫视.png" group-title="地方",浙江卫视
 http://ali-xwl.cztv.com/live/channel011080Plxw.m3u8
 #EXTINF:-1 tvg-id="浙江卫视4K" tvg-name="浙江卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/浙江卫视.png" group-title="地方",浙江卫视
@@ -650,11 +650,11 @@ https://bp-resource-dfl.bestv.cn/148/3/video.m3u8
 #EXTINF:-1 tvg-id="东方卫视4K" tvg-name="东方卫视4K" tvg-logo="https://www.xn--rgv465a.top/tvlogo/东方卫视4K.png" group-title="地方",东方卫视4K
 http://go.bkpcp.top/mg/dfws
 #EXTINF:-1 tvg-id="东方卫视4K" tvg-name="东方卫视4K" tvg-logo="https://www.xn--rgv465a.top/tvlogo/东方卫视4K.png" group-title="地方",东方卫视4K
-http://192.151.150.154/live/dfwshd.m3u8
-#EXTINF:-1 tvg-id="东方卫视4K" tvg-name="东方卫视4K" tvg-logo="https://www.xn--rgv465a.top/tvlogo/东方卫视4K.png" group-title="地方",东方卫视4K
 http://api.kkitv.itv888.cn:8080/hls/p269fvbehye/index.m3u8
 #EXTINF:-1 tvg-id="东方卫视4K" tvg-name="东方卫视4K" tvg-logo="https://www.xn--rgv465a.top/tvlogo/东方卫视4K.png" group-title="地方",东方卫视4K
 http://gf.you123.fun:35455/itv/1000000005000265018.m3u8?cdn=ystenlive
+#EXTINF:-1 tvg-id="东方卫视4K" tvg-name="东方卫视4K" tvg-logo="https://www.xn--rgv465a.top/tvlogo/东方卫视4K.png" group-title="地方",东方卫视4K
+http://[2409:8087:1e03:21::2]:6060/cms001/ch00000090990000001013/index.m3u8
 #EXTINF:-1 tvg-id="广州南国都市4K" tvg-name="广州南国都市4K" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广州南国都市4K.png" group-title="地方",广州南国都市4K
 http://tencentplaygsm.gztv.com/live/nanguodushi.m3u8
 #EXTINF:-1 tvg-id="广州南国都市4K" tvg-name="广州南国都市4K" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广州南国都市4K.png" group-title="地方",广州南国都市4K
@@ -833,6 +833,14 @@ http://[2409:8087:1a01:df::4061]/TVOD/88888888/224/3221225899/main.m3u8
 http://[2409:8087:1a01:df::4055]:80/TVOD/88888888/224/3221225901/main.m3u8
 #EXTINF:-1 tvg-id="澳门体育台" tvg-name="澳门体育台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/澳门体育台.png" group-title="体育",澳门体育台
 https://cdn6.cc.cd/163189/amty
+#EXTINF:-1 tvg-id="redbulltv" tvg-name="redbulltv" tvg-logo="https://www.xn--rgv465a.top/tvlogo/redbulltv.png" group-title="体育",redbulltv
+https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_6660.m3u8
+#EXTINF:-1 tvg-id="redbulltv" tvg-name="redbulltv" tvg-logo="https://www.xn--rgv465a.top/tvlogo/redbulltv.png" group-title="体育",redbulltv
+http://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_6660.m3u8
+#EXTINF:-1 tvg-id="redbulltv" tvg-name="redbulltv" tvg-logo="https://images.pluto.tv/channels/5e7cb84a172a0f0007da69e4/colorLogoPNG.png" group-title="体育",redbulltv
+https://3ea22335.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWdiX1JlZEJ1bGxUVl9ITFM/playlist.m3u8
+#EXTINF:-1 tvg-id="redbulltv" tvg-name="redbulltv" tvg-logo="https://images.pluto.tv/channels/5e7cb84a172a0f0007da69e4/colorLogoPNG.png" group-title="体育",redbulltv
+https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
 #EXTINF:-1 tvg-id="CCTV13" tvg-name="CCTV13" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV13.png" group-title="新闻",CCTV13
 http://192.151.150.154/live/cctv13hd.m3u8
 #EXTINF:-1 tvg-id="CCTV13" tvg-name="CCTV13" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV13.png" group-title="新闻",CCTV13
@@ -1337,6 +1345,8 @@ https://www.goodiptv.club/huya/11279251
 https://goodiptv.club/douyu/4246519
 #EXTINF:-1 tvg-id="邵氏电影" tvg-name="邵氏电影" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/斗鱼.png" group-title="电影",邵氏电影
 http://www.goodiptv.club/douyu/4246519
+#EXTINF:-1 tvg-id="邵氏电影" tvg-name="邵氏电影" tvg-logo="https://www.xn--rgv465a.top/tvlogo/邵氏电影.png" group-title="电影",邵氏电影
+https://www.goodiptv.club/douyu/4246519
 #EXTINF:-1 tvg-id="TVB功夫台" tvg-name="功夫台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/功夫台.png" group-title="电影",功夫台
 https://test.946985.filegear-sg.me/proxy/d1e9143b859804b8
 #EXTINF:-1 tvg-id="TVB功夫台" tvg-name="功夫台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/功夫台.png" group-title="电影",功夫台
@@ -2304,6 +2314,8 @@ https://www.goodiptv.club/huya/11342387
 http://cfss.cc/cdn/huya/30080236.flv
 #EXTINF:-1 tvg-id="名侦探柯南剧场版" tvg-name="名侦探柯南剧场版" tvg-logo="https://ghproxy.net/raw.githubusercontent.com/suxuang/myIPTV/main/img/名侦探柯南.png" group-title="轮播剧场",名侦探柯南剧场版
 https://live.ottiptv.cc/huya/30080236
+#EXTINF:-1 tvg-id="名侦探柯南剧场版" tvg-name="名侦探柯南剧场版" tvg-logo="https://www.xn--rgv465a.top/tvlogo/名侦探柯南剧场版.png" group-title="轮播剧场",名侦探柯南剧场版
+https://lbds.us.ci/30080236
 #EXTINF:-1 tvg-id="火影忍者" tvg-name="火影忍者" tvg-logo="https://www.xn--rgv465a.top/tvlogo/火影忍者.png" group-title="轮播剧场",火影忍者
 http://cfss.cc/cdn/huya/29465866.flv
 #EXTINF:-1 tvg-id="火影忍者" tvg-name="火影忍者" tvg-logo="https://www.xn--rgv465a.top/tvlogo/火影忍者.png" group-title="轮播剧场",火影忍者
@@ -2642,6 +2654,8 @@ https://lbds.us.ci/11352897
 http://cfss.cc/cdn/huya/11602033.flv
 #EXTINF:-1 tvg-id="电影_许氏三杰" tvg-name="电影_许氏三杰" tvg-logo="https://www.xn--rgv465a.top/tvlogo/电影_许氏三杰.png" group-title="轮播剧场",电影_许氏三杰
 https://www.goodiptv.club/huya/11602033
+#EXTINF:-1 tvg-id="电影_许氏三杰" tvg-name="电影_许氏三杰" tvg-logo="https://www.xn--rgv465a.top/tvlogo/电影_许氏三杰.png" group-title="轮播剧场",电影_许氏三杰
+https://lbds.us.ci/11602033
 #EXTINF:-1 tvg-id="电影_高分动作" tvg-name="电影_高分动作" tvg-logo="https://www.xn--rgv465a.top/tvlogo/电影_高分动作.png" group-title="轮播剧场",电影_高分动作
 http://cfss.cc/cdn/huya/11352884.flv
 #EXTINF:-1 tvg-id="电影_高分动作" tvg-name="电影_高分动作" tvg-logo="https://www.xn--rgv465a.top/tvlogo/电影_高分动作.png" group-title="轮播剧场",电影_高分动作
@@ -2668,6 +2682,8 @@ https://lbds.us.ci/11342395
 http://cfss.cc/cdn/huya/11342419.flv
 #EXTINF:-1 tvg-id="电影_黑帮斗争" tvg-name="电影_黑帮斗争" tvg-logo="https://www.xn--rgv465a.top/tvlogo/电影_黑帮斗争.png" group-title="轮播剧场",电影_黑帮斗争
 https://www.goodiptv.club/huya/11342419
+#EXTINF:-1 tvg-id="电影_黑帮斗争" tvg-name="电影_黑帮斗争" tvg-logo="https://www.xn--rgv465a.top/tvlogo/电影_黑帮斗争.png" group-title="轮播剧场",电影_黑帮斗争
+https://lbds.us.ci/11342419
 #EXTINF:-1 tvg-id="电影_喜乐影院" tvg-name="电影_喜乐影院" tvg-logo="https://www.xn--rgv465a.top/tvlogo/电影_喜乐影院.png" group-title="轮播剧场",电影_喜乐影院
 http://cfss.cc/cdn/huya/21059580.flv
 #EXTINF:-1 tvg-id="电影_喜乐影院" tvg-name="电影_喜乐影院" tvg-logo="https://www.xn--rgv465a.top/tvlogo/电影_喜乐影院.png" group-title="轮播剧场",电影_喜乐影院
