@@ -1,22 +1,14 @@
 # 这是接口黑名单列表，符合关键字的接口将被拦截，一个关键字一行
-# This is the interface blacklist list, the interface matching the keyword will be blocked, one keyword line
-
-
-
-# ==================== 接口黑名单 ====================
-# 符合关键字的接口将被拦截，一个关键字一行
 
 # ========== 音频/广播流 ==========
 /audio/
 /radio/
-bxtv.3a.ink
 /fm/
 /am/
 /music/
 /sound/
 
 # ========== 不稳定的免费域名 ==========
-
 t.freetv.fun
 freetv.fun
 dd.ddzb.fun
@@ -27,58 +19,30 @@ zby.130519.xyz
 3501776.xyz
 x1x.bid
 
-
 # ========== 移动/联通/电信内网 ==========
 ottrrs.hl.chinamobile.com
 hwrr.jx.chinamobile.com
 dbiptv.sn.chinamobile.com
 otttv.bj.chinamobile.com
-.ln.chinamobile.com
-.zj.chinamobile.com
-.js.chinamobile.com
-.gd.chinamobile.com
-.sc.chinamobile.com
-.hb.chinamobile.com
-.sd.chinamobile.com
-.fj.chinamobile.com
-.hn.chinamobile.com
-.sh.chinamobile.com
-gmcc.net
 chinamobile.com/PLTV
+gmcc.net
 
 # ========== 咪咕视频 ==========
 hlszymgsplive.miguvideo.com
 gslbmgsplive.miguvideo.com
-miguvideo
-migucloud
-migucdn
-# 如果确定要过滤所有咪咕源，保留；否则建议用更精确的域名
-migu
+miguvideo.com
+migucloud.com
+migucdn.com
 
-# ========== 无效IP地址 ==========
-120.87.19.109
-69.30.245.50
-204.12.221.218
-74.91.26.218
-198.204.228.26
-45.192.97.170
-122.152.202.33
-107.150.60.122
-173.208.212.130
-150.138.81.204
-125.77.18.245
-223.109.225.175
-# 内网IP段
+# ========== 内网IP段 ==========
 192.168.
-10.0.
+10.
 172.16.
 127.0.
 
 # ========== 私人/临时服务器 ==========
 php.jdshipin.com
-
 bak.dou.ddns-ip.net
-
 free.cnlive.club
 www.freetv.top
 smart.pendy.dpdns.org
@@ -95,28 +59,41 @@ alvin.ergotron.net
 lu.wqwqwq.sbs
 kkk.888.3116598
 bxtv.3a.ink
-
-# ========== 结果中的私人服务器关键词 ==========
-guangyuan
-xiongnas
-maomizi
-youngx
-vv5678
-scanflove
-rongrong
-hongzhijiaoyu
-yanshifen
-wmh.wmh
-xxika
-syy3
+guangyuan.site
+xiongnas.top
+maomizi.cc
+youngx.top
+vv5678.cn
+scanflove.com
+rongrong.me
+hongzhijiaoyu.net
+yanshifen.top
+wmh.wmh.ink
+xxika.net
+syy3.top
 cfss.cc
 hidns.vip
 hndt.com
-myalicdn
+myalicdn.com
 epg.pw
-antik
-cctvplus
-kwimgs
+antik.sk
+cctvplus.com
+kwimgs.com
+ansun.de5.net
+douyincdn.com
+chinacert.cftest5.cn
+jiduo.me
+mxmy.net
+cttv.vip
+
+# ========== 失效代理/私人中转 ==========
+smt.1678520.xyz
+test.946985.filegear-sg.me
+smt.858.qzz.io
+iptv8k.top
+kooca.cn
+indevs.in
+132.us.kg
 
 # ========== 组播/UDP地址 ==========
 /rtp/
@@ -126,26 +103,8 @@ kwimgs
 cctv5p.m3u8
 cctv4k.m3u8
 1905.php
-chchd
-9kds
-
-# ========== 低质量源 ==========
-chinacert.cftest5.cn
-jiduo.me
-mxmy.net
-cttv.vip
-
-# ========== 已失效订阅源 ==========
-player.cntv.cn
-xykt-fix.github.io
-iptv.catvod.com
-satellitepull.cnr.cn
-rihou.cc
-zb.xmzb.xyz
-jsnzkpg.us.ci
-yg.ygbox.de5.net
-iptv.huuc.edu.cn
-bztv.tvbus.cc
+chchd.m3u8
+9kds.com
 
 # ========== IPv6内网地址段 ==========
 [2409:8087:8:21::18]
@@ -164,37 +123,8 @@ bztv.tvbus.cc
 [2408:84e5:]
 
 # ========== 低质量流媒体协议 ==========
-
+rtmp://
 rtsp://
 p2p://
 file://
 localhost
-/test/
-/demo/
-/sample/
-/12345/
-/tmp/
-/cache/
-ansun.de5.net
-douyincdn.com
-8.138.7.223
-116.236.204.18
-111.231.6.102
-qwrt.ansun.de5.net
-
-# ========== 已失效GitHub订阅源 ==========
-raw.githubusercontent.com/imDazui
-raw.githubusercontent.com/develop202
-raw.githubusercontent.com/alienlu
-raw.githubusercontent.com/maitel2020
-raw.githubusercontent.com/zzmaze
-raw.githubusercontent.com/junge3333
-
-# ========== 临时API接口 ==========
-ilook.epg.one
-
-https://event.pull.hebtv.com/jishi/cp1.m3u8
-
-
-ha.msbot.dpdns.org
-xn--6orr3pi6g9uu.top
