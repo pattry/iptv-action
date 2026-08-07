@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url="https://raw.githubusercontent.com/pattry/iptv-action/refs/heads/main/output/epg/epg.gz"
-#EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV1.png" group-title="🕘️更新时间",2026-08-07 16:08:03
+#EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV1.png" group-title="🕘️更新时间",2026-08-07 18:17:29
 http://192.151.150.154/live/cctv1hd.m3u8
 #EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV1.png" group-title="央视",CCTV1
 http://192.151.150.154/live/cctv1hd.m3u8
@@ -827,6 +827,8 @@ http://[2409:8087:1a01:df::4061]/TVOD/88888888/224/3221225899/main.m3u8
 http://[2409:8087:1a01:df::4055]:80/TVOD/88888888/224/3221225901/main.m3u8
 #EXTINF:-1 tvg-id="澳门体育台" tvg-name="澳门体育台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/澳门体育台.png" group-title="体育",澳门体育台
 https://cdn6.cc.cd/163189/amty
+#EXTINF:-1 tvg-id="澳门体育台" tvg-name="澳门体育台" tvg-logo="https://live.fanmingming.cn/tv/澳门体育.png" group-title="体育",澳门体育台
+http://cdn6.163189.xyz/163189/amty
 #EXTINF:-1 tvg-id="redbulltv" tvg-name="redbulltv" tvg-logo="https://www.xn--rgv465a.top/tvlogo/redbulltv.png" group-title="体育",redbulltv
 https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_6660.m3u8
 #EXTINF:-1 tvg-id="redbulltv" tvg-name="redbulltv" tvg-logo="https://www.xn--rgv465a.top/tvlogo/redbulltv.png" group-title="体育",redbulltv
@@ -1379,6 +1381,10 @@ http://192.151.150.154/live/gdjjkt.m3u8
 http://www.kooca.cn:5140/%E5%B0%91%E5%84%BF%E9%A2%91%E9%81%93/%E5%98%89%E4%BD%B3%E5%8D%A1%E9%80%9A
 #EXTINF:-1 tvg-id="龙华卡通" tvg-name="龙华卡通台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/龙华卡通台.png" group-title="少儿",龙华卡通台
 https://test.946985.filegear-sg.me/proxy/1af4357b087a4014
+#EXTINF:-1 tvg-id="龙华卡通" tvg-name="龙华卡通台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/LTV8.png" group-title="少儿",龙华卡通台
+https://cdn8.163189.xyz/live/lhkt/stream.m3u8
+#EXTINF:-1 tvg-id="龙华卡通" tvg-name="龙华卡通台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/龙华卡通台.png" group-title="少儿",龙华卡通台
+http://cdn8.163189.xyz/163189/lhkt
 #EXTINF:-1 tvg-id="NICKELODEON" tvg-name="NICKELODEON" tvg-logo="https://www.xn--rgv465a.top/tvlogo/NICKELODEON.png" group-title="少儿",NICKELODEON
 http://4gtv.cnlive.club/channel/51bbda39/index.m3u8?q=1782639885837
 #EXTINF:-1 tvg-id="NICKELODEON" tvg-name="NICKELODEON" tvg-logo="https://www.xn--rgv465a.top/tvlogo/NICKELODEON.png" group-title="少儿",NICKELODEON
@@ -1995,18 +2001,46 @@ https://smt.1678520.xyz/163189/lxsd
 https://smt.1678520.xyz/163189/6963a2247128286b
 #EXTINF:-1 tvg-id="龙祥时代" tvg-name="龙祥时代" tvg-logo="https://www.xn--rgv465a.top/tvlogo/龙祥时代.png" group-title="港澳台",龙祥时代
 https://test.946985.filegear-sg.me/proxy/005cf3860426d8bf
+#EXTINF:-1 tvg-id="龙华偶像" tvg-name="龙华偶像" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/LTV6.png" group-title="港澳台",龙华偶像
+https://cdn8.163189.xyz/live/lhox/stream.m3u8
+#EXTINF:-1 tvg-id="龙华偶像" tvg-name="龙华偶像" tvg-logo="https://www.xn--rgv465a.top/tvlogo/龙华偶像.png" group-title="港澳台",龙华偶像
+http://cdn8.163189.xyz/163189/lhox
 #EXTINF:-1 tvg-id="龙华戏剧" tvg-name="龙华戏剧" tvg-logo="https://www.xn--rgv465a.top/tvlogo/龙华戏剧.png" group-title="港澳台",龙华戏剧
 https://test.946985.filegear-sg.me/proxy/0cd15ef7dac65487
+#EXTINF:-1 tvg-id="龙华戏剧" tvg-name="龙华戏剧" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/LTV4.png" group-title="港澳台",龙华戏剧
+https://cdn8.163189.xyz/live/lhxj/stream.m3u8
+#EXTINF:-1 tvg-id="龙华戏剧" tvg-name="龙华戏剧" tvg-logo="https://www.xn--rgv465a.top/tvlogo/龙华戏剧.png" group-title="港澳台",龙华戏剧
+http://cdn8.163189.xyz/163189/lhxj
 #EXTINF:-1 tvg-id="龙华日韩" tvg-name="龙华日韩" tvg-logo="https://www.xn--rgv465a.top/tvlogo/龙华日韩.png" group-title="港澳台",龙华日韩
 https://test.946985.filegear-sg.me/proxy/e22b032d5a9990af
+#EXTINF:-1 tvg-id="龙华日韩" tvg-name="龙华日韩" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/LTV5.png" group-title="港澳台",龙华日韩
+https://cdn8.163189.xyz/live/lhrh/stream.m3u8
+#EXTINF:-1 tvg-id="龙华日韩" tvg-name="龙华日韩" tvg-logo="https://www.xn--rgv465a.top/tvlogo/龙华日韩.png" group-title="港澳台",龙华日韩
+http://cdn8.163189.xyz/163189/lhrh
 #EXTINF:-1 tvg-id="龙华电影" tvg-name="龙华电影" tvg-logo="https://www.xn--rgv465a.top/tvlogo/龙华电影.png" group-title="港澳台",龙华电影
 https://test.946985.filegear-sg.me/proxy/3e25c26d79d21d2d
+#EXTINF:-1 tvg-id="龙华电影" tvg-name="龙华电影" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/LTV1.png" group-title="港澳台",龙华电影
+https://cdn8.163189.xyz/live/lhdy/stream.m3u8
+#EXTINF:-1 tvg-id="龙华电影" tvg-name="龙华电影" tvg-logo="https://www.xn--rgv465a.top/tvlogo/龙华电影.png" group-title="港澳台",龙华电影
+http://cdn8.163189.xyz/163189/lhdy
 #EXTINF:-1 tvg-id="龙华洋片" tvg-name="龙华洋片" tvg-logo="https://www.xn--rgv465a.top/tvlogo/龙华洋片.png" group-title="港澳台",龙华洋片
 https://test.946985.filegear-sg.me/proxy/fef9924d15fe3615
+#EXTINF:-1 tvg-id="龙华洋片" tvg-name="龙华洋片" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/LTV2.png" group-title="港澳台",龙华洋片
+https://cdn8.163189.xyz/live/lhyp/stream.m3u8
+#EXTINF:-1 tvg-id="龙华洋片" tvg-name="龙华洋片" tvg-logo="https://www.xn--rgv465a.top/tvlogo/龙华洋片.png" group-title="港澳台",龙华洋片
+http://cdn8.163189.xyz/163189/lhyp
 #EXTINF:-1 tvg-id="龙华卡通" tvg-name="龙华卡通" tvg-logo="https://www.xn--rgv465a.top/tvlogo/龙华卡通.png" group-title="港澳台",龙华卡通
 https://test.946985.filegear-sg.me/proxy/1af4357b087a4014
+#EXTINF:-1 tvg-id="龙华卡通" tvg-name="龙华卡通" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/LTV8.png" group-title="港澳台",龙华卡通
+https://cdn8.163189.xyz/live/lhkt/stream.m3u8
+#EXTINF:-1 tvg-id="龙华卡通" tvg-name="龙华卡通" tvg-logo="https://www.xn--rgv465a.top/tvlogo/龙华卡通.png" group-title="港澳台",龙华卡通
+http://cdn8.163189.xyz/163189/lhkt
 #EXTINF:-1 tvg-id="龙华经典" tvg-name="龙华经典" tvg-logo="https://www.xn--rgv465a.top/tvlogo/龙华经典.png" group-title="港澳台",龙华经典
 https://test.946985.filegear-sg.me/proxy/496083282139729f
+#EXTINF:-1 tvg-id="龙华经典" tvg-name="龙华经典" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/LTV7.png" group-title="港澳台",龙华经典
+https://cdn8.163189.xyz/live/lhjd/stream.m3u8
+#EXTINF:-1 tvg-id="龙华经典" tvg-name="龙华经典" tvg-logo="https://www.xn--rgv465a.top/tvlogo/龙华经典.png" group-title="港澳台",龙华经典
+http://cdn8.163189.xyz/163189/lhjd
 #EXTINF:-1 tvg-id="三立综合台" tvg-name="三立综合台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/三立综合台.png" group-title="港澳台",三立综合台
 http://4gtv.cnlive.club/channel/45c7d3e3/index.m3u8?q=1782639885837
 #EXTINF:-1 tvg-id="三立台湾台" tvg-name="三立台湾台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/三立台湾台.png" group-title="港澳台",三立台湾台
