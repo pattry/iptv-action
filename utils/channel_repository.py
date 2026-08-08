@@ -549,7 +549,9 @@ def sync_channel_snapshot(
                         channel_key, result_key, url, origin, first_seen_at,
                         last_seen_at, last_run_id, seen_count
                     ) VALUES (?, ?, ?, ?, ?, ?, ?, 1)
-                    ON CONFLICT(channel_key, result_key) DO UPDATE SET
+                    ON CONFLICT(channel_key, result_key
+
+   UPDATE SET
                         url=excluded.url,
                         origin=excluded.origin,
                         last_seen_at=excluded.last_seen_at,
@@ -798,7 +800,727 @@ def prune_stream_screenshots(
                 )
             conn.commit()
                finally:
+            return_db_connection(db_path, conn)
 
+    referenced = {
+        filename
+        for result_key, filename in stored_rows
+        if result_key in active_keys and filename
+    }
+    removed = 0
+    temporary = 0
+    for filename in os.listdir(screenshot_dir):
+        path = os.path.join(screenshot_dir, filename)
+        if not os.path.isfile(path):
+            continue
+        is_temporary = filename.startswith(".")
+        if is_temporary or filename not in referenced:
+            try:
+                os.unlink(path)
+                removed += 1
+                temporary += int(is_temporary)
+            except OSError:
+                pass
+    return {
+        "records": len(orphan_rows),
+        "files": removed,
+        "temporary_files": temporary,
+    }
+
+
+def list_streamable_results(db_path: str) -> list[dict[str, Any]]:
+    ensure_channel_repository(db_path)
+    conn = get_db_connection(db_path)
+    conn.row_factory = sqlite3.Row
+    try:
+        rows = conn.execute(
+            """
+            SELECT c.channel_key, c.category, c.name AS channel_name,
+                   r.result_key, r.url, r.selected_rank, r.speed, r.delay,
+                   r.resolution, r.video_codec, r.audio_codec
+            FROM channel_results r
+            JOIN channels c ON c.channel_key=r.channel_key
+            WHERE r.selected_rank IS NOT NULL
+              AND r.url IS NOT NULL
+              AND r.url != ''
+            ORDER BY c.category, c.name, r.selected_rank
+            """
+        ).fetchall()
+        return [dict(row) for row in rows]
+    finally:
+        return_db_connection(db_path, conn)
+
+
+def get_channel(db_path: str, channel_key: str) -> dict[str, Any] | None:
+    ensure_channel_repository(db_path)
+    conn = get_db_connection(db_path)
+    conn.row_factory = sqlite3.Row
+    try:
+        row = conn.execute("SELECT * FROM channels WHERE channel_key=?", (channel_key,)).fetchone()
+        return dict(row) if row else None
+    finally:
+        return_db_connection(db_path, conn)
+
+
+def upsert_manual_channel(db_path: str, category: str, name: str) -> str:
+    ensure_channel_repository(db_path)
+    channel_key = stable_channel_id(category, name)
+    conn = get_db_connection(db_path)
+    try:
+        conn.execute(
+            """
+            INSERT INTO channels(
+                channel_key, category, name, total_results, valid_results, selected_results,
+                health, updated_at
+            ) VALUES (?, ?, ?, 0, 0, 0, 'unknown', ?)
+            ON CONFLICT(channel_key) DO UPDATE SET
+                category=excluded.category, name=excluded.name, updated_at=excluded.updated_at
+            """,
+            (channel_key, category, name, time.time()),
+        )
+        conn.commit()
+    finally:
+        return_db_connection(db_path, conn)
+    return channel_key
+
+
+def delete_channel_records(db_path: str, channel_keys: list[str]) -> int:
+    keys = [key for key in channel_keys if key]
+    if not keys:
+        return 0
+    ensure_channel_repository(db_path)
+    placeholders = ",".join("?" for _ in keys)
+    conn = get_db_connection(db_path)
+    try:
+        conn.execute("PRAGMA foreign_keys=ON")
+        result_placeholders = ",".join("?" for _ in keys)
+        result_keys = [
+            row[0]
+            for row in conn.execute(
+                f"SELECT result_key FROM channel_results WHERE channel_key IN ({result_placeholders})",
+                keys,
+            )
+        ]
+        cursor = conn.execute(f"DELETE FROM channels WHERE channel_key IN ({placeholders})", keys)
+        if result_keys:
+            result_key_placeholders = ",".join("?" for _ in result_keys)
+            remaining = {
+                row[0]
+                for row in conn.execute(
+                    f"SELECT DISTINCT result_key FROM channel_results WHERE result_key IN ({result_key_placeholders})",
+                    result_keys,
+                )
+            }
+            orphaned = [key for key in result_keys if key not in remaining]
+            if orphaned:
+                orphan_placeholders = ",".join("?" for _ in orphaned)
+                conn.execute(
+                    f"DELETE FROM stream_samples WHERE result_key IN ({orphan_placeholders})",
+                    orphaned,
+                )
+                conn.execute(
+                    f"DELETE FROM stream_screenshots WHERE result_key IN ({orphan_placeholders})",
+                    orphaned,
+                )
+        conn.commit()
+        return cursor.rowcount
+    finally:
+        return_db_connection(db_path, conn)
+
+
+def delete_channel_results(
+    db_path: str,
+    channel_key: str,
+    result_keys: list[str],
+) -> list[str]:
+    keys = list(dict.fromkeys(str(key) for key in result_keys if key))
+    if not channel_key or not keys:
+        return []
+    ensure_channel_repository(db_path)
+    placeholders = ",".join("?" for _ in keys)
+    with _LOCK:
+        conn = get_db_connection(db_path)
+        try:
+            conn.execute("BEGIN IMMEDIATE")
+            existing = [
+                row[0]
+                for row in conn.execute(
+                    f"""
+                    SELECT result_key
+                    FROM channel_results
+                    WHERE channel_key=? AND result_key IN ({placeholders})
+                    """,
+                    [channel_key, *keys],
+                )
+            ]
+            if not existing:
+                conn.commit()
+                return []
+            key_placeholders = ",".join("?" for _ in existing)
+            conn.execute(
+                f"""
+                DELETE FROM channel_results
+                WHERE channel_key=? AND result_key IN ({key_placeholders})
+                """,
+                [channel_key, *existing],
+            )
+            remaining = {
+                row[0]
+                for row in conn.execute(
+                    f"SELECT DISTINCT result_key FROM channel_results WHERE result_key IN ({key_placeholders})",
+                    existing,
+                )
+            }
+            orphaned = [key for key in existing if key not in remaining]
+            if orphaned:
+                orphan_placeholders = ",".join("?" for _ in orphaned)
+                conn.execute(
+                    f"DELETE FROM stream_samples WHERE result_key IN ({orphan_placeholders})",
+                    orphaned,
+                )
+                conn.execute(
+                    f"DELETE FROM stream_screenshots WHERE result_key IN ({orphan_placeholders})",
+                    orphaned,
+                )
+            _refresh_channel_summary(conn, channel_key)
+            conn.commit()
+            return existing
+        except Exception:
+            conn.rollback()
+            raise
+        finally:
+            return_db_connection(db_path, conn)
+
+
+def add_manual_result(db_path: str, channel_key: str, url: str) -> str:
+    ensure_channel_repository(db_path)
+    result_key = stable_result_id(url, None)
+    host = urlparse(url).hostname
+    now = time.time()
+    conn = get_db_connection(db_path)
+    try:
+        conn.execute(
+               """
+            INSERT INTO channel_results(
+                channel_key, result_key, url, host, origin, supply, valid,
+                selected_rank, tested_at, last_seen_at, extra_data
+            ) VALUES (?, ?, ?, ?, 'local', 0, 0, NULL, NULL, ?, '{}')
+            ON CONFLICT(channel_key, result_key) DO UPDATE SET
+                url=excluded.url, host=excluded.host, origin='local', last_seen_at=excluded.last_seen_at
+            """,
+            (channel_key, result_key, url, host, now),
+        )
+        conn.execute(
+            """
+            UPDATE channels SET
+                total_results=(SELECT COUNT(*) FROM channel_results WHERE channel_key=?),
+                updated_at=? WHERE channel_key=?
+            """,
+            (channel_key, now, channel_key),
+        )
+        conn.commit()
+    finally:
+        return_db_connection(db_path, conn)
+    return result_key
+
+
+def list_result_urls_by_channel(db_path: str) -> dict[str, list[str]]:
+    ensure_channel_repository(db_path)
+    conn = get_db_connection(db_path)
+    try:
+        rows = conn.execute("SELECT channel_key, url FROM channel_results").fetchall()
+        result: dict[str, list[str]] = {}
+        for channel_key, url in rows:
+            result.setdefault(channel_key, []).append(url)
+        return result
+    finally:
+        return_db_connection(db_path, conn)
+
+
+def set_channel_logo(db_path: str, channel_key: str, logo: str) -> None:
+    ensure_channel_repository(db_path)
+    conn = get_db_connection(db_path)
+    try:
+        conn.execute("UPDATE channels SET logo=?, updated_at=? WHERE channel_key=?", (logo.strip(), time.time(), channel_key))
+        conn.commit()
+    finally:
+        return_db_connection(db_path, conn)
+
+
+def update_result_measurement(db_path: str, channel_key: str, result_key: str, measurement: dict) -> None:
+    ensure_channel_repository(db_path)
+    test_status = measurement.get("test_status")
+    failed_statuses = {"timeout", "request_error", "probe_error", "cancelled", "unreachable"}
+    stale_measurement = test_status in failed_statuses or measurement.get("delay") in {-1, None}
+    measurement_valid = _is_valid(measurement) and not stale_measurement
+    values = (
+        None if stale_measurement else measurement.get("speed"),
+        None if stale_measurement else measurement.get("delay"),
+        None if stale_measurement else measurement.get("resolution"),
+        None if stale_measurement else measurement.get("fps"),
+        None if stale_measurement else measurement.get("video_codec"),
+        None if stale_measurement else measurement.get("audio_codec"),
+        int(measurement_valid),
+        test_status or ("valid" if measurement_valid else "invalid"),
+        measurement.get("error_type"),
+        time.time(),
+        channel_key,
+        result_key,
+    )
+    with _LOCK:
+        conn = get_db_connection(db_path)
+        try:
+            conn.execute(
+                """
+                UPDATE channel_results SET
+                    speed=?, delay=?, resolution=?, fps=?, video_codec=?, audio_codec=?,
+                    valid=?, test_status=?, error_type=?, tested_at=?
+                    WHERE channel_key=? AND result_key=?
+                """,
+                values,
+            )
+            latest_run = conn.execute(
+                "SELECT run_id FROM runs ORDER BY started_at DESC LIMIT 1"
+            ).fetchone()
+            if latest_run:
+                conn.execute(
+                    """
+                    INSERT OR REPLACE INTO candidate_measurements(
+                        run_id, channel_key, result_key, speed, delay, resolution,
+                        fps, video_codec, audio_codec, valid, test_status, error_type,
+                        tested_at, measured_at
+                    )
+                    SELECT ?, channel_key, result_key, speed, delay, resolution,
+                           fps, video_codec, audio_codec, valid, test_status, error_type,
+                           tested_at, ?
+                    FROM channel_results
+                    WHERE channel_key=? AND result_key=?
+                    """,
+                    (latest_run[0], time.time(), channel_key, result_key),
+                )
+            conn.commit()
+        finally:
+            return_db_connection(db_path, conn)
+
+
+def set_channel_selection(
+    db_path: str,
+    channel_key: str,
+    selected: list[dict],
+    mode: str = "manual",
+) -> None:
+    ensure_channel_repository(db_path)
+    selected = selected[: config.output_urls_limit]
+    selected_ranks = {
+        stable_result_id(item.get("url", ""), item.get("headers")): rank
+        for rank, item in enumerate(selected, start=1)
+        if item.get("url")
+    }
+    with _LOCK:
+        conn = get_db_connection(db_path)
+        try:
+            conn.execute("BEGIN IMMEDIATE")
+            conn.execute("UPDATE channel_results SET selected_rank=NULL WHERE channel_key=?", (channel_key,))
+            conn.executemany(
+                "UPDATE channel_results SET selected_rank=? WHERE channel_key=? AND result_key=?",
+                [(rank, channel_key, result_key) for result_key, rank in selected_ranks.items()],
+            )
+            conn.execute("DELETE FROM channel_selection WHERE channel_key=?", (channel_key,))
+            if mode == "manual":
+                conn.executemany(
+                    """
+                    INSERT INTO channel_selection(
+                        channel_key, result_key, selection_rank,
+                        selection_state, pinned, updated_at
+                    ) VALUES (?, ?, ?, 'included', 0, ?)
+                    """,
+                    [
+                        (channel_key, result_key, rank, time.time())
+                        for result_key, rank in selected_ranks.items()
+                    ],
+                )
+            conn.execute(
+                "UPDATE channels SET selection_mode=? WHERE channel_key=?",
+                ("manual" if mode == "manual" else "auto", channel_key),
+            )
+            rows = conn.execute(
+                "SELECT speed, delay, resolution, valid FROM channel_results WHERE channel_key=?",
+                (channel_key,),
+            ).fetchall()
+            valid_rows = [row for row in rows if row[3]]
+            speeds = [row[0] for row in valid_rows if isinstance(row[0], (int, float)) and not math.isinf(row[0])]
+            delays = [row[1] for row in valid_rows if isinstance(row[1], (int, float)) and row[1] >= 0]
+            resolutions = [row[2] for row in valid_rows if row[2]]
+            health = "healthy" if len(valid_rows) >= 2 else "warning" if valid_rows else "offline"
+            conn.execute(
+                """
+                UPDATE channels SET valid_results=?, selected_results=?, best_speed=?, min_delay=?,
+                    max_resolution=?, health=?, updated_at=? WHERE channel_key=?
+                """,
+                (
+                    len(valid_rows),
+                    len(selected_ranks),
+                    max(speeds, default=None),
+                    min(delays, default=None),
+                    max(resolutions, key=_resolution_value, default=None),
+                    health,
+                    time.time(),
+                    channel_key,
+                ),
+            )
+            conn.commit()
+        except Exception:
+            conn.rollback()
+            raise
+        finally:
+            return_db_connection(db_path, conn)
+
+
+def _auto_selection_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Order measured candidates using the configured automatic policy."""
+    dimensions = list(config.sort_by)
+
+    def number(value, default):
+        try:
+            value = float(value)
+            return value if math.isfinite(value) else default
+        except (TypeError, ValueError):
+            return default
+
+    def key(row):
+        # Whitelist/HLS entries are intentionally retained and should remain
+        # ahead of ordinary probe results, matching the export sorter.
+        retained = 0 if row.get("origin") in {"whitelist", "hls"} else 1
+        values = []
+        for dimension in dimensions:
+            if dimension == "speed":
+                values.append(-number(row.get("speed"), -math.inf))
+            elif dimension == "delay":
+                values.append(number(row.get("delay"), math.inf))
+            else:
+                values.append(-_resolution_value(row.get("resolution")))
+        return retained, *values, str(row.get("result_key") or "")
+               else:
+                values.append(-_resolution_value(row.get("resolution")))
+        return retained, *values, str(row.get("result_key") or "")
+
+    return sorted(
+        [row for row in rows if _is_measured_valid(row)],
+        key=key,
+    )
+
+
+def reset_channel_selection(db_path: str, channel_key: str) -> None:
+    """Clear manual preferences and immediately recompute automatic output."""
+    ensure_channel_repository(db_path)
+    with _LOCK:
+        conn = get_db_connection(db_path)
+        try:
+            conn.execute("DELETE FROM channel_selection WHERE channel_key=?", (channel_key,))
+            conn.execute(
+                "UPDATE channels SET selection_mode='auto', updated_at=? WHERE channel_key=?",
+                (time.time(), channel_key),
+            )
+            conn.commit()
+        finally:
+            return_db_connection(db_path, conn)
+    rows = list_channel_results(db_path, channel_key)
+    set_channel_selection(db_path, channel_key, _auto_selection_rows(rows), mode="auto")
+
+
+def auto_select_channel(db_path: str, channel_key: str) -> list[dict[str, Any]]:
+    """Recompute and persist automatic output selection for one channel."""
+    rows = list_channel_results(db_path, channel_key)
+    selected = _auto_selection_rows(rows)[: config.output_urls_limit]
+    set_channel_selection(db_path, channel_key, selected, mode="auto")
+    return selected
+
+
+def _load_manual_selections(db_path: str) -> dict[str, list[str]]:
+    ensure_channel_repository(db_path)
+    conn = get_db_connection(db_path)
+    try:
+        rows = conn.execute(
+            """
+            SELECT c.channel_key, s.result_key
+            FROM channels c
+            LEFT JOIN channel_selection s ON s.channel_key=c.channel_key
+            WHERE c.selection_mode='manual'
+            ORDER BY c.channel_key, s.selection_rank IS NULL, s.selection_rank
+            """
+        ).fetchall()
+        result: dict[str, list[str]] = {}
+        for channel_key, result_key in rows:
+            result.setdefault(channel_key, [])
+            if result_key:
+                result[channel_key].append(result_key)
+        return result
+    finally:
+        return_db_connection(db_path, conn)
+
+
+def load_selected_snapshot(db_path: str) -> dict:
+    ensure_channel_repository(db_path)
+    conn = get_db_connection(db_path)
+    conn.row_factory = sqlite3.Row
+    try:
+        result = {}
+        channels = conn.execute("SELECT category, name FROM channels ORDER BY category, name").fetchall()
+        for channel in channels:
+            result.setdefault(channel["category"], {}).setdefault(channel["name"], [])
+        rows = conn.execute(
+            """
+            SELECT c.category, c.name, r.* FROM channel_results r
+            JOIN channels c ON c.channel_key=r.channel_key
+            WHERE r.selected_rank IS NOT NULL
+            ORDER BY c.category, c.name, r.selected_rank
+            """
+        ).fetchall()
+        for raw in rows:
+            row = dict(raw)
+            row["id"] = row["result_key"]
+            row["headers"] = json.loads(row["headers"]) if row.get("headers") else None
+            row.update(json.loads(row["extra_data"]) if row.get("extra_data") else {})
+            result.setdefault(row["category"], {}).setdefault(row["name"], []).append(row)
+        return result
+    finally:
+        return_db_connection(db_path, conn)
+
+
+def list_output_snapshot(db_path: str, run_id: str) -> list[dict[str, Any]]:
+    ensure_channel_repository(db_path)
+    conn = get_db_connection(db_path)
+    conn.row_factory = sqlite3.Row
+    try:
+        rows = conn.execute(
+            """
+            SELECT s.*, c.category, c.name
+            FROM output_snapshots s
+            JOIN channels c ON c.channel_key=s.channel_key
+            WHERE s.run_id=?
+            ORDER BY c.category, c.name, s.output_rank
+            """,
+            (run_id,),
+        ).fetchall()
+        return [dict(row) for row in rows]
+    finally:
+        return_db_connection(db_path, conn)
+
+
+def list_candidate_history(
+    db_path: str,
+    channel_key: str | None = None,
+    result_key: str | None = None,
+    limit: int = 1000,
+) -> list[dict[str, Any]]:
+    """Return discovered candidates recorded for completed collection runs."""
+    ensure_channel_repository(db_path)
+    conn = get_db_connection(db_path)
+    conn.row_factory = sqlite3.Row
+    try:
+        clauses = []
+        params: list[Any] = []
+        if channel_key:
+            clauses.append("h.channel_key=?")
+            params.append(channel_key)
+        if result_key:
+            clauses.append("h.result_key=?")
+            params.append(result_key)
+        where = f"WHERE {' AND '.join(clauses)}" if clauses else ""
+        params.append(max(1, int(limit)))
+        rows = conn.execute(
+            f"""
+            SELECT h.*, r.started_at, r.finished_at, r.status AS run_status
+            FROM candidate_history h
+            LEFT JOIN runs r ON r.run_id=h.run_id
+            {where}
+            ORDER BY h.last_seen_at DESC
+            LIMIT ?
+            """,
+            params,
+        ).fetchall()
+        return [dict(row) for row in rows]
+    finally:
+        return_db_connection(db_path, conn)
+
+
+def list_candidate_pool(
+    db_path: str,
+    channel_key: str | None = None,
+    include_stale: bool = True,
+    limit: int = 1000,
+) -> list[dict[str, Any]]:
+    """List the stable, deduplicated candidate pool across collection runs."""
+    ensure_channel_repository(db_path)
+    conn = get_db_connection(db_path)
+    conn.row_factory = sqlite3.Row
+    try:
+        clauses = []
+        params: list[Any] = []
+        if channel_key:
+            clauses.append("p.channel_key=?")
+            params.append(channel_key)
+        if not include_stale:
+            clauses.append(
+                "p.last_seen_at >= COALESCE((SELECT started_at FROM runs WHERE run_id=p.last_run_id), 0)"
+            )
+        where = f"WHERE {' AND '.join(clauses)}" if clauses else ""
+        params.append(max(1, int(limit)))
+        rows = conn.execute(
+            f"SELECT p.* FROM candidate_pool p {where} ORDER BY p.last_seen_at DESC LIMIT ?",
+            params,
+        ).fetchall()
+        return [dict(row) for row in rows]
+    finally:
+        return_db_connection(db_path, conn)
+
+
+def list_candidate_measurements(
+    db_path: str,
+    channel_key: str | None = None,
+    result_key: str | None = None,
+    limit: int = 1000,
+) -> list[dict[str, Any]]:
+    """Return per-run measurement snapshots for candidate quality history."""
+    ensure_channel_repository(db_path)
+    conn = get_db_connection(db_path)
+    conn.row_factory = sqlite3.Row
+    try:
+        clauses = []
+        params: list[Any] = []
+        if channel_key:
+            clauses.append("m.channel_key=?")
+            params.append(channel_key)
+        if result_key:
+            clauses.append("m.result_key=?")
+            params.append(result_key)
+        where = f"WHERE {' AND '.join(clauses)}" if clauses else ""
+        params.append(max(1, int(limit)))
+        rows = conn.execute(
+            f"""
+            SELECT m.*, r.started_at, r.finished_at, r.status AS run_status
+            FROM candidate_measurements m
+            LEFT JOIN runs r ON r.run_id=m.run_id
+            {where}
+            ORDER BY m.measured_at DESC
+            LIMIT ?
+            """,
+            params,
+             ).fetchall()
+        return [dict(row) for row in rows]
+    finally:
+        return_db_connection(db_path, conn)
+
+
+def begin_operation(db_path: str, operation: str, target_type: str, target_key: str | None) -> str:
+    ensure_channel_repository(db_path)
+    operation_id = uuid.uuid4().hex
+    conn = get_db_connection(db_path)
+    try:
+        conn.execute(
+            """
+            INSERT INTO operation_history(operation_id, operation, target_type, target_key, started_at, status)
+            VALUES (?, ?, ?, ?, ?, 'running')
+            """,
+            (operation_id, operation, target_type, target_key, time.time()),
+        )
+        conn.commit()
+    finally:
+        return_db_connection(db_path, conn)
+    return operation_id
+
+
+def finish_operation(db_path: str, operation_id: str, status: str, message: str = "") -> None:
+    ensure_channel_repository(db_path)
+    conn = get_db_connection(db_path)
+    try:
+        conn.execute(
+            "UPDATE operation_history SET finished_at=?, status=?, message=? WHERE operation_id=?",
+            (time.time(), status, message, operation_id),
+        )
+        conn.commit()
+    finally:
+        return_db_connection(db_path, conn)
+
+
+def list_operations(db_path: str, limit: int = 200) -> list[dict[str, Any]]:
+    ensure_channel_repository(db_path)
+    conn = get_db_connection(db_path)
+    conn.row_factory = sqlite3.Row
+    try:
+        rows = conn.execute(
+            "SELECT * FROM operation_history ORDER BY started_at DESC LIMIT ?",
+            (max(1, int(limit)),),
+        ).fetchall()
+        return [dict(row) for row in rows]
+    finally:
+        return_db_connection(db_path, conn)
+
+
+def append_stream_samples(db_path: str, sampled_at: float, streams: list[dict]) -> None:
+    if not streams:
+        return
+    ensure_channel_repository(db_path)
+    rows = [(
+        sampled_at,
+        str(stream.get("result_key") or stream.get("name") or ""),
+        int(stream.get("clients") or 0),
+        float(stream.get("bw_in") or 0),
+        float(stream.get("bw_out") or 0),
+        int(stream.get("bytes_in") or 0),
+        int(stream.get("bytes_out") or 0),
+        int(bool(stream.get("active"))),
+    ) for stream in streams if stream.get("result_key") or stream.get("name")]
+    conn = get_db_connection(db_path)
+    try:
+        conn.executemany(
+            """
+            INSERT OR REPLACE INTO stream_samples(
+                sampled_at, result_key, clients, bw_in, bw_out, bytes_in, bytes_out, active
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            rows,
+        )
+        conn.execute("DELETE FROM stream_samples WHERE sampled_at < ?", (sampled_at - 7 * 86400,))
+        conn.commit()
+    finally:
+        return_db_connection(db_path, conn)
+
+
+def result_metadata_map(db_path: str, result_keys: list[str]) -> dict[str, dict[str, Any]]:
+    keys = [str(key) for key in result_keys if key]
+    if not keys:
+        return {}
+    ensure_channel_repository(db_path)
+    conn = get_db_connection(db_path)
+    conn.row_factory = sqlite3.Row
+    try:
+        placeholders = ",".join("?" for _ in keys)
+        rows = conn.execute(
+            f"""
+            SELECT r.result_key, r.url, r.selected_rank, c.channel_key, c.category, c.name
+            FROM channel_results r JOIN channels c ON c.channel_key=r.channel_key
+            WHERE r.result_key IN ({placeholders})
+            """,
+            keys,
+        ).fetchall()
+        return {row["result_key"]: dict(row) for row in rows}
+    finally:
+        return_db_connection(db_path, conn)
+
+
+def list_runs(db_path: str, limit: int = 100) -> list[dict[str, Any]]:
+    ensure_channel_repository(db_path)
+    conn = get_db_connection(db_path)
+    conn.row_factory = sqlite3.Row
+    try:
+        rows = conn.execute(
+            "SELECT * FROM runs ORDER BY started_at DESC LIMIT ?",
+            (max(1, int(limit)),),
+        ).fetchall()
+        return [dict(row) for row in rows]
+    finally:
+        return_db_connection(db_path, conn)       
 
 
       
