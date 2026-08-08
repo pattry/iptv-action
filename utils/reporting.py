@@ -278,7 +278,7 @@ class Reporter:
         )
         self._progress.start()
 
-    def start_progress(self,
+    def start_progress(self, key: str, description: str, total: int, *, phase: str | None = None):
         total = max(0, int(total))
         with self._lock:
             if self._rich_console:
