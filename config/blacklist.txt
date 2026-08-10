@@ -1,4 +1,133 @@
 # 这是接口黑名单列表，符合关键字的接口将被拦截，一个关键字一行
-# This is the interface blacklist list, the interface matching the keyword will be blocked, one keyword line
+
+# ========== 音频/广播流 ==========
 /audio/
+/radio/
+/fm/
+/am/
+/music/
+/sound/
+
+# ========== 不稳定的免费域名 ==========
+t.freetv.fun
+freetv.fun
+dd.ddzb.fun
+live.666666.zip
+live.264788.xyz
+zby.130519.xyz
+0000505.xyz
+3501776.xyz
+x1x.bid
+
+# ========== 移动/联通/电信内网 ==========
+ottrrs.hl.chinamobile.com
+hwrr.jx.chinamobile.com
+dbiptv.sn.chinamobile.com
+otttv.bj.chinamobile.com
+chinamobile.com/PLTV
+gmcc.net
+
+# ========== 咪咕视频 ==========
+hlszymgsplive.miguvideo.com
+gslbmgsplive.miguvideo.com
+miguvideo.com
+migucloud.com
+migucdn.com
+
+# ========== 内网IP段 ==========
+192.168.
+10.
+172.16.
+127.0.
+
+# ========== 私人/临时服务器 ==========
+php.jdshipin.com
+bak.dou.ddns-ip.net
+free.cnlive.club
+www.freetv.top
+smart.pendy.dpdns.org
+emby.xlangnan.cn
+czkeji.vip
+www.huijie5421.cn
+wangfei.uno
+www.andy-nas.top
+vpstv.net
+nas.hssvm.com
+ott.mobaibox.com
+webmail.axxe.top
+alvin.ergotron.net
+lu.wqwqwq.sbs
+kkk.888.3116598
 bxtv.3a.ink
+guangyuan.site
+xiongnas.top
+maomizi.cc
+youngx.top
+vv5678.cn
+scanflove.com
+rongrong.me
+hongzhijiaoyu.net
+yanshifen.top
+wmh.wmh.ink
+xxika.net
+syy3.top
+cfss.cc
+hidns.vip
+hndt.com
+myalicdn.com
+epg.pw
+antik.sk
+cctvplus.com
+kwimgs.com
+ansun.de5.net
+douyincdn.com
+chinacert.cftest5.cn
+jiduo.me
+mxmy.net
+cttv.vip
+
+# ========== 失效代理/私人中转 ==========
+smt.1678520.xyz
+test.946985.filegear-sg.me
+smt.858.qzz.io
+iptv8k.top
+kooca.cn
+indevs.in
+132.us.kg
+
+# ========== 组播/UDP地址 ==========
+/rtp/
+/udp/
+
+# ========== 频道错配的源 ==========
+cctv5p.m3u8
+cctv4k.m3u8
+1905.php
+chchd.m3u8
+9kds.com
+
+# ========== IPv6内网地址段 ==========
+[2409:8087:8:21::18]
+[2409:8087:2001:20:2800:0:df6e:eb22]
+[2409:8087:2001:20:2800:0:df6e:eb21]
+[2409:8087:2001:20:2800:0:df6e:eb18]
+[2409:8087:3869:8021:1001::e5]
+[2409:8087:4c0a:22:1::11]
+[2409:8087:5e00:24::1e]
+[2409:8087:5e00:24::1f]
+[2409:8087:5e01:34::22]
+[2409:8087:]
+[2409:8014:]
+[2409:8a00:]
+[2408:84e3:]
+[2408:84e5:]
+
+# ========== 低质量流媒体协议 ==========
+
+
+p2p://
+file://
+localhost
+
+smt.1678520.xyz/163189/dsdy
+test.946985.filegear-sg.me/proxy/
