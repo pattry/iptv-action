@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html class="html-devise-layout gl-system" lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<title>登录 · 极狐GitLab</title>
+<link as="font" crossorigin="" href="/assets/gitlab-sans/GitLabSans-9892dc17af892e03de41625c0ee325117a3b8ee4ba6005f3a3eac68510030aed.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-sans/GitLabSans-Italic-f96f17332d67b21ada2dfba5f0c0e1d5801eab99330472057bf18edd93d4ccf7.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-mono/GitLabMono-29c2152dac8739499dd0fe5cd37a486ebcc7d4798c9b6d3aeab65b3172375b05.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-mono/GitLabMono-Italic-af36701a2188df32a9dcea12e0424c380019698d4f76da9ad8ea2fd59432cf83.woff2" rel="preload">
+
+<script nonce="6TZ8Or9m7tEJxHAAXqRMrg==">
+//<![CDATA[
+window.gon={};gon.features={"twoStepSignIn":false};
+//]]>
+</script>
+
+<script nonce="6TZ8Or9m7tEJxHAAXqRMrg==">
+//<![CDATA[
+const root = document.documentElement;
+if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  root.classList.add('gl-dark');
+}
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+  if (e.matches) {
+    root.classList.add('gl-dark');
+  } else {
+    root.classList.remove('gl-dark');
+  }
+});
+
+//]]>
+</script>
+
+
+
+
+<meta content="light dark" name="color-scheme">
+<link rel="stylesheet" href="/assets/application-08c5d61b3920f567915bf8d8bdd857bd976ded4730082d09f3abe76b76b5d07a.css" media="(prefers-color-scheme: light)" />
+<link rel="stylesheet" href="/assets/application_dark-ecb520db24f5cfb8ae5d0fc5d34e78510ef4683866f1527ffb866f5c6d04d7fb.css" media="(prefers-color-scheme: dark)" />
+<link rel="stylesheet" href="/assets/page_bundles/signin-173383fca478860a1dcf136348e9f38491ceaeb0a8c5ed5c3eed8f589395ceba.css" /><link rel="stylesheet" href="/assets/page_bundles/login-7240ec00cf3969b710fe5e8959f8ef8eeff66d635ded28839b1b4256ae8d96a3.css" /><link rel="stylesheet" href="/assets/page_bundles/commit_description-9e7efe20f0cef17d0606edabfad0418e9eb224aaeaa2dae32c817060fa60abcc.css" /><link rel="stylesheet" href="/assets/page_bundles/work_items-b00d538e477d2bc4cb785ad795de3920b73d4870f4b5289a5d60fb15e25eb5cf.css" /><link rel="stylesheet" href="/assets/page_bundles/notes_shared-c9b57d9276475765933235e17bca90b09602a2cced07e212f2e2eb086555758e.css" />
+<link rel="stylesheet" href="/assets/tailwind-4618f7b74eb4c1f92d7e14144a76c8eedeef23f57370e964098b2675dd00c957.css" />
+
+
+<link rel="stylesheet" href="/assets/fonts-deb7ad1d55ca77c0172d8538d53442af63604ff490c74acc2859db295c125bdb.css" />
+<link rel="stylesheet" href="/assets/highlight/themes/white-c3211f67c1e8d8cfb47de179b2da35275ab7865cdf299ab44b4a8cc52d5cafd3.css" media="(prefers-color-scheme: light)" />
+<link rel="stylesheet" href="/assets/highlight/themes/dark-8cae80594d7953b52bc449bf1b4f2de402c87cc39fffc7aa0187b5f881c0cfd7.css" media="(prefers-color-scheme: dark)" />
+
+<script src="/assets/webpack/runtime.61e7acb6.bundle.js" defer="defer" nonce="6TZ8Or9m7tEJxHAAXqRMrg=="></script>
+<script src="/assets/webpack/main.fd102f59.chunk.js" defer="defer" nonce="6TZ8Or9m7tEJxHAAXqRMrg=="></script>
+<script src="/assets/webpack/tracker.eea7cc16.chunk.js" defer="defer" nonce="6TZ8Or9m7tEJxHAAXqRMrg=="></script>
+<script nonce="6TZ8Or9m7tEJxHAAXqRMrg==">
+//<![CDATA[
+window.snowplowOptions = {"namespace":"gl","hostname":"jihulab.com:443","postPath":"/-/collect_events","forceSecureTracker":true,"appId":"gitlab_sm"};
+gl = window.gl || {};
+gl.snowplowStandardContext = {"schema":"iglu:com.gitlab/gitlab_standard/jsonschema/1-1-8","data":{"environment":"production","source":"gitlab-rails","correlation_id":"01KZMNVW3W3C5A5SAQS38TP7HG","extra":{},"user_id":null,"global_user_id":null,"user_type":null,"is_gitlab_team_member":null,"namespace_id":null,"ultimate_parent_namespace_id":null,"project_id":null,"feature_enabled_by_namespace_ids":null,"realm":"saas","deployment_type":".com","context_generated_at":"2026-08-10T09:51:15.644+08:00","organization_id":1}};
+gl.snowplowPseudonymizedPageUrl = "https://jihulab.com/users/sign_in";
+gl.maskedDefaultReferrerUrl = null;
+gl.ga4MeasurementId = 'G-ENFH3X7M5Y';
+gl.duoEvents = ["ai_question_category","perform_completion_worker","process_gitlab_duo_question","agent_platform_session_created","agent_platform_session_dropped","agent_platform_session_finished","agent_platform_session_resumed","agent_platform_session_started","agent_platform_session_stopped","ai_response_time","approve_tool_duo_chat","cleanup_stuck_agent_platform_session","click_ai_catalog_button_duo_rail","click_dap_trial_or_paid_empty_state_agent","click_dap_trial_or_paid_empty_state_explore_agents_link","click_dap_trial_or_paid_empty_state_prompt","click_delete_ai_catalog_item_button","click_disable_ai_catalog_item_button","click_duo_agentic_not_available_empty_state_learn_more","click_duo_agentic_not_available_empty_state_start_trial","click_duo_agentic_subscription_expired_learn_more","click_duo_agentic_subscription_expired_upgrade","click_duo_agentic_trial_expired_learn_more","click_duo_agentic_trial_expired_upgrade","click_duo_quick_action","click_duplicate_ai_catalog_item_button","click_enable_ai_catalog_item_button","click_purchase_seats_button_group_duo_pro_home_page","click_through_flow_widget","click_through_session_pill","close_vulnerability_resolution_merge_request","code_suggestion_accepted_in_ide","code_suggestion_rejected_in_ide","code_suggestion_shown_in_ide","code_suggestions_connection_details_rate_limit_exceeded","code_suggestions_direct_access_rate_limit_exceeded","code_suggestions_rate_limit_exceeded","compose_merge_request_description","create_ai_catalog_item","create_ai_catalog_item_consumer","create_ai_self_hosted_model","create_vulnerability_resolution_merge_request","default_answer","delete_ai_catalog_item","delete_ai_catalog_item_consumer","delete_ai_self_hosted_model","deny_tool_duo_chat","detected_high_comment_temperature","detected_repeated_high_comment_temperature","dismiss_sast_vulnerability_false_positive_analysis","dismiss_secret_detection_vulnerability_false_positive_analysis","duo_workflow_workload_completed","encounter_duo_code_review_error_during_review","error_answer","excluded_files_from_duo_code_review","execute_llm_method","explain_vulnerability","filter_ai_fp","find_no_issues_duo_code_review_after_review","find_nothing_to_review_duo_code_review_on_mr","finish_duo_workflow_execution","finish_mcp_tool_call","fix_pipeline_suggestion_applied","fix_pipeline_suggestion_posted","forced_high_temperature_commenting","generate_merge_commit_message","i_quickactions_q","include_repository_xray_data_into_code_generation_prompt","ingest_ai_audit_events_batch","mention_gitlabduo_in_mr_comment","merge_vulnerability_resolution_merge_request","post_comment_duo_code_review_on_diff","process_gitlab_duo_slash_command","publish_duo_code_review_comments","react_thumbs_down_on_duo_code_review_comment","react_thumbs_up_on_duo_code_review_comment","recommend_tool_duo_chat","reported_sast_vulnerability_false_positive_analysis","reported_secret_detection_vulnerability_false_positive_analysis","request_ask_help","request_duo_chat_response","request_duo_vulnerability_resolution","request_review_duo_code_review_on_mr_by_author","request_review_duo_code_review_on_mr_by_non_author","requested_comment_temperature","resolve_feature_discovery_search","restore_ai_catalog_item","retry_duo_workflow_execution","start_duo_workflow_execution","start_mcp_tool_call","submit_dap_trial_or_paid_empty_state_message","submit_gitlab_duo_question","summarize_new_merge_request","summarize_review","tokens_per_embedding","tokens_per_user_request_prompt","tokens_per_user_request_response","tool_failed_duo_chat","tool_succeeded_duo_chat","trigger_ai_catalog_item","trigger_resolve_dependency_bump_workflow","trigger_sast_vulnerability_fp_detection_workflow","trigger_sast_vulnerability_resolution_workflow","trigger_secret_detection_vulnerability_fp_detection_workflow","troubleshoot_job","update_ai_catalog_item","update_ai_catalog_item_consumer","update_ai_self_hosted_model","update_model_selection_feature","update_self_hosted_ai_feature_to_vendored_model","view_ai_catalog_item","view_ai_catalog_item_index","view_ai_catalog_project_catalog","view_ai_catalog_project_managed","view_dap_trial_or_paid_empty_state","view_duo_agentic_identity_verification_empty_state","view_duo_agentic_not_available_empty_state","view_duo_agentic_subscription_expired_empty_state","view_duo_agentic_trial_expired_empty_state"];
+gl.onlySendDuoEvents = true;
+
+
+//]]>
+</script>
+
+<script src="/assets/locale/zh_CN/app-771cf7876309b68af26a0f2c8ea1ea80914de14f54e82803508dc798ea96d766.js" defer="defer" nonce="6TZ8Or9m7tEJxHAAXqRMrg=="></script>
+
+
+<script src="/assets/webpack/commons-pages.admin.deploy_keys.index-pages.admin.groups.index-pages.admin.projects.index-pages.admi-81888dbb.c9d160f4.chunk.js" defer="defer" nonce="6TZ8Or9m7tEJxHAAXqRMrg=="></script>
+<script src="/assets/webpack/ba53ef03.c91246cb.chunk.js" defer="defer" nonce="6TZ8Or9m7tEJxHAAXqRMrg=="></script>
+<script src="/assets/webpack/0dcf7166.63feabc4.chunk.js" defer="defer" nonce="6TZ8Or9m7tEJxHAAXqRMrg=="></script>
+<script src="/assets/webpack/super_sidebar.53dc6922.chunk.js" defer="defer" nonce="6TZ8Or9m7tEJxHAAXqRMrg=="></script>
+<script src="/assets/webpack/commons-pages.admin.sessions-pages.groups.omniauth_callbacks-pages.ldap.omniauth_callbacks-pages.omn-aac29e51.f2eae0a3.chunk.js" defer="defer" nonce="6TZ8Or9m7tEJxHAAXqRMrg=="></script>
+<script src="/assets/webpack/pages.sessions.new.12bd4353.chunk.js" defer="defer" nonce="6TZ8Or9m7tEJxHAAXqRMrg=="></script>
+
+
+
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="7-Y5ISaMaJ9RBPeFPFvcAd0aGDE5-UVIr-dwgmsrdFvW8lAv64it4dt7vv7htz_UipLJcd3aAUZQ3HsCKo2d6w" />
+<meta name="csp-nonce" content="6TZ8Or9m7tEJxHAAXqRMrg==" />
+<meta name="action-cable-url" content="/-/cable" />
+<link href="/-/manifest.json" rel="manifest">
+<link rel="icon" type="image/png" href="/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" id="favicon" data-original-href="/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" />
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/apple-touch-icon-b049d4bc0dd9626f31db825d61880737befc7835982586d015bded10b4435460.png" />
+<link href="/search/opensearch.xml" rel="search" title="Search GitLab" type="application/opensearchdescription+xml">
+
+
+
+<!-- Tencent RUM -->
+<script src="https://cdn-go.cn/aegis/aegis-sdk/latest/aegis.min.js" type="text/javascript"></script>
+<script nonce="6TZ8Or9m7tEJxHAAXqRMrg==">
+//<![CDATA[
+;var aegis = new Aegis({
+    id: 'lYKjL8AgQDn7M6aqwe',
+    reportApiSpeed: true,
+    reportAssetSpeed: true,
+});
+window.addEventListener("unhandledrejection", function(err){
+  if(err.reason && err.reason.name === 'AbortError') {
+    err.preventDefault();
+  }
+});
+
+
+//]]>
+</script><!-- End Tencent Code -->
+
+<meta content="JihuLab.com 免费试用 90 天" name="description">
+<meta content="#F1F0F6" media="(prefers-color-scheme: light)" name="theme-color">
+<meta content="#232128" media="(prefers-color-scheme: dark)" name="theme-color">
+</head>
+
+<body class="gl-h-full login-page navless gl-browser-chrome gl-platform-windows" data-page="sessions:new" data-qa-selector="login_page" data-testid="login-page">
+<div class="jh-language-switcher position-fixed gl-flex gl-items-center gl-top-0 gl-right-0 gl-flex-row-reverse pr-3" style="height: 40px; z-index: 250;">
+<div class="js-language-switcher" data-locales="[{&quot;value&quot;:&quot;en&quot;,&quot;percentage&quot;:100,&quot;text&quot;:&quot;English&quot;},{&quot;value&quot;:&quot;zh_CN&quot;,&quot;percentage&quot;:99,&quot;text&quot;:&quot;简体中文&quot;},{&quot;value&quot;:&quot;pt_BR&quot;,&quot;percentage&quot;:99,&quot;text&quot;:&quot;português (Brasil)&quot;},{&quot;value&quot;:&quot;ko&quot;,&quot;percentage&quot;:99,&quot;text&quot;:&quot;한국어&quot;},{&quot;value&quot;:&quot;ja&quot;,&quot;percentage&quot;:99,&quot;text&quot;:&quot;日本語&quot;},{&quot;value&quot;:&quot;it&quot;,&quot;percentage&quot;:99,&quot;text&quot;:&quot;italiano&quot;},{&quot;value&quot;:&quot;ga_IE&quot;,&quot;percentage&quot;:99,&quot;text&quot;:&quot;Gaeilge&quot;},{&quot;value&quot;:&quot;fr&quot;,&quot;percentage&quot;:99,&quot;text&quot;:&quot;français&quot;},{&quot;value&quot;:&quot;es&quot;,&quot;percentage&quot;:99,&quot;text&quot;:&quot;español&quot;},{&quot;value&quot;:&quot;de&quot;,&quot;percentage&quot;:97,&quot;text&quot;:&quot;Deutsch&quot;},{&quot;value&quot;:&quot;zh_TW&quot;,&quot;percentage&quot;:74,&quot;text&quot;:&quot;繁體中文 (台灣)&quot;}]"></div>
+
+</div>
+
+<script nonce="6TZ8Or9m7tEJxHAAXqRMrg==">
+//<![CDATA[
+gl = window.gl || {};
+gl.client = {"isChrome":true,"isWindows":true};
+
+
+//]]>
+</script>
+
+
+<div class="gl-h-full borderless gl-flex gl-flex-wrap">
+<div class="container">
+<div class="content">
+<div class="flash-container flash-container-page sticky" data-testid="flash-container">
+<div class="gl-alert gl-alert-info gl-alert-not-dismissible" role="alert">
+<div class="gl-alert-icon-container">
+<svg class="s16 gl-alert-icon gl-alert-icon-no-title" data-testid="information-o-icon"><use href="/assets/icons-744c96d42bcc6345fdb1c870432a980c5f983ed177df344a4a5f94b625ac4ce8.svg#information-o"></use></svg>
+</div>
+<div class="gl-alert-content" role="alert">
+<div class="gl-alert-body">
+<div class="gl-flex gl-items-center">
+<div class="gl-grow">
+您需要先登录或注册，然后才能继续。
+</div>
+</div>
+
+</div>
+<div class="gl-alert-actions">
+<a class="gl-button btn btn-md btn-default btn-confirm" href="/users/sign_up"><span class="gl-button-text">
+立即注册
+</span>
+
+</a>
+
+</div>
+</div>
+</div>
+
+<div id="js-global-alerts"></div>
+</div>
+
+<div class="mt-3">
+<div class="col-sm-12 gl-text-center">
+<img alt="JihuLab.com 免费试用 90 天" class="gl-invisible gl-h-10 js-portrait-logo-detection lazy" data-src="/assets/logo-51e8cb6dc5a55e338ecf06362038ffa9227623ba3766a8e1710fd0da0b433521.svg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+<h1 class="mb-3 gl-text-size-h2">
+JihuLab.com 免费试用 90 天
+</h1>
+
+
+</div>
+</div>
+<div class="mb-3">
+<div class="gl-xs-w-full gl-ml-auto gl-mr-auto bar sm:gl-w-1/2">
+
+<div class="js-non-oauth-login">
+<div data-app-data="{&quot;sign_in_path&quot;:&quot;/users/sign_in&quot;,&quot;users_sign_in_path_path&quot;:&quot;/users/sign_in_path&quot;,&quot;passkeys_sign_in_path&quot;:&quot;/users/passkeys/sign_in&quot;,&quot;is_unconfirmed_email&quot;:false,&quot;new_user_confirmation_path&quot;:&quot;/users/confirmation/new&quot;,&quot;new_password_path&quot;:&quot;/users/password/new&quot;,&quot;show_captcha&quot;:false,&quot;is_remember_me_enabled&quot;:true,&quot;show_passkey_immediately&quot;:false}" id="js-sign-in-form">
+<div class="gl-spinner-container gl-my-5" role="status"><span aria-hidden class="gl-spinner gl-spinner-md gl-spinner-dark !gl-align-text-bottom"></span><span class="gl-sr-only !gl-absolute">加载中</span>
+</div>
+<form action="/users/sign_in" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="RJLz_i3wAfYc8KTUl7A30HmJyUu3or6oqrT1XPvExfh9hprw4PTEiJaP7a9KXNQFLgEYC1OB-qZVj_7cumIsSA" autocomplete="off" /><input data-js-name="login" autocomplete="off" type="hidden" name="user[login]" id="user_login" />
+<input data-js-name="password" autocomplete="off" type="hidden" name="user[password]" id="user_password" />
+<input data-js-name="rememberMe" autocomplete="off" type="hidden" name="user[remember_me]" id="user_remember_me" />
+</form></div>
+
+</div>
+<p class="gl-mt-3">
+登入即代表您同意并接受<a href='/-/users/terms' target='_blank' rel='noreferrer noopener'>极狐GitLab服务条款和账号规范</a>。如使用企业邮箱订阅本服务，则您同意极狐将该账户数据提供给对应企业而无需另行对您进行通知或承担责任。
+</p>
+<p class="gl-mt-3 gl-text-center">
+还没有账户？
+<a data-testid="register-link" href="/users/sign_up">立即注册</a>
+</p>
+<div class="clearfix">
+<div class="gl-flex gl-items-center gl-gap-5" data-testid="divider">
+<hr class="gl-grow gl-border-default">
+或使用以下账户登录
+<hr class="gl-grow gl-border-default">
+</div>
+
+<div class="js-oauth-login gl-mt-5 gl-flex gl-flex-col gl-gap-3 gl-text-center gl-ml-auto gl-mr-auto">
+<form class="js-omniauth-form" method="post" action="/users/auth/github"><button class="gl-button btn btn-block btn-md btn-default " data-testid="github-login-button" type="submit"><span class="gl-button-text">
+<img alt="GitHub" title="Sign in with GitHub" class="gl-button-icon lazy" data-src="/assets/auth_buttons/github_64-84041cd0ea392220da96f0fb9b9473c08485c4924b98c776be1bd33b0daab8c0.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+<span class="gl-button-text">
+GitHub
+</span>
+
+</span>
+
+</button><input type="hidden" name="authenticity_token" value="oJEQes0ZN9SzFW1luLxZPxjuckOUYVhBzIddfVE4utiZhXl0AB3yqjlqJB5lULrqT2ajA3BCHE8zvFb9EJ5TaA" autocomplete="off" /></form>
+<form class="js-omniauth-form" method="post" action="/users/auth/gitlab"><button class="gl-button btn btn-block btn-md btn-default " data-testid="gitlab-oauth-login-button" type="submit"><span class="gl-button-text">
+<img alt="GitLab.com" title="Sign in with GitLab.com" class="gl-button-icon lazy" data-src="/assets/auth_buttons/gitlab_64-2957169c8ef64c58616a1ac3f4fc626e8a35ce4eb3ed31bb0d873712f2a041a0.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+<span class="gl-button-text">
+GitLab.com
+</span>
+
+</span>
+
+</button><input type="hidden" name="authenticity_token" value="oYcnAvbW7RUB_cGNhnU5i03fEIhq9nXD_ipqUxLUoGSYk04MO9Ioa4uCiPZbmdpeGlfByI7VMc0BEWHTU3JJ1A" autocomplete="off" /></form>
+<form class="js-omniauth-form" method="post" action="/users/auth/dingtalk"><button class="gl-button btn btn-block btn-md btn-default " type="submit"><span class="gl-button-text">
+<img alt="DingTalk" title="Sign in with DingTalk" class="gl-button-icon lazy" data-src="/assets/auth_buttons/dingtalk_64-bdfcd26f5cd24bb90b5b3e2c1a4773ddef36f921a6478e82d49ecb6eb53acc8c.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+<span class="gl-button-text">
+DingTalk
+</span>
+
+</span>
+
+</button><input type="hidden" name="authenticity_token" value="FtNX3P3FL6tqZddkIi893_I0FCxebFZBUq3tbJ4tIBovxz7SMMHq1eAanh__w94KpbzFbLpPEk-tlubs34vJqg" autocomplete="off" /></form>
+<form class="js-omniauth-form" method="post" action="/users/auth/alicloud"><button class="gl-button btn btn-block btn-md btn-default " type="submit"><span class="gl-button-text">
+<img alt="AliCloud" title="Sign in with AliCloud" class="gl-button-icon lazy" data-src="/assets/auth_buttons/alicloud_64-ff0a43fef6dca5105288f51454bcdf96712b90ab1f513a8eab3d54dfe0213694.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+<span class="gl-button-text">
+AliCloud
+</span>
+
+</span>
+
+</button><input type="hidden" name="authenticity_token" value="F6Y_TYeTE169Ta1LEUmyZ0A743XHlMO1KCOxp52QOCIuslZDSpfWIDcy5DDMpVGyF7MyNSO3h7vXGLon3DbRkg" autocomplete="off" /></form>
+<form class="js-omniauth-form" method="post" action="/users/auth/bitbucket"><button class="gl-button btn btn-block btn-md btn-default " type="submit"><span class="gl-button-text">
+<img alt="Bitbucket" title="Sign in with Bitbucket" class="gl-button-icon lazy" data-src="/assets/auth_buttons/bitbucket_64-daa496030c0c290748e3c2e50f7464d2f5de0e019cce728930e0508a6dac815c.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+<span class="gl-button-text">
+Bitbucket
+</span>
+
+</span>
+
+</button><input type="hidden" name="authenticity_token" value="MAWDhdjNrcqltnKg9zrpfgvojzgnu3Nmj9ys2V2uTAgJEeqLFclotC_JO9sq1gqrXGBeeMOYN2hw56dZHAiluA" autocomplete="off" /></form>
+<div class="gl-form-checkbox custom-control custom-checkbox">
+<input type="checkbox" name="js-remember-me-omniauth" id="js-remember-me-omniauth" class="custom-control-input" />
+<label class="custom-control-label" for="js-remember-me-omniauth"><span>记住账号
+</span></label>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="footer-container gl-w-full gl-self-end">
+<hr class="gl-m-0">
+<div class="container gl-py-5 gl-flex gl-justify-between">
+<div class="gl-flex gl-gap-5 gl-flex-wrap gl-w-full">
+<a href="/explore">探索</a>
+<a href="/help">帮助</a>
+<a href="https://about.gitlab.cn">极狐(GitLab)官网</a>
+<div class="records gl-hidden md:gl-flex gl-gap-5 gl-ml-auto footer-links">
+<span class="record-item gl-flex gl-items-center">
+<img class="gl-mr-2 lazy" data-src="/assets/footer/anti-law-928014fd1478111affd68504f2450afb07d3eab1b69150f9af9791326a592c77.svg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+<a href="https://12377.cn/">违法和不良信息举报中心</a>
+</span>
+<span class="record-item gl-flex gl-items-center">
+<img class="gl-mr-2 lazy" data-src="/assets/footer/national-emblem-19e6a1836efc865e5a7892e555aeba3f70ad0ede3a39a614e84b0e65ae3e9cc7.svg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+<a class="jh-records-link" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502047940" target="_blank">京公网安备11010502047940号</a>
+</span>
+<span class="record-item gl-flex gl-items-center">
+<a class="jh-records-link" href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">京ICP备2021036779号-1</a>
+</span>
+</div>
+</div>
+<div class="js-language-switcher" data-locales="[{&quot;value&quot;:&quot;en&quot;,&quot;percentage&quot;:100,&quot;text&quot;:&quot;English&quot;},{&quot;value&quot;:&quot;zh_CN&quot;,&quot;percentage&quot;:99,&quot;text&quot;:&quot;简体中文&quot;},{&quot;value&quot;:&quot;pt_BR&quot;,&quot;percentage&quot;:99,&quot;text&quot;:&quot;português (Brasil)&quot;},{&quot;value&quot;:&quot;ko&quot;,&quot;percentage&quot;:99,&quot;text&quot;:&quot;한국어&quot;},{&quot;value&quot;:&quot;ja&quot;,&quot;percentage&quot;:99,&quot;text&quot;:&quot;日本語&quot;},{&quot;value&quot;:&quot;it&quot;,&quot;percentage&quot;:99,&quot;text&quot;:&quot;italiano&quot;},{&quot;value&quot;:&quot;ga_IE&quot;,&quot;percentage&quot;:99,&quot;text&quot;:&quot;Gaeilge&quot;},{&quot;value&quot;:&quot;fr&quot;,&quot;percentage&quot;:99,&quot;text&quot;:&quot;français&quot;},{&quot;value&quot;:&quot;es&quot;,&quot;percentage&quot;:99,&quot;text&quot;:&quot;español&quot;},{&quot;value&quot;:&quot;de&quot;,&quot;percentage&quot;:97,&quot;text&quot;:&quot;Deutsch&quot;},{&quot;value&quot;:&quot;zh_TW&quot;,&quot;percentage&quot;:74,&quot;text&quot;:&quot;繁體中文 (台灣)&quot;}]"></div>
+
+</div>
+</div>
+
+
+</div>
+</body>
+</html>
