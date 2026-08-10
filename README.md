@@ -398,31 +398,6 @@ docker run -d -p 80:8080 guovern/iptv-api
 
 [更新日志](./CHANGELOG.md)
 
-## 关注
-
-### GitHub
-
-关注我的 GitHub 账号 [Guovin](https://github.com/Guovin)，获取更多实用项目
-
-### 微信公众号
-
-微信公众号搜索 Govin，或扫码，接收更新推送、学习更多使用技巧：
-
-![微信公众号](./static/images/qrcode.jpg)
-
-### 联系我
-
-联系邮箱：[360996299@qq.com](mailto:360996299@qq.com)
-
-## 捐赠
-
-<div>开发维护不易，请我喝杯咖啡☕️吧~</div>
-
-[![Support me on Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/govin)
-
-| 支付宝                                  | 微信                                      |
-|--------------------------------------|-----------------------------------------|
-| ![支付宝扫码](./static/images/alipay.jpg) | ![微信扫码](./static/images/appreciate.jpg) |
 
 ## 免责声明
 
