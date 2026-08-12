@@ -1,7 +1,5 @@
 name: 'Update schedule'
 
-
-
 on:
   workflow_dispatch:
   schedule:
@@ -34,6 +32,13 @@ jobs:
         run: pipenv --python 3.14 && pipenv install --deploy
       - name: Update
         run: pipenv run dev
+      - name: Clean oversized database
+        run: |
+          DB="output/data/channel_results.db"
+          if [ -f "$DB" ] && [ $(du -m "$DB" | cut -f1) -gt 100 ]; then
+            rm -f "$DB"
+            echo "Removed oversized database"
+          fi
       - name: Commit and push if changed
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
