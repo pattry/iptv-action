@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url="https://raw.githubusercontent.com/pattry/iptv-action/refs/heads/master/output/epg/epg.gz"
-#EXTINF:-1 tvg-id="CCTV-1" tvg-name="CCTV1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV1.png" group-title="🕘️更新时间",2026-08-12 09:26:07
+#EXTINF:-1 tvg-id="CCTV-1" tvg-name="CCTV1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV1.png" group-title="🕘️更新时间",2026-08-12 10:03:34
 http://192.151.150.154/live/cctv1hd.m3u8
 #EXTINF:-1 tvg-id="CCTV-1" tvg-name="CCTV1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV1.png" group-title="央视",CCTV1
 http://192.151.150.154/live/cctv1hd.m3u8
@@ -427,10 +427,10 @@ http://event.pull.hebtv.com/jishi/weishi_tingyun.m3u8
 http://iptv.huuc.edu.cn/hls/hebhd.m3u8
 #EXTINF:-1 tvg-id="河北卫视" tvg-name="河北卫视" tvg-logo="https://live.fanmingming.cn/tv/河北卫视.png" group-title="地方",河北卫视
 http://tv.pull.hebtv.com/jishi/weishipindao.m3u8?t=2510710360&k=3d44740039027301acf8341d7361ab59
-#EXTINF:-1 tvg-id="河北卫视" tvg-name="河北卫视" tvg-logo="https://live.fanmingming.com/tv/河北卫视.png" group-title="地方",河北卫视
-https://tv.pull.hebtv.com/zhibo/yingshijupindao.m3u8?t=1785899161&k=aa51e77b56648d2e6d33b4f1ca62df1e
 #EXTINF:-1 tvg-id="河北卫视" tvg-name="河北卫视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/河北卫视.png" group-title="地方",河北卫视
 https://tv.pull.hebtv.com/jishi/weishipindao.m3u8?t=1784511016&k=1015cdcd41ea8fb8568aa27203e7ea1a
+#EXTINF:-1 tvg-id="河北卫视" tvg-name="河北卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/河北卫视.png" group-title="地方",河北卫视
+https://iptv.catvod.com/catvod.php?id=hbws
 #EXTINF:-1 tvg-id="山西卫视" tvg-name="山西卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/山西卫视.png" group-title="地方",山西卫视
 http://192.151.150.154/live/sxwshd.m3u8
 #EXTINF:-1 tvg-id="山西卫视" tvg-name="山西卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/山西卫视.png" group-title="地方",山西卫视
@@ -933,6 +933,20 @@ http://o11.163189.xyz/stream/live/ccm/
 https://10.fast.hidns.vip/163189/typd/
 #EXTINF:-1 tvg-id="NOW星影台" tvg-name="NOW星影台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/NOW星影台.png" group-title="电影",NOW星影台
 http://173.208.234.146/live/nowxy.m3u8
+#EXTINF:-1 tvg-id="Astro AOD" tvg-name="Astro AOD" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/ASTROAOD.png" group-title="电影",Astro AOD
+http://cdn9.163189.xyz/smt1.1.php?id=Aodhd
+#EXTINF:-1 tvg-id="Astro AOD" tvg-name="Astro AOD" tvg-logo="https://www.xn--rgv465a.top/tvlogo/Astro AOD.png" group-title="电影",Astro AOD
+https://o11.163189.xyz/stream/live/aod/
+#EXTINF:-1 tvg-id="Astro AEC" tvg-name="Astro AEC" tvg-logo="https://www.xn--rgv465a.top/tvlogo/Astro AEC.png" group-title="电影",Astro AEC
+https://o11.163189.xyz/stream/live/aec/
+#EXTINF:-1 tvg-id="Astro QJ" tvg-name="Astro QJ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/Astro QJ.png" group-title="电影",Astro QJ
+https://o11.163189.xyz/stream/live/qj/
+#EXTINF:-1 tvg-id="Astro欢喜台" tvg-name="Astro欢喜台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/Astro欢喜台.png" group-title="电影",Astro欢喜台
+https://o11.163189.xyz/stream/live/hxt/
+#EXTINF:-1 tvg-id="爱奇艺" tvg-name="爱奇艺" tvg-logo="https://www.xn--rgv465a.top/tvlogo/爱奇艺.png" group-title="电影",爱奇艺
+https://o11.163189.xyz/stream/live/iqiyi/
+#EXTINF:-1 tvg-id="爱奇艺" tvg-name="爱奇艺" tvg-logo="https://www.xn--rgv465a.top/tvlogo/爱奇艺.png" group-title="电影",爱奇艺
+http://o11.163189.xyz/stream/live/iqiyi/
 #EXTINF:-1 tvg-id="風雲恐怖電影" tvg-name="風雲恐怖電影" tvg-logo="https://www.xn--rgv465a.top/tvlogo/風雲恐怖電影.png" group-title="电影",風雲恐怖電影
 https://live.ottiptv.cc/yy/24066336
 #EXTINF:-1 tvg-id="風雲恐怖電影" tvg-name="風雲恐怖電影" tvg-logo="https://www.xn--rgv465a.top/tvlogo/風雲恐怖電影.png" group-title="电影",風雲恐怖電影
