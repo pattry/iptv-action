@@ -3857,3 +3857,153 @@
 2026-08-19T19:39:02+00:00 INFO    [run=d4e3d1bc7c6e46b98b99230437b31488 phase=statistics event=statistics.finished] 频道统计完成：测试 10836，有效 304
 2026-08-19T19:39:02+00:00 INFO    [run=d4e3d1bc7c6e46b98b99230437b31488 phase=complete event=run.summary] 更新摘要
 2026-08-19T19:39:02+00:00 INFO    [run=d4e3d1bc7c6e46b98b99230437b31488 phase=complete event=run.finished] 更新完成！总耗时：13:39
+2026-08-20T19:22:38+00:00 INFO    [event=application.started] IPTV-API 版本: 3.0.0 (构建时间: 2026-08-07 11:45:59)
+2026-08-20T19:22:38+00:00 INFO    [phase=prepare event=network.ipv6.checking] 🛜 正在检查当前网络是否支持IPv6...
+2026-08-20T19:22:38+00:00 WARNING [phase=prepare event=network.ipv6.unsupported] 当前网络不支持IPv6，别担心，IPv6的结果会被保存下来
+2026-08-20T19:22:38+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=prepare event=run.started] 性能模式: auto → balance，可用资源: 4.0 CPU / 15.61 GB，并发: 测速 64、媒体探测 2、源抓取 8
+2026-08-20T19:22:38+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=prepare event=channels.catalog_loaded] 频道目录已加载：白名单 840，黑名单 105，台标 21
+2026-08-20T19:22:38+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=sources.subscribe.summary] 订阅源数量：49，订阅白名单数量：0，停用地址数量：0，有效总数量：49
+2026-08-20T19:22:38+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=progress.started] 正在进行获取订阅源  0/49
+2026-08-20T19:22:39+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=progress.updated] 正在进行获取订阅源  1/49 (2%)  剩余 48
+2026-08-20T19:22:40+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=progress.updated] 正在进行获取订阅源  6/49 (12%)  剩余 43
+2026-08-20T19:22:41+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=progress.updated] 正在进行获取订阅源  11/49 (22%)  剩余 38
+2026-08-20T19:22:41+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=progress.updated] 正在进行获取订阅源  16/49 (32%)  剩余 33
+2026-08-20T19:22:42+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=progress.updated] 正在进行获取订阅源  21/49 (42%)  剩余 28
+2026-08-20T19:22:43+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=progress.updated] 正在进行获取订阅源  26/49 (53%)  剩余 23
+2026-08-20T19:22:44+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=progress.updated] 正在进行获取订阅源  31/49 (63%)  剩余 18
+2026-08-20T19:22:44+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=progress.updated] 正在进行获取订阅源  36/49 (73%)  剩余 13
+2026-08-20T19:22:45+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=progress.updated] 正在进行获取订阅源  41/49 (83%)  剩余 8
+2026-08-20T19:22:45+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=request.retrying] 🔄 请求https://live.zbds.org/tv/iptv4.txt失败，正在进行第1次重试...
+2026-08-20T19:22:46+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=progress.updated] 正在进行获取订阅源  46/49 (93%)  剩余 3
+2026-08-20T19:22:46+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=source.request_failed] 订阅源请求失败：❌ 请求https://live.zbds.org/tv/iptv4.txt失败，已达到最大重试次数
+2026-08-20T19:22:47+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=progress.updated] 正在进行获取订阅源  49/49 (100%)  剩余 0
+2026-08-20T19:22:47+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=sources.subscribe.finished] 订阅源: ✅ 有效地址数量：49，⛔ 停用地址数量：0
+2026-08-20T19:22:47+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=sources.subscribe.epg_discovered] 📡 从订阅源中发现 118 个 EPG 地址
+2026-08-20T19:22:47+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=progress.finished] 正在进行获取订阅源  49/49  未匹配 10000
+2026-08-20T19:22:47+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=sources.epg.summary] EPG源数量：1，EPG白名单数量：0，停用地址数量：0，有效总数量：1
+2026-08-20T19:22:47+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=progress.started] 正在进行获取EPG源  0/118
+2026-08-20T19:22:49+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=progress.updated] 正在进行获取EPG源  1/118 (0%)  剩余 117
+2026-08-20T19:22:50+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=request.retrying] 🔄 请求https://epg.aptv.app/xml失败，正在进行第1次重试...
+2026-08-20T19:22:50+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=request.retrying] 🔄 请求https://epg.aptv.app/pp.xml.gz失败，正在进行第1次重试...
+2026-08-20T19:22:51+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=source.request_failed] EPG源请求失败：❌ 请求https://epg.aptv.app/xml失败，已达到最大重试次数
+2026-08-20T19:22:51+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=source.request_failed] EPG源请求失败：❌ 请求https://epg.aptv.app/pp.xml.gz失败，已达到最大重试次数
+2026-08-20T19:22:56+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=progress.updated] 正在进行获取EPG源  12/118 (10%)  剩余 106
+2026-08-20T19:22:57+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=request.retrying] 🔄 请求https://epgshare01.online/epgshare01/epg_ripper_CA1.xml.gz失败，正在进行第1次重试...
+2026-08-20T19:23:03+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=request.retrying] 🔄 请求https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz失败，正在进行第1次重试...
+2026-08-20T19:23:04+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=request.retrying] 🔄 请求https://epgshare01.online/epgshare01/epg_ripper_BE2.xml.gz失败，正在进行第1次重试...
+2026-08-20T19:23:05+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=source.request_failed] EPG源请求失败：❌ 请求https://epgshare01.online/epgshare01/epg_ripper_CA1.xml.gz失败，已达到最大重试次数
+2026-08-20T19:23:09+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=request.retrying] 🔄 请求https://epgshare01.online/epgshare01/epg_ripper_CH1.xml.gz失败，正在进行第1次重试...
+2026-08-20T19:23:12+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=progress.updated] 正在进行获取EPG源  24/118 (20%)  剩余 94
+2026-08-20T19:23:17+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=source.request_failed] EPG源请求失败：❌ 请求https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz失败，已达到最大重试次数
+2026-08-20T19:23:17+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=request.retrying] 🔄 请求https://epgshare01.online/epgshare01/epg_ripper_DE1.xml.gz失败，正在进行第1次重试...
+2026-08-20T19:23:22+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=source.request_failed] EPG源请求失败：❌ 请求https://epgshare01.online/epgshare01/epg_ripper_CH1.xml.gz失败，已达到最大重试次数
+2026-08-20T19:23:26+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=progress.updated] 正在进行获取EPG源  36/118 (30%)  剩余 82
+2026-08-20T19:23:35+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=request.retrying] 🔄 请求https://epgshare01.online/epgshare01/epg_ripper_HU1.xml.gz失败，正在进行第1次重试...
+2026-08-20T19:23:44+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=progress.updated] 正在进行获取EPG源  48/118 (40%)  剩余 70
+2026-08-20T19:23:44+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=request.retrying] 🔄 请求https://epgshare01.online/epgshare01/epg_ripper_IN1.xml.gz失败，正在进行第1次重试...
+2026-08-20T19:23:54+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=progress.updated] 正在进行获取EPG源  59/118 (50%)  剩余 59
+2026-08-20T19:23:55+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=request.retrying] 🔄 请求https://epgshare01.online/epgshare01/epg_ripper_PAC-12.xml.gz失败，正在进行第1次重试...
+2026-08-20T19:23:59+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=source.request_failed] EPG源请求失败：❌ 请求https://epgshare01.online/epgshare01/epg_ripper_PAC-12.xml.gz失败，已达到最大重试次数
+2026-08-20T19:24:00+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=request.retrying] 🔄 请求https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz失败，正在进行第1次重试...
+2026-08-20T19:24:01+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=request.retrying] 🔄 请求https://epgshare01.online/epgshare01/epg_ripper_RAKUTEN_DE1.xml.gz失败，正在进行第1次重试...
+2026-08-20T19:24:07+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=request.retrying] 🔄 请求https://epgshare01.online/epgshare01/epg_ripper_RAKUTEN_ES1.xml.gz失败，正在进行第1次重试...
+2026-08-20T19:24:08+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=request.retrying] 🔄 请求https://epgshare01.online/epgshare01/epg_ripper_RAKUTEN_EN1.xml.gz失败，正在进行第1次重试...
+2026-08-20T19:24:08+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=source.request_failed] EPG源请求失败：❌ 请求https://epgshare01.online/epgshare01/epg_ripper_RAKUTEN_DE1.xml.gz失败，已达到最大重试次数
+2026-08-20T19:24:08+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=progress.updated] 正在进行获取EPG源  71/118 (60%)  剩余 47
+2026-08-20T19:24:09+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=request.retrying] 🔄 请求https://epgshare01.online/epgshare01/epg_ripper_PL1.xml.gz失败，正在进行第1次重试...
+2026-08-20T19:24:10+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=request.retrying] 🔄 请求https://epgshare01.online/epgshare01/epg_ripper_RAKUTEN_FR1.xml.gz失败，正在进行第1次重试...
+2026-08-20T19:24:11+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=request.retrying] 🔄 请求https://epgshare01.online/epgshare01/epg_ripper_RAKUTEN1.xml.gz失败，正在进行第1次重试...
+2026-08-20T19:24:11+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=source.request_failed] EPG源请求失败：❌ 请求https://epgshare01.online/epgshare01/epg_ripper_RAKUTEN_ES1.xml.gz失败，已达到最大重试次数
+2026-08-20T19:24:11+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=request.retrying] 🔄 请求https://epgshare01.online/epgshare01/epg_ripper_RAKUTEN_IT1.xml.gz失败，正在进行第1次重试...
+2026-08-20T19:24:11+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=source.request_failed] EPG源请求失败：❌ 请求https://epgshare01.online/epgshare01/epg_ripper_RAKUTEN_EN1.xml.gz失败，已达到最大重试次数
+2026-08-20T19:24:11+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=request.retrying] 🔄 请求https://epgshare01.online/epgshare01/epg_ripper_RAKUTEN_NL1.xml.gz失败，正在进行第1次重试...
+2026-08-20T19:24:12+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=source.request_failed] EPG源请求失败：❌ 请求https://epgshare01.online/epgshare01/epg_ripper_RAKUTEN_FR1.xml.gz失败，已达到最大重试次数
+2026-08-20T19:24:12+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=request.retrying] 🔄 请求https://epgshare01.online/epgshare01/epg_ripper_RAKUTEN_PL1.xml.gz失败，正在进行第1次重试...
+2026-08-20T19:24:13+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=source.request_failed] EPG源请求失败：❌ 请求https://epgshare01.online/epgshare01/epg_ripper_RAKUTEN_NL1.xml.gz失败，已达到最大重试次数
+2026-08-20T19:24:13+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=source.request_failed] EPG源请求失败：❌ 请求https://epgshare01.online/epgshare01/epg_ripper_RAKUTEN_IT1.xml.gz失败，已达到最大重试次数
+2026-08-20T19:24:18+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=source.request_failed] EPG源请求失败：❌ 请求https://epgshare01.online/epgshare01/epg_ripper_RAKUTEN_PL1.xml.gz失败，已达到最大重试次数
+2026-08-20T19:24:25+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=request.retrying] 🔄 请求https://epgshare01.online/epgshare01/epg_ripper_RO1.xml.gz失败，正在进行第1次重试...
+2026-08-20T19:24:26+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=request.retrying] 🔄 请求https://epgshare01.online/epgshare01/epg_ripper_RS1.xml.gz失败，正在进行第1次重试...
+2026-08-20T19:24:28+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=progress.updated] 正在进行获取EPG源  83/118 (70%)  剩余 35
+2026-08-20T19:24:37+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=request.retrying] 🔄 请求https://epgshare01.online/epgshare01/epg_ripper_US1.xml.gz失败，正在进行第1次重试...
+2026-08-20T19:24:39+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=progress.updated] 正在进行获取EPG源  95/118 (80%)  剩余 23
+2026-08-20T19:24:39+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=source.request_failed] EPG源请求失败：❌ 请求https://epgshare01.online/epgshare01/epg_ripper_RO1.xml.gz失败，已达到最大重试次数
+2026-08-20T19:24:40+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=request.retrying] 🔄 请求https://epgshare01.online/epgshare01/epg_ripper_US_LOCALS2.xml.gz失败，正在进行第1次重试...
+2026-08-20T19:24:41+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=source.request_failed] EPG源请求失败：❌ 请求https://epgshare01.online/epgshare01/epg_ripper_RS1.xml.gz失败，已达到最大重试次数
+2026-08-20T19:24:42+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=source.request_failed] EPG源请求失败：❌ 请求https://epgshare01.online/epgshare01/epg_ripper_US1.xml.gz失败，已达到最大重试次数
+2026-08-20T19:24:46+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=source.request_failed] EPG源请求失败：❌ 请求https://epgshare01.online/epgshare01/epg_ripper_US_LOCALS2.xml.gz失败，已达到最大重试次数
+2026-08-20T19:24:46+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=request.retrying] 🔄 请求https://epgshare01.online/epgshare01/locomotiontv.xml.gz失败，正在进行第1次重试...
+2026-08-20T19:24:49+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=source.request_failed] EPG源请求失败：❌ 请求https://epgshare01.online/epgshare01/locomotiontv.xml.gz失败，已达到最大重试次数
+2026-08-20T19:24:49+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=progress.updated] 正在进行获取EPG源  107/118 (90%)  剩余 11
+2026-08-20T19:24:51+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=request.retrying] 🔄 请求https://raw.githubusercontents.com/develop202/migu_video/refs/heads/main/playback.xml失败，正在进行第1次重试...
+2026-08-20T19:24:52+00:00 ERROR   [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=source.parse_failed] https://material.1989.click/epg.xml.gz 出错：expected string or bytes-like object, got 'NoneType'
+2026-08-20T19:24:53+00:00 WARNING [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=source.request_failed] EPG源请求失败：❌ 请求https://raw.githubusercontents.com/develop202/migu_video/refs/heads/main/playback.xml失败，已达到最大重试次数
+2026-08-20T19:24:55+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=progress.updated] 正在进行获取EPG源  118/118 (100%)  剩余 0
+2026-08-20T19:24:55+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=sources.epg.finished] EPG源: ✅ 有效地址数量：1，⛔ 停用地址数量：0
+2026-08-20T19:24:55+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=fetch event=progress.finished] 正在进行获取EPG源  118/118  匹配 258 个频道
+2026-08-20T19:27:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=aggregate event=channels.aggregated] 频道数据聚合完成：1050 个频道，15006 个接口（IPv4 12816 / IPv6 1121）
+2026-08-20T19:27:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=speed_test.planned] 总接口数量: 12335, 需要进行测速的接口数量: 10424
+2026-08-20T19:27:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.started] 测速  0/10424
+2026-08-20T19:27:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  1/10424 (0%)  有效 0  失败 1  CCTV1
+2026-08-20T19:27:35+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  622/10424 (5%)  有效 7  失败 615  CCTV3
+2026-08-20T19:28:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  1234/10424 (11%)  有效 26  失败 1208  CCTV6
+2026-08-20T19:28:35+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  1864/10424 (17%)  有效 45  失败 1819  CCTV9
+2026-08-20T19:29:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  2510/10424 (24%)  有效 60  失败 2450  CCTV13
+2026-08-20T19:29:35+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  3168/10424 (30%)  有效 85  失败 3083  CCTV17
+2026-08-20T19:30:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  3815/10424 (36%)  有效 100  失败 3715  湖南卫视
+2026-08-20T19:30:35+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  4418/10424 (42%)  有效 112  失败 4306  江苏卫视
+2026-08-20T19:31:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  5065/10424 (48%)  有效 122  失败 4943  山东卫视
+2026-08-20T19:31:35+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  5674/10424 (54%)  有效 134  失败 5540  湖北卫视
+2026-08-20T19:32:06+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  6303/10424 (60%)  有效 145  失败 6158  江西卫视
+2026-08-20T19:32:36+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  6917/10424 (66%)  有效 154  失败 6763  深圳卫视
+2026-08-20T19:33:06+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  7554/10424 (72%)  有效 160  失败 7394  陕西卫视
+2026-08-20T19:33:36+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  8194/10424 (78%)  有效 177  失败 8017  兵团卫视
+2026-08-20T19:34:06+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  8907/10424 (85%)  有效 206  失败 8701  AlJazeera English
+2026-08-20T19:34:36+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  9746/10424 (93%)  有效 242  失败 9504  龙华偶像
+2026-08-20T19:35:04+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 273  失败 10151  伪装者
+2026-08-20T19:35:04+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 273  失败 10152  妖神记
+2026-08-20T19:35:04+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 273  失败 10153  风筝
+2026-08-20T19:35:04+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 273  失败 10154  国内动作大片
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10154  科幻电影
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10155  欢乐集结号3
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10156  炊事班的故事
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10157  炊事班的故事
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10158  大汉贤后卫子夫
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10159  仙剑奇侠传
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10160  笑傲帮
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10161  叛逆者
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10162  叛逆者
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10163  苦乐村官
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10164  本山快乐营
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10165  本山快乐营
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10166  新世界
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10167  飞虎之潜行极战
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10168  大明王朝
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10169  钟馗传说
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10170  溏心风暴之家好月圆
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10171  钟馗传说
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10172  萌鸡小队S1-国漫
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10173  国内科幻片来袭
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10174  请回答1988
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10175  国外高分大片
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10176  我的父亲我的兵
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10177  我的父亲我的兵
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10178  热门喜剧
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10179  珍珠港-电影
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10180  超炫科幻大片
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10181  农家小菜
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10182  妖神记之黑狱篇
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10183  河山
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10184  来看修牛蹄
+2026-08-20T19:35:05+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10185  蔡明春晚小品
+2026-08-20T19:35:06+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10186  洪金宝福星系列
+2026-08-20T19:35:06+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10187  超英集结
+2026-08-20T19:35:06+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10188  名媛望族-精彩港剧
+2026-08-20T19:35:06+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10189  动作大片
+2026-08-20T19:35:06+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.updated] 测速  10424/10424 (100%)  有效 274  失败 10190  动作大片
+2026-08-20T19:35:06+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=speed_test.artifacts_written] 测速明细已写入 output/log/speed_test.log，有效结果已写入 output/log/result.log
+2026-08-20T19:35:06+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=speed_test event=progress.finished] 测速  10424/10424  有效 274  失败 10190
+2026-08-20T19:35:06+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=output event=output.written] 结果文件生成完成：更新 3 个文件
+2026-08-20T19:35:08+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=statistics event=statistics.finished] 频道统计完成：测试 10464，有效 274
+2026-08-20T19:35:08+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=complete event=run.summary] 更新摘要
+2026-08-20T19:35:08+00:00 INFO    [run=4915fdcc86d746d3a9ce514469a53d57 phase=complete event=run.finished] 更新完成！总耗时：12:29
