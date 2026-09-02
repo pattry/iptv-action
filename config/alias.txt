@@ -303,48 +303,47 @@ Astro_Premier league1,re:(?i)^\s*Astro[-\s_]*Premier[-\s_]*League[-\s_]*1[\s\S]*
 Astro_Premier league2,re:(?i)^\s*Astro[-\s_]*Premier[-\s_]*League[-\s_]*2[\s\S]*$
 
 # ========== 新闻 ==========
-CCTV13,re:(?i)^\s*CCTV[-\s_]*13(?![0-9Kk+])[\s\S]*$,CCTV-13,央视新闻,央视十三套
-凤凰资讯,re:(?i)^\s*(凤凰资讯|鳳凰資訊|凤凰资讯台|鳳凰資訊台|Phoenix InfoNews)[\s\S]*$
-凤凰中文,re:(?i)^\s*(凤凰中文|鳳凰中文|凤凰中文台|鳳凰中文台|Phoenix Chinese)[\s\S]*$
-凤凰香港,re:(?i)^\s*(凤凰香港|鳳凰香港|凤凰香港台|鳳凰香港台|Phoenix Hong Kong)[\s\S]*$
-中天新聞,re:(?i)^\s*(中天新闻|中天新聞|中天新闻台|中天新聞台|CTi News)[\s\S]*$
-TVBS新聞,re:(?i)^\s*(TVBS新闻|TVBS新聞|TVBS新闻台|TVBS新聞台|TVBS-N|TVBS N)[\s\S]*$
-鏡電視新聞台,re:(?i)^\s*(镜电视新闻台|鏡電視新聞台|镜电视新闻|鏡電視新聞|镜新闻|鏡新聞)[\s\S]*$
-東森新聞,re:(?i)^\s*(东森新闻|東森新聞|东森新闻台|東森新聞台|EBC News)[\s\S]*$
-東森財經新聞台,re:(?i)^\s*(东森财经新闻台|東森財經新聞台|东森财经新闻|東森財經新聞|东森财经台|東森財經台|EBC Financial)[\s\S]*$
-三立新聞iNEWS,re:(?i)^\s*(三立新闻iNEWS|三立新聞iNEWS|三立iNEWS|SET iNEWS|三立inews)[\s\S]*$
-寰宇新聞台灣台,re:(?i)^\s*(寰宇新闻台湾台|寰宇新聞台灣台|寰宇新闻台湾|寰宇新聞台灣)[\s\S]*$
-无线新闻台,re:(?i)^\s*(无线新闻台|無線新聞台|TVB新闻台|TVB新聞台|TVB News)[\s\S]*$
-NOW新闻台,re:(?i)^\s*(NOW新闻台|Now新闻台|now新闻台|NOW新聞台|Now新聞台|NOW新闻)[\s\S]*$
-Now财经台,re:(?i)^\s*(Now财经台|now财经台|Now財經台|NOW财经台|NOW財經台|Now财经)[\s\S]*$
+CCTV13,re:(?i)^\s*CCTV[-\s_]*13(?![0-9Kk+])[\s\S]*$,CCTV-13,央视新闻,中央13套
+凤凰资讯,re:(?i)^\s*(凤凰资讯|鳳凰資訊|凤凰资讯台|鳳凰資訊台)[\s\S]*$
+凤凰中文,re:(?i)^\s*(凤凰中文|鳳凰中文|凤凰中文台|鳳凰中文台)[\s\S]*$
+凤凰香港,re:(?i)^\s*(凤凰香港|鳳凰香港|凤凰香港台|鳳凰香港台)[\s\S]*$
+中天新聞,re:(?i)^\s*(中天新闻|中天新聞|中天新闻台|中天新聞台)[\s\S]*$
+TVBS新聞,re:(?i)^\s*TVBS[-\s_]*新聞[\s\S]*$,TVBS新闻,TVBS新闻台,TVBS-N,TVBS-N HD
+鏡電視新聞台,re:(?i)^\s*(镜电视新闻台|鏡電視新聞台|镜电视新闻|鏡電視新聞)[\s\S]*$
+東森新聞,re:(?i)^\s*(东森新闻|東森新聞|东森新闻台|東森新聞台)[\s\S]*$
+東森財經新聞台,re:(?i)^\s*(东森财经新闻台|東森財經新聞台|东森财经新闻|東森財經新聞|东森财经台|東森財經台)[\s\S]*$
+三立新聞iNEWS,re:(?i)^\s*(三立新聞iNEWS|三立新闻iNEWS|三立iNEWS|三立新聞台|三立新闻台)[\s\S]*$
+寰宇新聞台灣台,re:(?i)^\s*(寰宇新闻台湾台|寰宇新聞台灣台|寰宇新闻台湾|寰宇新聞台灣|寰宇新闻台|寰宇新聞台)[\s\S]*$
+无线新闻台,re:(?i)^\s*(无线新闻台|無線新聞台|TVB无线新闻台|TVB無線新聞台|無線新聞)[\s\S]*$,TVB新闻台
+NOW新闻台,re:(?i)^\s*NOW[-\s_]*新闻台[\s\S]*$,Now新闻台,NOW新聞台
+Now财经台,re:(?i)^\s*NOW[-\s_]*财经台[\s\S]*$,Now财经台,NOW財經台
 HOY资讯台,re:(?i)^\s*(HOY资讯台|HOY資訊台|HOY资讯|HOY資訊)[\s\S]*$
 HOY国际财经台,re:(?i)^\s*(HOY国际财经台|HOY國際財經台|HOY国际财经|HOY國際財經)[\s\S]*$
-镜新闻,re:(?i)^\s*(镜新闻|鏡新聞|镜新闻频道|鏡新聞頻道)[\s\S]*$
-TVBS,re:(?i)^\s*TVBS[\s\S]*$
-BBCNews,re:(?i)^\s*(BBC\s*News|BBC新闻|BBC新聞|BBC World News)[\s\S]*$
-SkyNews,re:(?i)^\s*(Sky\s*News|天空新闻|天空新聞)[\s\S]*$
+镜新闻,re:(?i)^\s*(镜新闻|鏡新聞|镜新闻频道|鏡新聞频道)[\s\S]*$
+TVBS,re:(?i)^\s*TVBS(?![-\s_]*新聞)(?![-\s_]*新闻)[\s\S]*$
+BBCNews,re:(?i)^\s*BBC[-\s_]*News[\s\S]*$,BBC新闻,BBC World News
+SkyNews,re:(?i)^\s*Sky[-\s_]*News[\s\S]*$,天空新闻
 Euronews,re:(?i)^\s*Euronews[\s\S]*$,欧洲新闻
-ABCNewsLive,re:(?i)^\s*(ABC\s*News\s*Live|ABC News|ABC新闻)[\s\S]*$
-CBSNews24/7,re:(?i)^\s*(CBS\s*News\s*24/7|CBS News|CBS新闻)[\s\S]*$
-CNN,re:(?i)^\s*CNN[\s\S]*$,CNN新闻,CNN International
-FoxWeather,re:(?i)^\s*(Fox\s*Weather|Fox天气)[\s\S]*$
+ABCNewsLive,re:(?i)^\s*ABC[-\s_]*News[-\s_]*Live[\s\S]*$,ABC News,ABC新闻
+CBSNews24/7,re:(?i)^\s*CBS[-\s_]*News[\s\S]*$,CBS新闻
+CNN,re:(?i)^\s*CNN[\s\S]*$
+FoxWeather,re:(?i)^\s*Fox[-\s_]*Weather[\s\S]*$,福克斯天气
 MSNBC,re:(?i)^\s*MSNBC[\s\S]*$
-NBC,re:(?i)^\s*NBC[\s\S]*$,NBC新闻
-CNBC,re:(?i)^\s*CNBC[\s\S]*$,CNBC财经
-Entertainment Tonight,re:(?i)^\s*Entertainment\s*Tonight[\s\S]*$
+NBC,re:(?i)^\s*NBC(?![-\s_]*News)[\s\S]*$
+CNBC,re:(?i)^\s*CNBC[\s\S]*$
+Entertainment Tonight,re:(?i)^\s*Entertainment[-\s_]*Tonight[\s\S]*$
 Newsmax,re:(?i)^\s*Newsmax[\s\S]*$
-RTNews,re:(?i)^\s*(RT\s*News|RT新闻|今日俄罗斯)[\s\S]*$
-ArirangTV,re:(?i)^\s*(Arirang\s*TV|阿里郎电视台|阿里郎TV)[\s\S]*$
-DWEnglish,re:(?i)^\s*(DW\s*English|DW新闻|德国之声)[\s\S]*$
-CBCNews,re:(?i)^\s*(CBC\s*News|CBC新闻)[\s\S]*$
-NHKWorld-Japan,re:(?i)^\s*(NHK\s*World[-\s_]*Japan|NHK World|NHK国际)[\s\S]*$
-CNA新加坡,re:(?i)^\s*(CNA新加坡|CNA|Channel News Asia|亚洲新闻台)[\s\S]*$
-AlJazeera English,re:(?i)^\s*(Al\s*Jazeera\s*English|AlJazeera|半岛新闻台|半岛电视台)[\s\S]*$
-GBNews,re:(?i)^\s*(GB\s*News|GB新闻)[\s\S]*$
+RTNews,re:(?i)^\s*RT[-\s_]*News[\s\S]*$,RT新闻,今日俄罗斯
+ArirangTV,re:(?i)^\s*Arirang[-\s_]*TV[\s\S]*$,阿里郎电视
+DWEnglish,re:(?i)^\s*DW[-\s_]*English[\s\S]*$,德国之声英语,DW新闻
+CBCNews,re:(?i)^\s*CBC[-\s_]*News[\s\S]*$,加拿大广播新闻
+NHKWorld-Japan,re:(?i)^\s*NHK[-\s_]*World[-\s_]*Japan[\s\S]*$,NHK World,NHK世界台
+CNA新加坡,re:(?i)^\s*CNA[\s\S]*$,Channel NewsAsia,亚洲新闻台
+AlJazeera English,re:(?i)^\s*Al[-\s_]*Jazeera[-\s_]*English[\s\S]*$,Al Jazeera,半岛电视台
+GBNews,re:(?i)^\s*GB[-\s_]*News[\s\S]*$
 WION,re:(?i)^\s*WION[\s\S]*$
-TRTWorld,re:(?i)^\s*(TRT\s*World|TRT世界)[\s\S]*$
+TRTWorld,re:(?i)^\s*TRT[-\s_]*World[\s\S]*$
 CGTN,re:(?i)^\s*CGTN[\s\S]*$,中国国际电视台
-
 # ========== 电影 ==========
 CCTV6,re:(?i)^\s*CCTV[-\s_]*0?6(?![0-9Kk+])[\s\S]*$,CCTV-6,央视六套,中央六套
 CHC家庭影院,re:(?i)^\s*CHC[-\s_]*家庭影院[\s\S]*$
