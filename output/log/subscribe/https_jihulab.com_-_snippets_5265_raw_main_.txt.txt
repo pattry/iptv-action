@@ -10,13 +10,13 @@
 <link as="font" crossorigin="" href="/assets/gitlab-mono/GitLabMono-29c2152dac8739499dd0fe5cd37a486ebcc7d4798c9b6d3aeab65b3172375b05.woff2" rel="preload">
 <link as="font" crossorigin="" href="/assets/gitlab-mono/GitLabMono-Italic-af36701a2188df32a9dcea12e0424c380019698d4f76da9ad8ea2fd59432cf83.woff2" rel="preload">
 
-<script nonce="40h0gMq8J6U+5BWwkjjyBg==">
+<script nonce="2/NrYtHd7ZGUDh4fCMnCYQ==">
 //<![CDATA[
 window.gon={};gon.features={"twoStepSignIn":false};
 //]]>
 </script>
 
-<script nonce="40h0gMq8J6U+5BWwkjjyBg==">
+<script nonce="2/NrYtHd7ZGUDh4fCMnCYQ==">
 //<![CDATA[
 const root = document.documentElement;
 if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -48,14 +48,14 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e)
 <link rel="stylesheet" href="/assets/highlight/themes/white-c3211f67c1e8d8cfb47de179b2da35275ab7865cdf299ab44b4a8cc52d5cafd3.css" media="(prefers-color-scheme: light)" />
 <link rel="stylesheet" href="/assets/highlight/themes/dark-8cae80594d7953b52bc449bf1b4f2de402c87cc39fffc7aa0187b5f881c0cfd7.css" media="(prefers-color-scheme: dark)" />
 
-<script src="/assets/webpack/runtime.ebad10b1.bundle.js" defer="defer" nonce="40h0gMq8J6U+5BWwkjjyBg=="></script>
-<script src="/assets/webpack/main.7e1e41e3.chunk.js" defer="defer" nonce="40h0gMq8J6U+5BWwkjjyBg=="></script>
-<script src="/assets/webpack/tracker.eea7cc16.chunk.js" defer="defer" nonce="40h0gMq8J6U+5BWwkjjyBg=="></script>
-<script nonce="40h0gMq8J6U+5BWwkjjyBg==">
+<script src="/assets/webpack/runtime.ebad10b1.bundle.js" defer="defer" nonce="2/NrYtHd7ZGUDh4fCMnCYQ=="></script>
+<script src="/assets/webpack/main.7e1e41e3.chunk.js" defer="defer" nonce="2/NrYtHd7ZGUDh4fCMnCYQ=="></script>
+<script src="/assets/webpack/tracker.eea7cc16.chunk.js" defer="defer" nonce="2/NrYtHd7ZGUDh4fCMnCYQ=="></script>
+<script nonce="2/NrYtHd7ZGUDh4fCMnCYQ==">
 //<![CDATA[
 window.snowplowOptions = {"namespace":"gl","hostname":"jihulab.com:443","postPath":"/-/collect_events","forceSecureTracker":true,"appId":"gitlab_sm"};
 gl = window.gl || {};
-gl.snowplowStandardContext = {"schema":"iglu:com.gitlab/gitlab_standard/jsonschema/1-1-8","data":{"environment":"production","source":"gitlab-rails","correlation_id":"01M1F9NZT03JQSRBEXD3SV5Q3V","extra":{},"user_id":null,"global_user_id":null,"user_type":null,"is_gitlab_team_member":null,"namespace_id":null,"ultimate_parent_namespace_id":null,"project_id":null,"feature_enabled_by_namespace_ids":null,"realm":"saas","deployment_type":".com","context_generated_at":"2026-09-02T04:13:31.373+08:00","organization_id":1}};
+gl.snowplowStandardContext = {"schema":"iglu:com.gitlab/gitlab_standard/jsonschema/1-1-8","data":{"environment":"production","source":"gitlab-rails","correlation_id":"01M1G399C7CMQ4PZ0FW6DB9FTE","extra":{},"user_id":null,"global_user_id":null,"user_type":null,"is_gitlab_team_member":null,"namespace_id":null,"ultimate_parent_namespace_id":null,"project_id":null,"feature_enabled_by_namespace_ids":null,"realm":"saas","deployment_type":".com","context_generated_at":"2026-09-02T11:40:58.164+08:00","organization_id":1}};
 gl.snowplowPseudonymizedPageUrl = "https://jihulab.com/users/sign_in";
 gl.maskedDefaultReferrerUrl = null;
 gl.ga4MeasurementId = 'G-ENFH3X7M5Y';
@@ -66,23 +66,23 @@ gl.onlySendDuoEvents = true;
 //]]>
 </script>
 
-<script src="/assets/locale/zh_CN/app-f28def1e55420c2c9066befa795645bdc0eb29bf47aed64fc8074c6ea7aba0fe.js" defer="defer" nonce="40h0gMq8J6U+5BWwkjjyBg=="></script>
+<script src="/assets/locale/zh_CN/app-f28def1e55420c2c9066befa795645bdc0eb29bf47aed64fc8074c6ea7aba0fe.js" defer="defer" nonce="2/NrYtHd7ZGUDh4fCMnCYQ=="></script>
 
 
-<script src="/assets/webpack/commons-pages.admin.deploy_keys.index-pages.admin.groups.index-pages.admin.projects.index-pages.admi-81888dbb.a15b3e72.chunk.js" defer="defer" nonce="40h0gMq8J6U+5BWwkjjyBg=="></script>
-<script src="/assets/webpack/ba53ef03.c91246cb.chunk.js" defer="defer" nonce="40h0gMq8J6U+5BWwkjjyBg=="></script>
-<script src="/assets/webpack/0dcf7166.63feabc4.chunk.js" defer="defer" nonce="40h0gMq8J6U+5BWwkjjyBg=="></script>
-<script src="/assets/webpack/309aed73.88190f25.chunk.js" defer="defer" nonce="40h0gMq8J6U+5BWwkjjyBg=="></script>
-<script src="/assets/webpack/super_sidebar.1cfcb1be.chunk.js" defer="defer" nonce="40h0gMq8J6U+5BWwkjjyBg=="></script>
-<script src="/assets/webpack/commons-pages.admin.sessions-pages.groups.omniauth_callbacks-pages.ldap.omniauth_callbacks-pages.omn-aac29e51.4191f108.chunk.js" defer="defer" nonce="40h0gMq8J6U+5BWwkjjyBg=="></script>
-<script src="/assets/webpack/pages.sessions.new.0feb9634.chunk.js" defer="defer" nonce="40h0gMq8J6U+5BWwkjjyBg=="></script>
+<script src="/assets/webpack/commons-pages.admin.deploy_keys.index-pages.admin.groups.index-pages.admin.projects.index-pages.admi-81888dbb.a15b3e72.chunk.js" defer="defer" nonce="2/NrYtHd7ZGUDh4fCMnCYQ=="></script>
+<script src="/assets/webpack/ba53ef03.c91246cb.chunk.js" defer="defer" nonce="2/NrYtHd7ZGUDh4fCMnCYQ=="></script>
+<script src="/assets/webpack/0dcf7166.63feabc4.chunk.js" defer="defer" nonce="2/NrYtHd7ZGUDh4fCMnCYQ=="></script>
+<script src="/assets/webpack/309aed73.88190f25.chunk.js" defer="defer" nonce="2/NrYtHd7ZGUDh4fCMnCYQ=="></script>
+<script src="/assets/webpack/super_sidebar.1cfcb1be.chunk.js" defer="defer" nonce="2/NrYtHd7ZGUDh4fCMnCYQ=="></script>
+<script src="/assets/webpack/commons-pages.admin.sessions-pages.groups.omniauth_callbacks-pages.ldap.omniauth_callbacks-pages.omn-aac29e51.4191f108.chunk.js" defer="defer" nonce="2/NrYtHd7ZGUDh4fCMnCYQ=="></script>
+<script src="/assets/webpack/pages.sessions.new.0feb9634.chunk.js" defer="defer" nonce="2/NrYtHd7ZGUDh4fCMnCYQ=="></script>
 
 
 
 
 <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="s-SO8LAl-panEhfRcT0oL-KJv-oLfiMeVqSgX4CW0Avl5REhXiFiwuVJ6T9TRlFhoEdkUTXMNrk7e22QMvsMLw" />
-<meta name="csp-nonce" content="40h0gMq8J6U+5BWwkjjyBg==" />
+<meta name="csrf-token" content="UC5tsbr4UNg2qbzX-bvndpJxrkf-uLcBrEd7kL3u6OVh4RdgqgQC-eWI1SZuY0ibw5wNlxnPcUOpkl_kNW9nDA" />
+<meta name="csp-nonce" content="2/NrYtHd7ZGUDh4fCMnCYQ==" />
 <meta name="action-cable-url" content="/-/cable" />
 <link crossorigin="use-credentials" href="/-/manifest.json" rel="manifest">
 <link rel="icon" type="image/png" href="/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" id="favicon" data-original-href="/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" />
@@ -93,7 +93,7 @@ gl.onlySendDuoEvents = true;
 
 <!-- Tencent RUM -->
 <script src="https://cdn-go.cn/aegis/aegis-sdk/latest/aegis.min.js" type="text/javascript"></script>
-<script nonce="40h0gMq8J6U+5BWwkjjyBg==">
+<script nonce="2/NrYtHd7ZGUDh4fCMnCYQ==">
 //<![CDATA[
 ;var aegis = new Aegis({
     id: 'lYKjL8AgQDn7M6aqwe',
@@ -121,7 +121,7 @@ window.addEventListener("unhandledrejection", function(err){
 
 </div>
 
-<script nonce="40h0gMq8J6U+5BWwkjjyBg==">
+<script nonce="2/NrYtHd7ZGUDh4fCMnCYQ==">
 //<![CDATA[
 gl = window.gl || {};
 gl.client = {"isChrome":true,"isWindows":true};
@@ -179,7 +179,7 @@ JihuLab.com 免费试用 90 天
 <div data-app-data="{&quot;sign_in_path&quot;:&quot;/users/sign_in&quot;,&quot;users_sign_in_path_path&quot;:&quot;/users/sign_in_path&quot;,&quot;passkeys_sign_in_path&quot;:&quot;/users/passkeys/sign_in&quot;,&quot;is_unconfirmed_email&quot;:false,&quot;new_user_confirmation_path&quot;:&quot;/users/confirmation/new&quot;,&quot;new_password_path&quot;:&quot;/users/password/new&quot;,&quot;show_captcha&quot;:false,&quot;is_remember_me_enabled&quot;:true,&quot;show_passkey_immediately&quot;:false}" id="js-sign-in-form">
 <div class="gl-spinner-container gl-my-5" role="status"><span aria-hidden class="gl-spinner gl-spinner-md gl-spinner-dark !gl-align-text-bottom"></span><span class="gl-sr-only !gl-absolute">加载中</span>
 </div>
-<form action="/users/sign_in" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="pKIsJDRnhKh0R8PKVD3WDaZBlwfWkFzuKMHn6Ztj3Sryo7P12mMc_DYcPSR2Rq9D5I9MvOgiSUlFHiomKQ4BDg" autocomplete="off" /><input data-js-name="login" autocomplete="off" type="hidden" name="user[login]" id="user_login" />
+<form action="/users/sign_in" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="jS_UXPAzMEAAE5ZH1fTIJLXe2hJqrjm1OmnzL6HU1SG84K6N4M9iYdMy_7ZCLGfJ5DN5wo3Z__c_vNdbKVVayA" autocomplete="off" /><input data-js-name="login" autocomplete="off" type="hidden" name="user[login]" id="user_login" />
 <input data-js-name="password" autocomplete="off" type="hidden" name="user[password]" id="user_password" />
 <input data-js-name="rememberMe" autocomplete="off" type="hidden" name="user[remember_me]" id="user_remember_me" />
 </form></div>
@@ -208,7 +208,7 @@ GitHub
 
 </span>
 
-</button><input type="hidden" name="authenticity_token" value="TWdyrk6nizGYX8gJQUwn1OL7L2bbl_D0lRi_phrgJmcbZu1_oKMTZdoENudjN16aoDX03eUl5VP4x3JpqI36Qw" autocomplete="off" /></form>
+</button><input type="hidden" name="authenticity_token" value="4BU1NLhrUI-wi8kcrS9-BjSpUn4qXe7maFBw4TZ0Wp7R2k_lqJcCrmOqoO0699HrZUTxrs0qKKRthVSVvvXVdw" autocomplete="off" /></form>
 <form class="js-omniauth-form" method="post" action="/users/auth/gitlab"><button class="gl-button btn btn-block btn-md btn-default " data-testid="gitlab-oauth-login-button" type="submit"><span class="gl-button-text">
 <img alt="GitLab.com" title="Sign in with GitLab.com" class="gl-button-icon lazy" data-src="/assets/auth_buttons/gitlab_64-2957169c8ef64c58616a1ac3f4fc626e8a35ce4eb3ed31bb0d873712f2a041a0.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
 <span class="gl-button-text">
@@ -217,7 +217,7 @@ GitLab.com
 
 </span>
 
-</button><input type="hidden" name="authenticity_token" value="0eBsA5Vj4GFFrxpqJREMv2r7CUQD3VQpofDc0-8aiO-H4fPSe2d4NQf05IQHanXxKDXS_z1vQY7MLxEcXXdUyw" autocomplete="off" /></form>
+</button><input type="hidden" name="authenticity_token" value="ixiIXrdnGNkWb6HZFjbq8in7B6kJxecFX9x0beLF6W661_KPp5tK-MVOyCiB7kUfeBakee6yIUdaCVAZakRmhw" autocomplete="off" /></form>
 <form class="js-omniauth-form" method="post" action="/users/auth/dingtalk"><button class="gl-button btn btn-block btn-md btn-default " type="submit"><span class="gl-button-text">
 <img alt="DingTalk" title="Sign in with DingTalk" class="gl-button-icon lazy" data-src="/assets/auth_buttons/dingtalk_64-bdfcd26f5cd24bb90b5b3e2c1a4773ddef36f921a6478e82d49ecb6eb53acc8c.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
 <span class="gl-button-text">
@@ -226,7 +226,7 @@ DingTalk
 
 </span>
 
-</button><input type="hidden" name="authenticity_token" value="tIbTkqTH4OqAF2_z2wyp8B7FaBg2xS7qaYKznf5agkvih0xDSsN4vsJMkR35d9C-XAuzowh3O00EXX5STDdebw" autocomplete="off" /></form>
+</button><input type="hidden" name="authenticity_token" value="kU7FYloJlLM_r3G2X-JoCTNre3yfouxMHs-KbYMQu56ggb-zSvXGkuyOGEfIOsfkYobYrHjVKg4bGq4ZC5E0dw" autocomplete="off" /></form>
 <form class="js-omniauth-form" method="post" action="/users/auth/alicloud"><button class="gl-button btn btn-block btn-md btn-default " type="submit"><span class="gl-button-text">
 <img alt="AliCloud" title="Sign in with AliCloud" class="gl-button-icon lazy" data-src="/assets/auth_buttons/alicloud_64-ff0a43fef6dca5105288f51454bcdf96712b90ab1f513a8eab3d54dfe0213694.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
 <span class="gl-button-text">
@@ -235,7 +235,7 @@ AliCloud
 
 </span>
 
-</button><input type="hidden" name="authenticity_token" value="ad5TSDlnpqLipWKVtvgWsV1Drrekr2DV8oSwFfRhw3Y_38yZ12M-9qD-nHuUg2__H411DJoddXKfW33aRgwfUg" autocomplete="off" /></form>
+</button><input type="hidden" name="authenticity_token" value="HFSX6vfHaDZv6DxuJKwJgmeTp0mlJ9UDVEkpQFUijUYtm-075zs6F7zJVZ-zdKZvNn4EmUJQE0FRnA003aMCrw" autocomplete="off" /></form>
 <form class="js-omniauth-form" method="post" action="/users/auth/bitbucket"><button class="gl-button btn btn-block btn-md btn-default " type="submit"><span class="gl-button-text">
 <img alt="Bitbucket" title="Sign in with Bitbucket" class="gl-button-icon lazy" data-src="/assets/auth_buttons/bitbucket_64-daa496030c0c290748e3c2e50f7464d2f5de0e019cce728930e0508a6dac815c.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
 <span class="gl-button-text">
@@ -244,7 +244,7 @@ Bitbucket
 
 </span>
 
-</button><input type="hidden" name="authenticity_token" value="HiYRgajDMw1mW3Fr7ehRbQkmwcY27Rzca1Jb3FWycO5IJ45QRserWSQAj4XPkygjS-gafQhfCXsGjZYT59-syg" autocomplete="off" /></form>
+</button><input type="hidden" name="authenticity_token" value="41axACG9ut1iRLLqppcqsqqY2PBQEhITvvkLKSdjOjDSmcvRMUHo_LFl2xsxT4Vf-3V7ILdl1FG7LC9dr-K12Q" autocomplete="off" /></form>
 <div class="gl-form-checkbox custom-control custom-checkbox">
 <input type="checkbox" name="js-remember-me-omniauth" id="js-remember-me-omniauth" class="custom-control-input" />
 <label class="custom-control-label" for="js-remember-me-omniauth"><span>记住账号
