@@ -1,5 +1,87 @@
-Payment required
 
-DEPLOYMENT_DISABLED
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>微信公众号消息服务</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;padding:25px 15px;font-family:Arial,"Microsoft YaHei",sans-serif;background:linear-gradient(135deg,#000428,#004e92);color:#fff}
+.card{max-width:850px;margin:auto;background:rgba(0,0,0,.65);padding:25px;border-radius:20px}
+h2{text-align:center;color:#00ffff}
+.box{background:#111;padding:18px;border-radius:15px;margin-top:15px}
+.open{color:#00ff99;font-weight:bold}
+.wait{color:#ffcc00}
+table{width:100%;border-collapse:collapse;margin-top:15px}
+td,th{padding:10px;border-bottom:1px solid #333;text-align:left}
+.tag{display:inline-block;background:#222;padding:8px 12px;border-radius:8px;margin:4px}
+.small{color:#999;font-size:13px}
+</style>
+</head>
+<body>
+<div class="card">
 
-hkg1::fjdpc-1788400853048-f9e4f356ec0d
+<h2>微信公众号消息服务</h2>
+
+<div class="box">
+<b style="color:#00ff99">● 服务运行正常</b>
+<br><br>
+<strong>微信接口：</strong>/wechat
+<br>
+<strong>当前日期：</strong>2026-09-04
+<br>
+<strong>分类缓存：</strong>67 个
+<br>
+<strong>最后刷新：</strong>
+2026/09/04 04:07:30
+</div>
+
+<div class="box">
+<strong>今日自动开放内容</strong>
+<br><br>
+<span class="tag">咪咕央卫</span><span class="tag">更新时间</span><span class="tag">香港港台</span>
+</div>
+
+<div class="box">
+<strong>今日关键词统计</strong>
+
+<table>
+<tr>
+<th>分类</th>
+<th>人数</th>
+<th>状态</th>
+</tr>
+
+<tr>
+<td>香港港台</td>
+<td>3</td>
+<td>
+<span class="open">已开放</span>
+</td>
+</tr>
+<tr>
+<td>四季台湾</td>
+<td>1</td>
+<td>
+<span class="wait">还差 2 人</span>
+</td>
+</tr>
+<tr>
+<td>央视电信</td>
+<td>1</td>
+<td>
+<span class="wait">还差 2 人</span>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="box small">
+公众号潇雨萌萌 发送“菜单”可获取当前可选择内容。<br>
+系统自动运行管理
+</div>
+
+</div>
+</body>
+</html>
