@@ -515,7 +515,7 @@ FashionBox,FashionBox
 World Fashion,World Fashion
 
 # ========== 纪录 ==========
-纪录片,#genre#
+
 CCTV9,re:(?i)^\s*CCTV[-\s_]*0?9(?![0-9Kk+])[\s\S]*$,CCTV-9,央视纪录,中央九套
 CCTV-9 HD,re:(?i)^\s*CCTV[-\s_]*0?9[-\s_]*HD[\s\S]*$,CCTV9HD
 CCTV記錄台,re:(?i)^\s*(CCTV记录台|CCTV記錄台|CCTV纪录|CCTV紀錄)[\s\S]*$
