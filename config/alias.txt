@@ -491,31 +491,28 @@ LiveABC互動英語頻道,re:(?i)^\s*(LiveABC互动英语频道|LiveABC互動英
 CCTV15,re:(?i)^\s*CCTV[-\s_]*15(?![0-9Kk+])[\s\S]*$,CCTV-15,央视音乐,央视十五套
 CCTV-15 HD,re:(?i)^\s*CCTV[-\s_]*15[-\s_]*HD[\s\S]*$,CCTV15HD
 风云音乐,re:(?i)^\s*(风云音乐|風雲音樂|风云音乐HD|風雲音樂HD)[\s\S]*$
-KroneHitTV,re:(?i)^\s*Krone[-\s_]*Hit[-\s_]*TV[\s\S]*$,KroneHit,Krone Hit TV
-DeluxeMusic,re:(?i)^\s*Deluxe[-\s_]*Music[\s\S]*$,Deluxe音乐
-CMusic,re:(?i)^\s*CMusic[\s\S]*$,C-Music
-TRACEUrban,re:(?i)^\s*TRACE[-\s_]*Urban[\s\S]*$,TRACE Urban
-MezzoLive HD,re:(?i)^\s*Mezzo[-\s_]*Live[-\s_]*HD[\s\S]*$,Mezzo Live HD,Mezzo
-CLASSICA古典乐,re:(?i)^\s*(CLASSICA古典乐|CLASSICA古典樂|Classica古典乐|Classica古典樂|Classica)[\s\S]*$
-MTVHITSHD,re:(?i)^\s*MTV[-\s_]*HITS[-\s_]*HD[\s\S]*$,MTV Hits HD,MTV Hits
-
-1_HD,re:(?i)^\s*1[-\s_]*HD[\s\S]*$
-MTV,re:(?i)^\s*MTV(?![-\s_]*HITS)(?![-\s_]*Hits)[\s\S]*$,MTVHD,MTV HD
-MTV(IN),re:(?i)^\s*MTV\s*\(?\s*IN\s*\)?[\s\S]*$,MTV India,MTV印度
-NOW 70s,re:(?i)^\s*NOW[-\s_]*70s[\s\S]*$,Now 70s,NOW七十年代
-NOW 80s,re:(?i)^\s*NOW[-\s_]*80s[\s\S]*$,Now 80s,NOW八十年代
-NOW ROCK,re:(?i)^\s*NOW[-\s_]*ROCK[\s\S]*$,Now Rock
-Makkah,re:(?i)^\s*Makkah[\s\S]*$,麦加
-Madinah,re:(?i)^\s*Madinah[\s\S]*$,麦地那
-人間衛視,re:(?i)^\s*(人间卫视|人間衛視|人间卫视台|人間衛視台)[\s\S]*$
-法國時裝,re:(?i)^\s*(法国时装|法國時裝|FashionBox|World[-\s_]*Fashion)[\s\S]*$
-華藏衛視,re:(?i)^\s*(华藏卫视|華藏衛視|华藏卫视台|華藏衛視台)[\s\S]*$
-無上師電視,re:(?i)^\s*(无上师电视|無上師電視|无上师|無上師)[\s\S]*$
-古典音樂台,re:(?i)^\s*(古典音乐台|古典音樂台|古典音乐|古典音樂)[\s\S]*$
-電影原聲台CMusic,re:(?i)^\s*(电影原声台CMusic|電影原聲台CMusic|电影原声台|電影原聲台|电影原声|電影原聲)[\s\S]*$
-THTmusic,re:(?i)^\s*THT[-\s_]*music[\s\S]*$,THT音乐
-FashionBox,re:(?i)^\s*FashionBox[\s\S]*$
-World Fashion,re:(?i)^\s*World[-\s_]*Fashion[\s\S]*$
+KroneHitTV,KroneHitTV
+DeluxeMusic,DeluxeMusic
+CMusic,CMusic,電影原聲台CMusic
+TRACEUrban,TRACEUrban
+MezzoLive HD,MezzoLive HD,Mezzo Live
+CLASSICA古典乐,CLASSICA古典乐,古典音樂台
+MTVHITSHD,MTVHITSHD
+MTV,MTV,MTV(IN)
+NOW 70s,NOW 70s
+NOW 80s,NOW 80s
+NOW ROCK,NOW ROCK
+Makkah,Makkah
+Madinah,Madinah
+CCTV-15,CCTV-15
+法國時裝,法國時裝
+古典音樂台,古典音樂台
+風雲音樂HD,風雲音樂HD
+電影原聲台CMusic,電影原聲台CMusic
+THTmusic,THTmusic
+Mezzo Live,Mezzo Live
+FashionBox,FashionBox
+World Fashion,World Fashion
 
 # ========== 纪录 ==========
 纪录片,#genre#
