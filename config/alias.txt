@@ -489,13 +489,12 @@ LiveABC互動英語頻道,re:(?i)^\s*(LiveABC互动英语频道|LiveABC互動英
 
 # ========== 音乐 ==========
 CCTV15,re:(?i)^\s*CCTV[-\s_]*15(?![0-9Kk+])[\s\S]*$,CCTV-15,央视音乐,央视十五套
-CCTV-15 HD,re:(?i)^\s*CCTV[-\s_]*15[-\s_]*HD[\s\S]*$,CCTV15HD
 风云音乐,re:(?i)^\s*(风云音乐|風雲音樂|风云音乐HD|風雲音樂HD)[\s\S]*$
 KroneHitTV,KroneHitTV
 DeluxeMusic,DeluxeMusic
 CMusic,CMusic,電影原聲台CMusic
 TRACEUrban,TRACEUrban
-MezzoLive HD,MezzoLive HD,Mezzo Live
+MezzoLive,MezzoLive HD,Mezzo Live
 CLASSICA古典乐,CLASSICA古典乐,古典音樂台
 MTVHITSHD,MTVHITSHD
 MTV,MTV,MTV(IN)
@@ -504,13 +503,8 @@ NOW 80s,NOW 80s
 NOW ROCK,NOW ROCK
 Makkah,Makkah
 Madinah,Madinah
-CCTV-15,CCTV-15
-法國時裝,法國時裝
-古典音樂台,古典音樂台
-風雲音樂HD,風雲音樂HD
-電影原聲台CMusic,電影原聲台CMusic
+法國時裝,法國時裝，法国时装，法国时装频道
 THTmusic,THTmusic
-Mezzo Live,Mezzo Live
 FashionBox,FashionBox
 World Fashion,World Fashion
 
