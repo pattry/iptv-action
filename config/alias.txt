@@ -5,7 +5,7 @@
 # Format: Main name (corresponds to channel name in demo.txt template), alias1, alias2, alias3
 # Aliases support regex matching. Aliases starting with re: are recognized as regular expressions, e\.g\. CCTV-1,re:(?i)^\s*CCTV[-\s_]*0?1(?![0-9Kk+])[\s\S]*$
 
-# ========== 央视 ==========
+
 CCTV1,re:(?i)^\s*CCTV[-\s_]*0?1(?![0-9Kk+])[\s\S]*$,CCTV-1,央视一套,中央一套
 CCTV2,re:(?i)^\s*CCTV[-\s_]*0?2(?![0-9Kk+])[\s\S]*$,CCTV-2,央视二套,中央二套
 CCTV3,re:(?i)^\s*CCTV[-\s_]*0?3(?![0-9Kk+])[\s\S]*$,CCTV-3,央视三套,中央三套
@@ -55,7 +55,7 @@ CHC影迷电影,re:(?i)^\s*CHC[-\s_]*影迷电影[\s\S]*$,CHC影迷
 优漫卡通,re:(?i)^\s*优漫卡通[\s\S]*$
 早期教育,re:(?i)^\s*早期教育[\s\S]*$
 
-# ========== 地方 ==========
+
 湖南卫视,re:(?i)^\s*(湖南卫视|湖南衛視|湖南台)[\s\S]*$
 湖南经视,re:(?i)^\s*(湖南经视|湖南經視)[\s\S]*$
 湖南都市,re:(?i)^\s*湖南都市[\s\S]*$
@@ -128,7 +128,7 @@ CHC影迷电影,re:(?i)^\s*CHC[-\s_]*影迷电影[\s\S]*$,CHC影迷
 五星体育,re:(?i)^\s*(五星体育|五星體育|五星体育台)[\s\S]*$
 海峡卫视,re:(?i)^\s*(海峡卫视|海峽衛視|海峡台)[\s\S]*$
 
-# ========== 体育 ==========
+
 CCTV5,re:(?i)^\s*CCTV[-\s_]*0?5(?![0-9Kk+])[\s\S]*$,CCTV-5,央视五套
 CCTV5+,re:(?i)^\s*CCTV[-\s_]*5\s*\+[\s\S]*$,CCTV-5+,央视体育赛事
 CCTV16,re:(?i)^\s*CCTV[-\s_]*16(?![0-9Kk+])[\s\S]*$,CCTV-16,央视奥林匹克
@@ -302,8 +302,8 @@ Astro_Sports puls,re:(?i)^\s*Astro[-\s_]*Sports[-\s_]*Plus[\s\S]*$,Astro Sports 
 Astro_Premier league1,re:(?i)^\s*Astro[-\s_]*Premier[-\s_]*League[-\s_]*1[\s\S]*$
 Astro_Premier league2,re:(?i)^\s*Astro[-\s_]*Premier[-\s_]*League[-\s_]*2[\s\S]*$
 
-# ========== 新闻 ==========
-CCTV13,re:(?i)^\s*CCTV[-\s_]*13(?![0-9Kk+])[\s\S]*$,CCTV-13,央视新闻,中央13套
+
+
 凤凰资讯,re:(?i)^\s*(凤凰资讯|鳳凰資訊|凤凰资讯台|鳳凰資訊台)[\s\S]*$
 凤凰中文,re:(?i)^\s*(凤凰中文|鳳凰中文|凤凰中文台|鳳凰中文台)[\s\S]*$
 凤凰香港,re:(?i)^\s*(凤凰香港|鳳凰香港|凤凰香港台|鳳凰香港台)[\s\S]*$
@@ -344,13 +344,8 @@ GBNews,re:(?i)^\s*GB[-\s_]*News[\s\S]*$
 WION,re:(?i)^\s*WION[\s\S]*$
 TRTWorld,re:(?i)^\s*TRT[-\s_]*World[\s\S]*$
 CGTN,re:(?i)^\s*CGTN[\s\S]*$,中国国际电视台
-# ========== 电影 ==========
-电影,#genre#
-CCTV6,re:(?i)^\s*CCTV[-\s_]*6(?![0-9Kk+])[\s\S]*$,CCTV-6,央视六套,央视电影,电影频道
-CCTV-6 HD,re:(?i)^\s*CCTV[-\s_]*6[-\s_]*HD[\s\S]*$,CCTV6HD
-CHC家庭影院,re:(?i)^\s*CHC[-\s_]*家庭影院[\s\S]*$
-CHC动作电影,re:(?i)^\s*CHC[-\s_]*动作电影[\s\S]*$,CHC動作電影
-CHC影迷电影,re:(?i)^\s*CHC[-\s_]*影迷电影[\s\S]*$,CHC影迷電影
+
+
 凤凰电影频道,re:(?i)^\s*(凤凰电影频道|鳳凰電影頻道|凤凰电影|鳳凰電影|凤凰电影台|鳳凰電影台)[\s\S]*$
 POPC,re:(?i)^\s*POPC[\s\S]*$
 美亚电影,re:(?i)^\s*(美亚电影|美亞電影)[\s\S]*$
@@ -443,7 +438,7 @@ NewTV明星大片,re:(?i)^\s*(NewTV明星大片|NewTV[-\s_]*明星大片)[\s\S]*
 NewTV军旅剧场,re:(?i)^\s*(NewTV军旅剧场|NewTV軍旅劇場|NewTV[-\s_]*军旅剧场)[\s\S]*$
 NewTV魅力潇湘,re:(?i)^\s*(NewTV魅力潇湘|NewTV魅力瀟湘|NewTV[-\s_]*魅力潇湘)[\s\S]*$
 
-# ========== 少儿 ==========
+
 CCTV14,re:(?i)^\s*CCTV[-\s_]*14(?![0-9Kk+])[\s\S]*$,CCTV-14,央视少儿,中央十四套
 卡酷少儿,re:(?i)^\s*(卡酷少儿|卡酷少兒|卡酷少儿台|卡酷少兒台)[\s\S]*$
 优漫卡通,re:(?i)^\s*(优漫卡通|優漫卡通|优漫卡通台|優漫卡通台)[\s\S]*$
@@ -487,8 +482,8 @@ MOMO綜合台,re:(?i)^\s*(MOMO综合台|MOMO綜合台|MOMO综合|MOMO綜合)[\s\
 ELTV生活英語台,re:(?i)^\s*(ELTV生活英语台|ELTV生活英語台|ELTV生活英语|ELTV生活英語)[\s\S]*$
 LiveABC互動英語頻道,re:(?i)^\s*(LiveABC互动英语频道|LiveABC互動英語頻道|LiveABC互动英语|LiveABC互動英語)[\s\S]*$
 
-# ========== 音乐 ==========
-CCTV15,re:(?i)^\s*CCTV[-\s_]*15(?![0-9Kk+])[\s\S]*$,CCTV-15,央视音乐,央视十五套
+
+
 风云音乐,re:(?i)^\s*(风云音乐|風雲音樂|风云音乐HD|風雲音樂HD)[\s\S]*$
 KroneHitTV,KroneHitTV
 DeluxeMusic,DeluxeMusic
@@ -508,10 +503,7 @@ THTmusic,THTmusic
 FashionBox,FashionBox
 World Fashion,World Fashion
 
-# ========== 纪录 ==========
 
-CCTV9,re:(?i)^\s*CCTV[-\s_]*0?9(?![0-9Kk+])[\s\S]*$,CCTV-9,央视纪录,中央九套
-CCTV-9 HD,re:(?i)^\s*CCTV[-\s_]*0?9[-\s_]*HD[\s\S]*$,CCTV9HD
 CCTV記錄台,re:(?i)^\s*(CCTV记录台|CCTV記錄台|CCTV纪录|CCTV紀錄)[\s\S]*$
 世界地理,re:(?i)^\s*世界地理[\s\S]*$
 发现之旅,re:(?i)^\s*发现之旅[\s\S]*$
@@ -596,8 +588,7 @@ NewTV军事纪实,re:(?i)^\s*NewTV军事纪实[\s\S]*$
 NewTV军事评论,re:(?i)^\s*NewTV军事评论[\s\S]*$
 直播中国精编直播,re:(?i)^\s*直播中国[\s\S]*$
 
-# ========== 港澳台 ==========
-# ========== 港澳台补充 ==========
+
 鳳凰資訊,凤凰资讯,鳳凰資訊,凤凰资讯台,鳳凰資訊台,凤凰资讯
 鳳凰香港,凤凰香港,鳳凰香港,凤凰香港台,鳳凰香港台
 鳳凰中文,凤凰中文,鳳凰中文,凤凰中文台,鳳凰中文台
@@ -986,18 +977,36 @@ CM+(多音轨),CM+,CM Plus,CM多音轨,re:(?i)^\s*CM[+\s_]*(多音轨|Plus)?\s*$
 E樂(多音轨),E樂,E乐,ELe,E樂多音轨,E乐多音轨
 佳樂(多音轨),佳樂,佳乐,JiaLe,佳樂多音轨,佳乐多音轨
 剧乐酷,劇樂酷,剧乐酷HD,劇樂酷HD,re:(?i)^\s*[剧劇]乐[乐樂]酷.*$
-CNA,re:(?i)^\s*(CNA|Channel News Asia|亚洲新闻台|亞洲新聞台)[\s\S]*$
+BBCNews,re:(?i)^\s*BBC[-\s_]*News[\s\S]*$,BBC新闻,BBC新聞,BBC World News
+SkyNews,re:(?i)^\s*Sky[-\s_]*News[\s\S]*$,天空新闻
+Euronews,re:(?i)^\s*Euronews[\s\S]*$,欧洲新闻
+ABCNewsLive,re:(?i)^\s*ABC[-\s_]*News[-\s_]*Live[\s\S]*$,ABC News,ABC新闻
+CBSNews24/7,re:(?i)^\s*CBS[-\s_]*News[\s\S]*$,CBS新闻
+CNN,re:(?i)^\s*CNN[\s\S]*$
+FoxWeather,re:(?i)^\s*Fox[-\s_]*Weather[\s\S]*$,福克斯天气
+MSNBC,re:(?i)^\s*MSNBC[\s\S]*$
+NBC,re:(?i)^\s*NBC(?![-\s_]*News)[\s\S]*$
+CNBC,re:(?i)^\s*CNBC[\s\S]*$
+Entertainment Tonight,re:(?i)^\s*Entertainment[-\s_]*Tonight[\s\S]*$
+Newsmax,re:(?i)^\s*Newsmax[\s\S]*$
+RTNews,re:(?i)^\s*RT[-\s_]*News[\s\S]*$,RT新闻,今日俄罗斯
+ArirangTV,re:(?i)^\s*Arirang[-\s_]*TV[\s\S]*$,阿里郎电视,阿里郎电视台,阿里郎TV
+DWEnglish,re:(?i)^\s*DW[-\s_]*English[\s\S]*$,德国之声英语,DW新闻,德国之声
+CBCNews,re:(?i)^\s*CBC[-\s_]*News[\s\S]*$,加拿大广播新闻
+NHKWorld-Japan,re:(?i)^\s*NHK[-\s_]*World[-\s_]*Japan[\s\S]*$,NHK World,NHK世界台,NHK国际
+CNA新加坡,re:(?i)^\s*CNA[\s\S]*$,Channel NewsAsia,亚洲新闻台,Channel News Asia
+AlJazeera English,re:(?i)^\s*Al[-\s_]*Jazeera[-\s_]*English[\s\S]*$,Al Jazeera,半岛电视台,半岛新闻台
+GBNews,re:(?i)^\s*GB[-\s_]*News[\s\S]*$,GB新闻
+WION,re:(?i)^\s*WION[\s\S]*$
+TRTWorld,re:(?i)^\s*TRT[-\s_]*World[\s\S]*$,TRT世界
+CGTN,re:(?i)^\s*CGTN[\s\S]*$,中国国际电视台
 Suria,re:(?i)^\s*Suria[\s\S]*$
-SPOTV,re:(?i)^\s*SPOTV(?![0-9])[\s\S]*$
-SPOTV2,re:(?i)^\s*SPOTV[-\s_]*2[\s\S]*$
 Now Jelli,re:(?i)^\s*(Now\s*Jelli|nowjelli|NowJelli)[\s\S]*$
-HITS,re:(?i)^\s*HITS[\s\S]*$
+HITS,re:(?i)^\s*HITS[\s\S]*$,HITS now,HitsMovies
 NOW 70s,re:(?i)^\s*NOW\s*70s[\s\S]*$
 NOW 80s,re:(?i)^\s*NOW\s*80s[\s\S]*$
 W-Sport,re:(?i)^\s*W[-\s_]*Sport[\s\S]*$
 NOW ROCK,re:(?i)^\s*NOW\s*ROCK[\s\S]*$
-HITS now,re:(?i)^\s*HITS\s*now[\s\S]*$
-HitsMovies,re:(?i)^\s*Hits\s*Movies[\s\S]*$
 Vasantham,re:(?i)^\s*Vasantham[\s\S]*$
 Channel5,re:(?i)^\s*(Channel\s*5|CH5|5频道|5頻道)[\s\S]*$
 Channel8,re:(?i)^\s*(Channel\s*8|CH8|8频道|8頻道)[\s\S]*$
@@ -1038,7 +1047,6 @@ AFN,re:(?i)^\s*AFN[\s\S]*$
 HBO,re:(?i)^\s*HBO[\s\S]*$
 GOLF,re:(?i)^\s*GOLF[\s\S]*$,Golf Channel
 HGTV,re:(?i)^\s*HGTV[\s\S]*$
-CNBC,re:(?i)^\s*CNBC[\s\S]*$
 Suntv,re:(?i)^\s*(Sun\s*TV|Suntv)[\s\S]*$
 愛奇藝,re:(?i)^\s*(爱奇艺|愛奇藝|iQIYI)[\s\S]*$
 翡翠台,re:(?i)^\s*(翡翠台|翡翠台HD|Jade|TVB Jade)[\s\S]*$
@@ -1071,12 +1079,6 @@ Astro_Badminton,re:(?i)^\s*Astro[-\s_]*Badminton[\s\S]*$
 Astro_Sports puls,re:(?i)^\s*Astro[-\s_]*Sports[-\s_]*Plus[\s\S]*$,Astro Sports Plus
 Astro_Premier league1,re:(?i)^\s*Astro[-\s_]*Premier[-\s_]*League[-\s_]*1[\s\S]*$
 Astro_Premier league2,re:(?i)^\s*Astro[-\s_]*Premier[-\s_]*League[-\s_]*2[\s\S]*$
-ABCNewsLive,re:(?i)^\s*(ABC\s*News\s*Live|ABC News|ABC新闻)[\s\S]*$
-BBC News,re:(?i)^\s*(BBC\s*News|BBC新闻|BBC新聞)[\s\S]*$
-CBSNews24/7,re:(?i)^\s*(CBS\s*News\s*24/7|CBS News|CBS新闻)[\s\S]*$
-CNN,re:(?i)^\s*CNN[\s\S]*$
-NBC,re:(?i)^\s*NBC[\s\S]*$
-SkyNews,re:(?i)^\s*(Sky\s*News|天空新闻)[\s\S]*$
 E!,re:(?i)^\s*E![\s\S]*$
 MTV,re:(?i)^\s*MTV[\s\S]*$
 Comedy Central,re:(?i)^\s*Comedy\s*Central[\s\S]*$
@@ -1089,24 +1091,13 @@ Bravo,re:(?i)^\s*Bravo[\s\S]*$
 Fuse,re:(?i)^\s*Fuse[\s\S]*$
 WETV,re:(?i)^\s*WETV[\s\S]*$
 VICE,re:(?i)^\s*VICE[\s\S]*$
-MSNBC,re:(?i)^\s*MSNBC[\s\S]*$
-CNBC,re:(?i)^\s*CNBC[\s\S]*$
-Newsmax,re:(?i)^\s*Newsmax[\s\S]*$
 FoxNews,re:(?i)^\s*(Fox\s*News|FoxNews|福克斯新闻)[\s\S]*$
 Bloomberg TV,re:(?i)^\s*Bloomberg[\s\S]*$
 France24,re:(?i)^\s*(France\s*24|France24|法国24)[\s\S]*$
-DWEnglish,re:(?i)^\s*(DW\s*English|DW新闻|德国之声)[\s\S]*$
-Euronews,re:(?i)^\s*Euronews[\s\S]*$
-RTNews,re:(?i)^\s*(RT\s*News|RT新闻|今日俄罗斯)[\s\S]*$
 AlJazeera,re:(?i)^\s*(Al\s*Jazeera|AlJazeera|半岛新闻台|半岛电视台)[\s\S]*$
 Arirang TV,re:(?i)^\s*(Arirang\s*TV|阿里郎电视台|阿里郎TV)[\s\S]*$
-CGTN,re:(?i)^\s*CGTN[\s\S]*$
 CNA,re:(?i)^\s*(CNA|Channel News Asia|亚洲新闻台)[\s\S]*$
-NHKWorld-Japan,re:(?i)^\s*(NHK\s*World[-\s_]*Japan|NHK World|NHK国际)[\s\S]*$
 KBSWorld,re:(?i)^\s*(KBS\s*World|KBS国际)[\s\S]*$
-TRTWorld,re:(?i)^\s*(TRT\s*World|TRT世界)[\s\S]*$
-GBNews,re:(?i)^\s*(GB\s*News|GB新闻)[\s\S]*$
-WION,re:(?i)^\s*WION[\s\S]*$
 NHK,re:(?i)^\s*NHK[\s\S]*$
 NTV,re:(?i)^\s*NTV[\s\S]*$
 TBS,re:(?i)^\s*TBS[\s\S]*$
