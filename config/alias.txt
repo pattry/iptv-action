@@ -362,10 +362,6 @@ RTHK32,RTHK32
 澳门体育,澳门体育,澳門體育,澳门体育台,澳門體育台
 澳门综艺,澳门综艺,澳門綜藝,澳门综艺台,澳門綜藝台
 澳门莲花,澳门莲花,澳門蓮花,澳门莲花台,澳門蓮花台
-CinemaWorld,CinemaWorld
-Cinemax Hits,Cinemax Hits
-Sony Movies,Sony Movies
-My Cinema Europe,My Cinema Europe
 经典电影,经典电影,經典電影,经典电影台,經典電影台
 CMusic,CMusic
 DreamWorks梦工厂动画,DreamWorks梦工厂动画,DreamWorks夢工廠動畫
@@ -407,8 +403,24 @@ ROCK Action,ROCK Action,ROCK_Action
 影迷數位電影台,影迷数位电影,影迷數位電影,影迷数位电影台,影迷數位電影台
 AXN,AXN
 amc電影台,amc电影,amc電影,amc电影台,amc電影台,AMC,AMC Europe
+CinemaWorld,CinemaWorld
+Cinemax Hits,Cinemax Hits
+Cinemax,re:(?i)^\s*(Cinemax|CINEMAX)[\s\S]*$
+MovieSphere,re:(?i)^\s*MovieSphere[\s\S]*$
+Mega Cine TV
+Movies Acion
+Movies Thriller
+My Cinema Europe,My Cinema Europe
 Home plus,Home plus
-Hallmark Movies&More
+Hallmark Movies&More,Hallmark Movies&More
+OuterSphere,OuterSphere
+Star Channel,Star Channel
+Sony Movies,Sony Movies
+HBO,HBO Movies,HBO电影,HBO电影台,HBO電影台
+HBO强档,HBO Hits,re:(?i)^\s*HBO[-\s_]*强档[\s\S]*$,HBO強檔
+HBO家庭,HBO Family,re:(?i)^\s*HBO[-\s_]*家庭[\s\S]*$
+HBOSignature,re:(?i)^\s*HBO[-\s_]*Signature[\s\S]*$,HBO Signature
+好萊塢电影,re:(?i)^\s*(好莱坞电影|好萊塢電影|好莱坞电影台|好萊塢電影台)[\s\S]*$
 TVBS精采,TVBS精采,TVBS精彩,TVBS精采台,TVBS精彩台
 TVBS歡樂,TVBS欢乐,TVBS歡樂,TVBS欢乐台,TVBS歡樂台
 TVBS綜藝,TVBS综艺,TVBS綜藝,TVBS综艺台,TVBS綜藝台
@@ -470,15 +482,6 @@ JSPORTS1,JSPORTS1
 SkyTennis+,SkyTennis+
 DAZN-体育,DAZN-体育
 momo'tv,momo'tv
-HBO,HBO Movies,HBO电影,HBO电影台,HBO電影台
-HBO强档,HBO Hits,re:(?i)^\s*HBO[-\s_]*强档[\s\S]*$,HBO強檔
-HBO家庭,HBO Family,re:(?i)^\s*HBO[-\s_]*家庭[\s\S]*$
-HBOSignature,re:(?i)^\s*HBO[-\s_]*Signature[\s\S]*$,HBO Signature
-Cinemax,re:(?i)^\s*(Cinemax|CINEMAX)[\s\S]*$
-OuterSphere,OuterSphere
-Star Channel
-MovieSphere,re:(?i)^\s*MovieSphere[\s\S]*$
-好萊塢电影,re:(?i)^\s*(好莱坞电影|好萊塢電影|好莱坞电影台|好萊塢電影台)[\s\S]*$
 
 劉德華,re:(?i)^\s*(刘德华|劉德華)[\s\S]*$
 成龍,re:(?i)^\s*(成龙|成龍)[\s\S]*$
