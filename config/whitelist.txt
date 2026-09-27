@@ -5,28 +5,6 @@
 # Filling in the channel name will directly retain the record to the final result of the channel, such as: CCTV-1, interface address;
 # If the channel name is not filled in, the address will be added to the results of all channels, with multiple records entered on new lines.
 
-CCTV4K超,http://107.150.60.122/live/cctv4k.m3u8
-CCTV4K超,http://192.151.150.154/live/cctv4k.m3u8
-
-CCTV8K超,http://107.150.60.122/live/cctv8k.m3u8
-CCTV8K超,http://192.151.150.154/live/cctv8k.m3u8
-
-CCTV5,http://107.150.60.122/live/cctv5hd.m3u8
-
-CCTV5+,http://183.129.255.66:8480/hls/6/index.m3u8
-CCTV13,http://192.151.150.154/live/cctv13hd.m3u8
-
-CCTV16,http://207.56.13.146:81/cdnlive/cctv16.m3u8
-CCTV16,http://104.152.209.49:8181/720p/cctv16.m3u8
-CCTV16,https://yunmei.tv/main/cctv-16.m3u8
-
-CHC家庭影院,http://192.151.150.154/live/chcjt.m3u8
-CHC动作电影,http://192.151.150.154/live/chcdz.m3u8
-CHC影迷电影,http://192.151.150.154/live/chchd.m3u8
-
-
-
-湖南卫视4K,http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/dWlwPTEyNy4wLjAuMSZ1aWQ9cWluZy1jbXMmbm5fdGltZXpvbmU9OCZjZG5leF9pZD1hbF9obHNfbGR2dCZ1dWlkPTliODY4NmU5ZTM2YzYwMmMmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
 
 
 # ========== 体育专场（虎牙源）==========
@@ -683,13 +661,13 @@ Storm憋大招,https://live.ottiptv.cc/yy/1382735559
 # 以下区域是关键字白名单，某频道获取到的接口地址中含有指定关键字，则该接口会被加入该频道的白名单，多条记录换行输入。
 # This area is the keyword whitelist. If the interface address obtained by a certain channel contains the specified keyword, the interface will be added to the whitelist of the channel, with multiple records entered on new lines.
 
-http://192.151.150.154/live/
+
 
 # ====== 体育类 ======
 https://live.ottiptv.cc/
 
 # ====== 港澳台新闻类 ======
-#http://iptv.4666888.xyz/
+http://iptv.4666888.xyz/
 
 
 # ====== 国际新闻类 ======
