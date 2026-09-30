@@ -9,8 +9,8 @@ CCTV1,CCTV-1HD,CCTV-1,CCTV-1综合
 CCTV2,CCTV-2HD,CCTV-2,CCTV-2财经
 CCTV3,CCTV-3HD,CCTV-3,CCTV-3综艺
 CCTV4,CCTV-4HD,CCTV-4,CCTV-4中文国际
-CCTV5,CCTV-5HD,CCTV-5,CCTV-5体育
-CCTV5+,CCTV-5+HD,CCTV-5+,CCTV-5+体育赛事
+CCTV5,CCTV-5,CCTV-5HD,CCTV5HD,CCTV-5体育
+CCTV5+,CCTV-5+,CCTV-5+HD,CCTV5+HD,CCTV-5+体育赛事
 CCTV6,CCTV-6HD,CCTV-6,CCTV-6电影
 CCTV7,CCTV-7HD,CCTV-7,CCTV-7国防军事
 CCTV8,CCTV-8HD,CCTV-8,CCTV-8电视剧
@@ -21,7 +21,7 @@ CCTV12,CCTV-12HD,CCTV-12,CCTV-12社会与法
 CCTV13,CCTV-13HD,CCTV-13,CCTV-13新闻
 CCTV14,CCTV-14HD,CCTV-14,CCTV-14少儿
 CCTV15,CCTV-15HD,CCTV-15,CCTV-15音乐
-CCTV16,CCTV-16HD,CCTV-16,CCTV-16奥林匹克
+CCTV16,CCTV-16HD,CCTV-16,CCTV16HD,CCTV-16奥运,CCTV-16奥林匹克
 CCTV17,CCTV-17HD,CCTV-17,CCTV-17农业农村
 CCTV4K,CCTV-4KHD,CCTV-4K超高清
 CCTV8K,CCTV-8KHD,CCTV-8K超高清
@@ -126,8 +126,6 @@ CETV4,CETV-4HD,CETV-4中国教育4,中国教育4,中国教育四台
 海峡卫视,海峡卫视4K,海峡台,海峡卫视HD,海峡卫视高清
 
 
-CCTV5,CCTV-5,CCTV-5HD,CCTV5HD,CCTV-5体育
-CCTV5+,CCTV-5+,CCTV-5+HD,CCTV5+HD,CCTV-5+体育赛事
 CCTV16,CCTV-16,CCTV-16HD,CCTV16HD,CCTV-16奥运
 astroFootball,re:(?i)^\s*[Aa]stro[-\s_]*Football[\s\S]*$
 足球频道,re:(?i)^\s*足球频道[\s\S]*$
@@ -417,7 +415,6 @@ My Cinema Europe,My Cinema Europe
 Home plus,Home plus
 Hallmark Movies&More,Hallmark Movies&More
 OuterSphere,OuterSphere
-Star Channel,Star Channel
 Sony Movies,Sony Movies
 HBO,HBO Movies,HBO电影,HBO电影台,HBO電影台
 HBO强档,HBO Hits,re:(?i)^\s*HBO[-\s_]*强档[\s\S]*$,HBO強檔
@@ -531,7 +528,6 @@ FashionBox,FashionBox
 World Fashion,World Fashion
 
 
-CCTV記錄,re:(?i)^\s*(CCTV记录台|CCTV記錄台|CCTV纪录|CCTV紀錄)[\s\S]*$
 世界地理,re:(?i)^\s*世界地理[\s\S]*$
 发现之旅,re:(?i)^\s*发现之旅[\s\S]*$
 老故事,re:(?i)^\s*老故事[\s\S]*$
