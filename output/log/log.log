@@ -3842,3 +3842,159 @@
 2026-10-23T21:06:38+00:00 INFO    [run=cd35db64591d43339a20d48b12114e0c phase=statistics event=statistics.finished] 频道统计完成：测试 13391，有效 1301
 2026-10-23T21:06:38+00:00 INFO    [run=cd35db64591d43339a20d48b12114e0c phase=complete event=run.summary] 更新摘要
 2026-10-23T21:06:38+00:00 INFO    [run=cd35db64591d43339a20d48b12114e0c phase=complete event=run.finished] 更新完成！总耗时：25:09
+2026-10-24T19:52:45+00:00 INFO    [event=application.started] IPTV-API 版本: 3.0.0 (构建时间: 2026-08-07 11:45:59)
+2026-10-24T19:52:45+00:00 INFO    [event=version.available] 发现新版本：当前 3.0.0，最新 3.1.0，请访问 https://github.com/Guovin/iptv-api/releases/tag/3.1.0
+2026-10-24T19:52:45+00:00 INFO    [phase=prepare event=network.ipv6.checking] 🛜 正在检查当前网络是否支持IPv6...
+2026-10-24T19:52:45+00:00 WARNING [phase=prepare event=network.ipv6.unsupported] 当前网络不支持IPv6，别担心，IPv6的结果会被保存下来
+2026-10-24T19:52:45+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=prepare event=run.started] 性能模式: auto → balance，可用资源: 4.0 CPU / 15.61 GB，并发: 测速 64、媒体探测 2、源抓取 8
+2026-10-24T19:52:45+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=prepare event=channels.catalog_loaded] 频道目录已加载：白名单 611，黑名单 5，台标 21
+2026-10-24T19:52:45+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=fetch event=sources.subscribe.summary] 订阅源数量：62，订阅白名单数量：0，停用地址数量：0，有效总数量：62
+2026-10-24T19:52:45+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=fetch event=progress.started] 正在进行获取订阅源  0/62
+2026-10-24T19:52:45+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=fetch event=sources.epg.summary] EPG源数量：0，EPG白名单数量：0，停用地址数量：1，有效总数量：0
+2026-10-24T19:52:46+00:00 WARNING [run=03e2f8bce9e94d798f157b552a63ab88 phase=fetch event=request.retrying] 🔄 请求https://iptv.852851.xyz/sub/JRTpy7FfgNKk/playlist.m3u失败，正在进行第1次重试...
+2026-10-24T19:52:46+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=fetch event=progress.updated] 正在进行获取订阅源  1/62 (1%)  剩余 61
+2026-10-24T19:52:46+00:00 WARNING [run=03e2f8bce9e94d798f157b552a63ab88 phase=fetch event=request.retrying] 🔄 请求https://raw.nuaa.cf/zgyd11/xiangjiao/main/itvlist.txt失败，正在进行第1次重试...
+2026-10-24T19:52:48+00:00 WARNING [run=03e2f8bce9e94d798f157b552a63ab88 phase=fetch event=source.request_failed] 订阅源请求失败：❌ 请求https://iptv.852851.xyz/sub/JRTpy7FfgNKk/playlist.m3u失败，已达到最大重试次数
+2026-10-24T19:52:48+00:00 WARNING [run=03e2f8bce9e94d798f157b552a63ab88 phase=fetch event=source.request_failed] 订阅源请求失败：❌ 请求https://raw.nuaa.cf/zgyd11/xiangjiao/main/itvlist.txt失败，已达到最大重试次数
+2026-10-24T19:52:48+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=fetch event=progress.updated] 正在进行获取订阅源  7/62 (11%)  剩余 55
+2026-10-24T19:52:49+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=fetch event=progress.updated] 正在进行获取订阅源  14/62 (22%)  剩余 48
+2026-10-24T19:52:50+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=fetch event=progress.updated] 正在进行获取订阅源  20/62 (32%)  剩余 42
+2026-10-24T19:52:52+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=fetch event=progress.updated] 正在进行获取订阅源  27/62 (43%)  剩余 35
+2026-10-24T19:52:53+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=fetch event=progress.updated] 正在进行获取订阅源  33/62 (53%)  剩余 29
+2026-10-24T19:52:54+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=fetch event=progress.updated] 正在进行获取订阅源  40/62 (64%)  剩余 22
+2026-10-24T19:52:55+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=fetch event=progress.updated] 正在进行获取订阅源  46/62 (74%)  剩余 16
+2026-10-24T19:52:57+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=fetch event=progress.updated] 正在进行获取订阅源  53/62 (85%)  剩余 9
+2026-10-24T19:52:58+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=fetch event=progress.updated] 正在进行获取订阅源  59/62 (95%)  剩余 3
+2026-10-24T19:53:00+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=fetch event=progress.updated] 正在进行获取订阅源  62/62 (100%)  剩余 0
+2026-10-24T19:53:00+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=fetch event=sources.subscribe.finished] 订阅源: ✅ 有效地址数量：62，⛔ 停用地址数量：0
+2026-10-24T19:53:00+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=fetch event=progress.finished] 正在进行获取订阅源  62/62  未匹配 10000
+2026-10-24T19:57:06+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=aggregate event=channels.aggregated] 频道数据聚合完成：1186 个频道，19268 个接口（IPv4 17553 / IPv6 1040）
+2026-10-24T19:57:06+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=speed_test.planned] 总接口数量: 15236, 需要进行测速的接口数量: 13871
+2026-10-24T19:57:06+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.started] 测速  0/13871
+2026-10-24T19:57:07+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  1/13871 (0%)  有效 0  失败 1  CCTV1
+2026-10-24T19:57:37+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  253/13871 (1%)  有效 26  失败 227  CCTV2
+2026-10-24T19:58:07+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  565/13871 (4%)  有效 44  失败 521  CCTV3
+2026-10-24T19:58:37+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  872/13871 (6%)  有效 60  失败 812  CCTV5
+2026-10-24T19:59:08+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  1176/13871 (8%)  有效 76  失败 1100  CCTV5+
+2026-10-24T19:59:38+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  1472/13871 (10%)  有效 93  失败 1379  CCTV8
+2026-10-24T20:00:08+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  1746/13871 (12%)  有效 108  失败 1638  CCTV9
+2026-10-24T20:00:38+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  2061/13871 (14%)  有效 120  失败 1941  CCTV11
+2026-10-24T20:01:09+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  2340/13871 (16%)  有效 130  失败 2210  CCTV12
+2026-10-24T20:01:39+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  2652/13871 (19%)  有效 149  失败 2503  CCTV13
+2026-10-24T20:02:09+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  2928/13871 (21%)  有效 160  失败 2768  CCTV15
+2026-10-24T20:02:39+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  3261/13871 (23%)  有效 199  失败 3062  CETV1
+2026-10-24T20:03:09+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  3610/13871 (26%)  有效 288  失败 3322  风云音乐
+2026-10-24T20:03:39+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  3911/13871 (28%)  有效 313  失败 3598  湖南卫视
+2026-10-24T20:04:09+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  4195/13871 (30%)  有效 326  失败 3869  东方卫视
+2026-10-24T20:04:39+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  4473/13871 (32%)  有效 342  失败 4131  浙江卫视
+2026-10-24T20:05:09+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  4749/13871 (34%)  有效 356  失败 4393  江苏卫视
+2026-10-24T20:05:40+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  5044/13871 (36%)  有效 370  失败 4674  北京卫视
+2026-10-24T20:06:11+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  5317/13871 (38%)  有效 380  失败 4937  天津卫视
+2026-10-24T20:06:41+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  5600/13871 (40%)  有效 389  失败 5211  山东卫视
+2026-10-24T20:07:12+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  5880/13871 (42%)  有效 407  失败 5473  辽宁卫视
+2026-10-24T20:07:42+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  6148/13871 (44%)  有效 414  失败 5734  湖北卫视
+2026-10-24T20:08:12+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  6458/13871 (46%)  有效 441  失败 6017  海南卫视
+2026-10-24T20:08:42+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  6721/13871 (48%)  有效 444  失败 6277  吉林卫视
+2026-10-24T20:09:12+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  7003/13871 (50%)  有效 455  失败 6548  江西卫视
+2026-10-24T20:09:42+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  7291/13871 (52%)  有效 467  失败 6824  河南卫视
+2026-10-24T20:10:12+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  7562/13871 (54%)  有效 481  失败 7081  贵州卫视
+2026-10-24T20:10:42+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  7848/13871 (56%)  有效 498  失败 7350  东南卫视
+2026-10-24T20:11:12+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  8125/13871 (58%)  有效 507  失败 7618  广西卫视
+2026-10-24T20:11:42+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  8408/13871 (60%)  有效 523  失败 7885  山西卫视
+2026-10-24T20:12:12+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  8718/13871 (62%)  有效 545  失败 8173  甘肃卫视
+2026-10-24T20:12:42+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  9014/13871 (64%)  有效 569  失败 8445  内蒙古卫视
+2026-10-24T20:13:12+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  9307/13871 (67%)  有效 593  失败 8714  厦门卫视
+2026-10-24T20:13:42+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  9637/13871 (69%)  有效 626  失败 9011  梨园
+2026-10-24T20:14:12+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  9904/13871 (71%)  有效 657  失败 9247  劲爆体育
+2026-10-24T20:14:42+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  10407/13871 (75%)  有效 720  失败 9687  Euronews
+2026-10-24T20:15:12+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  10832/13871 (78%)  有效 860  失败 9972  CGTN
+2026-10-24T20:15:42+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  11250/13871 (81%)  有效 884  失败 10366  MovieSphere AU
+2026-10-24T20:16:12+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  11650/13871 (83%)  有效 999  失败 10651  History
+2026-10-24T20:16:42+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  12027/13871 (86%)  有效 1084  失败 10943  明珠台
+2026-10-24T20:17:13+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  12575/13871 (90%)  有效 1166  失败 11409  BBC News
+2026-10-24T20:17:43+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  12966/13871 (93%)  有效 1277  失败 11689  庆余年
+2026-10-24T20:18:13+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13275/13871 (95%)  有效 1316  失败 11959  陀枪师姐
+2026-10-24T20:18:43+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13554/13871 (97%)  有效 1372  失败 12182  你是最美的风景
+2026-10-24T20:19:13+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13796/13871 (99%)  有效 1383  失败 12413  本山快乐营1
+2026-10-24T20:19:24+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1390  失败 12481  新时代农村青年奋斗
+2026-10-24T20:19:24+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1390  失败 12482  丹尼尔·斯洛斯
+2026-10-24T20:19:24+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1390  失败 12483  呆萌飞行员
+2026-10-24T20:19:24+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1390  失败 12484  亚洲笑星征服美国
+2026-10-24T20:19:25+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1390  失败 12485  宇宙护卫队-国漫
+2026-10-24T20:19:25+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1390  失败 12486  时间的答卷第二季
+2026-10-24T20:19:25+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1390  失败 12487  绝地生死营救
+2026-10-24T20:19:25+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1390  失败 12488  Bill Burr暴躁经典
+2026-10-24T20:19:25+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1390  失败 12489  经典传奇2018
+2026-10-24T20:19:25+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12489  心动信号甜蜜发酵
+2026-10-24T20:19:25+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12490  经典传奇2018
+2026-10-24T20:19:25+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12491  憨夫憨妇闯情关
+2026-10-24T20:19:26+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12492  异地演出炸场奇遇
+2026-10-24T20:19:26+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12493  笑果伴酒快乐中秋
+2026-10-24T20:19:26+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12494  杰斯尼克暗黑
+2026-10-24T20:19:26+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12495  追踪神秘狐影
+2026-10-24T20:19:26+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12496  快递小哥变身英雄
+2026-10-24T20:19:26+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12497  异类入侵高能反转
+2026-10-24T20:19:26+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12498  杀机四伏
+2026-10-24T20:19:27+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12499  旺达·塞克丝
+2026-10-24T20:19:27+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12500  为妈妈点赞
+2026-10-24T20:19:27+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12501  狼爸硬核带娃
+2026-10-24T20:19:27+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12502  龙师傅来接招
+2026-10-24T20:19:27+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12503  武状元落魄逆袭
+2026-10-24T20:19:28+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12504  苍狼特战突击
+2026-10-24T20:19:28+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12505  战俘营大逃亡
+2026-10-24T20:19:28+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12506  兵王绝境狙杀
+2026-10-24T20:19:28+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12507  英伦特工智斗谍影
+2026-10-24T20:19:28+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12508  颠覆秩序的声浪
+2026-10-24T20:19:29+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12509  重启
+2026-10-24T20:19:29+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12510  唐门双雄战神犼
+2026-10-24T20:19:29+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12511  体验另一种生活
+2026-10-24T20:19:29+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12512  打破第四面墙
+2026-10-24T20:19:29+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12513  茅山天师降魔
+2026-10-24T20:19:29+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12514  蜀山伏魔剑
+2026-10-24T20:19:29+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12515  你好现任
+2026-10-24T20:19:29+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12516  非典型恋爱
+2026-10-24T20:19:30+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12517  侏罗纪复活战
+2026-10-24T20:19:30+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12518  花木兰巾帼英雄
+2026-10-24T20:19:30+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12519  天师驱魔令
+2026-10-24T20:19:30+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12520  铁甲狂猴雷霆
+2026-10-24T20:19:30+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12521  大闹三界奇幻冒险
+2026-10-24T20:19:30+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12522  赵牡丹辛辣开麦
+2026-10-24T20:19:31+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1391  失败 12523  闲暇观看综艺
+2026-10-24T20:19:31+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1392  失败 12523  巅峰救援行动
+2026-10-24T20:19:31+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1392  失败 12524  暗恋成真青春纯爱
+2026-10-24T20:19:31+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1393  失败 12524  许光汉主演喜剧大片
+2026-10-24T20:19:32+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1393  失败 12525  未来中国
+2026-10-24T20:19:32+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1393  失败 12526  青龙偃月显威
+2026-10-24T20:19:32+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1393  失败 12527  小小心事笑着流泪
+2026-10-24T20:19:32+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1393  失败 12528  戴夫吐槽时代
+2026-10-24T20:19:32+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1393  失败 12529  最佳时机
+2026-10-24T20:19:32+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1393  失败 12530  淮水情深深
+2026-10-24T20:19:32+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1393  失败 12531  爆笑诡扯记
+2026-10-24T20:19:32+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1393  失败 12532  就是要疯狂
+2026-10-24T20:19:33+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1394  失败 12532  致命蜂群来袭
+2026-10-24T20:19:33+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1394  失败 12533  新弦已张
+2026-10-24T20:19:33+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1394  失败 12534  留学澳大利亚蓝翔梗王
+2026-10-24T20:19:33+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1394  失败 12535  硬核使命
+2026-10-24T20:19:33+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1394  失败 12536  热烈的玫瑰
+2026-10-24T20:19:33+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1394  失败 12537  爱情拯救计划
+2026-10-24T20:19:33+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1395  失败 12537  踮脚拥抱爱情
+2026-10-24T20:19:33+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1395  失败 12538  巨蛛嗜血狂
+2026-10-24T20:19:33+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1395  失败 12539  守护千年雄关
+2026-10-24T20:19:34+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1395  失败 12540  太空异种惊魂
+2026-10-24T20:19:34+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1395  失败 12541  公主战俘记
+2026-10-24T20:19:34+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1395  失败 12542  破解终极密码
+2026-10-24T20:19:34+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1395  失败 12543  哮天犬闹龙宫
+2026-10-24T20:19:35+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1395  失败 12544  赛道争锋
+2026-10-24T20:19:35+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1395  失败 12545  大铸剑师传奇
+2026-10-24T20:19:35+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1395  失败 12546  仙剑风云再起
+2026-10-24T20:19:35+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1395  失败 12547  冰峰惊魂夜
+2026-10-24T20:19:35+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1395  失败 12548  绝对忠诚使命
+2026-10-24T20:19:35+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1395  失败 12549  横行不霸道
+2026-10-24T20:19:35+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1395  失败 12550  特派先锋出击
+2026-10-24T20:19:35+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.updated] 测速  13871/13871 (100%)  有效 1395  失败 12551  24H地下交通站全
+2026-10-24T20:19:35+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=speed_test.artifacts_written] 测速明细已写入 output/log/speed_test.log，有效结果已写入 output/log/result.log
+2026-10-24T20:19:35+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=speed_test event=progress.finished] 测速  13871/13871  有效 1395  失败 12551
+2026-10-24T20:19:36+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=output event=output.written] 结果文件生成完成：更新 3 个文件
+2026-10-24T20:19:37+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=statistics event=statistics.finished] 频道统计完成：测试 13946，有效 1395
+2026-10-24T20:19:37+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=complete event=run.summary] 更新摘要
+2026-10-24T20:19:37+00:00 INFO    [run=03e2f8bce9e94d798f157b552a63ab88 phase=complete event=run.finished] 更新完成！总耗时：26:52
