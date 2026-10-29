@@ -640,8 +640,8 @@ CNN,re:(?i)^\s*CNN[\s\S]*$
 FoxNews,re:(?i)^\s*(Fox\s*News|FoxNews|福克斯新闻)[\s\S]*$
 FoxWeather,re:(?i)^\s*Fox[-\s_]*Weather[\s\S]*$,福克斯天气
 MSNBC,re:(?i)^\s*MSNBC[\s\S]*$
-NBC,re:(?i)^\s*NBC(?![-\s_]*News)[\s\S]*$
-CNBC,re:(?i)^\s*CNBC[\s\S]*$
+NBC,NBC HD
+CNBC,CNBC WORLD HD
 Entertainment Tonight,re:(?i)^\s*Entertainment[-\s_]*Tonight[\s\S]*$
 Newsmax,re:(?i)^\s*Newsmax[\s\S]*$
 RTNews,re:(?i)^\s*RT[-\s_]*News[\s\S]*$,RT新闻,今日俄罗斯
