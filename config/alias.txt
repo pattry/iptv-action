@@ -297,8 +297,8 @@ Astro_Premier league2,re:(?i)^\s*Astro[-\s_]*Premier[-\s_]*League[-\s_]*2[\s\S]*
 
 
 凤凰电影频道,re:(?i)^\s*(凤凰电影频道|鳳凰電影頻道|凤凰电影|鳳凰電影|凤凰电影台|鳳凰電影台)[\s\S]*$
-POPC,PopC,Pop C,Popc,POPC
-美亚电影,re:(?i)^\s*(美亚电影|美亞電影|美亚电影台|美亞電影台|美亞電影台(多音轨))[\s\S]*$,美亞電影台
+POPC,PopC,Pop C,Popc,POPC电影
+美亚电影,美亚电影台,美亞電影,美亞電影台,美亞電影台(多音轨),Mei Ah Movie Channel
 天映频道,re:(?i)^\s*(天映频道|天映頻道|天映頻道\(SG\)|天映频道\(SG\))[\s\S]*$,天映頻道「新加坡」,天映頻道「馬來西亞」
 天映经典,re:(?i)^\s*(天映经典|天映經典|天映經典頻道|天映经典频道|天映經典頻道(多音轨))[\s\S]*$,天映經典「新加坡」,天映經典「馬來西亞」
 天映新加坡,re:(?i)^\s*(天映新加坡|天映頻道\(SG\)|天映频道\(SG\))[\s\S]*$
@@ -405,6 +405,7 @@ BritBox Mysteries UK,BritBox Mysteries,BritBoxMysteriesUK
 CinemaWorld,Cinema World
 Cinemax Hits,Cinemax Hits,CinemaxHits
 Cinemax,Cinemax HD
+Cinemax2
 Cinemax Action,Cinemax Action,CinemaxAction
 FX Movie Channel,FXMovieChannel
 Gratitas Movies,GratitasMovies
@@ -414,6 +415,7 @@ HBO Hits,HBOHits,HBO Hits HD,HBO强档,HBO Hits,HBO強檔
 HBO Comedy,HBOComedy
 HBO Family，HBOFamily,HBO家庭,HBO Family
 HBOSignature,HBO Signature
+Hit HD
 Home plus,HomePlus
 Hallmark Movies&More,Hallmark Movies&More
 KinoHit,Kino Hit
@@ -421,15 +423,16 @@ MyTime Movie Network
 MovieSphere AU
 MovieSphere UK
 MovieSphere,re:(?i)^\s*MovieSphere[\s\S]*$
+MovieSphere Gold WFXT
 Mega Cine TV,MegaCine TV,MegaCineTV
-Movies!
 Movies Action,Movies Action
 Movies Thriller,Movies Thriller
 MGM Present,MGMPresent
 My Cinema Europe,My Cinema Europe,MCE 我的歐洲電影
 OuterSphere,Outer Sphere
-Sony Movies,SonyMovies
-Sony One Action HITS UK
+Sony Movies,Sony Movies
+Sony One Favoris
+Sony One Hits Action
 The Movie Channel Xtra
 Universal Action,UniversalAction
 Universal Movies,UniversalMovies
