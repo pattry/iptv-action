@@ -1,87 +1,85 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>微信公众号消息服务</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>公众号 潇雨萌萌</title>
+
 <style>
-*{box-sizing:border-box}
-body{margin:0;padding:25px 15px;font-family:Arial,"Microsoft YaHei",sans-serif;background:linear-gradient(135deg,#000428,#004e92);color:#fff}
-.card{max-width:850px;margin:auto;background:rgba(0,0,0,.65);padding:25px;border-radius:20px}
-h2{text-align:center;color:#00ffff}
-.box{background:#111;padding:18px;border-radius:15px;margin-top:15px}
-.open{color:#00ff99;font-weight:bold}
-.wait{color:#ffcc00}
-table{width:100%;border-collapse:collapse;margin-top:15px}
-td,th{padding:10px;border-bottom:1px solid #333;text-align:left}
-.tag{display:inline-block;background:#222;padding:8px 12px;border-radius:8px;margin:4px}
-.small{color:#999;font-size:13px}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+}
+
+body{
+min-height:100vh;
+background:radial-gradient(circle at center,#1b2a4e,#05070d);
+display:flex;
+justify-content:center;
+align-items:center;
+color:#e8f1ff;
+padding:20px;
+text-align:center;
+}
+
+.box{
+background:rgba(10,20,40,0.9);
+border:2px solid rgba(0,150,255,0.5);
+box-shadow:0 0 50px rgba(0,150,255,0.6);
+border-radius:20px;
+padding:80px 60px;
+max-width:1000px;
+width:95%;
+animation:pulse 1.5s infinite;
+line-height:2.2;
+}
+
+.subscribe{
+font-size:72px;
+font-weight:bold;
+
+background:linear-gradient(
+90deg,
+violet,
+cyan,
+lime,
+yellow,
+orange,
+red
+);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+background-size:400%;
+animation:rainbow 6s linear infinite;
+}
+
+@keyframes rainbow{
+0%{background-position:0%}
+100%{background-position:400%}
+}
+
+@keyframes pulse{
+0%{box-shadow:0 0 35px rgba(0,150,255,0.5)}
+50%{box-shadow:0 0 60px rgba(0,150,255,0.8)}
+100%{box-shadow:0 0 35px rgba(0,150,255,0.5)}
+}
 </style>
 </head>
+
 <body>
-<div class="card">
-
-<h2>微信公众号消息服务</h2>
 
 <div class="box">
-<b style="color:#00ff99">● 服务运行正常</b>
-<br><br>
-<strong>微信接口：</strong>/wechat
-<br>
-<strong>当前日期：</strong>2026-09-09
-<br>
-<strong>分类缓存：</strong>74 个
-<br>
-<strong>最后刷新：</strong>
-2026/09/09 09:49:26
-</div>
 
-<div class="box">
-<strong>今日自动开放内容</strong>
-<br><br>
-<span class="tag">央卫频道</span><span class="tag">更新时间</span>
-</div>
-
-<div class="box">
-<strong>今日关键词统计</strong>
-
-<table>
-<tr>
-<th>分类</th>
-<th>人数</th>
-<th>状态</th>
-</tr>
-
-<tr>
-<td>体育0909</td>
-<td>2</td>
-<td>
-<span class="wait">还差 1 人</span>
-</td>
-</tr>
-<tr>
-<td>江苏移动</td>
-<td>1</td>
-<td>
-<span class="wait">还差 2 人</span>
-</td>
-</tr>
-<tr>
-<td>咪咕线路</td>
-<td>1</td>
-<td>
-<span class="wait">还差 2 人</span>
-</td>
-</tr>
-</table>
-</div>
-
-<div class="box small">
-公众号潇雨萌萌 发送“菜单”可获取当前可选择内容。<br>
-系统自动运行管理
+<div class="subscribe">
+欢迎关注订阅<br>
+公众号 潇雨萌萌
 </div>
 
 </div>
+
 </body>
 </html>
