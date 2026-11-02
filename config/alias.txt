@@ -630,8 +630,8 @@ NewTV军事评论,re:(?i)^\s*NewTV军事评论[\s\S]*$
 
 
 
-# ========== 国外 ==========
-CM+(多音轨),CM+,CM Plus,CM多音轨,re:(?i)^\s*CM[+\s_]*(多音轨|Plus)?\s*$
+
+CM+,CM+(多音轨),CM+,CM Plus,CM多音轨,re:(?i)^\s*CM[+\s_]*(多音轨|Plus)?\s*$
 E樂(多音轨),E樂,E乐,ELe,E樂多音轨,E乐多音轨
 佳樂(多音轨),佳樂,佳乐,JiaLe,佳樂多音轨,佳乐多音轨
 剧乐酷,劇樂酷,剧乐酷HD,劇樂酷HD,re:(?i)^\s*[剧劇]乐[乐樂]酷.*$
@@ -670,7 +670,6 @@ Vasantham,re:(?i)^\s*Vasantham[\s\S]*$
 Channel5,re:(?i)^\s*(Channel\s*5|CH5|5频道|5頻道)[\s\S]*$,Channel 5
 Channel8,re:(?i)^\s*(Channel\s*8|CH8|8频道|8頻道)[\s\S]*$,Channel 8
 ChannelU,re:(?i)^\s*(Channel\s*U|CHU|U频道|U頻道)[\s\S]*$,Channel U
-天映頻道(SG),re:(?i)^\s*(天映频道|天映頻道|天映新加坡)[\s\S]*$
 HUB 都會台,re:(?i)^\s*(HUB都会台|HUB都會台|HUB都会|HUB都會)[\s\S]*$
 HUB 娛家台,re:(?i)^\s*(HUB娱家台|HUB娛家台|HUB娱家|HUB娛家)[\s\S]*$
 HUB 如意台,re:(?i)^\s*(HUB如意台|HUB如意)[\s\S]*$
