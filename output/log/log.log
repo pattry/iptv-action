@@ -6680,3 +6680,225 @@
 2026-11-08T05:19:22+00:00 INFO    [run=3dd2d6d47a714f4696172ffbca4920e6 phase=statistics event=statistics.finished] 频道统计完成：测试 16816，有效 2392
 2026-11-08T05:19:22+00:00 INFO    [run=3dd2d6d47a714f4696172ffbca4920e6 phase=complete event=run.summary] 更新摘要
 2026-11-08T05:19:22+00:00 INFO    [run=3dd2d6d47a714f4696172ffbca4920e6 phase=complete event=run.finished] 更新完成！总耗时：54:53
+2026-11-08T07:58:10+00:00 INFO    [event=application.started] IPTV-API 版本: 3.0.0 (构建时间: 2026-08-07 11:45:59)
+2026-11-08T07:58:10+00:00 INFO    [event=version.available] 发现新版本：当前 3.0.0，最新 3.1.0，请访问 https://github.com/Guovin/iptv-api/releases/tag/3.1.0
+2026-11-08T07:58:10+00:00 INFO    [phase=prepare event=network.ipv6.checking] 🛜 正在检查当前网络是否支持IPv6...
+2026-11-08T07:58:10+00:00 WARNING [phase=prepare event=network.ipv6.unsupported] 当前网络不支持IPv6，别担心，IPv6的结果会被保存下来
+2026-11-08T07:58:10+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=prepare event=run.started] 性能模式: auto → balance，可用资源: 4.0 CPU / 15.61 GB，并发: 测速 64、媒体探测 2、源抓取 8
+2026-11-08T07:58:10+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=prepare event=channels.catalog_loaded] 频道目录已加载：白名单 588，黑名单 66，台标 21
+2026-11-08T07:58:11+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=sources.subscribe.summary] 订阅源数量：119，订阅白名单数量：0，停用地址数量：0，有效总数量：119
+2026-11-08T07:58:11+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=progress.started] 正在进行获取订阅源  0/119
+2026-11-08T07:58:11+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=sources.epg.summary] EPG源数量：0，EPG白名单数量：0，停用地址数量：1，有效总数量：0
+2026-11-08T07:58:12+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=request.retrying] 🔄 请求https://iptv.852851.xyz/sub/JRTpy7FfgNKk/playlist.m3u失败，正在进行第1次重试...
+2026-11-08T07:58:12+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=progress.updated] 正在进行获取订阅源  1/119 (0%)  剩余 118
+2026-11-08T07:58:12+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=request.retrying] 🔄 请求https://raw.nuaa.cf/zgyd11/xiangjiao/main/itvlist.txt失败，正在进行第1次重试...
+2026-11-08T07:58:14+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.request_failed] 订阅源请求失败：❌ 请求https://iptv.852851.xyz/sub/JRTpy7FfgNKk/playlist.m3u失败，已达到最大重试次数
+2026-11-08T07:58:14+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://iptv.852851.xyz/sub/JRTpy7FfgNKk/playlist.m3u（请求失败）
+2026-11-08T07:58:15+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.request_failed] 订阅源请求失败：❌ 请求https://raw.nuaa.cf/zgyd11/xiangjiao/main/itvlist.txt失败，已达到最大重试次数
+2026-11-08T07:58:15+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://raw.nuaa.cf/zgyd11/xiangjiao/main/itvlist.txt（请求失败）
+2026-11-08T07:58:15+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://gitee.com/ztxiaoyao/tv/raw/master/修改版.txt（没有匹配到符合条件的值）
+2026-11-08T07:58:16+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://gitee.com/flying-snow-wu/tv/raw/main/itvlist.txt（没有匹配到符合条件的值）
+2026-11-08T07:58:16+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=progress.updated] 正在进行获取订阅源  12/119 (10%)  剩余 107
+2026-11-08T07:58:19+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=progress.updated] 正在进行获取订阅源  24/119 (20%)  剩余 95
+2026-11-08T07:58:19+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://raw.githubusercontent.com/liuchuang0321/K-TV/refs/heads/master/output/user_result.m3u（没有匹配到符合条件的值）
+2026-11-08T07:58:19+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://raw.githubusercontent.com/0610840119/iptv-api/refs/heads/master/output/xp_result.m3u（没有匹配到符合条件的值）
+2026-11-08T07:58:20+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=progress.updated] 正在进行获取订阅源  36/119 (30%)  剩余 83
+2026-11-08T07:58:24+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=progress.updated] 正在进行获取订阅源  48/119 (40%)  剩余 71
+2026-11-08T07:58:26+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg1.m3u（没有匹配到符合条件的值）
+2026-11-08T07:58:26+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=progress.updated] 正在进行获取订阅源  60/119 (50%)  剩余 59
+2026-11-08T07:58:27+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://raw.githubusercontent.com/cyalias/mytvs-github/refs/heads/main/mytv.txt（没有匹配到符合条件的值）
+2026-11-08T07:58:27+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/%E5%92%AA%E5%92%AA%E7%9B%B4%E6%92%AD.txt（没有匹配到符合条件的值）
+2026-11-08T07:58:27+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/%E5%B0%8F%E8%82%A5%E7%BE%8A.m3u（没有匹配到符合条件的值）
+2026-11-08T07:58:27+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv6.txt（没有匹配到符合条件的值）
+2026-11-08T07:58:27+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://raw.githubusercontent.com/onlylove2023/iptv/refs/heads/main/IPTV.m3u（没有匹配到符合条件的值）
+2026-11-08T07:58:27+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://raw.githubusercontent.com/kimwang1978/collect-txt/refs/heads/main/bbxx.txt（没有匹配到符合条件的值）
+2026-11-08T07:58:28+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt（没有匹配到符合条件的值）
+2026-11-08T07:58:28+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://raw.githubusercontent.com/yuanzl77/IPTV/refs/heads/main/live.txt（没有匹配到符合条件的值）
+2026-11-08T07:58:28+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://raw.githubusercontent.com/jiangnan1224/iptv_ipv4_live/refs/heads/main/live_ipv4.txt（没有匹配到符合条件的值）
+2026-11-08T07:58:28+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=progress.updated] 正在进行获取订阅源  72/119 (60%)  剩余 47
+2026-11-08T07:58:30+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=request.retrying] 🔄 请求http://rihou.cc:555/gggg.nzk失败，正在进行第1次重试...
+2026-11-08T07:58:30+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://2121.ccwu.cc（没有匹配到符合条件的值）
+2026-11-08T07:58:30+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://sports.de5.net/xiaohongshu/xhsworldcup.m3u（没有匹配到符合条件的值）
+2026-11-08T07:58:31+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=request.retrying] 🔄 请求https://ha.msbot.dpdns.org/4gtv_api.php失败，正在进行第1次重试...
+2026-11-08T07:58:31+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.request_failed] 订阅源请求失败：❌ 请求http://rihou.cc:555/gggg.nzk失败，已达到最大重试次数
+2026-11-08T07:58:31+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：http://rihou.cc:555/gggg.nzk（请求失败）
+2026-11-08T07:58:31+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://iptv.catvod.com/tv.m3u（没有匹配到符合条件的值）
+2026-11-08T07:58:31+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://seep.eu.org/develop202.github.io/migu_video/interface.txt（没有匹配到符合条件的值）
+2026-11-08T07:58:32+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://ilook.epg.one/5CM5SY98BF24PL/2（没有匹配到符合条件的值）
+2026-11-08T07:58:32+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=progress.updated] 正在进行获取订阅源  84/119 (70%)  剩余 35
+2026-11-08T07:58:32+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.request_failed] 订阅源请求失败：❌ 请求https://ha.msbot.dpdns.org/4gtv_api.php失败，已达到最大重试次数
+2026-11-08T07:58:32+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://ha.msbot.dpdns.org/4gtv_api.php（请求失败）
+2026-11-08T07:59:05+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=progress.updated] 正在进行获取订阅源  86/119 (72%)  剩余 33
+2026-11-08T07:59:05+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=request.retrying] 🔄 请求https://t.freetv.fun/m3u/playlist.txt失败，正在进行第1次重试...
+2026-11-08T07:59:05+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=request.retrying] 🔄 请求https://t.freetv.fun/m3u/taiwan.txt失败，正在进行第1次重试...
+2026-11-08T07:59:05+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=request.retrying] 🔄 请求https://t.freetv.fun/m3u/hong_kong.txt失败，正在进行第1次重试...
+2026-11-08T07:59:05+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=request.retrying] 🔄 请求https://t.freetv.fun/m3u/macao.txt失败，正在进行第1次重试...
+2026-11-08T07:59:05+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=request.retrying] 🔄 请求https://live.freetv.top/douyuyqk.m3u失败，正在进行第1次重试...
+2026-11-08T07:59:05+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=request.retrying] 🔄 请求https://yg.ygbox.de5.net/huya.php失败，正在进行第1次重试...
+2026-11-08T07:59:05+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=request.retrying] 🔄 请求https://jsnzkpg.us.ci/live.m3u失败，正在进行第1次重试...
+2026-11-08T07:59:07+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://live.hacks.tools/tv/ipv4/categories/地方频道.m3u（没有匹配到符合条件的值）
+2026-11-08T07:59:08+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://live.hacks.tools/tv/ipv4/categories/电影频道.m3u（没有匹配到符合条件的值）
+2026-11-08T07:59:09+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://live.hacks.tools/tv/ipv4/categories/儿童频道.m3u（没有匹配到符合条件的值）
+2026-11-08T07:59:10+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://live.hacks.tools/tv/ipv4/categories/纪录频道.m3u（没有匹配到符合条件的值）
+2026-11-08T07:59:11+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://live.hacks.tools/tv/ipv4/categories/其他频道.m3u（没有匹配到符合条件的值）
+2026-11-08T07:59:12+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://live.hacks.tools/tv/ipv4/categories/数字频道.m3u（没有匹配到符合条件的值）
+2026-11-08T07:59:13+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://live.hacks.tools/tv/ipv4/categories/体育频道.m3u（没有匹配到符合条件的值）
+2026-11-08T07:59:14+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://live.hacks.tools/tv/ipv4/categories/卫视频道.m3u（没有匹配到符合条件的值）
+2026-11-08T07:59:15+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://live.hacks.tools/tv/ipv4/categories/戏曲频道.m3u（没有匹配到符合条件的值）
+2026-11-08T07:59:16+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.request_failed] 订阅源请求失败：❌ 请求https://jsnzkpg.us.ci/live.m3u失败，已达到最大重试次数
+2026-11-08T07:59:16+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://jsnzkpg.us.ci/live.m3u（请求失败）
+2026-11-08T07:59:16+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://live.hacks.tools/tv/ipv4/categories/央视频道.m3u（没有匹配到符合条件的值）
+2026-11-08T07:59:16+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=progress.updated] 正在进行获取订阅源  98/119 (82%)  剩余 21
+2026-11-08T07:59:17+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://live.hacks.tools/tv/ipv4/categories/音乐频道.m3u（没有匹配到符合条件的值）
+2026-11-08T07:59:17+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://live.hacks.tools/tv/ipv4/categories/游戏频道.m3u（没有匹配到符合条件的值）
+2026-11-08T07:59:18+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://live.hacks.tools/tv/ipv4/categories/直播中国.m3u（没有匹配到符合条件的值）
+2026-11-08T07:59:18+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://live.hacks.tools/tv/ipv4/categories/综艺频道.m3u（没有匹配到符合条件的值）
+2026-11-08T07:59:19+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://live.hacks.tools/tv/ipv4/categories/解说频道.m3u（没有匹配到符合条件的值）
+2026-11-08T07:59:20+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://live.hacks.tools/tv/ipv6/categories/央视频道.m3u（没有匹配到符合条件的值）
+2026-11-08T07:59:20+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://live.hacks.tools/tv/ipv6/categories/地方频道.m3u（没有匹配到符合条件的值）
+2026-11-08T07:59:21+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://live.hacks.tools/tv/ipv6/categories/电影频道.m3u（没有匹配到符合条件的值）
+2026-11-08T07:59:21+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://live.hacks.tools/tv/ipv6/categories/儿童频道.m3u（没有匹配到符合条件的值）
+2026-11-08T07:59:22+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://live.hacks.tools/tv/ipv6/categories/其他频道.m3u（没有匹配到符合条件的值）
+2026-11-08T07:59:22+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://live.hacks.tools/tv/ipv6/categories/体育频道.m3u（没有匹配到符合条件的值）
+2026-11-08T07:59:23+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://live.hacks.tools/tv/ipv6/categories/卫视频道.m3u（没有匹配到符合条件的值）
+2026-11-08T07:59:23+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=progress.updated] 正在进行获取订阅源  110/119 (92%)  剩余 9
+2026-11-08T07:59:23+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=request.retrying] 🔄 请求https://t.freetv.fun/m3u/japan.txt失败，正在进行第1次重试...
+2026-11-08T07:59:24+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://live.zbds.org/tv/iptv4.txt（没有匹配到符合条件的值）
+2026-11-08T07:59:24+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.request_failed] 订阅源请求失败：❌ 请求https://t.freetv.fun/m3u/hong_kong.txt失败，已达到最大重试次数
+2026-11-08T07:59:24+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://t.freetv.fun/m3u/hong_kong.txt（请求失败）
+2026-11-08T07:59:24+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.request_failed] 订阅源请求失败：❌ 请求https://live.freetv.top/douyuyqk.m3u失败，已达到最大重试次数
+2026-11-08T07:59:24+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://live.freetv.top/douyuyqk.m3u（请求失败）
+2026-11-08T07:59:24+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.request_failed] 订阅源请求失败：❌ 请求https://t.freetv.fun/m3u/taiwan.txt失败，已达到最大重试次数
+2026-11-08T07:59:24+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://t.freetv.fun/m3u/taiwan.txt（请求失败）
+2026-11-08T07:59:24+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.request_failed] 订阅源请求失败：❌ 请求https://t.freetv.fun/m3u/macao.txt失败，已达到最大重试次数
+2026-11-08T07:59:24+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://t.freetv.fun/m3u/macao.txt（请求失败）
+2026-11-08T07:59:24+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.request_failed] 订阅源请求失败：❌ 请求https://t.freetv.fun/m3u/playlist.txt失败，已达到最大重试次数
+2026-11-08T07:59:24+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://t.freetv.fun/m3u/playlist.txt（请求失败）
+2026-11-08T07:59:26+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://jihulab.com/-/snippets/5265/raw/main/.txt（没有匹配到符合条件的值）
+2026-11-08T07:59:42+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=request.retrying] 🔄 请求https://freetv.fun/test_channels_original_new.txt失败，正在进行第1次重试...
+2026-11-08T07:59:43+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.request_failed] 订阅源请求失败：❌ 请求https://t.freetv.fun/m3u/japan.txt失败，已达到最大重试次数
+2026-11-08T07:59:43+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://t.freetv.fun/m3u/japan.txt（请求失败）
+2026-11-08T08:00:02+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.request_failed] 订阅源请求失败：❌ 请求https://freetv.fun/test_channels_original_new.txt失败，已达到最大重试次数
+2026-11-08T08:00:02+00:00 WARNING [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=source.disabled] 订阅源地址已自动停用：https://freetv.fun/test_channels_original_new.txt（请求失败）
+2026-11-08T08:00:02+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=progress.updated] 正在进行获取订阅源  119/119 (100%)  剩余 0
+2026-11-08T08:00:02+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=sources.subscribe.finished] 订阅源: ✅ 有效地址数量：65，⛔ 停用地址数量：55
+2026-11-08T08:00:02+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=fetch event=progress.finished] 正在进行获取订阅源  119/119  未匹配 10000
+2026-11-08T08:05:08+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=aggregate event=channels.aggregated] 频道数据聚合完成：1189 个频道，22409 个接口（IPv4 20595 / IPv6 1095）
+2026-11-08T08:05:09+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=speed_test.planned] 总接口数量: 18288, 需要进行测速的接口数量: 16784
+2026-11-08T08:05:09+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.started] 测速  0/16784
+2026-11-08T08:05:09+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  1/16784 (0%)  有效 0  失败 1  CCTV1
+2026-11-08T08:05:39+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  132/16784 (0%)  有效 23  失败 109  CCTV1
+2026-11-08T08:06:09+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  321/16784 (1%)  有效 51  失败 270  CCTV2
+2026-11-08T08:06:39+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  463/16784 (2%)  有效 53  失败 410  CCTV3
+2026-11-08T08:07:10+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  637/16784 (3%)  有效 79  失败 558  CCTV3
+2026-11-08T08:07:40+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  819/16784 (4%)  有效 114  失败 705  CCTV4
+2026-11-08T08:08:10+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  1000/16784 (5%)  有效 126  失败 874  CCTV4
+2026-11-08T08:08:40+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  1142/16784 (6%)  有效 134  失败 1008  CCTV5
+2026-11-08T08:09:10+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  1318/16784 (7%)  有效 151  失败 1167  CCTV6
+2026-11-08T08:09:41+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  1494/16784 (8%)  有效 176  失败 1318  CCTV6
+2026-11-08T08:10:12+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  1655/16784 (9%)  有效 201  失败 1454  CCTV7
+2026-11-08T08:10:42+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  1852/16784 (11%)  有效 211  失败 1641  CCTV8
+2026-11-08T08:11:13+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  1978/16784 (11%)  有效 227  失败 1751  CCTV8
+2026-11-08T08:11:43+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  2170/16784 (12%)  有效 271  失败 1899  CCTV9
+2026-11-08T08:12:13+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  2363/16784 (14%)  有效 299  失败 2064  CCTV10
+2026-11-08T08:12:43+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  2540/16784 (15%)  有效 308  失败 2232  CCTV10
+2026-11-08T08:13:13+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  2689/16784 (16%)  有效 329  失败 2360  CCTV11
+2026-11-08T08:13:44+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  2874/16784 (17%)  有效 359  失败 2515  CCTV12
+2026-11-08T08:14:16+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  3045/16784 (18%)  有效 387  失败 2658  CCTV12
+2026-11-08T08:14:46+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  3251/16784 (19%)  有效 402  失败 2849  CCTV14
+2026-11-08T08:15:16+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  3377/16784 (20%)  有效 417  失败 2960  CCTV14
+2026-11-08T08:15:46+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  3570/16784 (21%)  有效 441  失败 3129  CCTV15
+2026-11-08T08:16:16+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  3734/16784 (22%)  有效 469  失败 3265  CCTV17
+2026-11-08T08:16:46+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  3956/16784 (23%)  有效 512  失败 3444  CCTV17
+2026-11-08T08:17:16+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  4125/16784 (24%)  有效 549  失败 3576  风云剧场
+2026-11-08T08:17:47+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  4282/16784 (25%)  有效 586  失败 3696  兵器科技
+2026-11-08T08:18:17+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  4501/16784 (26%)  有效 632  失败 3869  优漫卡通
+2026-11-08T08:18:48+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  4623/16784 (27%)  有效 632  失败 3991  湖南卫视
+2026-11-08T08:19:18+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  4823/16784 (28%)  有效 681  失败 4142  金鹰卡通
+2026-11-08T08:19:48+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  5001/16784 (29%)  有效 692  失败 4309  金鹰卡通
+2026-11-08T08:20:18+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  5137/16784 (30%)  有效 700  失败 4437  东方卫视
+2026-11-08T08:20:48+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  5331/16784 (31%)  有效 729  失败 4602  浙江卫视
+2026-11-08T08:21:18+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  5486/16784 (32%)  有效 748  失败 4738  江苏卫视
+2026-11-08T08:21:48+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  5620/16784 (33%)  有效 761  失败 4859  江苏卫视
+2026-11-08T08:22:19+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  5799/16784 (34%)  有效 792  失败 5007  广东卫视
+2026-11-08T08:22:49+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  5950/16784 (35%)  有效 793  失败 5157  广东卫视
+2026-11-08T08:23:19+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  6117/16784 (36%)  有效 820  失败 5297  北京卫视
+2026-11-08T08:23:50+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  6271/16784 (37%)  有效 833  失败 5438  天津卫视
+2026-11-08T08:24:20+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  6441/16784 (38%)  有效 847  失败 5594  天津卫视
+2026-11-08T08:24:50+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  6572/16784 (39%)  有效 849  失败 5723  山东卫视
+2026-11-08T08:25:21+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  6734/16784 (40%)  有效 865  失败 5869  安徽卫视
+2026-11-08T08:25:51+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  6885/16784 (41%)  有效 885  失败 6000  辽宁卫视
+2026-11-08T08:26:21+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  7034/16784 (41%)  有效 893  失败 6141  湖北卫视
+2026-11-08T08:26:51+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  7174/16784 (42%)  有效 897  失败 6277  湖北卫视
+2026-11-08T08:27:21+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  7331/16784 (43%)  有效 910  失败 6421  重庆卫视
+2026-11-08T08:27:51+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  7506/16784 (44%)  有效 926  失败 6580  四川卫视
+2026-11-08T08:28:21+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  7675/16784 (45%)  有效 940  失败 6735  四川卫视
+2026-11-08T08:28:51+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  7817/16784 (46%)  有效 950  失败 6867  吉林卫视
+2026-11-08T08:29:21+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  7972/16784 (47%)  有效 966  失败 7006  江西卫视
+2026-11-08T08:29:51+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  8140/16784 (48%)  有效 975  失败 7165  黑龙江卫视
+2026-11-08T08:30:21+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  8298/16784 (49%)  有效 986  失败 7312  黑龙江卫视
+2026-11-08T08:30:51+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  8436/16784 (50%)  有效 994  失败 7442  河南卫视
+2026-11-08T08:31:21+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  8615/16784 (51%)  有效 1014  失败 7601  贵州卫视
+2026-11-08T08:31:52+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  8743/16784 (52%)  有效 1018  失败 7725  贵州卫视
+2026-11-08T08:32:22+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  8904/16784 (53%)  有效 1042  失败 7862  深圳卫视
+2026-11-08T08:32:55+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  9083/16784 (54%)  有效 1063  失败 8020  东南卫视
+2026-11-08T08:33:25+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  9243/16784 (55%)  有效 1076  失败 8167  广西卫视
+2026-11-08T08:33:56+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  9396/16784 (55%)  有效 1081  失败 8315  广西卫视
+2026-11-08T08:34:26+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  9573/16784 (57%)  有效 1095  失败 8478  河北卫视
+2026-11-08T08:34:56+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  9729/16784 (57%)  有效 1111  失败 8618  山西卫视
+2026-11-08T08:35:26+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  9884/16784 (58%)  有效 1123  失败 8761  陕西卫视
+2026-11-08T08:35:56+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  10059/16784 (59%)  有效 1143  失败 8916  宁夏卫视
+2026-11-08T08:36:26+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  10229/16784 (60%)  有效 1162  失败 9067  青海卫视
+2026-11-08T08:36:57+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  10390/16784 (61%)  有效 1183  失败 9207  内蒙古卫视
+2026-11-08T08:37:27+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  10546/16784 (62%)  有效 1204  失败 9342  新疆卫视
+2026-11-08T08:37:57+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  10732/16784 (63%)  有效 1229  失败 9503  三沙卫视
+2026-11-08T08:38:27+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  10946/16784 (65%)  有效 1277  失败 9669  大湾区卫视
+2026-11-08T08:38:57+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  11102/16784 (66%)  有效 1297  失败 9805  河南公共
+2026-11-08T08:39:27+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  11277/16784 (67%)  有效 1323  失败 9954  海峡卫视
+2026-11-08T08:39:57+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  11439/16784 (68%)  有效 1348  失败 10091  广东体育
+2026-11-08T08:40:27+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  11814/16784 (70%)  有效 1399  失败 10415  凤凰中文
+2026-11-08T08:40:58+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  12213/16784 (72%)  有效 1532  失败 10681  CGTN
+2026-11-08T08:41:29+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  12425/16784 (74%)  有效 1576  失败 10849  CGTN
+2026-11-08T08:41:59+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  12581/16784 (74%)  有效 1593  失败 10988  CHC影迷电影
+2026-11-08T08:42:29+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  12908/16784 (76%)  有效 1646  失败 11262  劉德華
+2026-11-08T08:43:00+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  13045/16784 (77%)  有效 1650  失败 11395  劉德華
+2026-11-08T08:43:30+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  13159/16784 (78%)  有效 1650  失败 11509  劉德華
+2026-11-08T08:44:00+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  13268/16784 (79%)  有效 1650  失败 11618  劉德華
+2026-11-08T08:44:30+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  13377/16784 (79%)  有效 1650  失败 11727  劉德華
+2026-11-08T08:45:00+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  13487/16784 (80%)  有效 1650  失败 11837  劉德華
+2026-11-08T08:45:30+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  13608/16784 (81%)  有效 1657  失败 11951  成龍
+2026-11-08T08:46:00+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  13772/16784 (82%)  有效 1683  失败 12089  王晶
+2026-11-08T08:46:31+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  14014/16784 (83%)  有效 1724  失败 12290  Fashion
+2026-11-08T08:47:01+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  14355/16784 (85%)  有效 1863  失败 12492  四川峨眉山远眺万佛顶
+2026-11-08T08:47:31+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  14663/16784 (87%)  有效 1887  失败 12776  翡翠剧集台
+2026-11-08T08:48:01+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  14979/16784 (89%)  有效 1947  失败 13032  TV3
+2026-11-08T08:48:31+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  15368/16784 (91%)  有效 2109  失败 13259  龙珠
+2026-11-08T08:49:02+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  15616/16784 (93%)  有效 2148  失败 13468  电影_欢笑影院
+2026-11-08T08:49:32+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  15808/16784 (94%)  有效 2177  失败 13631  倚天屠龙记
+2026-11-08T08:50:03+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  16018/16784 (95%)  有效 2226  失败 13792  宫心计-港剧-古装
+2026-11-08T08:50:33+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  16166/16784 (96%)  有效 2234  失败 13932  张国荣与周润发的兄弟情
+2026-11-08T08:51:03+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  16315/16784 (97%)  有效 2246  失败 14069  张国荣与周润发的兄弟情
+2026-11-08T08:51:34+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  16470/16784 (98%)  有效 2267  失败 14203  电影黑豹
+2026-11-08T08:52:04+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  16649/16784 (99%)  有效 2297  失败 14352  高能博弈—大事件
+2026-11-08T08:52:34+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  16777/16784 (99%)  有效 2333  失败 14444  最佳时机
+2026-11-08T08:52:36+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  16784/16784 (100%)  有效 2337  失败 14447  就是要疯狂
+2026-11-08T08:52:36+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  16784/16784 (100%)  有效 2337  失败 14448  新弦已张
+2026-11-08T08:52:36+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  16784/16784 (100%)  有效 2337  失败 14449  留学澳大利亚蓝翔梗王
+2026-11-08T08:52:36+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  16784/16784 (100%)  有效 2337  失败 14450  硬核使命
+2026-11-08T08:52:37+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  16784/16784 (100%)  有效 2337  失败 14451  热烈的玫瑰
+2026-11-08T08:52:38+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  16784/16784 (100%)  有效 2337  失败 14452  爱情拯救计划
+2026-11-08T08:52:39+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  16784/16784 (100%)  有效 2338  失败 14452  太空异种惊魂
+2026-11-08T08:52:39+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  16784/16784 (100%)  有效 2338  失败 14453  守护千年雄关
+2026-11-08T08:52:41+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  16784/16784 (100%)  有效 2338  失败 14454  公主战俘记
+2026-11-08T08:52:41+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  16784/16784 (100%)  有效 2338  失败 14455  破解终极密码
+2026-11-08T08:52:41+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  16784/16784 (100%)  有效 2338  失败 14456  哮天犬闹龙宫
+2026-11-08T08:52:41+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  16784/16784 (100%)  有效 2338  失败 14457  大铸剑师传奇
+2026-11-08T08:52:42+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  16784/16784 (100%)  有效 2338  失败 14458  绝对忠诚使命
+2026-11-08T08:52:42+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  16784/16784 (100%)  有效 2338  失败 14459  横行不霸道
+2026-11-08T08:52:42+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.updated] 测速  16784/16784 (100%)  有效 2338  失败 14460  特派先锋出击
+2026-11-08T08:52:42+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=speed_test.artifacts_written] 测速明细已写入 output/log/speed_test.log，有效结果已写入 output/log/result.log
+2026-11-08T08:52:42+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=speed_test event=progress.finished] 测速  16784/16784  有效 2338  失败 14460
+2026-11-08T08:52:43+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=output event=output.written] 结果文件生成完成：更新 3 个文件
+2026-11-08T08:52:45+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=statistics event=statistics.finished] 频道统计完成：测试 16798，有效 2338
+2026-11-08T08:52:46+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=complete event=run.summary] 更新摘要
+2026-11-08T08:52:46+00:00 INFO    [run=256dc6a474f64571afb37930c64f33e1 phase=complete event=run.finished] 更新完成！总耗时：54:35
