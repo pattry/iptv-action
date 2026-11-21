@@ -302,8 +302,8 @@ POPC,PopC,Pop C,Popc,POPC电影
 天映频道,re:(?i)^\s*(天映频道|天映頻道|天映頻道\(SG\)|天映频道\(SG\))[\s\S]*$,天映頻道「新加坡」,天映頻道「馬來西亞」
 天映经典,re:(?i)^\s*(天映经典|天映經典|天映經典頻道|天映经典频道|天映經典頻道(多音轨))[\s\S]*$,天映經典「新加坡」,天映經典「馬來西亞」
 天映新加坡,re:(?i)^\s*(天映新加坡|天映頻道\(SG\)|天映频道\(SG\))[\s\S]*$
-NOW星影台,re:(?i)^\s*NOW[-\s_]*星影台[\s\S]*$,Now星影台
-NOW爆谷台,re:(?i)^\s爆谷[-\s_]台[\s\S]*$,爆谷,爆谷频道,爆谷电影台,Now爆谷台
+NOW星影台,NOW星影,Now星影台
+NOW爆谷台,NOW爆谷,Now爆谷台
 Astro AOD,re:(?i)^\s*Astro[-\s_]*AOD[\s\S]*$,Astro_Aod,Astro AOD
 Astro AEC,re:(?i)^\s*Astro[-\s_]*AEC[\s\S]*$,Astro_Aec
 Astro QJ,re:(?i)^\s*Astro[-\s_]*QJ[\s\S]*$,Astro_QJ
