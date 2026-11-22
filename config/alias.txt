@@ -5,6 +5,7 @@
 # Format: Main name (corresponds to channel name in demo.txt template), alias1, alias2, alias3
 # Aliases support regex matching. Aliases starting with re: are recognized as regular expressions, e\.g\. CCTV-1,re:(?i)^\s*CCTV[-\s_]*0?1(?![0-9Kk+])[\s\S]*$
 
+
 CCTV1,CCTV-1HD,CCTV-1,CCTV-1综合,CCTV 1 綜合「Relay」
 CCTV2,CCTV-2HD,CCTV-2,CCTV-2财经,CCTV 2 財經「Relay」
 CCTV3,CCTV-3HD,CCTV-3,CCTV-3综艺,CCTV 3 綜藝「Relay」
@@ -33,14 +34,14 @@ CETV2,CETV-2HD,CETV-2中国教育2,中国教育2,中国教育二台
 CETV3,CETV-3HD,CETV-3中国教育3,中国教育3,中国教育三台
 CETV4,CETV-4HD,CETV-4中国教育4,中国教育4,中国教育四台
 爱上4K,爱上4K超高清
-重温经典,重温经典HD,重温经典高清,重温经典
-央视台球,中央台球,央视台球
+重温经典,重温经典HD,重温经典高清
+央视台球,中央台球,re:(?i)^\s*央视台球[\s\S]*$
 风云足球,风云足球HD,re:(?i)^\s*(风云足球|風雲足球|風雲足球HD)[\s\S]*$
 风云剧场,风云剧场HD
 风云音乐,风云音乐HD,re:(?i)^\s*(风云音乐|風雲音樂|风云音乐HD|風雲音樂HD)[\s\S]*$
 第一剧场,第一剧场HD
 兵器科技,兵器科技HD
-高尔夫网球,高尔夫·网球,高爾夫網球HD,re:(?i)^\s*(高尔夫网球|高爾夫網球)[\s\S]*$
+高尔夫网球,高尔夫·网球,re:(?i)^\s*(高尔夫网球|高爾夫網球)[\s\S]*$
 世界地理,世界地理HD,re:(?i)^\s*世界地理[\s\S]*$
 女性时尚,女性时尚HD
 怀旧剧场,怀旧剧场HD
@@ -53,7 +54,6 @@ CETV4,CETV-4HD,CETV-4中国教育4,中国教育4,中国教育四台
 天元围棋,天元围棋HD
 优漫卡通,优漫卡通HD
 早期教育,早期教育HD
-
 湖南卫视,湖南卫视4K,湖南卫视HD,湖南卫视超清,湖南卫视高清,湖南衛視「Relay」
 湖南经视,湖南经视4K,湖南经视HD,湖南经视高清
 湖南都市,湖南都市4K,湖南都市HD,湖南都市高清
@@ -62,9 +62,9 @@ CETV4,CETV-4HD,CETV-4中国教育4,中国教育4,中国教育四台
 湖南电影,湖南电影4K,湖南电影HD,湖南电影高清
 湖南爱晚,湖南爱晚4K,湖南爱晚HD,湖南爱晚高清
 湖南国际,湖南国际4K,湖南国际HD,湖南国际高清
-金鹰纪实,金鹰纪实4K,金鹰纪实HD,金鹰纪实高清,金鷹紀實頻道,re:(?i)^\s*(金鹰纪实频道|金鷹紀實頻道|金鹰纪实|金鷹紀實)[\s\S]*$
+金鹰纪实,金鹰纪实4K,金鹰纪实HD,金鹰纪实高清,re:(?i)^\s*(金鹰纪实频道|金鷹紀實頻道|金鹰纪实|金鷹紀實)[\s\S]*$
 金鹰卡通,金鹰卡通4K,金鹰卡通HD,金鹰卡通高清
-快乐垂钓,快乐垂钓4K,快乐垂钓HD,快乐垂钓高清,快乐垂钓,re:(?i)^\s*快乐垂钓[\s\S]*$
+快乐垂钓,快乐垂钓4K,快乐垂钓HD,快乐垂钓高清,re:(?i)^\s*快乐垂钓[\s\S]*$
 长沙新闻,长沙新闻4K,长沙新闻HD,长沙新闻高清
 长沙政法,长沙政法4K,长沙政法HD,长沙政法高清
 东方卫视,东方卫视4K,上海卫视,上海东方卫视,东方卫视HD,东方卫视高清,東方衛視「Relay」
@@ -103,7 +103,7 @@ CETV4,CETV-4HD,CETV-4中国教育4,中国教育4,中国教育四台
 三沙卫视,三沙卫视4K,三沙台,三沙卫视HD,三沙卫视高清
 大湾区卫视,大湾区卫视4K,大湾卫视,南方卫视,大湾区卫视HD,大湾区卫视高清
 苏州4K,苏州4K超高清
-广州南国都市4K,广州南国都市4K超高清,南国都市4K,广州南国都市,南国都市4K
+广州南国都市4K,广州南国都市4K超高清,南国都市4K
 嘉佳卡通,嘉佳卡通4K,嘉佳卡通HD,嘉佳卡通高清
 山东教育,山东教育4K,山东教育HD,山东教育高清
 河南都市,河南都市4K,河南都市HD,河南都市高清
@@ -118,26 +118,23 @@ CETV4,CETV-4HD,CETV-4中国教育4,中国教育4,中国教育四台
 文物宝库,文物宝库4K,文物宝库HD,文物宝库高清
 梨园,梨园4K,梨园HD,梨园高清
 武术世界,武术世界4K,武术世界HD,武术世界高清
-广东珠江,广东珠江4K,珠江台,珠江频道,广东珠江HD,广东珠江高清,广东珠江
-广东体育,广东体育4K,广东体育台,广东体育HD,广东体育高清,re:(?i)^\s*(广东体育|廣東體育|广东体育台|廣東體育HD)[\s\S]*$,广东体育
-广州综合,广州综合4K,广州综合台,广州综合HD,广州综合高清,广州综合
-广州新闻,广州新闻4K,广州新闻台,广州新闻HD,广州新闻高清,广州新闻
+广东珠江,广东珠江4K,珠江台,珠江频道,广东珠江HD,广东珠江高清
+广东体育,广东体育4K,广东体育台,广东体育HD,广东体育高清,re:(?i)^\s*(广东体育|廣東體育|广东体育台|廣東體育HD)[\s\S]*$
+广州综合,广州综合4K,广州综合台,广州综合HD,广州综合高清
+广州新闻,广州新闻4K,广州新闻台,广州新闻HD,广州新闻高清
 广州南国都市,广州南国都市4K,南国都市,广州南国都市HD,广州南国都市高清
-海峡卫视,海峡卫视4K,海峡台,海峡卫视HD,海峡卫视高清,海峡卫视
-
-astroFootball,re:(?i)^\s*[Aa]stro[-\s_]*Football[\s\S]*$,astroFootball
+海峡卫视,海峡卫视4K,海峡台,海峡卫视HD,海峡卫视高清
+astroFootball,re:(?i)^\s*[Aa]stro[-\s_]*Football[\s\S]*$
 足球频道,re:(?i)^\s*足球频道[\s\S]*$
-五星体育,五星体育,五星体育台,re:(?i)^\s*五星体育(台|HD)?[\s\S]*$,五星体育
+五星体育,五星体育台,re:(?i)^\s*五星体育(台|HD)?[\s\S]*$
 劲爆体育,re:(?i)^\s*(劲爆体育|勁爆體育)[\s\S]*$
-广东体育,re:(?i)^\s*(广东体育|廣東體育|广东体育台|廣東體育HD)[\s\S]*$,广东体育
-爱尔达体育1,re:(?i)^\s*(爱尔达体育[-\s_]*1|愛爾達體育[-\s_]*1|ELTA体育1|ELTA體育1)[\s\S]*$,爱尔达体育1,愛爾達體育 一,ELTA體育台1(多音轨),re:(?i)^\s*ELTA[-\s_]*體育[-\s_]*1[\s\S]*$
-爱尔达体育2,re:(?i)^\s*(爱尔达体育[-\s_]*2|愛爾達體育[-\s_]*2|ELTA体育2|ELTA體育2)[\s\S]*$,爱尔达体育2,愛爾達體育 二,ELTA體育台2(多音轨),re:(?i)^\s*ELTA[-\s_]*體育[-\s_]*2[\s\S]*$
-爱尔达体育3,re:(?i)^\s*(爱尔达体育[-\s_]*3|愛爾達體育[-\s_]*3|ELTA体育3|ELTA體育3)[\s\S]*$,爱尔达体育3,愛爾達體育 三,ELTA體育台3(多音轨),re:(?i)^\s*ELTA[-\s_]*體育[-\s_]*3[\s\S]*$
-爱尔达体育4,爱尔达体育4,愛爾達體育 四,ELTA體育台4(多音轨),re:(?i)^\s*ELTA[-\s_]*體育[-\s_]*4[\s\S]*$
-DAZN-体育,re:(?i)^\s*DAZN[-\s_]*体育[\s\S]*$,DAZN-体育
-momo'tv,re:(?i)^\s*momo'?tv[\s\S]*$,momo'tv
+爱尔达体育1,re:(?i)^\s*(爱尔达体育[-\s_]*1|愛爾達體育[-\s_]*1|ELTA体育1|ELTA體育1)[\s\S]*$,愛爾達體育 一,re:(?i)^\s*ELTA[-\s_]*體育[-\s_]*1[\s\S]*$
+爱尔达体育2,re:(?i)^\s*(爱尔达体育[-\s_]*2|愛爾達體育[-\s_]*2|ELTA体育2|ELTA體育2)[\s\S]*$,愛爾達體育 二,re:(?i)^\s*ELTA[-\s_]*體育[-\s_]*2[\s\S]*$
+爱尔达体育3,re:(?i)^\s*(爱尔达体育[-\s_]*3|愛爾達體育[-\s_]*3|ELTA体育3|ELTA體育3)[\s\S]*$,愛爾達體育 三,re:(?i)^\s*ELTA[-\s_]*體育[-\s_]*3[\s\S]*$
+爱尔达体育4,愛爾達體育 四,re:(?i)^\s*ELTA[-\s_]*體育[-\s_]*4[\s\S]*$
+DAZN-体育,re:(?i)^\s*DAZN[-\s_]*体育[\s\S]*$
+momo'tv,re:(?i)^\s*momo'?tv[\s\S]*$
 辽宁体育,re:(?i)^\s*(辽宁体育|遼寧體育|辽宁体育台)[\s\S]*$
-风云足球,re:(?i)^\s*(风云足球|風雲足球|風雲足球HD)[\s\S]*$
 魅力足球,re:(?i)^\s*魅力足球[\s\S]*$
 羽毛球专场,re:(?i)^\s*羽毛球专场[\s\S]*$
 篮球专场,re:(?i)^\s*篮球专场[\s\S]*$
@@ -177,10 +174,8 @@ Z,re:(?i)^\s*Z频道[\s\S]*$
 NBA,re:(?i)^\s*NBA[\s\S]*$
 TVB 18 台,re:(?i)^\s*TVB[-\s_]*18[\s\S]*$
 NOW  Prime(多音轨),re:(?i)^\s*NOW[-\s_]*Prime[\s\S]*$,Now Prime
-四海钓鱼,四海钓鱼,re:(?i)^\s*四海钓鱼[\s\S]*$
-快乐垂钓,快乐垂钓,re:(?i)^\s*快乐垂钓[\s\S]*$
-央视台球,央视台球,re:(?i)^\s*央视台球[\s\S]*$
-北京体育,北京体育,re:(?i)^\s*北京体育[\s\S]*$
+四海钓鱼,re:(?i)^\s*四海钓鱼[\s\S]*$
+北京体育,re:(?i)^\s*北京体育[\s\S]*$
 時尚運動X,re:(?i)^\s*(时尚运动X|時尚運動X)[\s\S]*$
 智林體育,re:(?i)^\s*(智林体育|智林體育|智林体育台|智林體育台)[\s\S]*$
 博斯魅力,re:(?i)^\s*(博斯魅力|博斯魅力台)[\s\S]*$
@@ -220,8 +215,8 @@ NOW sports 5(多音轨),re:(?i)^\s*NOW[-\s_]*[Ss]ports[-\s_]*5[\s\S]*$,Now Sport
 NOW sports 6(多音轨),re:(?i)^\s*NOW[-\s_]*[Ss]ports[-\s_]*6[\s\S]*$,Now Sports 6
 NOW sports 7(多音轨),re:(?i)^\s*NOW[-\s_]*[Ss]ports[-\s_]*7[\s\S]*$,Now Sports 7
 Now Sports Plus(多音轨),re:(?i)^\s*Now[-\s_]*Sports[-\s_]*Plus[\s\S]*$
-DAZN 1,re:(?i)^\s*DAZN[-\s_]*1[\s\S]*$,DAZN 1
-DAZN 2,re:(?i)^\s*DAZN[-\s_]*2[\s\S]*$,DAZN 2
+DAZN 1,re:(?i)^\s*DAZN[-\s_]*1[\s\S]*$
+DAZN 2,re:(?i)^\s*DAZN[-\s_]*2[\s\S]*$
 DAZN 3,re:(?i)^\s*DAZN[-\s_]*3[\s\S]*$
 Ginx TV電競頻道(多音轨),re:(?i)^\s*Ginx[-\s_]*TV[\s\S]*$,Ginx TV电竞频道
 TRACE Sport Stars,re:(?i)^\s*TRACE[-\s_]*Sport[-\s_]*Stars[\s\S]*$
@@ -232,7 +227,7 @@ TSN4,re:(?i)^\s*TSN[-\s_]*4[\s\S]*$,TSN 4
 TSN5,re:(?i)^\s*TSN[-\s_]*5[\s\S]*$,TSN 5
 SNE,re:(?i)^\s*SNE[\s\S]*$
 GOLF,re:(?i)^\s*GOLF[\s\S]*$,Golf Channel
-SPOTV,re:(?i)^\s*SPOTV(?![0-9])[\s\S]*$,SPOTV
+SPOTV,re:(?i)^\s*SPOTV(?![0-9])[\s\S]*$
 SPOTV2,re:(?i)^\s*SPOTV[-\s_]*2[\s\S]*$,SPOTV 2
 W-Sport,re:(?i)^\s*W[-\s_]*Sport[\s\S]*$
 HubPremier1,re:(?i)^\s*Hub[-\s_]*Premier[-\s_]*1[\s\S]*$,Hub Premier 1
@@ -294,8 +289,6 @@ Astro_Badminton,re:(?i)^\s*Astro[-\s_]*Badminton[\s\S]*$
 Astro_Sports puls,re:(?i)^\s*Astro[-\s_]*Sports[-\s_]*Plus[\s\S]*$,Astro Sports Plus
 Astro_Premier league1,re:(?i)^\s*Astro[-\s_]*Premier[-\s_]*League[-\s_]*1[\s\S]*$
 Astro_Premier league2,re:(?i)^\s*Astro[-\s_]*Premier[-\s_]*League[-\s_]*2[\s\S]*$
-
-
 凤凰电影频道,re:(?i)^\s*(凤凰电影频道|鳳凰電影頻道|凤凰电影|鳳凰電影|凤凰电影台|鳳凰電影台)[\s\S]*$
 POPC,PopC,Pop C,Popc,POPC电影
 美亚电影,美亚电影台,美亞電影,美亞電影台,美亞電影台(多音轨),Mei Ah Movie Channel
@@ -304,136 +297,124 @@ POPC,PopC,Pop C,Popc,POPC电影
 天映新加坡,re:(?i)^\s*(天映新加坡|天映頻道\(SG\)|天映频道\(SG\))[\s\S]*$
 NOW星影,NOW星影台
 NOW爆谷,NOW爆谷台
-Astro AOD,re:(?i)^\s*Astro[-\s_]*AOD[\s\S]*$,Astro_Aod,Astro AOD
-Astro AEC,re:(?i)^\s*Astro[-\s_]*AEC[\s\S]*$,Astro_Aec
-Astro QJ,re:(?i)^\s*Astro[-\s_]*QJ[\s\S]*$,Astro_QJ
+Astro AOD,re:(?i)^\s*Astro[-\s_]*AOD[\s\S]*$
+Astro AEC,re:(?i)^\s*Astro[-\s_]*AEC[\s\S]*$
+Astro QJ,re:(?i)^\s*Astro[-\s_]*QJ[\s\S]*$
 Astro欢喜台,re:(?i)^\s*(Astro欢喜台|Astro歡喜台|Astro欢喜|Astro歡喜|欢喜台|歡喜台)[\s\S]*$,Astro 歡喜台
 爱奇艺,re:(?i)^\s*(爱奇艺|愛奇藝|爱奇艺电影|愛奇藝電影|iQIYI)[\s\S]*$,iQIYI
-
-翡翠台,翡翠台,翡翠台4K(字幕),翡翠台(字幕),翡翠台(WebVTT字幕),翡翠台 4K「字幕」,翡翠台「字幕」,翡翠台「WebVTT字幕」
-翡翠剧集台,翡翠剧集,翡翠劇集,翡翠剧集台,翡翠劇集台
-华丽翡翠台,华丽翡翠,華麗翡翠,华丽翡翠台,華麗翡翠台,华丽翡翠台「硬字幕」,华丽翡翠台「新加坡」
-华丽翡翠台(硬字幕),华丽翡翠(硬字幕),華麗翡翠(硬字幕),华丽翡翠台(硬字幕),華麗翡翠台(硬字幕)
-华丽翡翠台(新加坡),华丽翡翠(新加坡),華麗翡翠(新加坡),华丽翡翠台(新加坡),華麗翡翠台(新加坡)
-TVB翡翠(馬來),TVB翡翠(馬來),TVB翡翠(马来)
+翡翠台,翡翠台4K(字幕),翡翠台(字幕),翡翠台(WebVTT字幕),翡翠台 4K「字幕」,翡翠台「字幕」,翡翠台「WebVTT字幕」,re:(?i)^\s*(翡翠台|翡翠台HD|Jade|TVB Jade)[\s\S]*$
+翡翠剧集台,翡翠剧集,翡翠劇集,翡翠劇集台
+华丽翡翠台,华丽翡翠,華麗翡翠,華麗翡翠台,华丽翡翠台「硬字幕」,华丽翡翠台「新加坡」
+华丽翡翠台(硬字幕),华丽翡翠(硬字幕),華麗翡翠(硬字幕),華麗翡翠台(硬字幕)
+华丽翡翠台(新加坡),华丽翡翠(新加坡),華麗翡翠(新加坡),華麗翡翠台(新加坡)
+TVB翡翠(馬來),TVB翡翠(马来)
 明珠台,明珠台(字幕),明珠台(WebVTT字幕),TVB明珠,明珠台「字幕」,明珠台「WebVTT字幕」
-TVB Plus(字幕),TVB Plus(字幕),TVB Plus「字幕」
-TVB Plus(WebVTT字幕),TVB Plus(WebVTT字幕),TVB Plus「WebVTT字幕」
+TVB Plus(字幕),TVB Plus「字幕」
+TVB Plus(WebVTT字幕),TVB Plus「WebVTT字幕」
 TVB Plus,TVB Plus
 TVB1,TVB1
 TVBJ1,TVBJ1
-TVB翡翠劇集,TVB翡翠剧集,TVB翡翠劇集
-凤凰中文,凤凰中文,鳳凰中文,凤凰中文台,鳳凰中文台,凤凰卫视中文台,鳳凰衛視中文台,鳳凰衛視·中文「72小时回看」
+TVB翡翠劇集,TVB翡翠剧集
+凤凰中文,鳳凰中文,凤凰中文台,鳳凰中文台,凤凰卫视中文台,鳳凰衛視中文台,鳳凰衛視·中文「72小时回看」
 凤凰资讯,鳳凰資訊,凤凰资讯台,鳳凰資訊台,凤凰卫视资讯台,鳳凰衛視資訊台,鳳凰衛視·資訊「72小时回看」
 凤凰香港,鳳凰香港,凤凰香港台,鳳凰香港台,凤凰卫视香港台,鳳凰衛視香港台,鳳凰衛視·香港「72小时回看」
-无线新闻,无线新闻,無線新聞,无线新闻台,無線新聞台,無綫新聞台「3小时回看」
-TVB娱乐新闻台,TVB娱乐新闻,TVB娛樂新聞,TVB娱乐新闻台,TVB娛樂新聞台
-TVB星河,TVB星河,TVB星河台
+无线新闻,无线新闻台,無線新聞,無線新聞台,無綫新聞台「3小时回看」
+TVB娱乐新闻台,TVB娱乐新闻,TVB娛樂新聞,TVB娛樂新聞台
+TVB星河,TVB星河台
 TVB星河3,TVB星河3
-TVB亚洲武侠,TVB亚洲武侠,TVB亞洲武俠
-亚洲武侠,亚洲武侠,亞洲武俠
-TVB黃金華劇,TVB黄金华剧,TVB黃金華劇
-黄金华剧台(WebVTT字幕),黄金华剧(WebVTT字幕),黃金華劇(WebVTT字幕),黄金华剧台(WebVTT字幕),黃金華劇台(WebVTT字幕),黃金華劇台「WebVTT字幕」
-千禧经典台,千禧经典,千禧經典,千禧经典台,千禧經典台,千禧經典台
-MYTV黃金翡翠,MYTV黄金翡翠,MYTV黃金翡翠
-TVB-獎門人,TVB-奖门人,TVB-獎門人
+TVB亚洲武侠,TVB亞洲武俠
+亚洲武侠,亞洲武俠
+TVB黄金华剧,TVB黃金華劇,TVB黃金華劇
+黄金华剧台(WebVTT字幕),黄金华剧(WebVTT字幕),黃金華劇(WebVTT字幕),黃金華劇台(WebVTT字幕),黃金華劇台「WebVTT字幕」
+千禧经典台,千禧经典,千禧經典,千禧經典台
+MYTV黃金翡翠,MYTV黄金翡翠
+TVB-獎門人,TVB-奖门人
 TVB-金曲,TVB-金曲
-娱乐新闻,娱乐新闻,娛樂新聞,娛樂新聞台
+娱乐新闻,娛樂新聞,娛樂新聞台
 HOY TV,HOY TV
-HOY资讯台,HOY资讯,HOY資訊,HOY资讯台,HOY資訊台,HOY 資訊台
-HOY国际财经台,HOY国际财经,HOY國際財經,HOY国际财经台,HOY國際財經台,HOY 國際財經台
+HOY资讯台,HOY资讯,HOY資訊,HOY資訊台,HOY 資訊台
+HOY国际财经台,HOY国际财经,HOY國際財經,HOY國際財經台,HOY 國際財經台
 HOY77,HOY77
 ViuTV,ViuTV
 ViuTVsix,ViuTVsix
-NOW新闻台,NOW新闻,NOW新聞,NOW新闻台,NOW新聞台,Now新聞台
-Now财经台，Now财经
-RTHK31,RTHK31,RTHK 31
-RTHK32,RTHK32,RTHK 32
-香港32台,香港32,香港32台
-香港33台,香港33,香港33台
-香港34台,香港34,香港34台
-香港35台,香港35,香港35台
+NOW新闻台,NOW新闻,NOW新聞,NOW新聞台,Now新聞台
+Now财经台,Now财经
+RTHK31,RTHK 31
+RTHK32,RTHK 32
+香港32台,香港32
+香港33台,香港33
+香港34台,香港34
+香港35台,香港35
 香港C+,香港C+
-澳视澳门,澳视澳门,澳視澳門,澳視澳門
-澳视卫星,澳视卫星,澳視衛星
-澳门体育,澳门体育,澳門體育,澳门体育台,澳門體育台,澳門體育
-澳门综艺,澳门综艺,澳門綜藝,澳门综艺台,澳門綜藝台,澳門綜藝
-澳门莲花,澳门莲花,澳門蓮花,澳门莲花台,澳門蓮花台,澳門蓮花
-经典电影,经典电影,經典電影,经典电影台,經典電影台,經典電影台
-CMusic,CMusic,電影原聲台CMusic
-DreamWorks梦工厂动画,DreamWorks梦工厂动画,DreamWorks夢工廠動畫,DreamWorks 夢工廠動畫
-精选动漫台,精选动漫,精選動漫,精选动漫台,精選動漫台,精選動漫台
-ROCK Action,ROCK Action,ROCK_Action
+澳视澳门,澳視澳門
+澳视卫星,澳視衛星
+澳门体育,澳門體育,澳门体育台,澳門體育台
+澳门综艺,澳門綜藝,澳门综艺台,澳門綜藝台
+澳门莲花,澳門蓮花,澳门莲花台,澳門蓮花台
+经典电影,經典電影,经典电影台,經典電影台
+CMusic,電影原聲台CMusic
+DreamWorks梦工厂动画,DreamWorks夢工廠動畫,DreamWorks 夢工廠動畫
+精选动漫台,精选动漫,精選動漫,精選動漫台
+ROCK Action,ROCK_Action
 东森电影,东森电影台,東森電影,東森電影台
-东森戏剧,東森戏剧,東森戲劇,东森戏剧台,東森戲劇台,東森戲劇台
-东森洋片,東森洋片,東森洋片,东森洋片台,東森洋片台,東森洋片台
-东森新闻,東森新聞,東森新聞,东森新闻台,東森新聞台
-东森超视,东森超视,東森超視,东森超视台,東森超視台
-东森财经新闻,東森財經新聞,東森財經新聞,东森财经新闻台,東森財經新聞台
-东森综合,東森綜合,東森綜合
-纬来电影,緯來電影,緯來電影,纬来电影台,緯來電影台,緯來電影台
-纬来戏剧,纬来戏剧,緯來戲劇,纬来戏剧台,緯來戲劇台,緯來戲劇台
-纬来体育,緯來體育,纬来体育台,緯來體育台,緯來體育台
+东森戏剧,東森戏剧,東森戲劇,东森戏剧台,東森戲劇台
+东森洋片,東森洋片,东森洋片台,東森洋片台
+东森新闻,東森新聞,东森新闻台,東森新聞台
+东森超视,東森超視,东森超视台,東森超視台
+东森财经新闻,東森財經新聞,东森财经新闻台,東森財經新聞台
+东森综合,東森綜合
+纬来电影,緯來電影,纬来电影台,緯來電影台
+纬来戏剧,緯來戲劇,纬来戏剧台,緯來戲劇台
+纬来体育,緯來體育,纬来体育台,緯來體育台
 纬来育乐,緯來育樂,纬来育乐台,緯來育樂台
 纬来日本,緯來日本,纬来日本台,緯來日本台
-龙祥时代,龍祥時代,龙祥电影,龍祥電影,龙祥电影台,龍祥電影台,龍祥時代
-龙华电影,龍華電影,龍華電影,龙华电影台,龍華電影台,龍華電影台
-龙华洋片,龍華洋片,龍華洋片,龙华洋片台,龍華洋片台,龍華洋片台
-龙华经典,龙华经典,龍華經典,龙华经典台,龍華經典台,龍華經典台
-龙华偶像,龙华偶像,龍華偶像,龙华偶像台,龍華偶像台,龍華偶像台
-龙华日韩,龙华日韩,龍華日韓,龙华日韩台,龍華日韓台,龍華日韓台
-龙华戏剧,龙华戏剧,龍華戲劇,龙华戏剧台,龍華戲劇台,龍華戲劇台
-龙华卡通,龙华卡通,龍華卡通,龙华卡通台,龍華卡通台,龍華卡通台
-靖洋戏剧,靖洋戲劇,靖洋戲劇,靖洋戏剧台,靖洋戲劇台,靖洋戲劇台
+龙祥时代,龍祥時代,龙祥电影,龍祥電影,龙祥电影台,龍祥電影台
+龙华电影,龍華電影,龙华电影台,龍華電影台
+龙华洋片,龍華洋片,龙华洋片台,龍華洋片台
+龙华经典,龍華經典,龙华经典台,龍華經典台
+龙华偶像,龍華偶像,龙华偶像台,龍華偶像台
+龙华日韩,龍華日韓,龙华日韩台,龍華日韓台
+龙华戏剧,龍華戲劇,龙华戏剧台,龍華戲劇台
+龙华卡通,龍華卡通,龙华卡通台,龍華卡通台
+靖洋戏剧,靖洋戲劇,靖洋戏剧台,靖洋戲劇台
 靖洋卡通,靖洋卡通Nice Bingo
-靖天电影,靖天電影,靖天電影,靖天电影台,靖天電影台
-靖天映画,靖天映畫,靖天映畫,靖天映画台,靖天映畫台,靖天映畫
-靖天戏剧,靖天戲劇,靖天戲劇,靖天戏剧台,靖天戲劇台,靖天戲劇台
-靖天资讯,靖天資訊,靖天資訊,靖天资讯台,靖天資訊台
-靖天综合,靖天綜合,靖天綜合,靖天综合台,靖天綜合台
-靖天日本,靖天日本,靖天日本台
-靖天育乐,靖天育樂,靖天育樂,靖天育乐台,靖天育樂台
+靖天电影,靖天電影,靖天电影台,靖天電影台
+靖天映画,靖天映畫,靖天映画台,靖天映畫台
+靖天戏剧,靖天戲劇,靖天戏剧台,靖天戲劇台
+靖天资讯,靖天資訊,靖天资讯台,靖天資訊台
+靖天综合,靖天綜合,靖天综合台,靖天綜合台
+靖天日本,靖天日本台
+靖天育乐,靖天育樂,靖天育乐台,靖天育樂台
 靖天国际,靖天國際,KLT-靖天国际,KLT-靖天國際,KLT-靖天国际台,KLT-靖天國際台
 靖天欢乐,靖天歡樂,Nice TV 靖天欢乐,Nice TV 靖天歡樂,Nice TV 靖天欢乐台,Nice TV 靖天歡樂台
-靖天卡通,靖天卡通,靖天卡通台
-采昌影剧,采昌影劇,采昌影剧,采昌影劇,采昌影剧台,采昌影劇台,采昌影劇台
-影迷数位电影,影迷數位電影台,影迷数位电影,影迷數位電影,影迷数位电影台,影迷數位電影台,影迷數位電影台
+靖天卡通,靖天卡通台
+采昌影剧,采昌影劇,采昌影剧台,采昌影劇台
+影迷数位电影,影迷數位電影台,影迷數位電影,影迷数位电影台
 AXN,Axn,Axn HD,AXN HD
 AMC電影台,amc电影,amc電影,amc电影台,amc電影台,AMC,AMC Europe
-Blokbaster
 BritBox Mysteries UK,BritBox Mysteries,BritBoxMysteriesUK
 CinemaWorld,Cinema World
-Cinemax Hits,Cinemax Hits,CinemaxHits
+Cinemax Hits,CinemaxHits
 Cinemax,Cinemax HD
-Cinemax2，Cinemax 2
-Cinemax Action,Cinemax Action,CinemaxAction
-FX Movie Channel
-Gravitas Movies
-HBO,HBO HD
+Cinemax2,Cinemax 2
+Cinemax Action,CinemaxAction
+HBO,HBO HD,re:(?i)^\s*HBO[\s\S]*$
 HBO Movies,HBOMovies,HBO电影,HBO电影台,HBO電影台
-HBO Hits,HBOHits,HBO Hits HD,HBO强档,HBO Hits,HBO強檔
+HBO Hits,HBOHits,HBO Hits HD,HBO強檔
 HBO Comedy,HBOComedy
-HBO Family，HBOFamily,HBO家庭,HBO Family
-HBOSignature,HBO Signature
-HITS,HITS HD
-Home plus
+HBO Family,HBOFamily
+HBOSignature,HBOSignature
+HITS,HITS HD,re:(?i)^\s*HITS[\s\S]*$
 Hallmark Movies&More,Hallmark Movies&More
 KinoHit,Kino Hit
-MyTime Movie Network
-MovieSphere AU
-MovieSphere UK
 MovieSphere,re:(?i)^\s*MovieSphere[\s\S]*$
-MovieSphere Gold WFXT
 Mega Cine TV,MegaCine TV,MegaCineTV
 Movies Action,Movies Action
 Movies Thriller,Movies Thriller
 MGM Present,MGMPresent
-My Cinema Europe,My Cinema Europe,MCE 我的歐洲電影
+My Cinema Europe,MCE 我的歐洲電影
 OuterSphere,Outer Sphere
 Sony Movies,Sony Movies
-Sony One Favoris
-Sony One Hits Action
-The Movie Channel Xtra
 Universal Action,UniversalAction
 Universal Movies,UniversalMovies
 好莱坞电影,re:(?i)^\s*(好莱坞电影|好萊塢電影|好莱坞电影台|好萊塢電影台)[\s\S]*$,好萊塢電影「Relay」
@@ -446,58 +427,46 @@ TVBS综合,TVBS综合台
 八大综艺,八大綜藝,八大综艺台,八大綜藝台
 八大精彩,八大精彩台
 三立综合,三立綜合,三立综合台,三立綜合台
-三立新闻,三立新闻,三立新聞,三立新闻台,三立新聞台,三立新闻iNEWS,三立新聞iNEWS
+三立新闻,三立新聞,三立新闻台,三立新聞台,三立新闻iNEWS,三立新聞iNEWS
 LIVE三立,LIVE三立
-中天新闻,中天新闻,中天新聞,中天新闻台,中天新聞台,中天新聞「ofiii」
+中天新闻,中天新聞,中天新闻台,中天新聞台,中天新聞「ofiii」
 中视新闻,中視新聞,中视新闻台,中視新聞台
-中视，中視,中視
+中视,中視
 中视经典,中視經典,中视经典台,中視經典台
 中视菁采,中視菁采,中视菁采台,中視菁采台
 华视新闻,華視新聞,华视新闻台,華視新聞台
-华视，華視
+华视,華視
 华视教育体育文化,華視教育體育文化
 民视新闻,民視新聞,民视新闻台,民視新聞台
 民视,民視
-民视第一,民視第一,民视第一台,民視第一台
+民视第一,民視第一,民視第一台,民视第一台
 民视台湾,民視台灣,民视台湾台,民視台灣台
 民视综艺,民視綜藝,民视综艺台,民視綜藝台
-民视影剧,民視影劇,民视影剧台,民視影劇台,民視影劇台
+民视影剧,民視影劇,民视影剧台,民視影劇台
 台视新闻,台視新聞,台视新闻台,台視新聞台
 台視,台视,台視「Relay」
-台视综合,台視綜合,台视综合台,台視綜合台
+台视综合,台視綜合,台视综合台,台視綜合台,臺視綜合,臺視綜合台
 台视财经,台視財經,台视财经台,台視財經台
-台视综合,臺視綜合,台视综合台,臺視綜合台
-公视，公視,
+公视,公視
 公视台语,公視台語,公视台语台,公視台語台
 PTSxs,PTSxs
-公视戏剧,公視戲劇,公视戏剧台,公視戲劇台,公視戲劇
+公视戏剧,公視戲劇,公视戏剧台,公視戲劇台
 寰宇新闻,寰宇新聞,寰宇新闻台,寰宇新聞台,寰宇新闻台湾,寰宇新聞台灣,寰宇新闻台湾台,寰宇新聞台灣台
 镜电视新闻,鏡電視新聞,镜电视新闻台,鏡電視新聞台
 MOMO亲子,MOMO親子,MOMO亲子台,MOMO親子台
 Duck TV儿童卡通,Duck TV兒童卡通
-梦工场动漫,梦工场动漫,夢工場動漫
-DreamWorks梦工厂动画,DreamWorks 夢工廠動畫
+梦工场动漫,夢工場動漫
 Nick Jr. 儿童频道,Nick Jr. 兒童頻道
 尼克儿童频道,尼克兒童頻道
 经典卡通,經典卡通,经典卡通台,經典卡通台
 华艺中文,華藝中文
-爱奇艺,愛奇藝
 中国电影,中國電影
 韩流美食料理秀,韓流美食料理秀
 娱乐百分百,娛樂百分百
 综艺大赢家,綜藝大贏家
 LiveABC互动英语频道,LiveABC互動英語頻道
-达文西频道,達文西頻道
-SPOTV
-SPOTV2
-astroFootball
-TntSports1
-智林体育,智林體育
-JSPORTS1
-SkyTennis+
-DAZN-体育
-momo'tv
-
+达文西频道,达文西频道
+智林体育,智林体育
 劉德華,re:(?i)^\s*(刘德华|劉德華)[\s\S]*$
 成龍,re:(?i)^\s*(成龙|成龍)[\s\S]*$
 周星馳,re:(?i)^\s*(周星驰|周星馳)[\s\S]*$
@@ -512,8 +481,6 @@ momo'tv
 邵氏电影,re:(?i)^\s*(邵氏电影|邵氏電影)[\s\S]*$
 功夫台,re:(?i)^\s*(功夫台|功夫臺|TVB功夫台|TVB[-\s_]*功夫台)[\s\S]*$,TVB 功夫台
 MCE,re:(?i)^\s*MCE[\s\S]*$,MCE 我的歐洲電影
-
-
 ZOOMOO,re:(?i)^\s*ZOOMOO[\s\S]*$
 广东少儿,re:(?i)^\s*(广东少儿|廣東少兒|广东少儿台|廣東少兒台)[\s\S]*$
 山东少儿,re:(?i)^\s*(山东少儿|山東少兒|山东少儿台|山東少兒台)[\s\S]*$
@@ -521,43 +488,34 @@ Boomerang,re:(?i)^\s*Boomerang[\s\S]*$
 DisneyJunior,re:(?i)^\s*(Disney\s*Junior|迪士尼少儿)[\s\S]*$
 空中英語教室,re:(?i)^\s*(空中英语教室|空中英語教室)[\s\S]*$
 ELTV生活英語台,re:(?i)^\s*(ELTV生活英语台|ELTV生活英語台|ELTV生活英语|ELTV生活英語)[\s\S]*$
-
-
-风云音乐,re:(?i)^\s*(风云音乐|風雲音樂|风云音乐HD|風雲音樂HD)[\s\S]*$
 KroneHitTV,KroneHitTV
 DeluxeMusic,DeluxeMusic
-CMusic,CMusic,電影原聲台CMusic
 TRACEUrban,TRACEUrban
 MezzoLive,MezzoLive HD,Mezzo Live
 THTmusic,THTmusic
-CLASSICA古典乐,CLASSICA古典乐,古典音樂台
+CLASSICA古典乐,古典音樂台
 MTVHITS,MTVHITSHD
-MTV,MTV,MTV(IN),MTV綜合台「Relay」
-NOW 70s,NOW 70s
-NOW 80s,NOW 80s
-NOW ROCK,NOW ROCK
+MTV,MTV綜合台「Relay」,re:(?i)^\s*MTV[\s\S]*$
+NOW 70s,re:(?i)^\s*NOW\s*70s[\s\S]*$
+NOW 80s,re:(?i)^\s*NOW\s*80s[\s\S]*$
+NOW ROCK,re:(?i)^\s*NOW\s*ROCK[\s\S]*$
 Makkah,Makkah
 Madinah,Madinah
 Fashion,Fashion
-FashionTV,Fashion TV,FashionTVFR,FashionTV HD,法国时装,法國時裝,法國時裝，法国时装，法国时装频道
+FashionTV,Fashion TV,FashionTVFR,FashionTV HD,法国时装,法國時裝,法国时装频道
 FashionBox,Fashion Box
 World Fashion,WorldFashion
-
-
-世界地理,re:(?i)^\s*世界地理[\s\S]*$
-发现之旅,re:(?i)^\s*发现之旅[\s\S]*$
-老故事,re:(?i)^\s*老故事[\s\S]*$
 CGTNDocumentary,re:(?i)^\s*CGTN\s*Documentary[\s\S]*$
 RTDocumentary,re:(?i)^\s*RT\s*Documentary[\s\S]*$
 动物星球,re:(?i)^\s*(动物星球|動物星球|Animal Planet)[\s\S]*$,動物星球「Relay」
 動物星球,re:(?i)^\s*(动物星球|動物星球|Animal Planet)[\s\S]*$,動物星球「Relay」
 BBCEarth,re:(?i)^\s*(BBC\s*Earth|BBC地球)[\s\S]*$,BBC Earth
-BBC Earth,re:(?i)^\s*BBC\s*Earth[\s\S]*$,BBC Earth
+BBC Earth,re:(?i)^\s*BBC\s*Earth[\s\S]*$
 LoveNature 4K,re:(?i)^\s*Love\s*Nature[\s\S]*$
 LOVE NATURE,re:(?i)^\s*LOVE\s*NATURE[\s\S]*$,Love Nature
 WildEarth,re:(?i)^\s*Wild\s*Earth[\s\S]*$
 History,re:(?i)^\s*History[\s\S]*$,历史频道
-Discovery,re:(?i)^\s*Discovery[\s\S]*$,探索频道,Discovery
+Discovery,re:(?i)^\s*Discovery[\s\S]*$
 NASA TV,re:(?i)^\s*NASA\s*TV[\s\S]*$
 人与自然,re:(?i)^\s*人与自然[\s\S]*$
 Tvn,re:(?i)^\s*Tvn[\s\S]*$,tvN
@@ -575,8 +533,7 @@ INULTRA,re:(?i)^\s*INULTRA[\s\S]*$
 求索动物,re:(?i)^\s*求索动物[\s\S]*$
 求索生活,re:(?i)^\s*求索生活[\s\S]*$
 亞洲旅遊,re:(?i)^\s*(亚洲旅游台|亞洲旅遊台|亚洲旅游|亞洲旅遊)[\s\S]*$
-美食星球,re:(?i)^\s*(美食星球台|美食星球)[\s\S]*$
-美食星球,re:(?i)^\s*美食星球[\s\S]*$
+美食星球,re:(?i)^\s*(美食星球台|美食星球)[\s\S]*$,re:(?i)^\s*美食星球[\s\S]*$
 亞洲美食,re:(?i)^\s*(亚洲美食台|亞洲美食台|亚洲美食|亞洲美食)[\s\S]*$
 Ci罪案偵緝,re:(?i)^\s*(Ci罪案侦缉|Ci罪案偵緝|CI罪案侦缉)[\s\S]*$
 達文西頻道,re:(?i)^\s*(达文西频道|達文西頻道|达文西|達文西)[\s\S]*$
@@ -593,13 +550,13 @@ Lifetime,re:(?i)^\s*Lifetime[\s\S]*$
 PET CLUB TV,re:(?i)^\s*PET\s*CLUB\s*TV[\s\S]*$
 Travel Channel,re:(?i)^\s*Travel\s*Channel[\s\S]*$
 Global Trekker,re:(?i)^\s*Global\s*Trekker[\s\S]*$
-BBC Lifestyle HD,re:(?i)^\s*BBC\s*Lifestyle[\s\S]*$,BBC Lifestyle
+BBC Lifestyle HD,re:(?i)^\s*BBC\s*Lifestyle[\s\S]*$
 国家地理,re:(?i)^\s*(国家地理|National Geographic)[\s\S]*$
 动物世界,re:(?i)^\s*动物世界[\s\S]*$
 蜥蜴世界,re:(?i)^\s*蜥蜴世界[\s\S]*$
 探秘中华美食,re:(?i)^\s*探秘中华美食[\s\S]*$
-舌尖上的中国第一季,re:(?i)^\s*舌尖上的中国第一季[\s\S]*$
-舌尖上的中国第2季,re:(?i)^\s*舌尖上的中国第2季[\s\S]*$
+舌尖上的中国第一季,re:(?i)^\s*舌尖上的中国第一季[\s\S]*$,re:(?i)^\s*舌尖上的中国[\s\S]*$
+舌尖上的中国第2季,re:(?i)^\s*舌尖上的中国第2季[\s\S]*$,re:(?i)^\s*舌尖上的中国[\s\S]*$
 蓝色星球-自然-纪录片,re:(?i)^\s*蓝色星球[\s\S]*$
 觅食者-美食纪录片,re:(?i)^\s*觅食者[\s\S]*$
 冰冻星球-纪录片,re:(?i)^\s*冰冻星球[\s\S]*$
@@ -626,11 +583,7 @@ NewTV精品纪录,re:(?i)^\s*NewTV精品纪录[\s\S]*$
 NewTV军事纪实,re:(?i)^\s*NewTV军事纪实[\s\S]*$
 NewTV军事评论,re:(?i)^\s*NewTV军事评论[\s\S]*$
 直播中国精编直播,re:(?i)^\s*直播中国[\s\S]*$
-
-
-
-
-CM+,CM+(多音轨),CM+,CM Plus,CM多音轨,re:(?i)^\s*CM[+\s_]*(多音轨|Plus)?\s*$
+CM+,CM Plus,CM多音轨,re:(?i)^\s*CM[+\s_]*(多音轨|Plus)?\s*$
 E樂(多音轨),E樂,E乐,ELe,E樂多音轨,E乐多音轨
 佳樂(多音轨),佳樂,佳乐,JiaLe,佳樂多音轨,佳乐多音轨
 剧乐酷,劇樂酷,剧乐酷HD,劇樂酷HD,re:(?i)^\s*[剧劇]乐[乐樂]酷.*$
@@ -660,11 +613,6 @@ TRTWorld,re:(?i)^\s*TRT[-\s_]*World[\s\S]*$,TRT世界
 CGTN,re:(?i)^\s*CGTN[\s\S]*$,中国国际电视台
 Suria,re:(?i)^\s*Suria[\s\S]*$
 Now Jelli,re:(?i)^\s*(Now\s*Jelli|nowjelli|NowJelli)[\s\S]*$
-HITS,re:(?i)^\s*HITS[\s\S]*$,HITS now,HitsMovies
-NOW 70s,re:(?i)^\s*NOW\s*70s[\s\S]*$
-NOW 80s,re:(?i)^\s*NOW\s*80s[\s\S]*$
-W-Sport,re:(?i)^\s*W[-\s_]*Sport[\s\S]*$
-NOW ROCK,re:(?i)^\s*NOW\s*ROCK[\s\S]*$
 Vasantham,re:(?i)^\s*Vasantham[\s\S]*$
 Channel5,re:(?i)^\s*(Channel\s*5|CH5|5频道|5頻道)[\s\S]*$,Channel 5
 Channel8,re:(?i)^\s*(Channel\s*8|CH8|8频道|8頻道)[\s\S]*$,Channel 8
@@ -672,25 +620,6 @@ ChannelU,re:(?i)^\s*(Channel\s*U|CHU|U频道|U頻道)[\s\S]*$,Channel U
 HUB 都會台,re:(?i)^\s*(HUB都会台|HUB都會台|HUB都会|HUB都會)[\s\S]*$
 HUB 娛家台,re:(?i)^\s*(HUB娱家台|HUB娛家台|HUB娱家|HUB娛家)[\s\S]*$
 HUB 如意台,re:(?i)^\s*(HUB如意台|HUB如意)[\s\S]*$
-HubPremier1,re:(?i)^\s*Hub[-\s_]*Premier[-\s_]*1[\s\S]*$,Hub Premier 1
-HubPremier2,re:(?i)^\s*Hub[-\s_]*Premier[-\s_]*2[\s\S]*$,Hub Premier 2 UHD
-HubPremier3,re:(?i)^\s*Hub[-\s_]*Premier[-\s_]*3[\s\S]*$,Hub Premier 3
-HubPremier4,re:(?i)^\s*Hub[-\s_]*Premier[-\s_]*4[\s\S]*$,Hub Premier 4
-HubPremier5,re:(?i)^\s*Hub[-\s_]*Premier[-\s_]*5[\s\S]*$,Hub Premier 5
-HubPremier6,re:(?i)^\s*Hub[-\s_]*Premier[-\s_]*6[\s\S]*$,Hub Premier 6
-HubPremier7,re:(?i)^\s*Hub[-\s_]*Premier[-\s_]*7[\s\S]*$
-HubSports_1,re:(?i)^\s*Hub[-\s_]*Sports[-\s_]*1[\s\S]*$,Hub Sports 1
-HubSports_2,re:(?i)^\s*Hub[-\s_]*Sports[-\s_]*2[\s\S]*$,Hub Sports 2
-HubSports_3,re:(?i)^\s*Hub[-\s_]*Sports[-\s_]*3[\s\S]*$,Hub Sports 3
-HubSports_4,re:(?i)^\s*Hub[-\s_]*Sports[-\s_]*4[\s\S]*$,Hub Sports 4
-HubSports_5,re:(?i)^\s*Hub[-\s_]*Sports[-\s_]*5[\s\S]*$,Hub Sports 5
-HubSports_6,re:(?i)^\s*Hub[-\s_]*Sports[-\s_]*6[\s\S]*$,Hub Sports 6
-HubSports_7,re:(?i)^\s*Hub[-\s_]*Sports[-\s_]*7[\s\S]*$,Hub Sports 7
-HubSports_8,re:(?i)^\s*Hub[-\s_]*Sports[-\s_]*8[\s\S]*$,Hub Sports 8
-Fight Sports,re:(?i)^\s*Fight[-\s_]*Sports[\s\S]*$,FIGHT SPORTS
-Beinsports 1,re:(?i)^\s*(Bein\s*Sports\s*1|beIN\s*Sports\s*1)[\s\S]*$,beIN Sports 1
-Beinsports 2,re:(?i)^\s*(Bein\s*Sports\s*2|beIN\s*Sports\s*2)[\s\S]*$,beIN Sports 2
-Beinsports 3,re:(?i)^\s*(Bein\s*Sports\s*3|beIN\s*Sports\s*3)[\s\S]*$,beIN Sports 3
 TV1,re:(?i)^\s*TV1[\s\S]*$,RTM TV1
 TV2,re:(?i)^\s*TV2[\s\S]*$,RTM TV2
 TV3,re:(?i)^\s*TV3[\s\S]*$,RTM TV3
@@ -701,23 +630,18 @@ TVS,re:(?i)^\s*TVS[\s\S]*$
 RTM,re:(?i)^\s*RTM[\s\S]*$
 NTV7,re:(?i)^\s*NTV7[\s\S]*$
 AFN,re:(?i)^\s*AFN[\s\S]*$
-HBO,re:(?i)^\s*HBO[\s\S]*$,HBO
-GOLF,re:(?i)^\s*GOLF[\s\S]*$,Golf Channel
-HGTV,re:(?i)^\s*HGTV[\s\S]*$
 Suntv,re:(?i)^\s*(Sun\s*TV|Suntv)[\s\S]*$
 愛奇藝,re:(?i)^\s*(爱奇艺|愛奇藝|iQIYI)[\s\S]*$,iQIYI
-翡翠台,re:(?i)^\s*(翡翠台|翡翠台HD|Jade|TVB Jade)[\s\S]*$,翡翠台
 欢喜台,re:(?i)^\s*(欢喜台|歡喜台|Astro欢喜台|Astro歡喜台)[\s\S]*$,Astro 歡喜台
 TVokey,re:(?i)^\s*TVokey[\s\S]*$
 Starvijay,re:(?i)^\s*(Star\s*Vijay|Starvijay)[\s\S]*$
 ZEEcinema,re:(?i)^\s*(ZEE\s*Cinema|ZEEcinema|Zee Cinema)[\s\S]*$
-Discovery,re:(?i)^\s*Discovery[\s\S]*$,探索频道,Discovery
 Tvalhijrah,re:(?i)^\s*(TV\s*Alhijrah|Tvalhijrah)[\s\S]*$
 Discoveryasia,re:(?i)^\s*(Discovery\s*Asia|Discoveryasia)[\s\S]*$
-Astro_QJ,re:(?i)^\s*Astro[-\s_]*QJ[\s\S]*$,Astro_QJ
+Astro_QJ,re:(?i)^\s*Astro[-\s_]*QJ[\s\S]*$
 Astro_Boo,re:(?i)^\s*Astro[-\s_]*Boo[\s\S]*$
-Astro_Aod,re:(?i)^\s*Astro[-\s_]*AOD[\s\S]*$,Astro_Aod
-Astro_Aec,re:(?i)^\s*Astro[-\s_]*AEC[\s\S]*$,Astro_Aec
+Astro_Aod,re:(?i)^\s*Astro[-\s_]*AOD[\s\S]*$
+Astro_Aec,re:(?i)^\s*Astro[-\s_]*AEC[\s\S]*$
 Astro_Ria,re:(?i)^\s*Astro[-\s_]*Ria[\s\S]*$
 Astro_Aura,re:(?i)^\s*Astro[-\s_]*Aura[\s\S]*$
 Astro_Rania,re:(?i)^\s*Astro[-\s_]*Rania[\s\S]*$
@@ -726,20 +650,9 @@ Astro_Ceria,re:(?i)^\s*Astro[-\s_]*Ceria[\s\S]*$
 Astro_Oasis,re:(?i)^\s*Astro[-\s_]*Oasis[\s\S]*$
 Astro_Citra,re:(?i)^\s*Astro[-\s_]*Citra[\s\S]*$
 Astro_Prima,re:(?i)^\s*Astro[-\s_]*Prima[\s\S]*$
-Astro_Arena,re:(?i)^\s*Astro[-\s_]*Arena(?![2])[\s\S]*$
-Astro_Arena2,re:(?i)^\s*Astro[-\s_]*Arena[-\s_]*2[\s\S]*$
 Astro_Vellithirai,re:(?i)^\s*Astro[-\s_]*Vellithirai[\s\S]*$
-Astro_Arenbola,re:(?i)^\s*Astro[-\s_]*Arenbola(?![2])[\s\S]*$
-Astro_Arenbola2,re:(?i)^\s*Astro[-\s_]*Arenbola[-\s_]*2[\s\S]*$
-Astro_Football,re:(?i)^\s*Astro[-\s_]*Football[\s\S]*$
-Astro_Badminton,re:(?i)^\s*Astro[-\s_]*Badminton[\s\S]*$
-Astro_Sports puls,re:(?i)^\s*Astro[-\s_]*Sports[-\s_]*Plus[\s\S]*$,Astro Sports Plus
-Astro_Premier league1,re:(?i)^\s*Astro[-\s_]*Premier[-\s_]*League[-\s_]*1[\s\S]*$
-Astro_Premier league2,re:(?i)^\s*Astro[-\s_]*Premier[-\s_]*League[-\s_]*2[\s\S]*$
 E!,re:(?i)^\s*E![\s\S]*$
-MTV,re:(?i)^\s*MTV[\s\S]*$,MTV綜合台「Relay」
 Comedy Central,re:(?i)^\s*Comedy\s*Central[\s\S]*$
-Boomerang,re:(?i)^\s*Boomerang[\s\S]*$
 Cartoon Network,re:(?i)^\s*Cartoon\s*Network[\s\S]*$
 USA Network,re:(?i)^\s*USA\s*Network[\s\S]*$
 A&E,re:(?i)^\s*A&E[\s\S]*$
@@ -748,7 +661,6 @@ Bravo,re:(?i)^\s*Bravo[\s\S]*$
 Fuse,re:(?i)^\s*Fuse[\s\S]*$
 WETV,re:(?i)^\s*WETV[\s\S]*$
 VICE,re:(?i)^\s*VICE[\s\S]*$
-FoxNews,re:(?i)^\s*(Fox\s*News|FoxNews|福克斯新闻)[\s\S]*$
 Bloomberg TV,re:(?i)^\s*Bloomberg[\s\S]*$
 France24,re:(?i)^\s*(France\s*24|France24|法国24)[\s\S]*$
 AlJazeera,re:(?i)^\s*(Al\s*Jazeera|AlJazeera|半岛新闻台|半岛电视台)[\s\S]*$
@@ -763,13 +675,8 @@ TVAsahi,re:(?i)^\s*(TV\s*Asahi|TVAsahi|朝日电视台)[\s\S]*$
 TVTokyo,re:(?i)^\s*(TV\s*Tokyo|TVTokyo|东京电视台)[\s\S]*$
 WOWOW,re:(?i)^\s*WOWOW[\s\S]*$
 Animax,re:(?i)^\s*Animax[\s\S]*$
-
-# ========== 轮播剧场 ==========
 刘德华,re:(?i)^\s*(刘德华|劉德華)[\s\S]*$
 成龙,re:(?i)^\s*(成龙|成龍)[\s\S]*$
-黄渤,re:(?i)^\s*(黄渤|黃渤)[\s\S]*$
-沈腾,re:(?i)^\s*(沈腾|沈騰)[\s\S]*$
-王晶,re:(?i)^\s*王晶[\s\S]*$
 周星驰,re:(?i)^\s*(周星驰|周星馳)[\s\S]*$
 李连杰,re:(?i)^\s*(李连杰|李連杰)[\s\S]*$
 周润发,re:(?i)^\s*(周润发|周潤發)[\s\S]*$
@@ -797,8 +704,6 @@ Animax,re:(?i)^\s*Animax[\s\S]*$
 网球王子,re:(?i)^\s*网球王子[\s\S]*$
 庆余年,re:(?i)^\s*(庆余年|慶餘年)[\s\S]*$
 陈情令,re:(?i)^\s*(陈情令|陳情令)[\s\S]*$
-古天乐,re:(?i)^\s*(古天乐|古天樂)[\s\S]*$
-甄子丹,re:(?i)^\s*甄子丹[\s\S]*$
 封神榜,re:(?i)^\s*封神榜[\s\S]*$
 鹿鼎记,re:(?i)^\s*(鹿鼎记|鹿鼎記)[\s\S]*$
 寻秦记,re:(?i)^\s*(寻秦记|尋秦記)[\s\S]*$
@@ -807,7 +712,6 @@ Animax,re:(?i)^\s*Animax[\s\S]*$
 大时代,re:(?i)^\s*(大时代|大時代)[\s\S]*$
 柳舟计,re:(?i)^\s*柳舟计[\s\S]*$
 大秦赋,re:(?i)^\s*(大秦赋|大秦賦)[\s\S]*$
-洪金宝,re:(?i)^\s*(洪金宝|洪金寶)[\s\S]*$
 埋堆堆,re:(?i)^\s*埋堆堆[\s\S]*$
 埋堆堆2,re:(?i)^\s*埋堆堆2[\s\S]*$
 王晶电影,re:(?i)^\s*王晶电影[\s\S]*$
@@ -1032,8 +936,6 @@ Blingbling,re:(?i)^\s*Blingbling[\s\S]*$
 珍珠港-电影,re:(?i)^\s*珍珠港[\s\S]*$
 福贵,re:(?i)^\s*福贵[\s\S]*$
 科幻惊悚片-异形,re:(?i)^\s*异形[\s\S]*$
-单挑荒野第一季,re:(?i)^\s*单挑荒野[\s\S]*$
-舌尖上的中国第2季,re:(?i)^\s*舌尖上的中国[\s\S]*$
 从溺水到冠军,re:(?i)^\s*从溺水到冠军[\s\S]*$
 超炫科幻大片,re:(?i)^\s*超炫科幻大片[\s\S]*$
 欢乐集结号2,re:(?i)^\s*欢乐集结号[\s\S]*$
@@ -1051,7 +953,6 @@ Blingbling,re:(?i)^\s*Blingbling[\s\S]*$
 蔡明春晚小品,re:(?i)^\s*蔡明[\s\S]*$
 抗日神片,re:(?i)^\s*抗日神片[\s\S]*$
 一起来笑吧,re:(?i)^\s*一起来笑吧[\s\S]*$
-舌尖上的中国第一季,re:(?i)^\s*舌尖上的中国[\s\S]*$
 宋小宝春晚小品合集,re:(?i)^\s*宋小宝[\s\S]*$
 百家讲坛-红楼梦,re:(?i)^\s*百家讲坛[\s\S]*$
 机械战警1-3,re:(?i)^\s*机械战警[\s\S]*$
@@ -1065,7 +966,6 @@ Blingbling,re:(?i)^\s*Blingbling[\s\S]*$
 大台风,re:(?i)^\s*大台风[\s\S]*$
 洪金宝福星系列,re:(?i)^\s*洪金宝[\s\S]*$
 紧急营救,re:(?i)^\s*紧急营救[\s\S]*$
-一分钟学道菜,re:(?i)^\s*一分钟学道菜[\s\S]*$
 辣警狂花2,re:(?i)^\s*辣警狂花[\s\S]*$
 超英集结,re:(?i)^\s*超英集结[\s\S]*$
 银河护卫队,re:(?i)^\s*银河护卫队[\s\S]*$
@@ -1204,6 +1104,15 @@ Storm憋大招,re:(?i)^\s*Storm憋大招[\s\S]*$
 绝对忠诚使命,re:(?i)^\s*绝对忠诚使命[\s\S]*$
 横行不霸道,re:(?i)^\s*横行不霸道[\s\S]*$
 特派先锋出击,re:(?i)^\s*特派先锋[\s\S]*$
-经典传奇2018,re:(?i)^\s*经典传奇[\s\S]*$
 冬去春来,re:(?i)^\s*冬去春来[\s\S]*$
 24H地下交通站全,re:(?i)^\s*24H地下交通站[\s\S]*$
+BBC Lifestyle,BBC Life style
+CM+(多音轨),CM+(多音轨)
+HBO Signature,HBO Signature
+HBO家庭,HBO家庭
+HBO强档,HBO强档
+HITSnow,HITS now
+HitsMovies,Hits Movies
+MTV(IN),MTV(IN)
+
+
